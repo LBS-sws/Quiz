@@ -1,0 +1,234 @@
+<?php /* @var $this Controller */ ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<?php 
+		Yii::app()->bootstrap->bootstrapPath = Yii::app()->basePath.'/../../bootstrap-3.3.7-dist';
+		Yii::app()->bootstrap->register(); 
+	?>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="language" content="<?php echo Yii::app()->language; ?>" />
+	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
+</head>
+
+<body>
+
+<div class="container" id="page">
+	<div class="row">
+		<div class="col-md-12" id="header">
+			<h1 id="branding" style='padding-top:4px;padding-bottom:4px;font-style:italic;'>
+			<?php echo CHtml::image(Yii::app()->request->baseUrl.'/images/logo.png'); ?>
+			<?php echo CHtml::encode(Yii::t('app',Yii::app()->name)); ?>
+			<?php
+				echo (!Yii::app()->user->isGuest && Yii::app()->user->city_name())
+					? CHtml::encode('('.Yii::app()->user->city_name().')')
+					: '&nbsp;';
+			?>
+			</h1>
+		</div><!-- header -->
+	</div>
+	<div class="row">
+		<div class="col-md-12" id="mainmenu">
+	<?php
+		$this->widget('zii.widgets.CMenu',array(
+			'htmlOptions'=>array('class'=>'nav main'),
+			'items'=>array(
+				array('label'=>Yii::t('app','Data Entry'), 'url'=>array('/site/home'), 
+					'visible'=>(!Yii::app()->user->isGuest && Yii::app()->user->validFunction('A')), 
+					'items'=>array(
+					array('label'=>Yii::t('app','Staff Info'), 'url'=>array('/staff/index'), 
+						'visible'=>(!Yii::app()->user->isGuest && Yii::app()->user->validFunction('A07')),
+					),
+					array('label'=>Yii::t('app','Customer Info'), 'url'=>array('/customer/index'), 
+						'visible'=>(!Yii::app()->user->isGuest && Yii::app()->user->validFunction('A01')),
+					),
+					array('label'=>Yii::t('app','Customer Service'), 'url'=>array('/service/index'), 
+						'visible'=>(!Yii::app()->user->isGuest && Yii::app()->user->validFunction('A02')),
+					),
+					array('label'=>Yii::t('app','Complaint Cases'), 'url'=>array('/followup/index'), 
+						'visible'=>(!Yii::app()->user->isGuest && Yii::app()->user->validFunction('A03')),
+					),
+					array('label'=>Yii::t('app','Customer Enquiry'), 'url'=>array('/enquiry/index'), 
+						'visible'=>(!Yii::app()->user->isGuest && Yii::app()->user->validFunction('A04')),
+					),
+					array('label'=>Yii::t('app','Product Delivery'), 'url'=>array('/logistic/index'), 
+						'visible'=>(!Yii::app()->user->isGuest && Yii::app()->user->validFunction('A05')),
+					),
+					array('label'=>Yii::t('app','QC Record'), 'url'=>array('/qc/index'), 
+						'visible'=>(!Yii::app()->user->isGuest && Yii::app()->user->validFunction('A06')),
+					),
+					array('label'=>Yii::t('app','Feedback'), 'url'=>array('/feedback/index'), 
+						'visible'=>(!Yii::app()->user->isGuest && Yii::app()->user->validFunction('A08')),
+					),
+					array('label'=>Yii::t('app','Monthly Report Data'), 'url'=>array('/monthly/index'), 
+						'visible'=>(!Yii::app()->user->isGuest && Yii::app()->user->validFunction('A09')),
+					),
+				)),
+				array('label'=>Yii::t('app','Report'), 'url'=>array('/site/home'), 
+					'visible'=>(!Yii::app()->user->isGuest && Yii::app()->user->validFunction('B')), 
+					'items'=>array(
+					array('label'=>Yii::t('app','Complaint Cases'), 'url'=>array('/report/complaint'), 
+						'visible'=>(!Yii::app()->user->isGuest && Yii::app()->user->validFunction('B01')),
+					),
+					array('label'=>Yii::t('app','Customer-New'), 'url'=>array('/report/custnew'), 
+						'visible'=>(!Yii::app()->user->isGuest && Yii::app()->user->validFunction('B02')),
+					),
+					array('label'=>Yii::t('app','Customer-Renewal'), 'url'=>array('/report/custrenew'), 
+						'visible'=>(!Yii::app()->user->isGuest && Yii::app()->user->validFunction('B15')),
+					),
+					array('label'=>Yii::t('app','Customer-Suspended'), 'url'=>array('/report/custsuspend'), 
+						'visible'=>(!Yii::app()->user->isGuest && Yii::app()->user->validFunction('B03')),
+					),
+					array('label'=>Yii::t('app','Customer-Resume'), 'url'=>array('/report/custresume'), 
+						'visible'=>(!Yii::app()->user->isGuest && Yii::app()->user->validFunction('B04')),
+					),
+					array('label'=>Yii::t('app','Customer-Amendment'), 'url'=>array('/report/custamend'), 
+						'visible'=>(!Yii::app()->user->isGuest && Yii::app()->user->validFunction('B05')),
+					),
+					array('label'=>Yii::t('app','Customer-Terminate'), 'url'=>array('/report/custterminate'), 
+						'visible'=>(!Yii::app()->user->isGuest && Yii::app()->user->validFunction('B10')),
+					),
+					array('label'=>Yii::t('app','Customer Enquiry'), 'url'=>array('/report/enquiry'), 
+						'visible'=>(!Yii::app()->user->isGuest && Yii::app()->user->validFunction('B06')),
+					),
+					array('label'=>Yii::t('app','Product Delivery'), 'url'=>array('/report/logistic'), 
+						'visible'=>(!Yii::app()->user->isGuest && Yii::app()->user->validFunction('B07')),
+					),
+					array('label'=>Yii::t('app','QC Record'), 'url'=>array('/report/qc'), 
+						'visible'=>(!Yii::app()->user->isGuest && Yii::app()->user->validFunction('B08')),
+					),
+					array('label'=>Yii::t('app','Staff'), 'url'=>array('/report/staff'), 
+						'visible'=>(!Yii::app()->user->isGuest && Yii::app()->user->validFunction('B09')),
+					),
+					array('label'=>Yii::t('app','All Daily Reports'), 'url'=>array('/report/all'), 
+						'visible'=>(!Yii::app()->user->isGuest && Yii::app()->user->validFunction('B11')),
+					),
+					array('label'=>Yii::t('app','Renewal Reminder'), 'url'=>array('/report/renewal'), 
+						'visible'=>(!Yii::app()->user->isGuest && Yii::app()->user->validFunction('B13')),
+					),
+					array('label'=>Yii::t('app','Feedback Statistics'), 'url'=>array('/report/feedbackstat'), 
+						'visible'=>(!Yii::app()->user->isGuest && Yii::app()->user->validFunction('B16')),
+					),
+					array('label'=>Yii::t('app','Feedback List'), 'url'=>array('/report/feedback'), 
+						'visible'=>(!Yii::app()->user->isGuest && Yii::app()->user->validFunction('B17')),
+					),
+					array('label'=>Yii::t('app','Monthly Report'), 'url'=>array('/report/monthly'), 
+						'visible'=>(!Yii::app()->user->isGuest && Yii::app()->user->validFunction('B14')),
+					),
+					array('label'=>Yii::t('app','Report Manager'), 'url'=>array('/queue/index'), 
+						'visible'=>(!Yii::app()->user->isGuest && Yii::app()->user->validFunction('B12')),
+					),
+				)),
+				array('label'=>Yii::t('app','System Setting'), 'url'=>array('/site/home'), 
+					'visible'=>(!Yii::app()->user->isGuest && Yii::app()->user->validFunction('C')), 
+					'items'=>array(
+					array('label'=>Yii::t('app','Nature'), 'url'=>array('/nature/index'), 
+						'visible'=>(!Yii::app()->user->isGuest && Yii::app()->user->validFunction('C01')),
+					),
+					array('label'=>Yii::t('app','Customer Type'), 'url'=>array('/customertype/index'), 
+						'visible'=>(!Yii::app()->user->isGuest && Yii::app()->user->validFunction('C02')),
+					),
+					array('label'=>Yii::t('app','Location'), 'url'=>array('/location/index'), 
+						'visible'=>(!Yii::app()->user->isGuest && Yii::app()->user->validFunction('C03')),
+					),
+					array('label'=>Yii::t('app','Task'), 'url'=>array('/task/index'), 
+						'visible'=>(!Yii::app()->user->isGuest && Yii::app()->user->validFunction('C04')),
+					),
+					array('label'=>Yii::t('app','City'), 'url'=>array('/city/index'), 
+						'visible'=>(!Yii::app()->user->isGuest && Yii::app()->user->validFunction('C05')),
+					),
+					array('label'=>Yii::t('app','Product'), 'url'=>array('/product/index'), 
+						'visible'=>(!Yii::app()->user->isGuest && Yii::app()->user->validFunction('C06')),
+					),
+					array('label'=>Yii::t('app','Service Type'), 'url'=>array('/servicetype/index'), 
+						'visible'=>(!Yii::app()->user->isGuest && Yii::app()->user->validFunction('C07')),
+					),
+				)),
+				array('label'=>Yii::t('app','Security'), 'url'=>array('/site/home'), 
+					'visible'=>!Yii::app()->user->isGuest &&Yii::app()->user->validFunction('D'), 
+					'items'=>array(
+					array('label'=>Yii::t('app','User'), 'url'=>array('/user/index'), 
+						'visible'=>(!Yii::app()->user->isGuest && Yii::app()->user->validFunction('D01')),
+					),
+					array('label'=>Yii::t('app','Group'), 'url'=>array('/group/index'), 
+						'visible'=>(!Yii::app()->user->isGuest && Yii::app()->user->validFunction('D02')),
+					),
+					array('label'=>Yii::t('app','Station'), 'url'=>array('/station/index'), 
+						'visible'=>(!Yii::app()->user->isGuest && Yii::app()->user->validFunction('D03')),
+					),
+					array('label'=>Yii::t('app','Station Register'), 'url'=>array('/register/index'), 
+						'visible'=>(!Yii::app()->user->isGuest && Yii::app()->user->validFunction('D04')),
+					),
+				)),
+				array('label'=>Yii::t('app','Tools'), 'url'=>array('/site/home'), 'visible'=>!Yii::app()->user->isGuest, 'items'=>array(
+					array('label'=>Yii::t('app','Change Password'), 'url'=>array('/site/password'), 
+						'visible'=>!Yii::app()->user->isGuest,
+					),
+					array('label'=>'- '.Yii::t('app','Languages').' -', 'url'=>array('/site/home'), 
+						'visible'=>!Yii::app()->user->isGuest,
+					),
+					array('label'=>'中文(简)', 'url'=>array('/site/language','locale'=>'zh_cn'), 
+						'visible'=>!Yii::app()->user->isGuest,
+					),
+					array('label'=>'中文(繁)', 'url'=>array('/site/language','locale'=>'zh_tw'), 
+						'visible'=>!Yii::app()->user->isGuest,
+					),
+					array('label'=>'English', 'url'=>array('/site/language','locale'=>'en'), 
+						'visible'=>!Yii::app()->user->isGuest,
+					),
+				)),
+				array('label'=>Yii::t('misc','Login'), 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest,),
+				array('label'=>Yii::t('misc','Logout').' ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 
+					'visible'=>!Yii::app()->user->isGuest,
+					'itemOptions'=>array('class'=>'secondary'),
+				),
+			),
+		)); 
+	?>
+		</div><!-- mainmenu -->
+	</div>
+	<?php echo $content; ?>
+	<div class="grid_24" id="site_info">
+		<div class="box"><p>
+<!--
+			Copyright &copy; <?php echo date('Y'); ?> by XXX Limited. 
+			All Rights Reserved. 
+-->
+			<?php echo Yii::powered(); ?>
+		</p></div>
+	</div><!-- footer -->
+	<div class="clear"></div>
+	<?php $this->renderPartial('//site/dialog'); ?>
+</div><!-- page -->
+</body>
+<?php
+if (!Yii::app()->user->isGuest) {
+	$checkurl = Yii::app()->createUrl("ajax/checksession");
+	$loginurl = Yii::app()->createUrl("site/logout");
+	$js = "
+var checkLogin = function() {
+    $.ajax({
+		type: 'GET', 
+		url: '$checkurl',
+		dataType: 'json', 
+		success: function(json) {
+			var x = json;
+			var data = json;
+			if (!data.loggedin) {
+				clearInterval(logincheckinterval);
+				window.location = '$loginurl';
+			}
+		},
+		error: function(xhr, status, error) {
+			alert(xhr.responseText);
+		}
+	});
+};
+var logincheckinterval = setInterval(checkLogin, 30000);
+	";
+	Yii::app()->clientScript->registerScript('checksession',$js,CClientScript::POS_READY);
+}
+?>
+</script>
+</html>
