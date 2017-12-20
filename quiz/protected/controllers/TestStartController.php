@@ -17,9 +17,9 @@ Class TestStartController extends Controller
         //var_dump($_REQUEST['QuizList']['searchField']);die;
         //$k=$_REQUEST['QuizList']['searchField'];
         //$v=$_REQUEST['QuizList']['searchValue'];
-        $model = new QuizList();
-        if (isset($_POST['QuizList'])) {
-            $model->attributes = $_POST['QuizList'];
+        $model = new TestStartList();
+        if (isset($_POST['TestStartList'])) {
+            $model->attributes = $_POST['TestStartList'];
         } else {
             $session = Yii::app()->session;
             if (isset($session['criteria_c02']) && !empty($session['criteria_c02'])) {
@@ -36,15 +36,13 @@ Class TestStartController extends Controller
     //进入新增页面
     Public function actionNew()
     {
-
-        $model = new QuizForm('new');
+        $model = new TestStartForm('new');
         $this->render('form', array('model' => $model,));
     }
 
-
     public function actionView($index)
     {
-        $model = new QuizForm('view');
+        $model = new TestStartForm('view');
         if (!$model->retrieveData($index)) {
             throw new CHttpException(404, 'The requested page does not exist.');
         } else {
@@ -55,7 +53,7 @@ Class TestStartController extends Controller
 
     public function actionDelete()
     {
-        $model = new QuizForm('delete');
+        $model = new TestStartForm('delete');
         if (isset($_POST['QuizForm'])) {
             $model->attributes = $_POST['QuizForm'];
             if ($model->isOccupied($model->id)) {
@@ -75,7 +73,7 @@ Class TestStartController extends Controller
     {
 
         if (isset($_POST['QuizForm'])) {
-            $model = new QuizForm($_POST['QuizForm']['scenario']);
+            $model = new TestStartForm($_POST['QuizForm']['scenario']);
             $model->attributes = $_POST['QuizForm'];
 
             if ($model->validate()) {

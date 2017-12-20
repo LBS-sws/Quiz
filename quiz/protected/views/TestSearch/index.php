@@ -11,7 +11,7 @@ $this->pageTitle=Yii::app()->name . ' - Nature';
 )); ?>
 
     <section class="content-header">
-    <!--    <h1>
+        <!--    <h1>
             <strong><?php /*echo Yii::t('code','无添加'); */?></strong>
         </h1>-->
         <!--
@@ -24,23 +24,23 @@ $this->pageTitle=Yii::app()->name . ' - Nature';
     </section>
 
     <section class="content">
-<!--        <div class="box">
+        <!--        <div class="box">
             <div class="box-body">
                 <div class="btn-group" role="group">
                     <?php
-/*                    if (Yii::app()->user->validRWFunction('HK01'))
-                        echo TbHtml::button('<span class="fa fa-file-o"></span> '.Yii::t('misc','Add Record'), array(
-                            'submit'=>Yii::app()->createUrl('Quiz/new'),
-                        ));
-                    */?>
+        /*                    if (Yii::app()->user->validRWFunction('HK01'))
+                                echo TbHtml::button('<span class="fa fa-file-o"></span> '.Yii::t('misc','Add Record'), array(
+                                    'submit'=>Yii::app()->createUrl('Quiz/new'),
+                                ));
+                            */?>
                 </div>
             </div>
         </div>-->
         <?php $this->widget('ext.layout.ListPageWidget', array(
             'title'=>Yii::t('quiz','Quiz history List'),
             'model'=>$model,
-            'viewhdr'=>'//TestStart/_listhdr',
-            'viewdtl'=>'//TestStart/_listdtl',
+            'viewhdr'=>'//TestSearch/_listhdr',
+            'viewdtl'=>'//TestSearch/_listdtl',
             'gridsize'=>'24',
             'height'=>'600',
             'search'=>array(

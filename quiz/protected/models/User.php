@@ -128,7 +128,6 @@ class User extends CActiveRecord
 
 	public function saveUserOption($name, $key, $value)	{
 		$suffix = Yii::app()->params['envSuffix'];
-
 		$connection = Yii::app()->db;
 		$sql = "replace into security$suffix.sec_user_option 
 					(username, option_key, option_value)
@@ -141,5 +140,4 @@ class User extends CActiveRecord
 		$command->bindParam(':option_value', $value, PDO::PARAM_STR);
 		$command->execute();
 	}
-
 }

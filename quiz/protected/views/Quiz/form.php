@@ -90,11 +90,7 @@ $this->pageTitle=Yii::app()->name . ' - Customer Type Form';
 
 
             <div class="form-group">
-                <?php
-                for($i=0;$i<10;$i++){
-                    $model->count_import["$i=>'demo'"]=$i;
-                }
-                ?>
+
                 <?php echo $form->labelEx($model,'quiz_employee_id',array('class'=>"col-sm-2 control-label")); ?>
                 <div class="col-sm-5">
                     <?php echo $form->textField($model, 'quiz_employee_id',
@@ -145,7 +141,7 @@ $this->pageTitle=Yii::app()->name . ' - Customer Type Form';
                 <?php echo $form->labelEx($model,'quiz_exams_count',array('class'=>"col-sm-2 control-label")); ?>
                 <div class="col-sm-5">
                     <?php echo $form->textField($model, 'quiz_exams_count',
-                        array('size'=>50,'maxlength'=>100,'readonly'=>($model->scenario=='view'))
+                        array('size'=>50,'maxlength'=>100,'readonly'=>($model->scenario=='view'),'disabled'=>'disabled')
                     ); ?>
                 </div>
             </div>

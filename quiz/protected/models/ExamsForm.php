@@ -51,12 +51,12 @@ class ExamsForm extends CFormModel
             'pay_method'=>Yii::t('logistic','Payment Method'),
             'finish'=>Yii::t('logistic','Finished'),
             'deadline'=>Yii::t('logistic','Deadline'),
-            'reason'=>Yii::t('logistic','Job Status'),
-            'task'=>Yii::t('logistic','Task'),
-            'qty'=>Yii::t('logistic','Quantity'),
-            'address'=>Yii::t('logistic','Address'),
-            'repair'=>Yii::t('logistic','Repair Items'),
-            'remarks'=>Yii::t('logistic','Remarks'),
+            'kinds'=>Yii::t('quiz','kinds'),
+            'test_exams_contents'=>Yii::t('quiz','test_exams_contents'),
+            'test_exams_answer_right'=>Yii::t('quiz','test_exams_answer_right'),
+            'test_exams_answer_faultf'=>Yii::t('quiz','test_exams_answer_faultf'),
+            'test_exams_answer_faults'=>Yii::t('quiz','test_exams_answer_faults'),
+            'test_exams_answer_faultt'=>Yii::t('quiz','test_exams_answer_faultt'),
         );
     }
 

@@ -11,7 +11,7 @@ $this->pageTitle=Yii::app()->name . ' - Product Delivery Form';
 
 <section class="content-header">
 	<h1>
-		<strong><?php echo Yii::t('logistic','Product Delivery Form'); ?></strong>
+		<strong><?php echo Yii::t('quiz','Questions Add'); ?></strong>
 	</h1>
 	<!--
         <ol class="breadcrumb">
@@ -23,7 +23,8 @@ $this->pageTitle=Yii::app()->name . ' - Product Delivery Form';
 </section>
 
 <section class="content">
-	<div class="box"><div class="box-body">
+	<div class="box">
+		<div class="box-body">
 			<div class="btn-group" role="group">
 				<?php
 				if ($model->scenario!='new' && $model->scenario!='view') {
@@ -46,7 +47,8 @@ $this->pageTitle=Yii::app()->name . ' - Product Delivery Form';
 					?>
 				<?php endif ?>
 			</div>
-		</div></div>
+		</div>
+	</div>
 
 	<div class="box box-info">
 		<div class="box-body">
@@ -55,46 +57,18 @@ $this->pageTitle=Yii::app()->name . ' - Product Delivery Form';
 			<?php echo $form->hiddenField($model, 'location'); ?>
 			<?php echo CHtml::hiddenField('dtltemplate'); ?>
 
-			<div class="form-group">
-				<?php echo $form->labelEx($model,'log_dt',array('class'=>"col-sm-2 control-label")); ?>
-				<div class="col-sm-3">
-					<div class="input-group date">
-						<div class="input-group-addon">
-							<i class="fa fa-calendar"></i>
-						</div>
-						<?php echo $form->textField($model, 'log_dt',
-							array('class'=>'form-control pull-right','readonly'=>($model->scenario=='view'),));
-						?>
-					</div>
-				</div>
-				<?php echo $form->labelEx($model,'seq',array('class'=>"col-sm-2 control-label")); ?>
-				<div class="col-sm-2">
-					<?php echo $form->hiddenField($model, 'seq'); ?>
-					<?php echo $form->textField($model, 'seq',
-						array('size'=>5,'maxlength'=>5,'readonly'=>($model->scenario=='view'||$model->scenario=='new'))
-					); ?>
-				</div>
-			</div>
-
-			<div class="form-group">
-				<?php echo $form->labelEx($model,'company_name',array('class'=>"col-sm-2 control-label")); ?>
+		<!--	客户姓名  <div class="form-group">
+				<?php /*echo $form->labelEx($model,'company_name',array('class'=>"col-sm-2 control-label")); */?>
 				<div class="col-sm-7">
-					<?php echo $form->hiddenField($model, 'company_id'); ?>
-					<?php echo $form->textField($model, 'company_name',
+					<?php /*echo $form->hiddenField($model, 'company_id'); */?>
+					<?php /*echo $form->textField($model, 'company_name',
 						array('size'=>50,'maxlength'=>100,'readonly'=>($model->scenario=='view'),
 							'append'=>TbHtml::Button('<span class="fa fa-search"></span> '.Yii::t('logistic','Customer'),array('name'=>'btnCompany','id'=>'btnCompany','disabled'=>($model->scenario=='view')))
-						)); ?>
+						)); */?>
 				</div>
-			</div>
+			</div>-->
 
-			<div class="form-group">
-				<?php echo $form->labelEx($model,'address',array('class'=>"col-sm-2 control-label")); ?>
-				<div class="col-sm-7">
-					<?php echo $form->textField($model, 'address',
-						array('size'=>50,'maxlength'=>1000,'readonly'=>($model->scenario=='view'))
-					); ?>
-				</div>
-			</div>
+
 
 			<div class="form-group">
 				<?php echo $form->labelEx($model,'follow_staff',array('class'=>"col-sm-2 control-label")); ?>
@@ -184,7 +158,7 @@ $this->pageTitle=Yii::app()->name . ' - Product Delivery Form';
 			</div>
 			<div class="box">
 				<div class="box-body table-responsive">
-					<legend><?php echo Yii::t('logistic','Task'); ?></legend>
+					<legend><?php echo Yii::t('quiz','Questions DataOrder'); ?></legend>
 					<?php $this->widget('ext.layout.TableView2Widget', array(
 						'model'=>$model,
 						'attribute'=>'detail',

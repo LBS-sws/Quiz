@@ -29,7 +29,6 @@ Class QuestionsController extends Controller{
 
     //进入新增页面
     Public function actionNew(){
-
         $model = new QuestionsForm('new');
         $model->log_dt = date("Y/m/d");
         $this->render('form',array('model'=>$model));
