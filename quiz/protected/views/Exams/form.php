@@ -3,50 +3,50 @@ $this->pageTitle=Yii::app()->name . ' - Product Delivery Form';
 ?>
 
 <?php $form=$this->beginWidget('TbActiveForm', array(
-'id'=>'logistic-form',
-'enableClientValidation'=>true,
-'clientOptions'=>array('validateOnSubmit'=>true,),
-'layout'=>TbHtml::FORM_LAYOUT_HORIZONTAL,
+	'id'=>'Exams-form',
+	'enableClientValidation'=>true,
+	'clientOptions'=>array('validateOnSubmit'=>true,),
+	'layout'=>TbHtml::FORM_LAYOUT_HORIZONTAL,
 )); ?>
 
 <section class="content-header">
 	<h1>
 		<strong><?php echo Yii::t('logistic','Product Delivery Form'); ?></strong>
 	</h1>
-<!--
-	<ol class="breadcrumb">
-		<li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-		<li><a href="#">Layout</a></li>
-		<li class="active">Top Navigation</li>
-	</ol>
--->
+	<!--
+        <ol class="breadcrumb">
+            <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+            <li><a href="#">Layout</a></li>
+            <li class="active">Top Navigation</li>
+        </ol>
+    -->
 </section>
 
 <section class="content">
 	<div class="box"><div class="box-body">
-	<div class="btn-group" role="group">
-		<?php 
-			if ($model->scenario!='new' && $model->scenario!='view') {
-				echo TbHtml::button('<span class="fa fa-file-o"></span> '.Yii::t('misc','Add Another'), array(
-					'submit'=>Yii::app()->createUrl('logistic/new')));
-			}
-		?>
-		<?php echo TbHtml::button('<span class="fa fa-reply"></span> '.Yii::t('misc','Back'), array(
-				'submit'=>Yii::app()->createUrl('logistic/index'))); 
-		?>
-<?php if ($model->scenario!='view'): ?>
-			<?php echo TbHtml::button('<span class="fa fa-upload"></span> '.Yii::t('misc','Save'), array(
-				'submit'=>Yii::app()->createUrl('logistic/save'))); 
-			?>
-<?php endif ?>
-<?php if ($model->scenario=='edit'): ?>
-	<?php echo TbHtml::button('<span class="fa fa-remove"></span> '.Yii::t('misc','Delete'), array(
-			'name'=>'btnDelete','id'=>'btnDelete','data-toggle'=>'modal','data-target'=>'#removedialog',)
-		);
-	?>
-<?php endif ?>
-	</div>
-	</div></div>
+			<div class="btn-group" role="group">
+				<?php
+				if ($model->scenario!='new' && $model->scenario!='view') {
+					echo TbHtml::button('<span class="fa fa-file-o"></span> '.Yii::t('misc','Add Another'), array(
+						'submit'=>Yii::app()->createUrl('Exams/new')));
+				}
+				?>
+				<?php echo TbHtml::button('<span class="fa fa-reply"></span> '.Yii::t('misc','Back'), array(
+					'submit'=>Yii::app()->createUrl('Exams/index')));
+				?>
+				<?php if ($model->scenario!='view'): ?>
+					<?php echo TbHtml::button('<span class="fa fa-upload"></span> '.Yii::t('misc','Save'), array(
+						'submit'=>Yii::app()->createUrl('Exams/save')));
+					?>
+				<?php endif ?>
+				<?php if ($model->scenario=='edit'): ?>
+					<?php echo TbHtml::button('<span class="fa fa-remove"></span> '.Yii::t('misc','Delete'), array(
+							'name'=>'btnDelete','id'=>'btnDelete','data-toggle'=>'modal','data-target'=>'#removedialog',)
+					);
+					?>
+				<?php endif ?>
+			</div>
+		</div></div>
 
 	<div class="box box-info">
 		<div class="box-body">
@@ -62,15 +62,15 @@ $this->pageTitle=Yii::app()->name . ' - Product Delivery Form';
 						<div class="input-group-addon">
 							<i class="fa fa-calendar"></i>
 						</div>
-						<?php echo $form->textField($model, 'log_dt', 
-							array('class'=>'form-control pull-right','readonly'=>($model->scenario=='view'),)); 
+						<?php echo $form->textField($model, 'log_dt',
+							array('class'=>'form-control pull-right','readonly'=>($model->scenario=='view'),));
 						?>
 					</div>
 				</div>
 				<?php echo $form->labelEx($model,'seq',array('class'=>"col-sm-2 control-label")); ?>
 				<div class="col-sm-2">
 					<?php echo $form->hiddenField($model, 'seq'); ?>
-					<?php echo $form->textField($model, 'seq', 
+					<?php echo $form->textField($model, 'seq',
 						array('size'=>5,'maxlength'=>5,'readonly'=>($model->scenario=='view'||$model->scenario=='new'))
 					); ?>
 				</div>
@@ -80,17 +80,17 @@ $this->pageTitle=Yii::app()->name . ' - Product Delivery Form';
 				<?php echo $form->labelEx($model,'company_name',array('class'=>"col-sm-2 control-label")); ?>
 				<div class="col-sm-7">
 					<?php echo $form->hiddenField($model, 'company_id'); ?>
-					<?php echo $form->textField($model, 'company_name', 
+					<?php echo $form->textField($model, 'company_name',
 						array('size'=>50,'maxlength'=>100,'readonly'=>($model->scenario=='view'),
-						'append'=>TbHtml::Button('<span class="fa fa-search"></span> '.Yii::t('logistic','Customer'),array('name'=>'btnCompany','id'=>'btnCompany','disabled'=>($model->scenario=='view')))
-					)); ?>
+							'append'=>TbHtml::Button('<span class="fa fa-search"></span> '.Yii::t('logistic','Customer'),array('name'=>'btnCompany','id'=>'btnCompany','disabled'=>($model->scenario=='view')))
+						)); ?>
 				</div>
 			</div>
 
 			<div class="form-group">
 				<?php echo $form->labelEx($model,'address',array('class'=>"col-sm-2 control-label")); ?>
 				<div class="col-sm-7">
-					<?php echo $form->textField($model, 'address', 
+					<?php echo $form->textField($model, 'address',
 						array('size'=>50,'maxlength'=>1000,'readonly'=>($model->scenario=='view'))
 					); ?>
 				</div>
@@ -99,25 +99,25 @@ $this->pageTitle=Yii::app()->name . ' - Product Delivery Form';
 			<div class="form-group">
 				<?php echo $form->labelEx($model,'follow_staff',array('class'=>"col-sm-2 control-label")); ?>
 				<div class="col-sm-7">
-					<?php echo $form->textField($model, 'follow_staff', 
+					<?php echo $form->textField($model, 'follow_staff',
 						array('size'=>80,'maxlength'=>1000,'readonly'=>($model->scenario=='view'),
-						'append'=>TbHtml::Button(Yii::t('logistic','Resp. Staff'),array('name'=>'btnStaff','id'=>'btnStaff','disabled'=>($model->scenario=='view')))
-					)); ?>
+							'append'=>TbHtml::Button(Yii::t('logistic','Resp. Staff'),array('name'=>'btnStaff','id'=>'btnStaff','disabled'=>($model->scenario=='view')))
+						)); ?>
 				</div>
 			</div>
 
 			<div class="form-group">
 				<?php echo $form->labelEx($model,'pay_method',array('class'=>"col-sm-2 control-label")); ?>
 				<div class="col-sm-3">
-					<?php echo $form->dropDownList($model, 'pay_method', 
-								array(
-									'MONTHLY'=>Yii::t('logistic','Monthly'),
-									'QUARTERLY'=>Yii::t('logistic','Quarterly'),
-									'COD'=>Yii::t('logistic','COD'),
-									'CBD'=>Yii::t('logistic','CBD'),
-									'FREE'=>Yii::t('logistic','Free'),
-								),
-								array('disabled'=>($model->scenario=='view'))
+					<?php echo $form->dropDownList($model, 'pay_method',
+						array(
+							'MONTHLY'=>Yii::t('logistic','Monthly'),
+							'QUARTERLY'=>Yii::t('logistic','Quarterly'),
+							'COD'=>Yii::t('logistic','COD'),
+							'CBD'=>Yii::t('logistic','CBD'),
+							'FREE'=>Yii::t('logistic','Free'),
+						),
+						array('disabled'=>($model->scenario=='view'))
 					); ?>
 				</div>
 			</div>
@@ -126,11 +126,11 @@ $this->pageTitle=Yii::app()->name . ' - Product Delivery Form';
 				<?php echo $form->labelEx($model,'location',array('class'=>"col-sm-2 control-label")); ?>
 				<div class="col-sm-3">
 					<?php echo $form->dropDownList($model, 'location', General::getLocationList(),
-								array('disabled'=>($model->scenario=='view'))
+						array('disabled'=>($model->scenario=='view'))
 					); ?>
 				</div>
 				<div class="col-sm-4">
-					<?php echo $form->textField($model, 'location_dtl', 
+					<?php echo $form->textField($model, 'location_dtl',
 						array('size'=>30,'maxlength'=>200,'readonly'=>($model->scenario=='view'))
 					); ?>
 				</div>
@@ -140,7 +140,7 @@ $this->pageTitle=Yii::app()->name . ' - Product Delivery Form';
 				<?php echo $form->labelEx($model,'finish',array('class'=>"col-sm-2 control-label")); ?>
 				<div class="col-sm-2">
 					<?php echo $form->dropDownList($model, 'finish', array('N'=>Yii::t('misc','No'),'Y'=>Yii::t('misc','Yes')),
-								array('disabled'=>($model->scenario=='view'))
+						array('disabled'=>($model->scenario=='view'))
 					); ?>
 				</div>
 				<?php echo $form->labelEx($model,'deadline',array('class'=>"col-sm-2 control-label")); ?>
@@ -149,8 +149,8 @@ $this->pageTitle=Yii::app()->name . ' - Product Delivery Form';
 						<div class="input-group-addon">
 							<i class="fa fa-calendar"></i>
 						</div>
-						<?php echo $form->textField($model, 'deadline', 
-							array('class'=>'form-control pull-right','readonly'=>($model->scenario=='view'),)); 
+						<?php echo $form->textField($model, 'deadline',
+							array('class'=>'form-control pull-right','readonly'=>($model->scenario=='view'),));
 						?>
 					</div>
 				</div>
@@ -159,7 +159,7 @@ $this->pageTitle=Yii::app()->name . ' - Product Delivery Form';
 			<div class="form-group">
 				<?php echo $form->labelEx($model,'repair',array('class'=>"col-sm-2 control-label")); ?>
 				<div class="col-sm-7">
-					<?php echo $form->textField($model, 'repair', 
+					<?php echo $form->textField($model, 'repair',
 						array('size'=>50,'maxlength'=>1000,'readonly'=>($model->scenario=='view'))
 					); ?>
 				</div>
@@ -168,7 +168,7 @@ $this->pageTitle=Yii::app()->name . ' - Product Delivery Form';
 			<div class="form-group">
 				<?php echo $form->labelEx($model,'reason',array('class'=>"col-sm-2 control-label")); ?>
 				<div class="col-sm-7">
-					<?php echo $form->textField($model, 'reason', 
+					<?php echo $form->textField($model, 'reason',
 						array('size'=>50,'maxlength'=>1000,'readonly'=>($model->scenario=='view'))
 					); ?>
 				</div>
@@ -177,25 +177,25 @@ $this->pageTitle=Yii::app()->name . ' - Product Delivery Form';
 			<div class="form-group">
 				<?php echo $form->labelEx($model,'remarks',array('class'=>"col-sm-2 control-label")); ?>
 				<div class="col-sm-7">
-					<?php echo $form->textField($model, 'remarks', 
+					<?php echo $form->textField($model, 'remarks',
 						array('size'=>50,'maxlength'=>1000,'readonly'=>($model->scenario=='view'))
 					); ?>
 				</div>
 			</div>
-<div class="box">
-<div class="box-body table-responsive">
-			<legend><?php echo Yii::t('logistic','Task'); ?></legend>
-			<?php $this->widget('ext.layout.TableView2Widget', array(
-					'model'=>$model,
-					'attribute'=>'detail',
-					'viewhdr'=>'//logistic/_formhdr',
-					'viewdtl'=>'//logistic/_formdtl',
-					'gridsize'=>'24',
-					'height'=>'200',
-				));
-			?>
-</div>			
-</div>			
+			<div class="box">
+				<div class="box-body table-responsive">
+					<legend><?php echo Yii::t('logistic','Task'); ?></legend>
+					<?php $this->widget('ext.layout.TableView2Widget', array(
+						'model'=>$model,
+						'attribute'=>'detail',
+						'viewhdr'=>'//Exams/_formhdr',
+						'viewdtl'=>'//Exams/_formdtl',
+						'gridsize'=>'24',
+						'height'=>'200',
+					));
+					?>
+				</div>
+			</div>
 		</div>
 	</div>
 </section>
@@ -207,7 +207,7 @@ $this->pageTitle=Yii::app()->name . ' - Product Delivery Form';
 $js = Script::genLookupSearchEx();
 Yii::app()->clientScript->registerScript('lookupSearch',$js,CClientScript::POS_READY);
 
-$js = Script::genLookupButtonEx('btnCompany', 'company', 'company_id', 'company_name', array('address'=>'LogisticForm_address'));
+$js = Script::genLookupButtonEx('btnCompany', 'company', 'company_id', 'company_name', array('address'=>'ExamsForm_address'));
 Yii::app()->clientScript->registerScript('lookupCompany',$js,CClientScript::POS_READY);
 
 $js = Script::genLookupButtonEx('btnStaff', 'staff', '', 'follow_staff', array(), true);
@@ -217,9 +217,9 @@ $js = Script::genLookupSelect();
 Yii::app()->clientScript->registerScript('lookupSelect',$js,CClientScript::POS_READY);
 
 $js = "
-$('table').on('change','[id^=\"LogisticForm\"]',function() {
+$('table').on('change','[id^=\"ExamsForm\"]',function() {
 	var n=$(this).attr('id').split('_');
-	$('#LogisticForm_'+n[1]+'_'+n[2]+'_uflag').val('Y');
+	$('#ExamsForm'+n[1]+'_'+n[2]+'_uflag').val('Y');
 });
 ";
 Yii::app()->clientScript->registerScript('setFlag',$js,CClientScript::POS_READY);
@@ -231,7 +231,7 @@ $('table').on('click','#btnDelRow', function() {
 	$(this).closest('tr').hide();
 });
 	";
-Yii::app()->clientScript->registerScript('removeRow',$js,CClientScript::POS_READY);
+	Yii::app()->clientScript->registerScript('removeRow',$js,CClientScript::POS_READY);
 
 	$js = "
 $(document).ready(function(){
@@ -246,7 +246,7 @@ $('#btnAddRow').on('click',function() {
 		var nid = '';
 		var ct = $('#dtltemplate').val();
 		$('#tblDetail tbody:last').append('<tr>'+ct+'</tr>');
-		$('#tblDetail tr').eq(-1).find('[id*=\"LogisticForm_\"]').each(function(index) {
+		$('#tblDetail tr').eq(-1).find('[id*=\"ExamsForm\"]').each(function(index) {
 			var id = $(this).attr('id');
 			var name = $(this).attr('name');
 
@@ -279,9 +279,9 @@ $('#btnAddRow').on('click',function() {
 	Yii::app()->clientScript->registerScript('addRow',$js,CClientScript::POS_READY);
 
 	$js = Script::genDatePicker(array(
-			'LogisticForm_log_dt',
-			'LogisticForm_deadline',
-		));
+		'ExamsForm_log_dt',
+		'ExamsForm_deadline',
+	));
 	Yii::app()->clientScript->registerScript('datePick',$js,CClientScript::POS_READY);
 }
 

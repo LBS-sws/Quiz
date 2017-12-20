@@ -19,6 +19,8 @@ return array(
 	'Quiz questions'=>'测验问题库数据',
 	'Quiz questions add'=>'增加测验问题',
 	'Quiz questions manage'=>'测验问题详解',
+	'Quiz test manage'=>'测验题测试',
+	'Quiz test search'=>'测验题查询',
 
 	//张静增加结束
 	'All'=>'全部',

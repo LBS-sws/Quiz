@@ -26,9 +26,9 @@ $this->pageTitle=Yii::app()->name . ' - Product Delivery';
 	<div class="box"><div class="box-body">
 	<div class="btn-group" role="group">
 		<?php 
-			if (Yii::app()->user->validRWFunction('A05'))
+			if (Yii::app()->user->validRWFunction('HK01'))
 				echo TbHtml::button('<span class="fa fa-file-o"></span> '.Yii::t('misc','Add Record'), array(
-					'submit'=>Yii::app()->createUrl('logistic/new'), 
+					'submit'=>Yii::app()->createUrl('Exams/new'),
 				)); 
 		?>
 	</div>
@@ -46,8 +46,8 @@ $this->pageTitle=Yii::app()->name . ' - Product Delivery';
 		$this->widget('ext.layout.ListPageWidget', array(
 			'title'=>Yii::t('logistic','Delivery List'),
 			'model'=>$model,
-				'viewhdr'=>'//logistic/_listhdr',
-				'viewdtl'=>'//logistic/_listdtl',
+				'viewhdr'=>'//Exams/_listhdr',
+				'viewdtl'=>'//Exams/_listdtl',
 				'gridsize'=>'24',
 				'height'=>'600',
 				'search'=>$search,

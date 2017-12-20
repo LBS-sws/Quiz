@@ -68,14 +68,12 @@ class User extends CActiveRecord
 		// should not be searched.
 
 		$criteria=new CDbCriteria;
-
 		$criteria->compare('username',$this->username,true);
 		$criteria->compare('password',$this->password,true);
 		$criteria->compare('disp_name',$this->disp_name,true);
 		$criteria->compare('logon_time',$this->logon_time,true);
 		$criteria->compare('logoff_time',$this->logoff_time,true);
 		$criteria->compare('status',$this->status,true);
-
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
 		));

@@ -87,16 +87,14 @@ $this->pageTitle=Yii::app()->name . ' - Customer Type Form';
                 </div>
             </div>
 
-            <div class="form-group">
-                <?php echo $form->labelEx($model,'quiz_exams_count',array('class'=>"col-sm-2 control-label")); ?>
-                <div class="col-sm-5">
-                    <?php echo $form->textField($model, 'quiz_exams_count',
-                        array('size'=>50,'maxlength'=>100,'readonly'=>($model->scenario=='view'))
-                    ); ?>
-                </div>
-            </div>
+
 
             <div class="form-group">
+                <?php
+                for($i=0;$i<10;$i++){
+                    $model->count_import["$i=>'demo'"]=$i;
+                }
+                ?>
                 <?php echo $form->labelEx($model,'quiz_employee_id',array('class'=>"col-sm-2 control-label")); ?>
                 <div class="col-sm-5">
                     <?php echo $form->textField($model, 'quiz_employee_id',
@@ -127,6 +125,26 @@ $this->pageTitle=Yii::app()->name . ' - Customer Type Form';
                 <?php echo $form->labelEx($model,'city_privileges',array('class'=>"col-sm-2 control-label")); ?>
                 <div class="col-sm-5">
                     <?php echo $form->textField($model, 'city_privileges',
+                        array('size'=>50,'maxlength'=>100,'readonly'=>($model->scenario=='view'))
+                    ); ?>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <?php echo $form->labelEx($model,'count_import',array('class'=>"col-sm-2 control-label")); ?>
+                <div class="col-sm-5">
+                        <?php echo $form->dropDownList($model, 'count_import',
+                           $model->count_import
+                            ,
+                            array('disabled'=>($model->scenario=='view'))
+                        ); ?>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <?php echo $form->labelEx($model,'quiz_exams_count',array('class'=>"col-sm-2 control-label")); ?>
+                <div class="col-sm-5">
+                    <?php echo $form->textField($model, 'quiz_exams_count',
                         array('size'=>50,'maxlength'=>100,'readonly'=>($model->scenario=='view'))
                     ); ?>
                 </div>
@@ -180,7 +198,6 @@ Yii::app()->clientScript->registerScript('readonlyClass',$js,CClientScript::POS_
 if ($model->scenario!='view') {
     $js = Script::genDatePicker(array(
         'QuizForm_quiz_start_dt',
-
     ));
     Yii::app()->clientScript->registerScript('datePick',$js,CClientScript::POS_READY);
 }

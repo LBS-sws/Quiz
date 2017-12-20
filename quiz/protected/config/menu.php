@@ -25,6 +25,17 @@ return array(
 				'url'=>'/Quiz/manage',
 				'tag'=>'@',
 			),
+			'Quiz test manage'=>array(
+				'access'=>'HK05',
+				'url'=>'/TestStart/index',
+				'tag'=>'@',
+			),
+	'Quiz test search'=>array(
+	'access'=>'HK06',
+	'url'=>'/TestSearch/index',
+	'tag'=>'@',
+			),
 		),
 	),
+
 );

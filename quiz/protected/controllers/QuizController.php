@@ -7,7 +7,7 @@
  */
  Class QuizController extends Controller{
 
-
+Public $arr;
      public function actionIndex($pageNum=0){
          //searching operation can get the value of searching result
       //var_dump($_REQUEST['QuizList']['searchField']);die;
@@ -31,6 +31,7 @@
 
             //进入新增页面
      Public function actionNew(){
+
          $model = new QuizForm('new');
          $this->render('form',array('model'=>$model,));
      }

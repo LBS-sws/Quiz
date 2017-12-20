@@ -75,10 +75,10 @@ class QuizList extends CListPageModel
         // $list = array();
         $this->attr = array();
         if (count($records) > 0) {
-            $startrow = ($this->noOfItem != 0) ? ($this->pageNum - 1) * $this->noOfItem : 0;
-            $itemcnt = 0;
+           // $startrow = ($this->noOfItem != 0) ? ($this->pageNum - 1) * $this->noOfItem : 0;
+           // $itemcnt = 0;
             foreach ($records as $k => $record) {
-                if ($k >= $startrow && ($itemcnt <= $this->noOfItem || $this->noOfItem == 0)) {
+              //  if ($k >= $startrow && ($itemcnt <= $this->noOfItem || $this->noOfItem == 0)) {
                     $this->attr[] = array(
                         'id' => $record['id'],
                         'quiz_exams_count' => $record['quiz_exams_count'],
@@ -88,9 +88,9 @@ class QuizList extends CListPageModel
                         'quiz_correct_rate' => $record['quiz_correct_rate'],
                         'quiz_start_dt' => $record['quiz_start_dt'],
                     );
-                    $itemcnt++;
+                  //  $itemcnt++;
 //				}
-                }
+             //   }
             }
             $session = Yii::app()->session;
             $session['criteria_c01'] = $this->getCriteria();

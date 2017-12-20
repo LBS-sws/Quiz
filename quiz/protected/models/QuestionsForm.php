@@ -15,6 +15,7 @@ class QuestionsForm extends CFormModel
     Public $arrData=array();
     Public $newData=array();
     Public $detail;
+    public $log_dt;
 
     //Public $scenario;
     /**

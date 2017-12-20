@@ -133,10 +133,8 @@ class ListPageWidget extends CWidget
 
 	protected function pageBar()
 	{
-		$modelName = get_class($this->model);  //QuizList
-
-		$link = '/'.$this->controller->uniqueId.'/'.$this->controller->action->id;  ///quiz/index
-
+		$modelName = get_class($this->model);
+		$link = '/'.$this->controller->uniqueId.'/'.$this->controller->action->id;
 		$list = array(
 			'2'=>'2',
 			'4'=>'4',
@@ -144,13 +142,11 @@ class ListPageWidget extends CWidget
 			'8'=>'8',
 			'0'=>Yii::t('misc','All'),
 		);
-		$fldname = $modelName.'[noOfItem]';  //QuizList[noOfItem]
-
+		$fldname = $modelName.'[noOfItem]';
 		$layout = '<div class="col-sm-3">'.Yii::t('misc','Display').': '
 			.TbHtml::dropDownList($fldname,$this->model->noOfItem,$list,
 				array('submit'=>Yii::app()->createUrl($link),)
 			).'</div>';
-
 		return $layout;
 	}
 

@@ -6,7 +6,7 @@
  * Time: 16:18
  */
 
-class LogisticList extends CListPageModel
+class ExamsList extends CListPageModel
 {
     /**
      * Declares customized attribute labels.

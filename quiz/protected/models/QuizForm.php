@@ -12,6 +12,7 @@ class QuizForm extends CFormModel
     Public $quiz_employee_id;
     Public $quiz_exams_count;
     Public $quiz_start_dt;
+    Public $count_import;
     //Public $scenario;
     /**
      * Declares customized attribute labels.
@@ -48,6 +49,7 @@ class QuizForm extends CFormModel
 
     public function retrieveData($index)
     {
+
         $tableFuss=Yii::app()->params['jsonTableName'];
         $sql = "select * from blog$tableFuss.quiz where id=".$index."";
 
@@ -66,15 +68,15 @@ class QuizForm extends CFormModel
                 $this->quiz_start_dt = General::toDate($row['quiz_start_dt']);
                 $this->quiz_exams_count = $row['quiz_exams_count'];
                 $this->quiz_employee_id=$row['quiz_employee_id'];
-
                 break;
             }
         }
+        $this->count_import=array();
+
         return true;
     }
-
     public function saveData()
-    {
+    {    var_dump($this->count_import);
         $connection = Yii::app()->db;
         $transaction=$connection->beginTransaction();
         try {
@@ -89,6 +91,8 @@ class QuizForm extends CFormModel
 
     protected function saveUser(&$connection)
     {
+
+
         $tableFuss=Yii::app()->params['jsonTableName'];
         $sql = '';
         switch ($this->scenario) {
