@@ -54,7 +54,7 @@ $this->pageTitle=Yii::app()->name . ' - Product Delivery Form';
 		<div class="box-body">
 			<?php echo $form->hiddenField($model, 'scenario'); ?>
 			<?php echo $form->hiddenField($model, 'id'); ?>
-			<?php echo $form->hiddenField($model, 'location'); ?>
+
 			<?php echo CHtml::hiddenField('dtltemplate'); ?>
 
 			<div class="box">
@@ -112,6 +112,7 @@ $('table').on('click','#btnDelRow', function() {
 $(document).ready(function(){
 	var ct = $('#tblDetail tr').eq(1).html();
 	$('#dtltemplate').attr('value',ct);
+
 });
 
 $('#btnAddRow').on('click',function() {
@@ -138,10 +139,7 @@ $('#btnAddRow').on('click',function() {
 			}
 			if (id.indexOf('_qty') != -1) $(this).attr('value','');
 			if (id.indexOf('_finish') != -1) $(this).attr('value','N');
-			if (id.indexOf('_deadline') != -1) {
-				$(this).attr('value','');
-				$(this).datepicker({autoclose: true, format: 'yyyy/mm/dd'});
-			}
+
 		});
 		if (nid != '') {
 			var topos = $('#'+nid).position().top;
@@ -159,8 +157,6 @@ $('#btnAddRow').on('click',function() {
 	Yii::app()->clientScript->registerScript('datePick',$js,CClientScript::POS_READY);
 }
 
-$js = Script::genDeleteData(Yii::app()->createUrl('logistic/delete'));
-Yii::app()->clientScript->registerScript('deleteRecord',$js,CClientScript::POS_READY);
 
 $js = Script::genReadonlyField();
 Yii::app()->clientScript->registerScript('readonlyClass',$js,CClientScript::POS_READY);

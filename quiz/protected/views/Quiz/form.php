@@ -68,7 +68,7 @@ $this->pageTitle=Yii::app()->name . ' - Customer Type Form';
                 <?php echo $form->labelEx($model,'quiz_name',array('class'=>"col-sm-2 control-label")); ?>
                 <div class="col-sm-2">
                     <?php echo $form->textField($model, 'quiz_name',
-                        array('size'=>10,'maxlength'=>10,'readonly'=>($model->scenario=='view'))
+                        array('size'=>10,'maxlength'=>10,'id'=>'quiz_name','readonly'=>($model->scenario=='view'))
                     ); ?>
                 </div>
             </div>
@@ -112,10 +112,20 @@ $this->pageTitle=Yii::app()->name . ' - Customer Type Form';
                 <?php echo $form->labelEx($model,'quiz_correct_rate',array('class'=>"col-sm-2 control-label")); ?>
                 <div class="col-sm-5">
                     <?php echo $form->textField($model, 'quiz_correct_rate',
-                        array('size'=>50,'maxlength'=>100,'readonly'=>($model->scenario=='view'))
+                        array('size'=>50,'maxlength'=>100,'id'=>'showRate','readonly'=>($model->scenario=='view'))
                     ); ?>
                 </div>
             </div>
+            <script src="<?php echo Yii::app()->baseUrl;?>/js/jquery-1.3.2.min.js'"></script>
+<!--            <?php /*echo Yii::app()->baseUrl;*/?>
+            --><?php /*echo Quiz::Fiv();*/?>
+            <?php echo $form->hiddenField($model, 'id'); ?>
+            <script>
+                $("#showRate").click(function(){
+                    console.log("aaa");
+                $("#quiz_name").val("demo");
+                });
+            </script>
 
             <div class="form-group">
                 <?php echo $form->labelEx($model,'city_privileges',array('class'=>"col-sm-2 control-label")); ?>
@@ -129,11 +139,9 @@ $this->pageTitle=Yii::app()->name . ' - Customer Type Form';
             <div class="form-group">
                 <?php echo $form->labelEx($model,'count_import',array('class'=>"col-sm-2 control-label")); ?>
                 <div class="col-sm-5">
-                        <?php echo $form->dropDownList($model, 'count_import',
-                           $model->count_import
-                            ,
-                            array('disabled'=>($model->scenario=='view'))
-                        ); ?>
+                       <select>
+                           <option></option>
+                       </select>
                 </div>
             </div>
 

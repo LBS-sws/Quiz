@@ -6759,3 +6759,826 @@ REQUEST_URI=/quiz/quiz/index.php/Exams/new
 in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\Exams\_formdtl.php (3)
 in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\layout\TableView2Widget.php (75)
 in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\layout\TableView2Widget.php (30)
+2017/12/21 14:57:20 [warning] [application] Failed to set unsafe attribute "scenario" of "ExamsForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php (30)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/21 14:57:20 [warning] [application] Failed to set unsafe attribute "location" of "ExamsForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php (30)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/21 14:57:20 [warning] [application] Failed to set unsafe attribute "detail" of "ExamsForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php (30)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/21 14:57:20 [error] [exception.CException] exception 'CException' with message '属性 "ExamsForm.test_exams_contents" 未被定义.' in D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\validators\CRequiredValidator.php(52): CComponent->__get('test_exams_cont...')
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\validators\CValidator.php(214): CRequiredValidator->validateAttribute(Object(ExamsForm), 'test_exams_cont...')
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CModel.php(158): CValidator->validate(Object(ExamsForm), NULL)
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php(32): CModel->validate()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): ExamsController->actionSave()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('save')
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('Exams/save')
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/quiz/quiz/index.php/Exams/save
+HTTP_REFERER=http://127.0.0.1/quiz/quiz/index.php/Exams/new
+---
+2017/12/21 14:59:03 [warning] [application] Failed to set unsafe attribute "scenario" of "ExamsForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php (30)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/21 14:59:03 [warning] [application] Failed to set unsafe attribute "location" of "ExamsForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php (30)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/21 14:59:03 [warning] [application] Failed to set unsafe attribute "detail" of "ExamsForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php (30)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/21 14:59:03 [error] [exception.CException] exception 'CException' with message '属性 "ExamsForm.test_exams_contents" 未被定义.' in D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\validators\CRequiredValidator.php(52): CComponent->__get('test_exams_cont...')
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\validators\CValidator.php(214): CRequiredValidator->validateAttribute(Object(ExamsForm), 'test_exams_cont...')
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CModel.php(158): CValidator->validate(Object(ExamsForm), NULL)
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php(32): CModel->validate()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): ExamsController->actionSave()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('save')
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('Exams/save')
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/quiz/quiz/index.php/Exams/save
+HTTP_REFERER=http://127.0.0.1/quiz/quiz/index.php/Exams/new
+---
+2017/12/21 14:59:04 [warning] [application] Failed to set unsafe attribute "scenario" of "ExamsForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php (30)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/21 14:59:04 [warning] [application] Failed to set unsafe attribute "location" of "ExamsForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php (30)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/21 14:59:04 [warning] [application] Failed to set unsafe attribute "detail" of "ExamsForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php (30)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/21 14:59:04 [error] [exception.CException] exception 'CException' with message '属性 "ExamsForm.test_exams_contents" 未被定义.' in D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\validators\CRequiredValidator.php(52): CComponent->__get('test_exams_cont...')
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\validators\CValidator.php(214): CRequiredValidator->validateAttribute(Object(ExamsForm), 'test_exams_cont...')
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CModel.php(158): CValidator->validate(Object(ExamsForm), NULL)
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php(32): CModel->validate()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): ExamsController->actionSave()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('save')
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('Exams/save')
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/quiz/quiz/index.php/Exams/save
+HTTP_REFERER=http://127.0.0.1/quiz/quiz/index.php/Exams/new
+---
+2017/12/21 14:59:04 [warning] [application] Failed to set unsafe attribute "scenario" of "ExamsForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php (30)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/21 14:59:04 [warning] [application] Failed to set unsafe attribute "location" of "ExamsForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php (30)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/21 14:59:04 [warning] [application] Failed to set unsafe attribute "detail" of "ExamsForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php (30)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/21 14:59:04 [error] [exception.CException] exception 'CException' with message '属性 "ExamsForm.test_exams_contents" 未被定义.' in D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\validators\CRequiredValidator.php(52): CComponent->__get('test_exams_cont...')
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\validators\CValidator.php(214): CRequiredValidator->validateAttribute(Object(ExamsForm), 'test_exams_cont...')
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CModel.php(158): CValidator->validate(Object(ExamsForm), NULL)
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php(32): CModel->validate()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): ExamsController->actionSave()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('save')
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('Exams/save')
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/quiz/quiz/index.php/Exams/save
+HTTP_REFERER=http://127.0.0.1/quiz/quiz/index.php/Exams/new
+---
+2017/12/21 14:59:04 [warning] [application] Failed to set unsafe attribute "scenario" of "ExamsForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php (30)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/21 14:59:04 [warning] [application] Failed to set unsafe attribute "location" of "ExamsForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php (30)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/21 14:59:04 [warning] [application] Failed to set unsafe attribute "detail" of "ExamsForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php (30)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/21 14:59:04 [error] [exception.CException] exception 'CException' with message '属性 "ExamsForm.test_exams_contents" 未被定义.' in D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\validators\CRequiredValidator.php(52): CComponent->__get('test_exams_cont...')
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\validators\CValidator.php(214): CRequiredValidator->validateAttribute(Object(ExamsForm), 'test_exams_cont...')
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CModel.php(158): CValidator->validate(Object(ExamsForm), NULL)
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php(32): CModel->validate()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): ExamsController->actionSave()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('save')
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('Exams/save')
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/quiz/quiz/index.php/Exams/save
+HTTP_REFERER=http://127.0.0.1/quiz/quiz/index.php/Exams/new
+---
+2017/12/21 14:59:05 [warning] [application] Failed to set unsafe attribute "scenario" of "ExamsForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php (30)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/21 14:59:05 [warning] [application] Failed to set unsafe attribute "location" of "ExamsForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php (30)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/21 14:59:05 [warning] [application] Failed to set unsafe attribute "detail" of "ExamsForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php (30)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/21 14:59:05 [error] [exception.CException] exception 'CException' with message '属性 "ExamsForm.test_exams_contents" 未被定义.' in D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\validators\CRequiredValidator.php(52): CComponent->__get('test_exams_cont...')
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\validators\CValidator.php(214): CRequiredValidator->validateAttribute(Object(ExamsForm), 'test_exams_cont...')
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CModel.php(158): CValidator->validate(Object(ExamsForm), NULL)
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php(32): CModel->validate()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): ExamsController->actionSave()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('save')
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('Exams/save')
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/quiz/quiz/index.php/Exams/save
+HTTP_REFERER=http://127.0.0.1/quiz/quiz/index.php/Exams/new
+---
+2017/12/21 14:59:15 [warning] [application] Failed to set unsafe attribute "scenario" of "ExamsForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php (30)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/21 14:59:15 [warning] [application] Failed to set unsafe attribute "id" of "ExamsForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php (30)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/21 14:59:15 [warning] [application] Failed to set unsafe attribute "location" of "ExamsForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php (30)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/21 14:59:15 [warning] [application] Failed to set unsafe attribute "detail" of "ExamsForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php (30)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/21 14:59:17 [error] [exception.CException] exception 'CException' with message 'ExamsForm and its behaviors do not have a method or closure named "retrieveData".' in D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php(37): CComponent->__call('retrieveData', Array)
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php(37): ExamsForm->retrieveData(0)
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): ExamsController->actionSave()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('save')
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('Exams/save')
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/quiz/quiz/index.php/Exams/save
+HTTP_REFERER=http://127.0.0.1/quiz/quiz/index.php/Exams/new
+---
+2017/12/21 14:59:22 [warning] [application] Failed to set unsafe attribute "scenario" of "ExamsForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php (30)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/21 14:59:22 [warning] [application] Failed to set unsafe attribute "id" of "ExamsForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php (30)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/21 14:59:22 [warning] [application] Failed to set unsafe attribute "location" of "ExamsForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php (30)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/21 14:59:22 [warning] [application] Failed to set unsafe attribute "detail" of "ExamsForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php (30)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/21 14:59:24 [error] [exception.CException] exception 'CException' with message 'ExamsForm and its behaviors do not have a method or closure named "retrieveData".' in D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php(37): CComponent->__call('retrieveData', Array)
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php(37): ExamsForm->retrieveData(0)
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): ExamsController->actionSave()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('save')
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('Exams/save')
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/quiz/quiz/index.php/Exams/save
+HTTP_REFERER=http://127.0.0.1/quiz/quiz/index.php/Exams/new
+---
+2017/12/21 15:00:01 [warning] [application] Failed to set unsafe attribute "scenario" of "ExamsForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php (30)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/21 15:00:01 [warning] [application] Failed to set unsafe attribute "id" of "ExamsForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php (30)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/21 15:00:01 [warning] [application] Failed to set unsafe attribute "location" of "ExamsForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php (30)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/21 15:00:01 [warning] [application] Failed to set unsafe attribute "detail" of "ExamsForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php (30)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/21 15:00:03 [error] [exception.CException] exception 'CException' with message 'ExamsForm and its behaviors do not have a method or closure named "retrieveData".' in D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php(37): CComponent->__call('retrieveData', Array)
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php(37): ExamsForm->retrieveData(0)
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): ExamsController->actionSave()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('save')
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('Exams/save')
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/quiz/quiz/index.php/Exams/save
+HTTP_REFERER=http://127.0.0.1/quiz/quiz/index.php/Exams/new
+---
+2017/12/21 15:01:07 [warning] [application] Failed to set unsafe attribute "scenario" of "ExamsForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php (30)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/21 15:01:07 [warning] [application] Failed to set unsafe attribute "id" of "ExamsForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php (30)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/21 15:01:07 [warning] [application] Failed to set unsafe attribute "location" of "ExamsForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php (30)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/21 15:01:07 [warning] [application] Failed to set unsafe attribute "detail" of "ExamsForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php (30)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/21 15:10:27 [error] [php] Undefined index: test_exams_contents (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\Exams\_formdtl.php:3)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\layout\TableView2Widget.php(75): TableView2Widget->renderFile()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\layout\TableView2Widget.php(30): TableView2Widget->render()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(174): TableView2Widget->run()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\Exams\form.php(70): ExamsController->widget()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(127): require()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(96): ExamsController->renderInternal()
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(870): ExamsController->renderFile()
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(783): ExamsController->renderPartial()
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php(64): ExamsController->render()
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): ExamsController->actionNew()
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#11 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): ExamsController->runAction()
+#12 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): ExamsController->runActionWithFilters()
+#13 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): ExamsController->run()
+#14 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#15 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/quiz/quiz/index.php/Exams/new
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\Exams\_formdtl.php (3)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\layout\TableView2Widget.php (75)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\layout\TableView2Widget.php (30)
+2017/12/21 15:11:47 [error] [php] Undefined index: qty (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\Exams\_formdtl.php:9)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\layout\TableView2Widget.php(75): TableView2Widget->renderFile()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\layout\TableView2Widget.php(30): TableView2Widget->render()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(174): TableView2Widget->run()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\Exams\form.php(70): ExamsController->widget()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(127): require()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(96): ExamsController->renderInternal()
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(870): ExamsController->renderFile()
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(783): ExamsController->renderPartial()
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php(64): ExamsController->render()
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): ExamsController->actionNew()
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#11 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): ExamsController->runAction()
+#12 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): ExamsController->runActionWithFilters()
+#13 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): ExamsController->run()
+#14 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#15 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/quiz/quiz/index.php/Exams/new
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\Exams\_formdtl.php (9)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\layout\TableView2Widget.php (75)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\layout\TableView2Widget.php (30)
+2017/12/21 15:11:48 [error] [php] Undefined index: qty (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\Exams\_formdtl.php:9)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\layout\TableView2Widget.php(75): TableView2Widget->renderFile()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\layout\TableView2Widget.php(30): TableView2Widget->render()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(174): TableView2Widget->run()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\Exams\form.php(70): ExamsController->widget()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(127): require()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(96): ExamsController->renderInternal()
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(870): ExamsController->renderFile()
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(783): ExamsController->renderPartial()
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php(64): ExamsController->render()
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): ExamsController->actionNew()
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#11 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): ExamsController->runAction()
+#12 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): ExamsController->runActionWithFilters()
+#13 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): ExamsController->run()
+#14 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#15 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/quiz/quiz/index.php/Exams/new
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\Exams\_formdtl.php (9)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\layout\TableView2Widget.php (75)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\layout\TableView2Widget.php (30)
+2017/12/21 15:11:48 [error] [php] Undefined index: qty (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\Exams\_formdtl.php:9)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\layout\TableView2Widget.php(75): TableView2Widget->renderFile()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\layout\TableView2Widget.php(30): TableView2Widget->render()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(174): TableView2Widget->run()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\Exams\form.php(70): ExamsController->widget()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(127): require()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(96): ExamsController->renderInternal()
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(870): ExamsController->renderFile()
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(783): ExamsController->renderPartial()
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php(64): ExamsController->render()
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): ExamsController->actionNew()
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#11 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): ExamsController->runAction()
+#12 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): ExamsController->runActionWithFilters()
+#13 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): ExamsController->run()
+#14 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#15 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/quiz/quiz/index.php/Exams/new
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\Exams\_formdtl.php (9)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\layout\TableView2Widget.php (75)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\layout\TableView2Widget.php (30)
+2017/12/21 15:11:48 [error] [php] Undefined index: qty (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\Exams\_formdtl.php:9)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\layout\TableView2Widget.php(75): TableView2Widget->renderFile()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\layout\TableView2Widget.php(30): TableView2Widget->render()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(174): TableView2Widget->run()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\Exams\form.php(70): ExamsController->widget()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(127): require()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(96): ExamsController->renderInternal()
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(870): ExamsController->renderFile()
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(783): ExamsController->renderPartial()
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php(64): ExamsController->render()
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): ExamsController->actionNew()
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#11 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): ExamsController->runAction()
+#12 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): ExamsController->runActionWithFilters()
+#13 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): ExamsController->run()
+#14 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#15 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/quiz/quiz/index.php/Exams/new
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\Exams\_formdtl.php (9)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\layout\TableView2Widget.php (75)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\layout\TableView2Widget.php (30)
+2017/12/21 15:12:08 [error] [php] Undefined index: uflag (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\Exams\_formdtl.php:47)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\layout\TableView2Widget.php(75): TableView2Widget->renderFile()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\layout\TableView2Widget.php(30): TableView2Widget->render()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(174): TableView2Widget->run()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\Exams\form.php(70): ExamsController->widget()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(127): require()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(96): ExamsController->renderInternal()
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(870): ExamsController->renderFile()
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(783): ExamsController->renderPartial()
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php(64): ExamsController->render()
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): ExamsController->actionNew()
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#11 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): ExamsController->runAction()
+#12 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): ExamsController->runActionWithFilters()
+#13 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): ExamsController->run()
+#14 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#15 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/quiz/quiz/index.php/Exams/new
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\Exams\_formdtl.php (47)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\layout\TableView2Widget.php (75)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\layout\TableView2Widget.php (30)
+2017/12/21 15:12:09 [error] [php] Undefined index: uflag (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\Exams\_formdtl.php:47)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\layout\TableView2Widget.php(75): TableView2Widget->renderFile()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\layout\TableView2Widget.php(30): TableView2Widget->render()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(174): TableView2Widget->run()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\Exams\form.php(70): ExamsController->widget()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(127): require()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(96): ExamsController->renderInternal()
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(870): ExamsController->renderFile()
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(783): ExamsController->renderPartial()
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php(64): ExamsController->render()
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): ExamsController->actionNew()
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#11 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): ExamsController->runAction()
+#12 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): ExamsController->runActionWithFilters()
+#13 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): ExamsController->run()
+#14 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#15 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/quiz/quiz/index.php/Exams/new
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\Exams\_formdtl.php (47)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\layout\TableView2Widget.php (75)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\layout\TableView2Widget.php (30)
+2017/12/21 15:12:09 [error] [php] Undefined index: uflag (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\Exams\_formdtl.php:47)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\layout\TableView2Widget.php(75): TableView2Widget->renderFile()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\layout\TableView2Widget.php(30): TableView2Widget->render()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(174): TableView2Widget->run()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\Exams\form.php(70): ExamsController->widget()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(127): require()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(96): ExamsController->renderInternal()
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(870): ExamsController->renderFile()
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(783): ExamsController->renderPartial()
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php(64): ExamsController->render()
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): ExamsController->actionNew()
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#11 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): ExamsController->runAction()
+#12 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): ExamsController->runActionWithFilters()
+#13 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): ExamsController->run()
+#14 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#15 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/quiz/quiz/index.php/Exams/new
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\Exams\_formdtl.php (47)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\layout\TableView2Widget.php (75)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\layout\TableView2Widget.php (30)
+2017/12/21 15:13:53 [warning] [application] Failed to set unsafe attribute "scenario" of "ExamsForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php (30)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/21 15:13:53 [warning] [application] Failed to set unsafe attribute "id" of "ExamsForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php (30)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/21 15:13:53 [warning] [application] Failed to set unsafe attribute "location" of "ExamsForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php (30)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/21 15:13:53 [warning] [application] Failed to set unsafe attribute "detail" of "ExamsForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php (30)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/21 15:13:53 [error] [exception.CException] exception 'CException' with message '属性 "ExamsForm.test_exams_contents" 未被定义.' in D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\validators\CRequiredValidator.php(52): CComponent->__get('test_exams_cont...')
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\validators\CValidator.php(214): CRequiredValidator->validateAttribute(Object(ExamsForm), 'test_exams_cont...')
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CModel.php(158): CValidator->validate(Object(ExamsForm), NULL)
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php(32): CModel->validate()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): ExamsController->actionSave()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('save')
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('Exams/save')
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/quiz/quiz/index.php/Exams/save
+HTTP_REFERER=http://127.0.0.1/quiz/quiz/index.php/Exams/new
+---
+2017/12/21 15:14:16 [warning] [application] Failed to set unsafe attribute "scenario" of "ExamsForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php (30)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/21 15:14:16 [warning] [application] Failed to set unsafe attribute "id" of "ExamsForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php (30)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/21 15:14:16 [warning] [application] Failed to set unsafe attribute "location" of "ExamsForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php (30)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/21 15:14:16 [warning] [application] Failed to set unsafe attribute "detail" of "ExamsForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php (30)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/21 15:21:21 [warning] [application] Failed to set unsafe attribute "scenario" of "ExamsForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php (30)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/21 15:21:21 [warning] [application] Failed to set unsafe attribute "id" of "ExamsForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php (30)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/21 15:21:21 [warning] [application] Failed to set unsafe attribute "location" of "ExamsForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php (30)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/21 15:21:21 [warning] [application] Failed to set unsafe attribute "detail" of "ExamsForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php (30)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/21 15:21:57 [warning] [application] Failed to set unsafe attribute "scenario" of "ExamsForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php (30)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/21 15:21:57 [warning] [application] Failed to set unsafe attribute "id" of "ExamsForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php (30)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/21 15:21:57 [warning] [application] Failed to set unsafe attribute "location" of "ExamsForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php (30)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/21 15:21:57 [warning] [application] Failed to set unsafe attribute "detail" of "ExamsForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php (30)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/21 15:21:57 [error] [exception.CException] exception 'CException' with message '属性 "ExamsForm.location" 未被定义.' in D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\helpers\CHtml.php(2158): CComponent->__get('location')
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\helpers\CHtml.php(1887): CHtml::resolveValue(Object(ExamsForm), 'location')
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\helpers\CHtml.php(1332): CHtml::activeInputField('hidden', Object(ExamsForm), 'location', Array)
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\widgets\CActiveForm.php(673): CHtml::activeHiddenField(Object(ExamsForm), 'location', Array)
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\Exams\form.php(57): CActiveForm->hiddenField(Object(ExamsForm), 'location')
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(127): require('D:\\phpstudy\\PHP...')
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\\phpstudy\\PHP...', Array, true)
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(870): CBaseController->renderFile('D:\\phpstudy\\PHP...', Array, true)
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(783): CController->renderPartial('form', Array, true)
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php(45): CController->render('form', Array)
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): ExamsController->actionSave()
+#11 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#12 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#13 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('save')
+#15 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('Exams/save')
+#16 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#17 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/quiz/quiz/index.php/Exams/save
+HTTP_REFERER=http://127.0.0.1/quiz/quiz/index.php/Exams/new
+---
+2017/12/21 15:22:46 [warning] [application] Failed to set unsafe attribute "scenario" of "ExamsForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php (30)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/21 15:22:46 [warning] [application] Failed to set unsafe attribute "id" of "ExamsForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php (30)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/21 15:22:46 [warning] [application] Failed to set unsafe attribute "location" of "ExamsForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php (30)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/21 15:22:46 [warning] [application] Failed to set unsafe attribute "detail" of "ExamsForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php (30)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/21 15:23:03 [warning] [application] Failed to set unsafe attribute "scenario" of "ExamsForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php (30)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/21 15:23:03 [warning] [application] Failed to set unsafe attribute "id" of "ExamsForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php (30)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/21 15:23:03 [warning] [application] Failed to set unsafe attribute "location" of "ExamsForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php (30)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/21 15:23:03 [warning] [application] Failed to set unsafe attribute "detail" of "ExamsForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php (30)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/21 15:33:43 [error] [exception.CException] exception 'CException' with message '属性 "QuestionsForm.detail" 未被定义.' in D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\layout\TableView2Widget.php(23): CComponent->__get('detail')
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(174): TableView2Widget->run()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\questions\form.php(133): CBaseController->widget('ext.layout.Tabl...', Array)
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(127): require('D:\\phpstudy\\PHP...')
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\\phpstudy\\PHP...', Array, true)
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(870): CBaseController->renderFile('D:\\phpstudy\\PHP...', Array, true)
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(783): CController->renderPartial('form', Array, true)
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuestionsController.php(89): CController->render('form', Array)
+#8 [internal function]: QuestionsController->actionEdit('2')
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(QuestionsController), Array)
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(QuestionsController), Object(ReflectionMethod), Array)
+#11 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#12 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#13 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('edit')
+#15 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('Questions/edit')
+#16 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#17 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/quiz/quiz/index.php/Questions/edit?index=2
+HTTP_REFERER=http://127.0.0.1/quiz/quiz/index.php/Questions/index
+---
+2017/12/21 15:33:56 [error] [exception.CException] exception 'CException' with message '属性 "QuestionsForm.detail" 未被定义.' in D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\layout\TableView2Widget.php(23): CComponent->__get('detail')
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(174): TableView2Widget->run()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\questions\form.php(133): CBaseController->widget('ext.layout.Tabl...', Array)
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(127): require('D:\\phpstudy\\PHP...')
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\\phpstudy\\PHP...', Array, true)
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(870): CBaseController->renderFile('D:\\phpstudy\\PHP...', Array, true)
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(783): CController->renderPartial('form', Array, true)
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuestionsController.php(89): CController->render('form', Array)
+#8 [internal function]: QuestionsController->actionEdit('2')
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(QuestionsController), Array)
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(QuestionsController), Object(ReflectionMethod), Array)
+#11 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#12 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#13 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('edit')
+#15 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('Questions/edit')
+#16 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#17 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/quiz/quiz/index.php/Questions/edit?index=2
+HTTP_REFERER=http://127.0.0.1/quiz/quiz/index.php/Questions/index
+---
+2017/12/21 15:39:40 [error] [php] Invalid argument supplied for foreach() (D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\helpers\CHtml.php:1960)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\helpers\TbHtml.php(2585): activeDropDownList()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\widgets\TbActiveForm.php(443): createActiveInput()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\widgets\TbActiveForm.php(330): TbActiveForm->createInput()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\Quiz\form.php(136): TbActiveForm->dropDownList()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(127): require()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(96): QuizController->renderInternal()
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(870): QuizController->renderFile()
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(783): QuizController->renderPartial()
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php(36): QuizController->render()
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): QuizController->actionNew()
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#11 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): QuizController->runAction()
+#12 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): QuizController->runActionWithFilters()
+#13 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): QuizController->run()
+#14 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#15 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/quiz/quiz/index.php/Quiz/new
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\helpers\TbHtml.php (2028)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\helpers\TbHtml.php (2585)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\widgets\TbActiveForm.php (443)
+2017/12/21 15:46:58 [warning] [application] Failed to set unsafe attribute "scenario" of "ExamsForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php (30)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/21 15:46:58 [warning] [application] Failed to set unsafe attribute "id" of "ExamsForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php (30)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/21 15:46:58 [warning] [application] Failed to set unsafe attribute "detail" of "ExamsForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php (30)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/21 15:47:02 [warning] [application] Failed to set unsafe attribute "scenario" of "ExamsForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php (30)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/21 15:47:02 [warning] [application] Failed to set unsafe attribute "id" of "ExamsForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php (30)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/21 15:47:02 [warning] [application] Failed to set unsafe attribute "detail" of "ExamsForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php (30)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/21 15:47:06 [warning] [application] Failed to set unsafe attribute "scenario" of "ExamsForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php (30)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/21 15:47:06 [warning] [application] Failed to set unsafe attribute "id" of "ExamsForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php (30)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/21 15:47:06 [warning] [application] Failed to set unsafe attribute "detail" of "ExamsForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php (30)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/21 15:47:15 [warning] [application] Failed to set unsafe attribute "scenario" of "ExamsForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php (30)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/21 15:47:15 [warning] [application] Failed to set unsafe attribute "id" of "ExamsForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php (30)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/21 15:47:15 [warning] [application] Failed to set unsafe attribute "detail" of "ExamsForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php (30)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/21 15:48:08 [warning] [application] Failed to set unsafe attribute "scenario" of "ExamsForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php (30)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/21 15:48:08 [warning] [application] Failed to set unsafe attribute "id" of "ExamsForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php (30)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/21 15:48:08 [warning] [application] Failed to set unsafe attribute "detail" of "ExamsForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php (30)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/21 15:48:23 [warning] [application] Failed to set unsafe attribute "scenario" of "ExamsForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php (30)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/21 15:48:23 [warning] [application] Failed to set unsafe attribute "id" of "ExamsForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php (30)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/21 15:48:23 [warning] [application] Failed to set unsafe attribute "detail" of "ExamsForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php (30)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/21 15:49:12 [warning] [application] Failed to set unsafe attribute "scenario" of "ExamsForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php (30)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/21 15:49:12 [warning] [application] Failed to set unsafe attribute "id" of "ExamsForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php (30)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/21 15:49:12 [warning] [application] Failed to set unsafe attribute "detail" of "ExamsForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php (30)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/21 15:55:15 [error] [exception.CException] exception 'CException' with message '属性 "ExamsForm.test_exams_answer_faultf" 未被定义.' in D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\helpers\CHtml.php(2158): CComponent->__get('test_exams_answ...')
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\helpers\CHtml.php(1887): CHtml::resolveValue(Object(ExamsForm), 'test_exams_answ...')
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\helpers\TbHtml.php(2688): CHtml::activeInputField('text', Object(ExamsForm), 'test_exams_answ...', Array)
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\helpers\TbHtml.php(1789): TbHtml::activeTextInputField('text', Object(ExamsForm), 'test_exams_answ...', Array)
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\helpers\TbHtml.php(2563): TbHtml::activeTextField(Object(ExamsForm), 'test_exams_answ...', Array)
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\widgets\TbActiveForm.php(443): TbHtml::createActiveInput('textField', Object(ExamsForm), 'test_exams_answ...', Array, Array)
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\widgets\TbActiveForm.php(187): TbActiveForm->createInput('textField', Object(ExamsForm), 'test_exams_answ...', Array)
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\Exams\add.php(80): TbActiveForm->textField(Object(ExamsForm), 'test_exams_answ...', Array)
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(127): require('D:\\phpstudy\\PHP...')
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\\phpstudy\\PHP...', Array, true)
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(870): CBaseController->renderFile('D:\\phpstudy\\PHP...', Array, true)
+#11 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(783): CController->renderPartial('add', Array, true)
+#12 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php(73): CController->render('add', Array)
+#13 [internal function]: ExamsController->actionEdit('2')
+#14 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(ExamsController), Array)
+#15 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(ExamsController), Object(ReflectionMethod), Array)
+#16 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#17 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#18 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('edit')
+#20 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('Exams/edit')
+#21 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#22 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#23 {main}
+REQUEST_URI=/quiz/quiz/index.php/Exams/edit?index=2
+HTTP_REFERER=http://127.0.0.1/quiz/quiz/index.php/Exams/index
+---
+2017/12/21 16:01:40 [warning] [application] Failed to set unsafe attribute "scenario" of "ExamsForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php (47)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/21 16:01:40 [warning] [application] Failed to set unsafe attribute "id" of "ExamsForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php (47)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/21 16:01:40 [warning] [application] Failed to set unsafe attribute "detail" of "ExamsForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php (47)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/21 16:03:40 [warning] [application] Failed to set unsafe attribute "scenario" of "ExamsAdd".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php (25)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/21 16:03:51 [warning] [application] Failed to set unsafe attribute "scenario" of "ExamsAdd".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php (25)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/21 16:07:27 [warning] [application] Failed to set unsafe attribute "scenario" of "ExamsForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php (49)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/21 16:07:27 [warning] [application] Failed to set unsafe attribute "id" of "ExamsForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php (49)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/21 16:07:27 [warning] [application] Failed to set unsafe attribute "detail" of "ExamsForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php (49)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/21 16:47:28 [error] [php] Invalid argument supplied for foreach() (D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\helpers\CHtml.php:1960)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\helpers\TbHtml.php(2585): activeDropDownList()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\widgets\TbActiveForm.php(443): createActiveInput()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\widgets\TbActiveForm.php(330): TbActiveForm->createInput()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\Quiz\form.php(136): TbActiveForm->dropDownList()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(127): require()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(96): QuizController->renderInternal()
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(870): QuizController->renderFile()
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(783): QuizController->renderPartial()
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php(36): QuizController->render()
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): QuizController->actionNew()
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#11 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): QuizController->runAction()
+#12 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): QuizController->runActionWithFilters()
+#13 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): QuizController->run()
+#14 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#15 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/quiz/quiz/index.php/Quiz/new
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\helpers\TbHtml.php (2028)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\helpers\TbHtml.php (2585)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\widgets\TbActiveForm.php (443)
+2017/12/21 16:49:02 [error] [php] Invalid argument supplied for foreach() (D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\helpers\CHtml.php:1960)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\helpers\TbHtml.php(2585): activeDropDownList()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\widgets\TbActiveForm.php(443): createActiveInput()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\widgets\TbActiveForm.php(330): TbActiveForm->createInput()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\Quiz\form.php(136): TbActiveForm->dropDownList()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(127): require()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(96): QuizController->renderInternal()
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(870): QuizController->renderFile()
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(783): QuizController->renderPartial()
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php(36): QuizController->render()
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): QuizController->actionNew()
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#11 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): QuizController->runAction()
+#12 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): QuizController->runActionWithFilters()
+#13 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): QuizController->run()
+#14 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#15 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/quiz/quiz/index.php/Quiz/new
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\helpers\TbHtml.php (2028)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\helpers\TbHtml.php (2585)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\widgets\TbActiveForm.php (443)
+2017/12/21 17:15:02 [error] [php] Non-static method Quiz::listReturn() should not be called statically, assuming $this from incompatible context (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\Quiz\form.php:121)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(870): QuizController->renderFile()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(783): QuizController->renderPartial()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php(36): QuizController->render()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): QuizController->actionNew()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): QuizController->runAction()
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): QuizController->runActionWithFilters()
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): QuizController->run()
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/quiz/quiz/index.php/Quiz/new
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\Quiz\form.php (121)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (36)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/21 17:17:12 [error] [php] Non-static method Quiz::Fiv() should not be called statically, assuming $this from incompatible context (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\Quiz\form.php:121)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(870): QuizController->renderFile()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(783): QuizController->renderPartial()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php(36): QuizController->render()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): QuizController->actionNew()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): QuizController->runAction()
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): QuizController->runActionWithFilters()
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): QuizController->run()
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/quiz/quiz/index.php/Quiz/new
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\Quiz\form.php (121)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (36)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)

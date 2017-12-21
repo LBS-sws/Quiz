@@ -19,6 +19,25 @@ class ExamsController extends Controller
         $this->render('index',array('model'=>$model));
     }
 
+    Public function actionSaveAdd(){
+        if (isset($_POST['ExamsAdd'])) {
+            $model = new ExamsAdd($_POST['ExamsAdd']['scenario']);
+            $model->attributes = $_POST['ExamsAdd'];
+            if ($model->validate()) {
+
+                $model->saveData();
+                //$model->scenario = 'edit';
+                Dialog::message(Yii::t('dialog','Information'), Yii::t('dialog','Save Done'));
+                $this->redirect(Yii::app()->createUrl('Exams/index',array('index'=>$model->id)));
+            } else {
+
+                $message = CHtml::errorSummary($model);
+                Dialog::message(Yii::t('dialog','Validation Message'), $message);
+                $this->render('index',array('model'=>$model,));
+            }
+        }
+    }
+
 
     public function actionSave()
     {
@@ -38,18 +57,18 @@ class ExamsController extends Controller
                     throw new CHttpException(404,'The requested page does not exist.');
                 }
                 Dialog::message(Yii::t('dialog','Information'), Yii::t('dialog','Save Done'));
-                $this->redirect(Yii::app()->createUrl('Exams/edit',array('index'=>$model->id)));
+                $this->redirect(Yii::app()->createUrl('Exams/index',array('index'=>$model->id)));
             } else {
                 $message = CHtml::errorSummary($model);
                 Dialog::message(Yii::t('dialog','Validation Message'), $message);
-                $this->render('form',array('model'=>$model,));
+                $this->render('index',array('model'=>$model,));
             }
         }
     }
 
     public function actionView($index)
     {
-        $model = new ExamsForm('view');
+        $model = new ExamsAdd('view');
         if (!$model->retrieveData($index)) {
             throw new CHttpException(404,'The requested page does not exist.');
         } else {
@@ -66,17 +85,17 @@ class ExamsController extends Controller
 
     public function actionEdit($index)
     {
-        $model = new ExamsForm('edit');
+        $model = new ExamsAdd('edit');
         if (!$model->retrieveData($index)) {
             throw new CHttpException(404,'The requested page does not exist.');
         } else {
-            $this->render('form',array('model'=>$model,));
+            $this->render('add',array('model'=>$model,));
         }
     }
 
     public function actionDelete()
     {
-        $model = new ExamsForm('delete');
+        $model = new ExamsAdd('delete');
         if (isset($_POST['ExamsForm'])) {
             $model->attributes = $_POST['ExamsForm'];
             $model->saveData();

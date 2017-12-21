@@ -1,34 +1,34 @@
 <tr>
 	<td>
-		<?php echo TbHtml::textField($this->getFieldName('test_exams_contents'), $this->record['qty'],
+		<?php echo TbHtml::textField($this->getFieldName('test_exams_contents'), $this->record['test_exams_contents'],
 			array('readonly'=>!Yii::app()->user->validRWFunction('HK01'),
-				'size'=>'10', 'maxlength'=>'10',)
+				'size'=>'10', 'maxlength'=>'50',)
 		); ?>
 	</td>
 	<td>
-		<?php echo TbHtml::textField($this->getFieldName('test_exams_answer_right'), $this->record['qty'],
+		<?php echo TbHtml::textField($this->getFieldName('test_exams_answer_right'), $this->record['test_exams_answer_right'],
 			array('readonly'=>!Yii::app()->user->validRWFunction('HK01'),
-				'size'=>'10', 'maxlength'=>'10',)
+				'size'=>'10', 'maxlength'=>'20',)
 		); ?>
 	</td>
 	<td>
-		<?php echo TbHtml::textField($this->getFieldName('test_exams_answer_faultf'), $this->record['qty'],
+		<?php echo TbHtml::textField($this->getFieldName('test_exams_answer_faultf'), $this->record['test_exams_answer_faultf'],
 			array('readonly'=>!Yii::app()->user->validRWFunction('HK01'),
-				'size'=>'10', 'maxlength'=>'10',)
-		); ?>
-	</td>
-
-	<td>
-		<?php echo TbHtml::textField($this->getFieldName('test_exams_answer_faults'), $this->record['qty'],
-			array('readonly'=>!Yii::app()->user->validRWFunction('HK01'),
-				'size'=>'10', 'maxlength'=>'10',)
+				'size'=>'10', 'maxlength'=>'20',)
 		); ?>
 	</td>
 
 	<td>
-		<?php echo TbHtml::textField($this->getFieldName('test_exams_answer_faultt'), $this->record['qty'],
+		<?php echo TbHtml::textField($this->getFieldName('test_exams_answer_faults'), $this->record['test_exams_answer_faults'],
 			array('readonly'=>!Yii::app()->user->validRWFunction('HK01'),
-				'size'=>'10', 'maxlength'=>'10',)
+				'size'=>'10', 'maxlength'=>'20',)
+		); ?>
+	</td>
+
+	<td>
+		<?php echo TbHtml::textField($this->getFieldName('test_exams_answer_faultt'), $this->record['test_exams_answer_faultt'],
+			array('readonly'=>!Yii::app()->user->validRWFunction('HK01'),
+				'size'=>'10', 'maxlength'=>'20',)
 		); ?>
 	</td>
 
@@ -44,8 +44,6 @@
 
 	<td>
 		<?php echo Yii::app()->user->validRWFunction('HK01') ? TbHtml::Button('-',array('id'=>'btnDelRow','title'=>Yii::t('misc','Delete'),'size'=>TbHtml::BUTTON_SIZE_SMALL)) : '&nbsp;'; ?>
-		<?php echo CHtml::hiddenField($this->getFieldName('uflag'),$this->record['uflag']); ?>
-		<?php echo CHtml::hiddenField($this->getFieldName('logid'),$this->record['logid']); ?>
 		<?php echo CHtml::hiddenField($this->getFieldName('id'),$this->record['id']); ?>
 	</td>
 </tr>
