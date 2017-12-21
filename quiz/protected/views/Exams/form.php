@@ -57,105 +57,6 @@ $this->pageTitle=Yii::app()->name . ' - Product Delivery Form';
 			<?php echo $form->hiddenField($model, 'location'); ?>
 			<?php echo CHtml::hiddenField('dtltemplate'); ?>
 
-		<!--	客户姓名  <div class="form-group">
-				<?php /*echo $form->labelEx($model,'company_name',array('class'=>"col-sm-2 control-label")); */?>
-				<div class="col-sm-7">
-					<?php /*echo $form->hiddenField($model, 'company_id'); */?>
-					<?php /*echo $form->textField($model, 'company_name',
-						array('size'=>50,'maxlength'=>100,'readonly'=>($model->scenario=='view'),
-							'append'=>TbHtml::Button('<span class="fa fa-search"></span> '.Yii::t('logistic','Customer'),array('name'=>'btnCompany','id'=>'btnCompany','disabled'=>($model->scenario=='view')))
-						)); */?>
-				</div>
-			</div>-->
-
-
-
-			<div class="form-group">
-				<?php echo $form->labelEx($model,'follow_staff',array('class'=>"col-sm-2 control-label")); ?>
-				<div class="col-sm-7">
-					<?php echo $form->textField($model, 'follow_staff',
-						array('size'=>80,'maxlength'=>1000,'readonly'=>($model->scenario=='view'),
-							'append'=>TbHtml::Button(Yii::t('logistic','Resp. Staff'),array('name'=>'btnStaff','id'=>'btnStaff','disabled'=>($model->scenario=='view')))
-						)); ?>
-				</div>
-			</div>
-
-			<div class="form-group">
-				<?php echo $form->labelEx($model,'pay_method',array('class'=>"col-sm-2 control-label")); ?>
-				<div class="col-sm-3">
-					<?php echo $form->dropDownList($model, 'pay_method',
-						array(
-							'MONTHLY'=>Yii::t('logistic','Monthly'),
-							'QUARTERLY'=>Yii::t('logistic','Quarterly'),
-							'COD'=>Yii::t('logistic','COD'),
-							'CBD'=>Yii::t('logistic','CBD'),
-							'FREE'=>Yii::t('logistic','Free'),
-						),
-						array('disabled'=>($model->scenario=='view'))
-					); ?>
-				</div>
-			</div>
-
-			<div class="form-group">
-				<?php echo $form->labelEx($model,'location',array('class'=>"col-sm-2 control-label")); ?>
-				<div class="col-sm-3">
-					<?php echo $form->dropDownList($model, 'location', General::getLocationList(),
-						array('disabled'=>($model->scenario=='view'))
-					); ?>
-				</div>
-				<div class="col-sm-4">
-					<?php echo $form->textField($model, 'location_dtl',
-						array('size'=>30,'maxlength'=>200,'readonly'=>($model->scenario=='view'))
-					); ?>
-				</div>
-			</div>
-
-			<div class="form-group">
-				<?php echo $form->labelEx($model,'finish',array('class'=>"col-sm-2 control-label")); ?>
-				<div class="col-sm-2">
-					<?php echo $form->dropDownList($model, 'finish', array('N'=>Yii::t('misc','No'),'Y'=>Yii::t('misc','Yes')),
-						array('disabled'=>($model->scenario=='view'))
-					); ?>
-				</div>
-				<?php echo $form->labelEx($model,'deadline',array('class'=>"col-sm-2 control-label")); ?>
-				<div class="col-sm-3">
-					<div class="input-group date">
-						<div class="input-group-addon">
-							<i class="fa fa-calendar"></i>
-						</div>
-						<?php echo $form->textField($model, 'deadline',
-							array('class'=>'form-control pull-right','readonly'=>($model->scenario=='view'),));
-						?>
-					</div>
-				</div>
-			</div>
-
-			<div class="form-group">
-				<?php echo $form->labelEx($model,'repair',array('class'=>"col-sm-2 control-label")); ?>
-				<div class="col-sm-7">
-					<?php echo $form->textField($model, 'repair',
-						array('size'=>50,'maxlength'=>1000,'readonly'=>($model->scenario=='view'))
-					); ?>
-				</div>
-			</div>
-
-			<div class="form-group">
-				<?php echo $form->labelEx($model,'reason',array('class'=>"col-sm-2 control-label")); ?>
-				<div class="col-sm-7">
-					<?php echo $form->textField($model, 'reason',
-						array('size'=>50,'maxlength'=>1000,'readonly'=>($model->scenario=='view'))
-					); ?>
-				</div>
-			</div>
-
-			<div class="form-group">
-				<?php echo $form->labelEx($model,'remarks',array('class'=>"col-sm-2 control-label")); ?>
-				<div class="col-sm-7">
-					<?php echo $form->textField($model, 'remarks',
-						array('size'=>50,'maxlength'=>1000,'readonly'=>($model->scenario=='view'))
-					); ?>
-				</div>
-			</div>
 			<div class="box">
 				<div class="box-body table-responsive">
 					<legend><?php echo Yii::t('quiz','Questions DataOrder'); ?></legend>
@@ -211,7 +112,6 @@ $('table').on('click','#btnDelRow', function() {
 $(document).ready(function(){
 	var ct = $('#tblDetail tr').eq(1).html();
 	$('#dtltemplate').attr('value',ct);
-	$('.deadline').datepicker({autoclose: true, format: 'yyyy/mm/dd'});
 });
 
 $('#btnAddRow').on('click',function() {

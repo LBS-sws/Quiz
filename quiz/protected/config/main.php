@@ -75,6 +75,16 @@ return array(
 			'password' => 'root',
 			'charset' => 'utf8',
 		),
+		'db2'=>array(
+			'class' =>'CDbConnection' ,
+			'connectionString' => 'mysql:host=localhost;dbname=blog_test',
+			'emulatePrepare' => true,
+			/*'username' => 'swuser',
+			'password' => 'Swisher@123',*/
+			'username' => 'root',
+			'password' => 'root',
+			'charset' => 'utf8',
+		),
 		
 		'errorHandler'=>array(
 			// use 'site/error' action to display errors

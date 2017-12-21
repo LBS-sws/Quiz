@@ -22,10 +22,15 @@ class ExamsController extends Controller
 
     public function actionSave()
     {
+
         if (isset($_POST['ExamsForm'])) {
+
             $model = new ExamsForm($_POST['ExamsForm']['scenario']);
+
             $model->attributes = $_POST['ExamsForm'];
+
             if ($model->validate()) {
+
                 $model->saveData();
                 $index = $model->id;
 //				$model->scenario = 'edit';

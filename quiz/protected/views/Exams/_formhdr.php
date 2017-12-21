@@ -15,7 +15,7 @@
 		<?php echo TbHtml::label($this->getLabelName('test_exams_answer_faultt'), false); ?>
 	</th>
 	<th>
-		<?php echo TbHtml::label($this->getLabelName('kinds'), false); ?>
+		<?php echo TbHtml::label($this->getLabelName('test_exams_kinds'), false); ?>
 	</th>
 	<th>
 		<?php echo Yii::app()->user->validRWFunction('HK01') ?

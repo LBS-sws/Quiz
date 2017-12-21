@@ -27,13 +27,13 @@ return array(
     'test_exams_answer_faultf'=>'错解A',
     'test_exams_answer_faults'=>'错解B',
     'test_exams_answer_faultt'=>'错解C',
-    'test_exams_kinds'=>'试题类型',
+
     'Questions DataOrder'=>'测验题数据单',
     'selectValueExams'=>'测验题类型',
     'quiz_start_dt'=>'截止时间',
     'temper'=>'短暂',
     'long'=>'长期',
-    'kinds'=>'问题类型',
+    'test_exams_kinds'=>'问题类型',
     'Quiz history List'=>'历史测验单',
     'Questions Add'=>'问题增加',
 
