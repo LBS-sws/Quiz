@@ -7582,3 +7582,1161 @@ REQUEST_URI=/quiz/quiz/index.php/Quiz/new
 in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\Quiz\form.php (121)
 in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (36)
 in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/22 09:50:43 [warning] [application] Failed to set unsafe attribute "scenario" of "ExamsAdd".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php (25)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/22 09:50:54 [warning] [application] Failed to set unsafe attribute "scenario" of "ExamsAdd".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php (25)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/22 09:58:47 [error] [exception.CException] exception 'CException' with message 'QuizController and its behaviors do not have a method or closure named "getFieldName".' in D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\Quiz\form.php(122): CComponent->__call('getFieldName', Array)
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\Quiz\form.php(122): QuizController->getFieldName('task')
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(127): require('D:\\phpstudy\\PHP...')
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\\phpstudy\\PHP...', Array, true)
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(870): CBaseController->renderFile('D:\\phpstudy\\PHP...', Array, true)
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(783): CController->renderPartial('form', Array, true)
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php(36): CController->render('form', Array)
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): QuizController->actionNew()
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('new')
+#12 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('Quiz/new')
+#13 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/quiz/quiz/index.php/Quiz/new
+HTTP_REFERER=http://127.0.0.1/quiz/quiz/index.php/Quiz/index
+---
+2017/12/22 09:59:52 [error] [exception.CException] exception 'CException' with message 'QuizController and its behaviors do not have a method or closure named "getFieldName".' in D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\Quiz\form.php(122): CComponent->__call('getFieldName', Array)
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\Quiz\form.php(122): QuizController->getFieldName('downList')
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(127): require('D:\\phpstudy\\PHP...')
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\\phpstudy\\PHP...', Array, true)
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(870): CBaseController->renderFile('D:\\phpstudy\\PHP...', Array, true)
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(783): CController->renderPartial('form', Array, true)
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php(36): CController->render('form', Array)
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): QuizController->actionNew()
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('new')
+#12 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('Quiz/new')
+#13 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/quiz/quiz/index.php/Quiz/new
+HTTP_REFERER=http://127.0.0.1/quiz/quiz/index.php/Quiz/index
+---
+2017/12/22 09:59:54 [error] [exception.CException] exception 'CException' with message 'QuizController and its behaviors do not have a method or closure named "getFieldName".' in D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\Quiz\form.php(122): CComponent->__call('getFieldName', Array)
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\Quiz\form.php(122): QuizController->getFieldName('downList')
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(127): require('D:\\phpstudy\\PHP...')
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\\phpstudy\\PHP...', Array, true)
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(870): CBaseController->renderFile('D:\\phpstudy\\PHP...', Array, true)
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(783): CController->renderPartial('form', Array, true)
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php(36): CController->render('form', Array)
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): QuizController->actionNew()
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('new')
+#12 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('Quiz/new')
+#13 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/quiz/quiz/index.php/Quiz/new
+HTTP_REFERER=http://127.0.0.1/quiz/quiz/index.php/Quiz/index
+---
+2017/12/22 10:00:24 [error] [exception.CException] exception 'CException' with message 'QuizController and its behaviors do not have a method or closure named "getFieldName".' in D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\Quiz\form.php(122): CComponent->__call('getFieldName', Array)
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\Quiz\form.php(122): QuizController->getFieldName('downList')
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(127): require('D:\\phpstudy\\PHP...')
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\\phpstudy\\PHP...', Array, true)
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(870): CBaseController->renderFile('D:\\phpstudy\\PHP...', Array, true)
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(783): CController->renderPartial('form', Array, true)
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php(36): CController->render('form', Array)
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): QuizController->actionNew()
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('new')
+#12 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('Quiz/new')
+#13 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/quiz/quiz/index.php/Quiz/new
+HTTP_REFERER=http://127.0.0.1/quiz/quiz/index.php/Quiz/index
+---
+2017/12/22 10:01:06 [error] [exception.CException] exception 'CException' with message '属性 "QuizController.record" 未被定义.' in D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\Quiz\form.php(122): CComponent->__get('record')
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(127): require('D:\\phpstudy\\PHP...')
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\\phpstudy\\PHP...', Array, true)
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(870): CBaseController->renderFile('D:\\phpstudy\\PHP...', Array, true)
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(783): CController->renderPartial('form', Array, true)
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php(36): CController->render('form', Array)
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): QuizController->actionNew()
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('new')
+#11 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('Quiz/new')
+#12 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/quiz/quiz/index.php/Quiz/new
+HTTP_REFERER=http://127.0.0.1/quiz/quiz/index.php/Quiz/index
+---
+2017/12/22 10:04:06 [error] [exception.CException] exception 'CException' with message '属性 "QuizController.record" 未被定义.' in D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\Quiz\form.php(123): CComponent->__get('record')
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(127): require('D:\\phpstudy\\PHP...')
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\\phpstudy\\PHP...', Array, true)
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(870): CBaseController->renderFile('D:\\phpstudy\\PHP...', Array, true)
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(783): CController->renderPartial('form', Array, true)
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php(94): CController->render('form', Array)
+#6 [internal function]: QuizController->actionEdit('23')
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(QuizController), Array)
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(QuizController), Object(ReflectionMethod), Array)
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#11 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('edit')
+#13 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('Quiz/edit')
+#14 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/quiz/quiz/index.php/Quiz/edit?index=23
+HTTP_REFERER=http://127.0.0.1/quiz/quiz/index.php/Quiz/index
+---
+2017/12/22 10:07:21 [error] [php] Object of class QuizForm could not be converted to string (D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\helpers\CHtml.php:1825)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\helpers\TbHtml.php(1061): dropDownList()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\Quiz\form.php(125): dropDownList()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(127): require()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(96): QuizController->renderInternal()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(870): QuizController->renderFile()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(783): QuizController->renderPartial()
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php(94): QuizController->render()
+#7 unknown(0): QuizController->actionEdit()
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#11 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): QuizController->runAction()
+#12 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): QuizController->runActionWithFilters()
+#13 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): QuizController->run()
+#14 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#15 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/quiz/quiz/index.php/Quiz/edit?index=23
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\helpers\TbHtml.php (1061)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\Quiz\form.php (125)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (94)
+2017/12/22 10:08:53 [error] [php] Object of class QuizForm could not be converted to string (D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\helpers\CHtml.php:1825)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\helpers\TbHtml.php(1061): dropDownList()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\Quiz\form.php(126): dropDownList()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(127): require()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(96): QuizController->renderInternal()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(870): QuizController->renderFile()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(783): QuizController->renderPartial()
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php(94): QuizController->render()
+#7 unknown(0): QuizController->actionEdit()
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#11 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): QuizController->runAction()
+#12 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): QuizController->runActionWithFilters()
+#13 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): QuizController->run()
+#14 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#15 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/quiz/quiz/index.php/Quiz/edit?index=23
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\helpers\TbHtml.php (1061)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\Quiz\form.php (126)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (94)
+2017/12/22 10:08:56 [error] [php] Object of class QuizForm could not be converted to string (D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\helpers\CHtml.php:1825)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\helpers\TbHtml.php(1061): dropDownList()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\Quiz\form.php(126): dropDownList()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(127): require()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(96): QuizController->renderInternal()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(870): QuizController->renderFile()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(783): QuizController->renderPartial()
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php(94): QuizController->render()
+#7 unknown(0): QuizController->actionEdit()
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#11 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): QuizController->runAction()
+#12 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): QuizController->runActionWithFilters()
+#13 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): QuizController->run()
+#14 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#15 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/quiz/quiz/index.php/Quiz/edit?index=23
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\helpers\TbHtml.php (1061)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\Quiz\form.php (126)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (94)
+2017/12/22 10:10:09 [error] [exception.CException] exception 'CException' with message 'QuizController and its behaviors do not have a method or closure named "getFieldName".' in D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\Quiz\form.php(123): CComponent->__call('getFieldName', Array)
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\Quiz\form.php(123): QuizController->getFieldName('count_questions')
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(127): require('D:\\phpstudy\\PHP...')
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\\phpstudy\\PHP...', Array, true)
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(870): CBaseController->renderFile('D:\\phpstudy\\PHP...', Array, true)
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(783): CController->renderPartial('form', Array, true)
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php(94): CController->render('form', Array)
+#7 [internal function]: QuizController->actionEdit('23')
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(QuizController), Array)
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(QuizController), Object(ReflectionMethod), Array)
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#12 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('edit')
+#14 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('Quiz/edit')
+#15 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/quiz/quiz/index.php/Quiz/edit?index=23
+HTTP_REFERER=http://127.0.0.1/quiz/quiz/index.php/Quiz/index
+---
+2017/12/22 10:12:00 [error] [php] Object of class QuizForm could not be converted to string (D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\helpers\CHtml.php:1825)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\helpers\TbHtml.php(1061): dropDownList()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\Quiz\form.php(125): dropDownList()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(127): require()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(96): QuizController->renderInternal()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(870): QuizController->renderFile()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(783): QuizController->renderPartial()
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php(94): QuizController->render()
+#7 unknown(0): QuizController->actionEdit()
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#11 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): QuizController->runAction()
+#12 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): QuizController->runActionWithFilters()
+#13 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): QuizController->run()
+#14 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#15 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/quiz/quiz/index.php/Quiz/edit?index=23
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\helpers\TbHtml.php (1061)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\Quiz\form.php (125)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (94)
+2017/12/22 10:13:33 [error] [php] Array to string conversion (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\Quiz\form.php:121)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(870): QuizController->renderFile()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(783): QuizController->renderPartial()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php(94): QuizController->render()
+#3 unknown(0): QuizController->actionEdit()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): QuizController->runAction()
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): QuizController->runActionWithFilters()
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): QuizController->run()
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#11 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/quiz/quiz/index.php/Quiz/edit?index=23
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\Quiz\form.php (121)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (94)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/22 10:37:46 [error] [exception.CException] exception 'CException' with message 'QuizController 无法找到请求的视图 "form".' in D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php:879
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(783): CController->renderPartial('form', Array, true)
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php(99): CController->render('form', Array)
+#2 [internal function]: QuizController->actionEdit('23')
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(QuizController), Array)
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(QuizController), Object(ReflectionMethod), Array)
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('edit')
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('Quiz/edit')
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/quiz/quiz/index.php/Quiz/edit?index=23
+HTTP_REFERER=http://127.0.0.1/quiz/quiz/index.php/Quiz/index
+---
+2017/12/22 11:04:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "ajaxUrl" 动作.' in D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php:484
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(271): CController->missingAction('ajaxUrl')
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('ajaxUrl')
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('Quiz/ajaxUrl')
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/quiz/index.php/Quiz/ajaxUrl
+HTTP_REFERER=http://127.0.0.1/quiz/quiz/index.php/Quiz/edit?index=23
+---
+2017/12/22 11:06:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "ajaxUrl" 动作.' in D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php:484
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(271): CController->missingAction('ajaxUrl')
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('ajaxUrl')
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('Quiz/ajaxUrl')
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/quiz/index.php/Quiz/ajaxUrl
+HTTP_REFERER=http://127.0.0.1/quiz/quiz/index.php/Quiz/edit?index=23
+---
+2017/12/22 11:06:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "ajaxUrl" 动作.' in D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php:484
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(271): CController->missingAction('ajaxUrl')
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('ajaxUrl')
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('Quiz/ajaxUrl')
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/quiz/index.php/Quiz/ajaxUrl
+HTTP_REFERER=http://127.0.0.1/quiz/quiz/index.php/Quiz/edit?index=23
+---
+2017/12/22 11:06:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "ajaxUrl" 动作.' in D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php:484
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(271): CController->missingAction('ajaxUrl')
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('ajaxUrl')
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('Quiz/ajaxUrl')
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/quiz/index.php/Quiz/ajaxUrl
+HTTP_REFERER=http://127.0.0.1/quiz/quiz/index.php/Quiz/edit?index=23
+---
+2017/12/22 11:06:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "ajaxUrl" 动作.' in D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php:484
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(271): CController->missingAction('ajaxUrl')
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('ajaxUrl')
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('Quiz/ajaxUrl')
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/quiz/index.php/Quiz/ajaxUrl
+HTTP_REFERER=http://127.0.0.1/quiz/quiz/index.php/Quiz/edit?index=23
+---
+2017/12/22 11:06:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "ajaxUrl" 动作.' in D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php:484
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(271): CController->missingAction('ajaxUrl')
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('ajaxUrl')
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('Quiz/ajaxUrl')
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/quiz/index.php/Quiz/ajaxUrl
+HTTP_REFERER=http://127.0.0.1/quiz/quiz/index.php/Quiz/edit?index=23
+---
+2017/12/22 11:06:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "ajaxUrl" 动作.' in D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php:484
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(271): CController->missingAction('ajaxUrl')
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('ajaxUrl')
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('Quiz/ajaxUrl')
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/quiz/index.php/Quiz/ajaxUrl
+HTTP_REFERER=http://127.0.0.1/quiz/quiz/index.php/Quiz/edit?index=23
+---
+2017/12/22 11:07:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "ajaxUrl" 动作.' in D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php:484
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(271): CController->missingAction('ajaxUrl')
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('ajaxUrl')
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('Quiz/ajaxUrl')
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/quiz/index.php/Quiz/ajaxUrl
+HTTP_REFERER=http://127.0.0.1/quiz/quiz/index.php/Quiz/edit?index=23
+---
+2017/12/22 11:07:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "ajaxUrl" 动作.' in D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php:484
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(271): CController->missingAction('ajaxUrl')
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('ajaxUrl')
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('Quiz/ajaxUrl')
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/quiz/quiz/index.php/Quiz/ajaxUrl
+HTTP_REFERER=http://127.0.0.1/quiz/quiz/index.php/Quiz/edit?index=23
+---
+2017/12/22 11:42:36 [warning] [application] Failed to set unsafe attribute "scenario" of "QuizForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (81)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/22 11:42:54 [warning] [application] Failed to set unsafe attribute "scenario" of "QuizForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (81)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/22 11:42:55 [warning] [application] Failed to set unsafe attribute "scenario" of "QuizForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (81)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/22 11:44:15 [warning] [application] Failed to set unsafe attribute "scenario" of "QuizForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (81)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/22 11:51:11 [warning] [application] Failed to set unsafe attribute "scenario" of "QuizForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (81)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/22 14:01:48 [error] [php] Undefined index: id (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestStartList.php:77)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): TestStartController->runAction()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): TestStartController->runActionWithFilters()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): TestStartController->run()
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/quiz/quiz/index.php/TestStart/index
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestStartList.php (77)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestStartController.php (31)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/22 14:09:48 [error] [exception.CException] exception 'CException' with message '属性 "QuizForm.checkBox" 未被定义.' in D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\helpers\CHtml.php(2158): CComponent->__get('checkBox')
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\helpers\CHtml.php(1460): CHtml::resolveValue(Object(QuizForm), 'checkBox')
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\helpers\TbHtml.php(1951): CHtml::activeCheckBox(Object(QuizForm), 'checkBox', Array)
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\helpers\TbHtml.php(2583): TbHtml::activeCheckBox(Object(QuizForm), 'checkBox', Array)
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\widgets\TbActiveForm.php(443): TbHtml::createActiveInput('checkBox', Object(QuizForm), 'checkBox', Array, Array)
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\widgets\TbActiveForm.php(316): TbActiveForm->createInput('checkBox', Object(QuizForm), 'checkBox', Array)
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\Quiz\form.php(165): TbActiveForm->checkBox(Object(QuizForm), 'checkBox', Array)
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(127): require('D:\\phpstudy\\PHP...')
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\\phpstudy\\PHP...', Array, true)
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(870): CBaseController->renderFile('D:\\phpstudy\\PHP...', Array, true)
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(783): CController->renderPartial('form', Array, true)
+#11 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php(44): CController->render('form', Array)
+#12 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): QuizController->actionNew()
+#13 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#14 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#15 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('new')
+#17 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('Quiz/new')
+#18 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#19 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/quiz/quiz/index.php/Quiz/new
+HTTP_REFERER=http://127.0.0.1/quiz/quiz/index.php/Quiz/index
+---
+2017/12/22 14:12:07 [error] [exception.CException] exception 'CException' with message '属性 "QuizForm.checkBoxValue" 未被定义.' in D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\Quiz\form.php(168): CComponent->__get('checkBoxValue')
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(127): require('D:\\phpstudy\\PHP...')
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\\phpstudy\\PHP...', Array, true)
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(870): CBaseController->renderFile('D:\\phpstudy\\PHP...', Array, true)
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(783): CController->renderPartial('form', Array, true)
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php(44): CController->render('form', Array)
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): QuizController->actionNew()
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('new')
+#11 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('Quiz/new')
+#12 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/quiz/quiz/index.php/Quiz/new
+HTTP_REFERER=http://127.0.0.1/quiz/quiz/index.php/Quiz/index
+---
+2017/12/22 14:12:08 [error] [exception.CException] exception 'CException' with message '属性 "QuizForm.checkBoxValue" 未被定义.' in D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\Quiz\form.php(168): CComponent->__get('checkBoxValue')
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(127): require('D:\\phpstudy\\PHP...')
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\\phpstudy\\PHP...', Array, true)
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(870): CBaseController->renderFile('D:\\phpstudy\\PHP...', Array, true)
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(783): CController->renderPartial('form', Array, true)
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php(44): CController->render('form', Array)
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): QuizController->actionNew()
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('new')
+#11 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('Quiz/new')
+#12 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/quiz/quiz/index.php/Quiz/new
+HTTP_REFERER=http://127.0.0.1/quiz/quiz/index.php/Quiz/index
+---
+2017/12/22 14:12:08 [error] [exception.CException] exception 'CException' with message '属性 "QuizForm.checkBoxValue" 未被定义.' in D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\Quiz\form.php(168): CComponent->__get('checkBoxValue')
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(127): require('D:\\phpstudy\\PHP...')
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\\phpstudy\\PHP...', Array, true)
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(870): CBaseController->renderFile('D:\\phpstudy\\PHP...', Array, true)
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(783): CController->renderPartial('form', Array, true)
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php(44): CController->render('form', Array)
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): QuizController->actionNew()
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('new')
+#11 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('Quiz/new')
+#12 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/quiz/quiz/index.php/Quiz/new
+HTTP_REFERER=http://127.0.0.1/quiz/quiz/index.php/Quiz/index
+---
+2017/12/22 14:12:09 [error] [exception.CException] exception 'CException' with message '属性 "QuizForm.checkBoxValue" 未被定义.' in D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\Quiz\form.php(168): CComponent->__get('checkBoxValue')
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(127): require('D:\\phpstudy\\PHP...')
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\\phpstudy\\PHP...', Array, true)
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(870): CBaseController->renderFile('D:\\phpstudy\\PHP...', Array, true)
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(783): CController->renderPartial('form', Array, true)
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php(44): CController->render('form', Array)
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): QuizController->actionNew()
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('new')
+#11 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('Quiz/new')
+#12 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/quiz/quiz/index.php/Quiz/new
+HTTP_REFERER=http://127.0.0.1/quiz/quiz/index.php/Quiz/index
+---
+2017/12/22 14:12:22 [error] [php] Invalid argument supplied for foreach() (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\helpers\TbHtml.php:1184)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(96): QuizController->renderInternal()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(870): QuizController->renderFile()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(783): QuizController->renderPartial()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php(44): QuizController->render()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): QuizController->actionNew()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): QuizController->runAction()
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): QuizController->runActionWithFilters()
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): QuizController->run()
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/quiz/quiz/index.php/Quiz/new
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\helpers\TbHtml.php (1184)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\Quiz\form.php (168)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (44)
+2017/12/22 14:30:55 [error] [php] substr() expects parameter 1 to be string, object given (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\helpers\TbHtml.php:1168)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(127): require()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(96): QuizController->renderInternal()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(870): QuizController->renderFile()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(783): QuizController->renderPartial()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php(44): QuizController->render()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): QuizController->actionNew()
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): QuizController->runAction()
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): QuizController->runActionWithFilters()
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): QuizController->run()
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#11 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/quiz/quiz/index.php/Quiz/new
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\helpers\TbHtml.php (1168)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\Quiz\form.php (168)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (44)
+2017/12/22 14:31:08 [error] [php] substr() expects parameter 1 to be string, object given (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\helpers\TbHtml.php:1168)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(127): require()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(96): QuizController->renderInternal()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(870): QuizController->renderFile()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(783): QuizController->renderPartial()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php(44): QuizController->render()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): QuizController->actionNew()
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): QuizController->runAction()
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): QuizController->runActionWithFilters()
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): QuizController->run()
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#11 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/quiz/quiz/index.php/Quiz/new
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\helpers\TbHtml.php (1168)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\Quiz\form.php (168)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (44)
+2017/12/22 14:31:08 [error] [php] substr() expects parameter 1 to be string, object given (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\helpers\TbHtml.php:1168)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(127): require()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(96): QuizController->renderInternal()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(870): QuizController->renderFile()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(783): QuizController->renderPartial()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php(44): QuizController->render()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): QuizController->actionNew()
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): QuizController->runAction()
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): QuizController->runActionWithFilters()
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): QuizController->run()
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#11 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/quiz/quiz/index.php/Quiz/new
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\helpers\TbHtml.php (1168)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\Quiz\form.php (168)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (44)
+2017/12/22 14:31:08 [error] [php] substr() expects parameter 1 to be string, object given (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\helpers\TbHtml.php:1168)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(127): require()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(96): QuizController->renderInternal()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(870): QuizController->renderFile()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(783): QuizController->renderPartial()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php(44): QuizController->render()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): QuizController->actionNew()
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): QuizController->runAction()
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): QuizController->runActionWithFilters()
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): QuizController->run()
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#11 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/quiz/quiz/index.php/Quiz/new
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\helpers\TbHtml.php (1168)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\Quiz\form.php (168)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (44)
+2017/12/22 14:31:09 [error] [php] substr() expects parameter 1 to be string, object given (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\helpers\TbHtml.php:1168)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(127): require()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(96): QuizController->renderInternal()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(870): QuizController->renderFile()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(783): QuizController->renderPartial()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php(44): QuizController->render()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): QuizController->actionNew()
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): QuizController->runAction()
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): QuizController->runActionWithFilters()
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): QuizController->run()
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#11 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/quiz/quiz/index.php/Quiz/new
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\helpers\TbHtml.php (1168)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\Quiz\form.php (168)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (44)
+2017/12/22 14:31:09 [error] [php] substr() expects parameter 1 to be string, object given (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\helpers\TbHtml.php:1168)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(127): require()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(96): QuizController->renderInternal()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(870): QuizController->renderFile()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(783): QuizController->renderPartial()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php(44): QuizController->render()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): QuizController->actionNew()
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): QuizController->runAction()
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): QuizController->runActionWithFilters()
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): QuizController->run()
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#11 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/quiz/quiz/index.php/Quiz/new
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\helpers\TbHtml.php (1168)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\Quiz\form.php (168)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (44)
+2017/12/22 14:58:17 [error] [php] Undefined index: select_employee (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php:78)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): QuizController->runAction()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): QuizController->runActionWithFilters()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): QuizController->run()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/quiz/quiz/index.php/Quiz/save
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (78)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/22 14:58:47 [error] [php] Undefined index: select_employee (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php:78)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): QuizController->runAction()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): QuizController->runActionWithFilters()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): QuizController->run()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/quiz/quiz/index.php/Quiz/save
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (78)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/22 14:58:48 [error] [php] Undefined index: select_employee (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php:78)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): QuizController->runAction()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): QuizController->runActionWithFilters()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): QuizController->run()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/quiz/quiz/index.php/Quiz/save
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (78)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/22 14:58:48 [error] [php] Undefined index: select_employee (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php:78)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): QuizController->runAction()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): QuizController->runActionWithFilters()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): QuizController->run()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/quiz/quiz/index.php/Quiz/save
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (78)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/22 14:58:48 [error] [php] Undefined index: select_employee (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php:78)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): QuizController->runAction()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): QuizController->runActionWithFilters()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): QuizController->run()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/quiz/quiz/index.php/Quiz/save
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (78)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/22 14:59:05 [error] [php] Undefined index: select_employee (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php:78)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): QuizController->runAction()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): QuizController->runActionWithFilters()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): QuizController->run()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/quiz/quiz/index.php/Quiz/save
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (78)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/22 15:02:28 [warning] [application] Failed to set unsafe attribute "scenario" of "QuizForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (81)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/22 15:03:15 [warning] [application] Failed to set unsafe attribute "scenario" of "QuizForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (81)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/22 15:09:21 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'employee_name' in 'field list'. The SQL statement executed was: select id,employee_name from blog_test.employee_info where 1=1.
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\components\Quiz.php (27)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\Quiz\form.php (173)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (44)
+2017/12/22 15:09:21 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'employee_name' in 'field list'. The SQL statement executed was: select id,employee_name from blog_test.employee_info where 1=1' in D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\components\Quiz.php(27): CDbCommand->queryAll()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\Quiz\form.php(173): Quiz::SelectReturn()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(127): require('D:\\phpstudy\\PHP...')
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\\phpstudy\\PHP...', Array, true)
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(870): CBaseController->renderFile('D:\\phpstudy\\PHP...', Array, true)
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(783): CController->renderPartial('form', Array, true)
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php(44): CController->render('form', Array)
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): QuizController->actionNew()
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#11 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('new')
+#13 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('Quiz/new')
+#14 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/quiz/quiz/index.php/Quiz/new
+HTTP_REFERER=http://127.0.0.1/quiz/quiz/index.php/Quiz/index
+---
+2017/12/22 15:52:56 [error] [php] Undefined index: quiz_employee_id (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\components\Quiz.php:30)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(96): QuizController->renderInternal()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(870): QuizController->renderFile()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(783): QuizController->renderPartial()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php(102): QuizController->render()
+#4 unknown(0): QuizController->actionEdit()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): QuizController->runAction()
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): QuizController->runActionWithFilters()
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): QuizController->run()
+#11 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#12 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/quiz/quiz/index.php/Quiz/edit?index=23
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\components\Quiz.php (30)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\Quiz\form.php (173)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (102)
+2017/12/22 15:53:32 [error] [php] Undefined index: quiz_employee_id (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\components\Quiz.php:30)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(96): QuizController->renderInternal()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(870): QuizController->renderFile()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(783): QuizController->renderPartial()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php(102): QuizController->render()
+#4 unknown(0): QuizController->actionEdit()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): QuizController->runAction()
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): QuizController->runActionWithFilters()
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): QuizController->run()
+#11 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#12 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/quiz/quiz/index.php/Quiz/edit?index=23
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\components\Quiz.php (30)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\Quiz\form.php (173)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (102)
+2017/12/22 15:53:36 [error] [php] Undefined index: quiz_employee_id (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\components\Quiz.php:30)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(96): QuizController->renderInternal()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(870): QuizController->renderFile()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(783): QuizController->renderPartial()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php(102): QuizController->render()
+#4 unknown(0): QuizController->actionEdit()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): QuizController->runAction()
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): QuizController->runActionWithFilters()
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): QuizController->run()
+#11 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#12 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/quiz/quiz/index.php/Quiz/edit?index=23
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\components\Quiz.php (30)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\Quiz\form.php (173)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (102)
+2017/12/22 15:53:54 [error] [php] Undefined index: quiz_employee_id (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\components\Quiz.php:30)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(96): QuizController->renderInternal()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(870): QuizController->renderFile()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(783): QuizController->renderPartial()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php(102): QuizController->render()
+#4 unknown(0): QuizController->actionEdit()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): QuizController->runAction()
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): QuizController->runActionWithFilters()
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): QuizController->run()
+#11 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#12 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/quiz/quiz/index.php/Quiz/edit?index=23
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\components\Quiz.php (30)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\Quiz\form.php (173)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (102)
+2017/12/22 15:54:27 [error] [php] Undefined index: employee_info_name (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\components\Quiz.php:42)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(96): QuizController->renderInternal()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(870): QuizController->renderFile()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(783): QuizController->renderPartial()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php(102): QuizController->render()
+#4 unknown(0): QuizController->actionEdit()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): QuizController->runAction()
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): QuizController->runActionWithFilters()
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): QuizController->run()
+#11 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#12 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/quiz/quiz/index.php/Quiz/edit?index=23
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\components\Quiz.php (42)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\Quiz\form.php (173)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (102)
+2017/12/22 15:56:42 [error] [php] Undefined index: checked (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\components\Quiz.php:43)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(96): QuizController->renderInternal()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(870): QuizController->renderFile()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(783): QuizController->renderPartial()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php(44): QuizController->render()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): QuizController->actionNew()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): QuizController->runAction()
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): QuizController->runActionWithFilters()
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): QuizController->run()
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/quiz/quiz/index.php/Quiz/new
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\components\Quiz.php (43)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\Quiz\form.php (173)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (44)
+2017/12/22 15:58:12 [error] [php] Undefined index: checked (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\components\Quiz.php:43)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(96): QuizController->renderInternal()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(870): QuizController->renderFile()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(783): QuizController->renderPartial()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php(44): QuizController->render()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): QuizController->actionNew()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): QuizController->runAction()
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): QuizController->runActionWithFilters()
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): QuizController->run()
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/quiz/quiz/index.php/Quiz/new
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\components\Quiz.php (43)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\Quiz\form.php (173)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (44)
+2017/12/22 15:58:14 [error] [php] Undefined index: checked (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\components\Quiz.php:43)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(96): QuizController->renderInternal()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(870): QuizController->renderFile()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(783): QuizController->renderPartial()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php(44): QuizController->render()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): QuizController->actionNew()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): QuizController->runAction()
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): QuizController->runActionWithFilters()
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): QuizController->run()
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/quiz/quiz/index.php/Quiz/new
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\components\Quiz.php (43)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\Quiz\form.php (173)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (44)
+2017/12/22 16:10:13 [error] [php] Array to string conversion (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\helpers\TbHtml.php:1199)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(96): QuizController->renderInternal()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(870): QuizController->renderFile()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(783): QuizController->renderPartial()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php(44): QuizController->render()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): QuizController->actionNew()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): QuizController->runAction()
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): QuizController->runActionWithFilters()
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): QuizController->run()
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/quiz/quiz/index.php/Quiz/new
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\helpers\TbHtml.php (1199)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\Quiz\form.php (175)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (44)
+2017/12/22 16:18:03 [error] [php] Array to string conversion (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\helpers\TbHtml.php:1199)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(96): QuizController->renderInternal()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(870): QuizController->renderFile()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(783): QuizController->renderPartial()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php(44): QuizController->render()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): QuizController->actionNew()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): QuizController->runAction()
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): QuizController->runActionWithFilters()
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): QuizController->run()
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/quiz/quiz/index.php/Quiz/new
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\helpers\TbHtml.php (1199)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\Quiz\form.php (172)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (44)
+2017/12/22 16:18:47 [error] [php] Undefined index: value_count (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\components\Quiz.php:42)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(96): QuizController->renderInternal()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(870): QuizController->renderFile()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(783): QuizController->renderPartial()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php(44): QuizController->render()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): QuizController->actionNew()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): QuizController->runAction()
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): QuizController->runActionWithFilters()
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): QuizController->run()
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/quiz/quiz/index.php/Quiz/new
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\components\Quiz.php (42)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\Quiz\form.php (170)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (44)
+2017/12/22 16:19:33 [error] [php] Undefined offset: 6 (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\components\Quiz.php:43)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(96): QuizController->renderInternal()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(870): QuizController->renderFile()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(783): QuizController->renderPartial()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php(44): QuizController->render()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): QuizController->actionNew()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): QuizController->runAction()
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): QuizController->runActionWithFilters()
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): QuizController->run()
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/quiz/quiz/index.php/Quiz/new
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\components\Quiz.php (43)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\Quiz\form.php (170)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (44)
+2017/12/22 16:19:37 [error] [php] Undefined offset: 6 (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\components\Quiz.php:43)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(96): QuizController->renderInternal()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(870): QuizController->renderFile()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(783): QuizController->renderPartial()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php(44): QuizController->render()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): QuizController->actionNew()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): QuizController->runAction()
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): QuizController->runActionWithFilters()
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): QuizController->run()
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/quiz/quiz/index.php/Quiz/new
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\components\Quiz.php (43)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\Quiz\form.php (170)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (44)
+2017/12/22 16:19:45 [error] [php] Undefined offset: 6 (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\components\Quiz.php:43)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(96): QuizController->renderInternal()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(870): QuizController->renderFile()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(783): QuizController->renderPartial()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php(44): QuizController->render()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): QuizController->actionNew()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): QuizController->runAction()
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): QuizController->runActionWithFilters()
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): QuizController->run()
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/quiz/quiz/index.php/Quiz/new
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\components\Quiz.php (43)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\Quiz\form.php (170)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (44)
+2017/12/22 16:35:25 [error] [exception.CException] exception 'CException' with message 'TbActiveForm and its behaviors do not have a method or closure named "field".' in D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\Quiz\form.php(175): CComponent->__call('field', Array)
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\Quiz\form.php(175): TbActiveForm->field(Object(QuizForm), 'sex')
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(127): require('D:\\phpstudy\\PHP...')
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\\phpstudy\\PHP...', Array, true)
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(870): CBaseController->renderFile('D:\\phpstudy\\PHP...', Array, true)
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(783): CController->renderPartial('form', Array, true)
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php(44): CController->render('form', Array)
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): QuizController->actionNew()
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('new')
+#12 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('Quiz/new')
+#13 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/quiz/quiz/index.php/Quiz/new
+HTTP_REFERER=http://127.0.0.1/quiz/quiz/index.php/Quiz
+---
+2017/12/22 16:35:36 [error] [exception.CException] exception 'CException' with message 'TbActiveForm and its behaviors do not have a method or closure named "field".' in D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\Quiz\form.php(175): CComponent->__call('field', Array)
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\Quiz\form.php(175): TbActiveForm->field(Object(QuizForm), 'select_employee')
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(127): require('D:\\phpstudy\\PHP...')
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\\phpstudy\\PHP...', Array, true)
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(870): CBaseController->renderFile('D:\\phpstudy\\PHP...', Array, true)
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(783): CController->renderPartial('form', Array, true)
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php(44): CController->render('form', Array)
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): QuizController->actionNew()
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('new')
+#12 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('Quiz/new')
+#13 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/quiz/quiz/index.php/Quiz/new
+HTTP_REFERER=http://127.0.0.1/quiz/quiz/index.php/Quiz
+---
+2017/12/22 16:37:27 [error] [php] htmlspecialchars() expects parameter 1 to be string, object given (D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\helpers\CHtml.php:85)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\helpers\CHtml.php(140): renderAttributes()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\helpers\CHtml.php(1135): tag()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\helpers\CHtml.php(727): inputField()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\helpers\TbHtml.php(1013): checkBox()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\helpers\TbHtml.php(1195): checkBox()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\Quiz\form.php(178): checkBoxList()
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(127): require()
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(96): QuizController->renderInternal()
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(870): QuizController->renderFile()
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(783): QuizController->renderPartial()
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php(44): QuizController->render()
+#11 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): QuizController->actionNew()
+#12 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#13 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): QuizController->runAction()
+#14 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): QuizController->runActionWithFilters()
+#15 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): QuizController->run()
+#16 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#17 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/quiz/quiz/index.php/Quiz/new
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\helpers\TbHtml.php (1013)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\helpers\TbHtml.php (1195)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\Quiz\form.php (178)
+2017/12/22 16:49:07 [error] [php] Undefined index: employee_info (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\components\Quiz.php:42)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(96): QuizController->renderInternal()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(870): QuizController->renderFile()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(783): QuizController->renderPartial()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php(44): QuizController->render()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): QuizController->actionNew()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): QuizController->runAction()
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): QuizController->runActionWithFilters()
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): QuizController->run()
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/quiz/quiz/index.php/Quiz/new
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\components\Quiz.php (42)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\Quiz\form.php (170)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (44)
+2017/12/22 16:53:02 [error] [php] Illegal string offset 'checked' (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\components\Quiz.php:43)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(96): QuizController->renderInternal()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(870): QuizController->renderFile()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(783): QuizController->renderPartial()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php(44): QuizController->render()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): QuizController->actionNew()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): QuizController->runAction()
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): QuizController->runActionWithFilters()
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): QuizController->run()
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/quiz/quiz/index.php/Quiz/new
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\components\Quiz.php (43)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\Quiz\form.php (170)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (44)
+2017/12/22 17:04:49 [error] [exception.CException] exception 'CException' with message '属性 "TestSearchForm.quiz_start_dt" 未被定义.' in D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\helpers\CHtml.php(2158): CComponent->__get('quiz_start_dt')
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\helpers\CHtml.php(1887): CHtml::resolveValue(Object(TestSearchForm), 'quiz_start_dt')
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\helpers\TbHtml.php(2688): CHtml::activeInputField('text', Object(TestSearchForm), 'quiz_start_dt', Array)
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\helpers\TbHtml.php(1789): TbHtml::activeTextInputField('text', Object(TestSearchForm), 'quiz_start_dt', Array)
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\helpers\TbHtml.php(2563): TbHtml::activeTextField(Object(TestSearchForm), 'quiz_start_dt', Array)
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\widgets\TbActiveForm.php(443): TbHtml::createActiveInput('textField', Object(TestSearchForm), 'quiz_start_dt', Array, Array)
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\widgets\TbActiveForm.php(187): TbActiveForm->createInput('textField', Object(TestSearchForm), 'quiz_start_dt', Array)
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\TestSearch\form.php(85): TbActiveForm->textField(Object(TestSearchForm), 'quiz_start_dt', Array)
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(127): require('D:\\phpstudy\\PHP...')
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\\phpstudy\\PHP...', Array, true)
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(870): CBaseController->renderFile('D:\\phpstudy\\PHP...', Array, true)
+#11 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(783): CController->renderPartial('form', Array, true)
+#12 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestSearchController.php(46): CController->render('form', Array)
+#13 [internal function]: TestSearchController->actionView('23')
+#14 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(TestSearchController), Array)
+#15 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(TestSearchController), Object(ReflectionMethod), Array)
+#16 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#17 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#18 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('view')
+#20 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('TestSearch/view')
+#21 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#22 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#23 {main}
+REQUEST_URI=/quiz/quiz/index.php/TestSearch/view?index=23
+HTTP_REFERER=http://127.0.0.1/quiz/quiz/index.php/TestSearch/index
+---
+2017/12/22 17:04:58 [error] [php] Undefined index: id (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestStartList.php:77)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): TestStartController->runAction()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): TestStartController->runActionWithFilters()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): TestStartController->run()
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/quiz/quiz/index.php/TestStart/index
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestStartList.php (77)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestStartController.php (31)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)

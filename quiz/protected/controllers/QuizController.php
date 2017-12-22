@@ -6,8 +6,9 @@
  * Time: 10:25
  */
  Class QuizController extends Controller{
-
+Public $urlAjaxSelect;
 Public $arr;
+
      public function actionIndex($pageNum=0){
          //searching operation can get the value of searching result
       //var_dump($_REQUEST['QuizList']['searchField']);die;
@@ -29,6 +30,13 @@ Public $arr;
      }
 
 
+
+     Public function actionAjaxUrl(){
+         $name=$_REQUEST['username'];
+         $pwd=$_REQUEST['password'];
+         $countSelect=$_REQUEST['selectCount'];
+        var_dump("aa".$name.$pwd.$countSelect);
+     }
             //进入新增页面
      Public function actionNew(){
 
@@ -67,7 +75,7 @@ Public $arr;
 
      //点击保存后  跳转到表单页面 且有提交的保存数据
      Public function actionSave(){
-
+        var_dump($_REQUEST['select_employee']);die;
          if (isset($_POST['QuizForm'])) {
              $model = new QuizForm($_POST['QuizForm']['scenario']);
              $model->attributes = $_POST['QuizForm'];

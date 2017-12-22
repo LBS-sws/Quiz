@@ -26,6 +26,7 @@
 	<header class="main-header">
 		<nav class="navbar navbar-static-top">
 			<div class="container">
+
 				<div class="navbar-header">
 					<a href="<?php echo Yii::app()->baseUrl; ?>" class="navbar-brand">
 						<b><?php echo CHtml::encode(Yii::t('app',Yii::app()->name)); ?></b> <small><?php echo '('.Yii::app()->user->city_name().')'; ?></small>

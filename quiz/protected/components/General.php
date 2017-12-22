@@ -169,7 +169,7 @@ class General {
 	{
 		$city = Yii::app()->user->city();
 		$list = array(0=>Yii::t('misc','-- None --'));
-		$sql = "select id, description from swo_task where city='".$city."' order by id";
+		$sql = "select id, description from swo_task where id>0";
 		$rows = Yii::app()->db->createCommand($sql)->queryAll();
 		if (count($rows) > 0) {
 			foreach ($rows as $row) {

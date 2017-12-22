@@ -116,17 +116,42 @@ $this->pageTitle=Yii::app()->name . ' - Customer Type Form';
                     ); ?>
                 </div>
             </div>
-            <script src="<?php echo Yii::app()->baseUrl;?>/js/jquery-1.3.2.min.js'"></script>
-<!--            <?php /*echo Yii::app()->baseUrl;*/?>
-            --><?php /*echo Quiz::Fiv();*/?>
+            <script src="<?php echo Yii::app()->baseUrl;?>/js/jquery.js'"></script>
+    <div class="form-group">
+            <?php echo $form->labelEx($model,'quiz_exams_count_set',array('class'=>"col-sm-2 control-label")); ?>
+                <div class="col-sm-5">
+            <?php echo TbHtml::dropDownList($model->count_questions,'',Quiz::listReturn(),
+                array('disabled'=>!Yii::app()->user->validRWFunction('HK01'),'id'=>'select_questions_count')
+            ); ?>
+                </div>
+    </div>
+            <?PHP /*$this->urlAjaxSelect=Yii::app()->createUrl('Quiz/AjaxUrl');*/?>
+            <input type="hidden" id="urlGet" name="urlGet" value="<?php echo $this->urlAjaxSelect;?>"/>
             <?php echo $form->hiddenField($model, 'id'); ?>
             <script>
-                $("#showRate").click(function(){
-                    console.log("aaa");
-                $("#quiz_name").val("demo");
+                $("#select_questions_count").change(function(){
+                  var selectValue= $("#select_questions_count").find("option:selected").text();
+                    $("#getCountValue").val(selectValue);
+                    $("#getCountValue2").val(selectValue);
+                    //console.log(selectValue);
+                    var url = $("#urlGet").val();
+                    var username='1';
+                    var password='2';
+                    $.ajax({
+                        type: "post",  //数据提交方式（post/get）
+                        url: url,  //提交到的url
+                        data: {username:username,password:password,selectCount:selectValue},//提交的数据
+                        dataType: "text",//返回的数据类型格式
+                        success: function(msg){
+                            console.log(msg);
+                        },
+                        error:function(msg){
+                            console.log(msg);
+                        }
+                    });
                 });
             </script>
-
+          <?php echo $form->hiddenField($model, 'quiz_exams_count',array('id'=>'getCountValue')); ?>
             <div class="form-group">
                 <?php echo $form->labelEx($model,'city_privileges',array('class'=>"col-sm-2 control-label")); ?>
                 <div class="col-sm-5">
@@ -135,22 +160,33 @@ $this->pageTitle=Yii::app()->name . ' - Customer Type Form';
                     ); ?>
                 </div>
             </div>
-
+            <style type="text/css">
+                label .labelForRadio{display:inline-block;width:auto;float:none;}
+                .checkbox{display:inline-block;float:none; width:100px;}
+            </style>
             <div class="form-group">
-                <?php echo $form->labelEx($model,'count_import',array('class'=>"col-sm-2 control-label")); ?>
+                <?php echo $form->labelEx($model,'select_employee',array('class'=>"col-sm-2 control-label")); ?>
                 <div class="col-sm-5">
-                       <select>
-                           <option></option>
-                       </select>
+                   <?php echo TbHtml::checkBoxList('select_employee',array('小张','小明','小赵'),Quiz::SelectReturn($model->id),
+                       array('labelOptions'=>array('class'=>'labelForRadio',"checked"=>"checked")),''
+                   ); ?>
+                </div>
+            </div>
+            <div class="form-group">
+                <?php echo $form->labelEx($model,'select_employee',array('class'=>"col-sm-2 control-label")); ?>
+                <div class="col-sm-5">
+                    <?php echo TbHtml::checkBoxList('select_employee',array('1','2','3'),array('1'=>'测试1','2'=>'测试2','3'=>'测试3','4'=>'测试4'),
+                        array('labelOptions'=>array('class'=>'labelForRadio',"checked"=>"checked")),''
+                    ); ?>
                 </div>
             </div>
 
-            <div class="form-group">
+          <div class="form-group">
                 <?php echo $form->labelEx($model,'quiz_exams_count',array('class'=>"col-sm-2 control-label")); ?>
                 <div class="col-sm-5">
                     <?php echo $form->textField($model, 'quiz_exams_count',
-                        array('size'=>50,'maxlength'=>100,'readonly'=>($model->scenario=='view'),'disabled'=>'disabled')
-                    ); ?>
+                        array('size'=>50,'maxlength'=>100,'readonly'=>($model->scenario=='view'),'disabled'=>'disabled','id'=>'getCountValue2')
+                    );?>
                 </div>
             </div>
 

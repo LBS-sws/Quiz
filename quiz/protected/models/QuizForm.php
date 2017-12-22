@@ -13,6 +13,9 @@ class QuizForm extends CFormModel
     Public $quiz_exams_count;
     Public $quiz_start_dt;
     Public $count_import;
+    Public $count_questions;
+    Public $checkBoxValue;
+    Public $select_employee;
     //Public $scenario;
     /**
      * Declares customized attribute labels.
@@ -22,6 +25,7 @@ class QuizForm extends CFormModel
     public function attributeLabels()
     {
         return array(
+            'select_employee'=>Yii::t('quiz','select_employee'),
             'quiz_correct_rate'=>Yii::t('quiz','quiz_correct_rate'),
             'quiz_exams_id'=>Yii::t('quiz','quiz_exams_id'),
             'quiz_employee_id'=>Yii::t('quiz','quiz_employee_id'),
@@ -31,7 +35,8 @@ class QuizForm extends CFormModel
             'quiz_name'=>Yii::t('quiz','quiz_name'),
             'city_privileges'=>Yii::t('quiz','city_privileges'),
             'quiz_start_dt'=>Yii::t('quiz','quiz_start_dt'),
-
+            'count_questions'=>Yii::t('quiz','count_questions'),
+            'quiz_exams_count_set'=>Yii::t('quiz','quiz_exams_count_set'),
         );
     }
 
@@ -68,6 +73,7 @@ class QuizForm extends CFormModel
                 $this->quiz_start_dt = General::toDate($row['quiz_start_dt']);
                 $this->quiz_exams_count = $row['quiz_exams_count'];
                 $this->quiz_employee_id=$row['quiz_employee_id'];
+                $this->count_questions='';
                 break;
             }
         }
@@ -92,7 +98,7 @@ class QuizForm extends CFormModel
     protected function saveUser(&$connection)
     {
 
-
+var_dump($_REQUEST);die;
         $tableFuss=Yii::app()->params['jsonTableName'];
         $sql = '';
         switch ($this->scenario) {

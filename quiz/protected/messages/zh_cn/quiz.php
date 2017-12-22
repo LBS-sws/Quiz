@@ -14,12 +14,13 @@ return array(
     'Quiz questions new'=>'测验单数据添加',
     'Question Name'=>'问题描述',
     'Quiz Date'=>'具体日期',
-    'quiz_exams_count'=>'总计测验单数量（纯数字）',
+    'quiz_exams_count'=>'总计测验单数量（测验开始生成具体测验题）',
+    'quiz_exams_count_set'=>'测验题数量获取',
     'quiz_employee_id'=>'员工外键',
     'city_privileges'=>'地区权限',
     'quiz_correct_rate'=>'正确率',
     'Quiz DataOrder'=>'测验数据单',
-
+    'select_employee'=>'下拉选择',
     //QuestionList model
     'Question List'=>'测验题列表',
     'test_exams_contents'=>'问题内容',
@@ -36,6 +37,7 @@ return array(
     'test_exams_kinds'=>'问题类型',
     'Quiz history List'=>'历史测验单',
     'Questions Add'=>'问题增加',
-
+    'count_questions'=>'总计',
+    'question_count_choose'=>'问题数量',
 
 );

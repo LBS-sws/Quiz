@@ -208,7 +208,6 @@ class ExamsForm extends CFormModel
                     "test_exams_answer_faults"=>$kArr['test_exams_answer_faults'],
                     "test_exams_answer_faultt"=>$kArr['test_exams_answer_faultt']));
         }
-
         return true;
     }
 
