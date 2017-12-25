@@ -17,6 +17,7 @@ class TestSearchForm extends CFormModel
     Public $quiz_start_dt;
     Public $quiz_employee_name;
     Public $employee_name_show;
+    Public $quiz_exams_count;
     //Public $scenario;
     /**
      * Declares customized attribute labels.
@@ -73,6 +74,7 @@ class TestSearchForm extends CFormModel
                 $this->quiz_name = $row['quiz_name'];
                 $this->city_privileges = $row['city_privileges'];
                 $this->quiz_correct_rate = $row['quiz_correct_rate'];
+                $this->quiz_exams_count=$row['quiz_exams_count'];
                 break;
             }
         }

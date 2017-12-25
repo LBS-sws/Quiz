@@ -99,6 +99,14 @@ $this->pageTitle=Yii::app()->name . ' - Customer Type Form';
             </div>-->
 
             <div class="form-group">
+                <?php echo $form->labelEx($model,'quiz_exams_count',array('class'=>"col-sm-2 control-label")); ?>
+                <div class="col-sm-5">
+                    <?php echo $form->textField($model, 'quiz_exams_count',array('readonly'=>($model->scenario=='view')))
+                    ; ?>
+                </div>
+            </div>
+
+            <div class="form-group">
                 <?php echo $form->labelEx($model,'quiz_correct_rate',array('class'=>"col-sm-2 control-label")); ?>
                 <div class="col-sm-5">
                     <?php echo $form->textField($model, 'quiz_correct_rate',array('readonly'=>($model->scenario=='view')))

@@ -54,78 +54,45 @@ $this->pageTitle=Yii::app()->name . ' - Customer Type Form';
         <div class="box-body">
             <?php echo $form->hiddenField($model, 'scenario'); ?>
             <?php echo $form->hiddenField($model, 'id'); ?>
-
-
+            <script src="<?php echo Yii::app()->baseUrl;?>/js/jquery.js'"></script>
+            <?PHP $this->urlAjaxSubmit=Yii::app()->createUrl('TestStart/AjaxUrl');?>
+           <!-- <input type="hidden" id="urlGet" name="urlGet" value="<?php /*echo $this->urlAjaxSubmit;*/?>"/>
+            <input type="text" name="k"  id="searchInput"/>&nbsp;<input type="button" name="startQuiz" value="开始测试" />
+            <input type="text" id="getValueSearch" value=""/>
+            <div id="showData"></div>
+-->
             <div class="form-group">
-                <?php echo $form->labelEx($model,'quiz_date',array('class'=>"col-sm-2 control-label")); ?>
+                <?php echo $form->labelEx($model,'employee_info',array('class'=>"col-sm-2 control-label")); ?>
                 <div class="col-sm-5">
-                    <?php echo $form->textField($model, 'quiz_date',
-                        array('size'=>50,'maxlength'=>100,'readonly'=>($model->scenario=='view'))
+                    <?php echo $form->textField($model, 'employee_info',
+                        array('size'=>50,'maxlength'=>100,'readonly'=>($model->scenario=='view'),'id'=>'checkInfoName',)
                     ); ?>
                 </div>
             </div>
-
-            <div class="form-group">
-                <?php echo $form->labelEx($model,'quiz_name',array('class'=>"col-sm-2 control-label")); ?>
-                <div class="col-sm-2">
-                    <?php echo $form->textField($model, 'quiz_name',
-                        array('size'=>10,'maxlength'=>10,'readonly'=>($model->scenario=='view'))
-                    ); ?>
-                </div>
-            </div>
-
-            <div class="form-group">
-                <?php echo $form->labelEx($model,'quiz_start_dt',array('class'=>"col-sm-2 control-label")); ?>
-                <div class="col-sm-3">
-                    <div class="input-group date">
-                        <div class="input-group-addon">
-                            <i class="fa fa-calendar"></i>
-                        </div>
-                        <?php echo $form->textField($model, 'quiz_start_dt',
-                            array('class'=>'form-control pull-right','readonly'=>($model->scenario=='view'),));
-                        ?>
-                    </div>
-                </div>
-            </div>
-
-
-
-            <div class="form-group">
-                <?php
-                for($i=0;$i<10;$i++){
-                    $model->count_import["$i=>'demo'"]=$i;
-                }
-                ?>
-                <?php echo $form->labelEx($model,'quiz_employee_id',array('class'=>"col-sm-2 control-label")); ?>
-                <div class="col-sm-5">
-                    <?php echo $form->textField($model, 'quiz_employee_id',
-                        array('size'=>50,'maxlength'=>100,'readonly'=>($model->scenario=='view'))
-                    ); ?>
-                </div>
-            </div>
-
-            <div class="form-group">
-                <?php echo $form->labelEx($model,'quiz_exams_id',array('class'=>"col-sm-2 control-label")); ?>
-                <div class="col-sm-5">
-                    <?php echo $form->textField($model, 'quiz_exams_id',
-                        array('size'=>50,'maxlength'=>100,'readonly'=>($model->scenario=='view'))
-                    ); ?>
-                </div>
-            </div>
-
-            <div class="form-group">
-                <?php echo $form->labelEx($model,'quiz_correct_rate',array('class'=>"col-sm-2 control-label")); ?>
-                <div class="col-sm-5">
-                    <?php echo $form->textField($model, 'quiz_correct_rate',
-                        array('size'=>50,'maxlength'=>100,'readonly'=>($model->scenario=='view'))
-                    ); ?>
-                </div>
-            </div>
-
-
 
         </div>
-    </div>
+        <script>
+            $("#searchInput").keyup(function(){
+                var url=$("#urlGet").val();
+                var value = $("#searchInput").val();
+                $.ajax({
+                    type: "post",
+                    url: url,
+                    data: {searchValue:value},
+                    dataType: "json",//json xml
+                    success: function(msg){
+                        console.log(value);
+                        $("#getValueSearch").val(msg);
+                        console.log(msg);
+                    },
+                    error:function(msg){
+                        console.log(msg);
+                    }
+                });
+            });
+            $("#checkInfoName").
+        </script>
+        </div>
 </section>
 
 <?php $this->renderPartial('//site/removedialog'); ?>

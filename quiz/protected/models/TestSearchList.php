@@ -22,7 +22,6 @@ class TestSearchList extends CListPageModel
     public function retrieveDataByPage($pageNum = 1)
     {
         $tableFuss = Yii::app()->params['jsonTableName'];
-
         $sql1 = "select *
 				from blog$tableFuss.quiz
 				where 1=1 ";
@@ -30,12 +29,9 @@ class TestSearchList extends CListPageModel
 				from blog$tableFuss.quiz
 				where 1=1 ";
         $clause = "";
-
         //searchField =>字段名   searchValue =>字段值  日期  名字 描述
         if (!empty($this->searchField) && !empty($this->searchValue)) {
-
             $svalue = str_replace("'", "\'", $this->searchValue);
-
             switch ($this->searchField) {
                 case 'quiz_date':
                     $clause .= General::getSqlConditionClause('quiz_date', $svalue);
@@ -56,15 +52,11 @@ class TestSearchList extends CListPageModel
             $order .= " order by " . $this->orderField . " ";
             if ($this->orderType == 'D') $order .= "desc ";
         }
-
         $sql = $sql2 . $clause;
-
         $this->totalRow = Yii::app()->db->createCommand($sql)->queryScalar();
-
         $sql = $sql1 . $clause . $order;
         $sql = $this->sqlWithPageCriteria($sql, $this->pageNum);
         $records = Yii::app()->db->createCommand($sql)->queryAll();
-
         // $list = array();
         $this->attr = array();
         if (count($records) > 0) {
@@ -81,9 +73,6 @@ class TestSearchList extends CListPageModel
                     'quiz_correct_rate' => $record['quiz_correct_rate'],
                     'quiz_start_dt' => $record['quiz_start_dt'],
                 );
-                //  $itemcnt++;
-//				}
-                //   }
             }
             $session = Yii::app()->session;
             $session['criteria_c01'] = $this->getCriteria();

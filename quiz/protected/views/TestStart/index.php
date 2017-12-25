@@ -9,7 +9,6 @@ $this->pageTitle=Yii::app()->name . ' - Nature';
     'clientOptions'=>array('validateOnSubmit'=>true,),
     'layout'=>TbHtml::FORM_LAYOUT_INLINE,
 )); ?>
-
     <section class="content-header">
     <!--    <h1>
             <strong><?php /*echo Yii::t('code','无添加'); */?></strong>

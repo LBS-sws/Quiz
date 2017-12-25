@@ -12,8 +12,11 @@
     public $quiz_date;
     public $quiz_name;
     Public $quiz_correct_rate;
-
-    //Public $scenario;
+    Public $quiz_start_dt;
+    Public $count_import;
+    Public $quiz_employee_id;
+    Public $employee_info;
+    Public $scenario;
     /**
      * Declares customized attribute labels.
      * If not declared here, an attribute would have a label that is
@@ -31,6 +34,7 @@
             'quiz_name'=>Yii::t('quiz','quiz_name'),
             'city_privileges'=>Yii::t('quiz','city_privileges'),
             'quiz_start_dt'=>Yii::t('quiz','quiz_start_dt'),
+            'employee_info'=>Yii::t('quiz','employee_info'),
 
         );
     }
@@ -41,7 +45,7 @@
     public function rules()
     {
         return array(
-            array('quiz_date','required'),
+            array('employee_info','required'),
             array('id,quiz_start_dt,quiz_name,quiz_correct_rate,quiz_exams_id,quiz_employee_id,quiz_exams_count,city_privileges','safe'),
         );
 
