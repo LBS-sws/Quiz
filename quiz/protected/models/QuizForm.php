@@ -1,5 +1,5 @@
 <?php
-
+header("Content-type: text/html; charset=utf-8");
 class QuizForm extends CFormModel
 {
     /* User Fields */
@@ -49,7 +49,6 @@ class QuizForm extends CFormModel
             array('quiz_date','required'),
             array('id,quiz_start_dt,quiz_name,quiz_correct_rate,quiz_exams_id,quiz_employee_id,quiz_exams_count,city_privileges','safe'),
             );
-
     }
 
     public function retrieveData($index)
@@ -82,7 +81,8 @@ class QuizForm extends CFormModel
         return true;
     }
     public function saveData()
-    {    var_dump($this->count_import);
+    {
+
         $connection = Yii::app()->db;
         $transaction=$connection->beginTransaction();
         try {
@@ -97,8 +97,10 @@ class QuizForm extends CFormModel
 
     protected function saveUser(&$connection)
     {
+        $_REQUEST['quiz_employee_id']=implode(',',$_REQUEST['quiz_employee_id']);
+        $_REQUEST['QuizForm']['quiz_employee_id']=$_REQUEST['quiz_employee_id'];
+        $this->quiz_employee_id=$_REQUEST['QuizForm']['quiz_employee_id'];
 
-var_dump($_REQUEST);die;
         $tableFuss=Yii::app()->params['jsonTableName'];
         $sql = '';
         switch ($this->scenario) {
@@ -134,16 +136,14 @@ var_dump($_REQUEST);die;
             $command->bindParam(':quiz_date',$this->quiz_date,PDO::PARAM_STR);
         if (strpos($sql,':quiz_name')!==false)
             $command->bindParam(':quiz_name',$this->quiz_name,PDO::PARAM_STR);
-
         if (strpos($sql,':quiz_start_dt')!==false) {
             $quizDate = General::toMyDate($this->quiz_start_dt);
             $command->bindParam(':quiz_start_dt',$quizDate,PDO::PARAM_STR);
         }
-
         if (strpos($sql,':quiz_exams_count')!==false)
             $command->bindParam(':quiz_exams_count',$this->quiz_exams_count,PDO::PARAM_INT);
         if (strpos($sql,':quiz_employee_id')!==false)
-            $command->bindParam(':quiz_employee_id',$this->quiz_employee_id,PDO::PARAM_STR);
+            $command->bindParam(':quiz_employee_id',$this->quiz_employee_id,PDO::PARAM_STR );
         if (strpos($sql,':quiz_exams_id')!==false)
             $command->bindParam(':quiz_exams_id',$this->quiz_exams_id,PDO::PARAM_STR);
         if (strpos($sql,':quiz_correct_rate')!==false)

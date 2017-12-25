@@ -39,5 +39,7 @@ return array(
     'Questions Add'=>'问题增加',
     'count_questions'=>'总计',
     'question_count_choose'=>'问题数量',
+    'quiz_employee_name'=>'该测验题测验员工',
+    'employee_name_show'=>'可测验的人员',
 
 );

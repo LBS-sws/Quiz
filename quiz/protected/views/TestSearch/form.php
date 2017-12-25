@@ -14,13 +14,6 @@ $this->pageTitle=Yii::app()->name . ' - Customer Type Form';
     <h1>
         <strong><?php echo Yii::t('quiz','Quiz DataOrder'); ?></strong>
     </h1>
-    <!--
-        <ol class="breadcrumb">
-            <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-            <li><a href="#">Layout</a></li>
-            <li class="active">Top Navigation</li>
-        </ol>
-    -->
 </section>
 
 <section class="content">
@@ -33,7 +26,7 @@ $this->pageTitle=Yii::app()->name . ' - Customer Type Form';
                 }
                 ?>
                 <?php echo TbHtml::button('<span class="fa fa-reply"></span> '.Yii::t('misc','Back'), array(
-                    'submit'=>Yii::app()->createUrl('Quiz/index')));
+                    'submit'=>Yii::app()->createUrl('TestSearch/index')));
                 ?>
                 <?php if ($model->scenario!='view'): ?>
                     <?php echo TbHtml::button('<span class="fa fa-upload"></span> '.Yii::t('misc','Save'), array(
@@ -88,37 +81,28 @@ $this->pageTitle=Yii::app()->name . ' - Customer Type Form';
                 </div>
             </div>
 
-
-
             <div class="form-group">
-                <?php
-                for($i=0;$i<10;$i++){
-                    $model->count_import["$i=>'demo'"]=$i;
-                }
-                ?>
-                <?php echo $form->labelEx($model,'quiz_employee_id',array('class'=>"col-sm-2 control-label")); ?>
-                <div class="col-sm-5">
-                    <?php echo $form->textField($model, 'quiz_employee_id',
-                        array('size'=>50,'maxlength'=>100,'readonly'=>($model->scenario=='view'))
+                <?php echo $form->labelEx($model,'employee_name_show',array('class'=>"col-sm-2 control-label")); ?>
+                <div class="col-sm-3">
+                    <?php echo $form->textArea($model, 'employee_name_show',
+                        array('size'=>50,'maxlength'=>100,'readonly'=>($model->scenario=='view'),'cols'=>'30','rows'=>'6')
                     ); ?>
                 </div>
             </div>
-
+<!--
             <div class="form-group">
-                <?php echo $form->labelEx($model,'quiz_exams_id',array('class'=>"col-sm-2 control-label")); ?>
+                <?php /*echo $form->labelEx($model,'quiz_employee_name',array('class'=>"col-sm-2 control-label")); */?>
                 <div class="col-sm-5">
-                    <?php echo $form->textField($model, 'quiz_exams_id',
-                        array('size'=>50,'maxlength'=>100,'readonly'=>($model->scenario=='view'))
-                    ); ?>
+                    <?php /*echo $form->textArea($model,'quiz_employee_name',
+                        array('readonly'=>($model->scenario=='view'),'cols'=>'30','rows'=>'6')); */?>
                 </div>
-            </div>
+            </div>-->
 
             <div class="form-group">
                 <?php echo $form->labelEx($model,'quiz_correct_rate',array('class'=>"col-sm-2 control-label")); ?>
                 <div class="col-sm-5">
-                    <?php echo $form->textField($model, 'quiz_correct_rate',
-                        array('size'=>50,'maxlength'=>100,'readonly'=>($model->scenario=='view'))
-                    ); ?>
+                    <?php echo $form->textField($model, 'quiz_correct_rate',array('readonly'=>($model->scenario=='view')))
+                    ; ?>
                 </div>
             </div>
 

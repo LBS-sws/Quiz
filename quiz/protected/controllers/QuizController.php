@@ -5,6 +5,7 @@
  * Date: 2017/12/14 0014
  * Time: 10:25
  */
+header("Content-type: text/html; charset=utf-8");
  Class QuizController extends Controller{
 Public $urlAjaxSelect;
 Public $arr;
@@ -75,14 +76,14 @@ Public $arr;
 
      //点击保存后  跳转到表单页面 且有提交的保存数据
      Public function actionSave(){
-        var_dump($_REQUEST['select_employee']);die;
+     /*    $_REQUEST['quiz_employee_id']=implode(',',$_REQUEST['quiz_employee_id']);
+         $_REQUEST['QuizForm']['quiz_employee_id']=$_REQUEST['quiz_employee_id'];
+    var_dump($_REQUEST['QuizForm']);die;*/
          if (isset($_POST['QuizForm'])) {
              $model = new QuizForm($_POST['QuizForm']['scenario']);
              $model->attributes = $_POST['QuizForm'];
-
              if ($model->validate()) {
                  $model->saveData();
-
 		            //$model->scenario = 'edit';
                  Dialog::message(Yii::t('dialog','Information'), Yii::t('dialog','Save Done'));
                  $this->redirect(Yii::app()->createUrl('Quiz/edit',array('index'=>$model->id)));

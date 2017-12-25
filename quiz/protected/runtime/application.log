@@ -8740,3 +8740,1252 @@ REQUEST_URI=/quiz/quiz/index.php/TestStart/index
 in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestStartList.php (77)
 in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestStartController.php (31)
 in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/25 09:43:29 [error] [php] Undefined index: employee_info_name (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\components\Quiz.php:42)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(96): QuizController->renderInternal()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(870): QuizController->renderFile()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(783): QuizController->renderPartial()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php(101): QuizController->render()
+#4 unknown(0): QuizController->actionEdit()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): QuizController->runAction()
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): QuizController->runActionWithFilters()
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): QuizController->run()
+#11 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#12 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/quiz/quiz/index.php/Quiz/edit?index=23
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\components\Quiz.php (42)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\Quiz\form.php (170)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (101)
+2017/12/25 09:44:50 [error] [php] Undefined index: employee_info_name (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\components\Quiz.php:40)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(96): QuizController->renderInternal()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(870): QuizController->renderFile()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(783): QuizController->renderPartial()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php(101): QuizController->render()
+#4 unknown(0): QuizController->actionEdit()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): QuizController->runAction()
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): QuizController->runActionWithFilters()
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): QuizController->run()
+#11 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#12 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/quiz/quiz/index.php/Quiz/edit?index=23
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\components\Quiz.php (40)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\Quiz\form.php (170)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (101)
+2017/12/25 10:17:46 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '2,3,4,5' at line 1. The SQL statement executed was: select quiz_employee_id from blog_test.quiz WHERE id=1,2,3,4,5.
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\components\Quiz.php (54)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\components\Quiz.php (56)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\Quiz\form.php (170)
+2017/12/25 10:17:46 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '2,3,4,5' at line 1. The SQL statement executed was: select quiz_employee_id from blog_test.quiz WHERE id=1,2,3,4,5' in D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\components\Quiz.php(54): CDbCommand->queryAll()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\components\Quiz.php(56): Quiz::EmployeeIdGet('1,2,3,4,5')
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\Quiz\form.php(170): Quiz::EmployeeIdGet('23')
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(127): require('D:\\phpstudy\\PHP...')
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\\phpstudy\\PHP...', Array, true)
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(870): CBaseController->renderFile('D:\\phpstudy\\PHP...', Array, true)
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(783): CController->renderPartial('form', Array, true)
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php(101): CController->render('form', Array)
+#9 [internal function]: QuizController->actionEdit('23')
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(QuizController), Array)
+#11 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(QuizController), Object(ReflectionMethod), Array)
+#12 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#13 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#14 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('edit')
+#16 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('Quiz/edit')
+#17 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/quiz/quiz/index.php/Quiz/edit?index=23
+HTTP_REFERER=http://127.0.0.1/quiz/quiz/index.php/Quiz/index
+---
+2017/12/25 10:20:33 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1. The SQL statement executed was: select quiz_employee_id from blog_test.quiz WHERE id=.
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\components\Quiz.php (54)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\Quiz\form.php (170)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (44)
+2017/12/25 10:20:33 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1. The SQL statement executed was: select quiz_employee_id from blog_test.quiz WHERE id=' in D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\components\Quiz.php(54): CDbCommand->queryAll()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\Quiz\form.php(170): Quiz::EmployeeIdGet(NULL)
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(127): require('D:\\phpstudy\\PHP...')
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\\phpstudy\\PHP...', Array, true)
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(870): CBaseController->renderFile('D:\\phpstudy\\PHP...', Array, true)
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(783): CController->renderPartial('form', Array, true)
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php(44): CController->render('form', Array)
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): QuizController->actionNew()
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#11 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('new')
+#13 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('Quiz/new')
+#14 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/quiz/quiz/index.php/Quiz/new
+HTTP_REFERER=http://127.0.0.1/quiz/quiz/index.php/Quiz/index
+---
+2017/12/25 10:23:56 [warning] [application] Failed to set unsafe attribute "scenario" of "QuizForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (80)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/25 10:24:12 [warning] [application] Failed to set unsafe attribute "scenario" of "QuizForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (80)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/25 10:27:50 [warning] [application] Failed to set unsafe attribute "scenario" of "QuizForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (81)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/25 10:28:06 [warning] [application] Failed to set unsafe attribute "scenario" of "QuizForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (81)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/25 10:28:56 [error] [php] Undefined index: select_employee (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php:78)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): QuizController->runAction()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): QuizController->runActionWithFilters()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): QuizController->run()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/quiz/quiz/index.php/Quiz/save
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (78)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/25 10:29:19 [error] [php] Undefined index: select_employee (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php:78)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): QuizController->runAction()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): QuizController->runActionWithFilters()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): QuizController->run()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/quiz/quiz/index.php/Quiz/save
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (78)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/25 10:29:22 [error] [php] Undefined index: select_employee (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php:78)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): QuizController->runAction()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): QuizController->runActionWithFilters()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): QuizController->run()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/quiz/quiz/index.php/Quiz/save
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (78)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/25 10:30:31 [warning] [application] Failed to set unsafe attribute "scenario" of "QuizForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (81)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/25 10:30:32 [error] [php] Undefined index: select_employee (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\QuizForm.php:101)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): QuizController->actionSave()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): QuizController->runAction()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): QuizController->runActionWithFilters()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): QuizController->run()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/quiz/quiz/index.php/Quiz/save
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\QuizForm.php (101)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\QuizForm.php (89)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (83)
+2017/12/25 10:31:29 [warning] [application] Failed to set unsafe attribute "scenario" of "QuizForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (81)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/25 10:31:54 [warning] [application] Failed to set unsafe attribute "scenario" of "QuizForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (81)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/25 10:34:03 [warning] [application] Failed to set unsafe attribute "scenario" of "QuizForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (81)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/25 10:34:04 [error] [php] Array to string conversion (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\QuizForm.php:112)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): QuizController->actionSave()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): QuizController->runAction()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): QuizController->runActionWithFilters()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): QuizController->run()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/quiz/quiz/index.php/Quiz/save
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\QuizForm.php (112)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\QuizForm.php (89)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (83)
+2017/12/25 10:34:18 [warning] [application] Failed to set unsafe attribute "scenario" of "QuizForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (81)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/25 10:34:19 [error] [php] A non well formed numeric value encountered (D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\db\CDbCommand.php:251)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\QuizForm.php(89): QuizForm->saveUser()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php(83): QuizForm->saveData()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): QuizController->actionSave()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): QuizController->runAction()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): QuizController->runActionWithFilters()
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): QuizController->run()
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/quiz/quiz/index.php/Quiz/save
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\QuizForm.php (147)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\QuizForm.php (89)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (83)
+2017/12/25 10:34:38 [warning] [application] Failed to set unsafe attribute "scenario" of "QuizForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (81)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/25 10:34:39 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1. The SQL statement executed was: insert into blog_test.quiz(
+						quiz_date, quiz_name,city_privileges,quiz_correct_rate,quiz_exams_id,quiz_exams_count,quiz_employee_id,quiz_start_dt) values (
+						:quiz_date, :quiz_name,:city_privileges,:quiz_correct_rate,:quiz_exams_id,:quiz_exams_count,1,2,5,6,:quiz_start_dt).
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\QuizForm.php (155)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\QuizForm.php (89)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (83)
+2017/12/25 10:34:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Cannot update.' in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\QuizForm.php:94
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php(83): QuizForm->saveData()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): QuizController->actionSave()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('save')
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('Quiz/save')
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/quiz/quiz/index.php/Quiz/save
+HTTP_REFERER=http://127.0.0.1/quiz/quiz/index.php/Quiz/save
+---
+2017/12/25 10:34:57 [warning] [application] Failed to set unsafe attribute "scenario" of "QuizForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (81)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/25 10:34:58 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1. The SQL statement executed was: insert into blog_test.quiz(
+						quiz_date, quiz_name,city_privileges,quiz_correct_rate,quiz_exams_id,quiz_exams_count,quiz_employee_id,quiz_start_dt) values (
+						:quiz_date, :quiz_name,:city_privileges,:quiz_correct_rate,:quiz_exams_id,:quiz_exams_count,1,2,5,6,:quiz_start_dt).
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\QuizForm.php (155)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\QuizForm.php (89)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (83)
+2017/12/25 10:34:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Cannot update.' in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\QuizForm.php:94
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php(83): QuizForm->saveData()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): QuizController->actionSave()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('save')
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('Quiz/save')
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/quiz/quiz/index.php/Quiz/save
+HTTP_REFERER=http://127.0.0.1/quiz/quiz/index.php/Quiz/save
+---
+2017/12/25 10:35:11 [warning] [application] Failed to set unsafe attribute "scenario" of "QuizForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (81)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/25 10:35:12 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1. The SQL statement executed was: insert into blog_test.quiz(
+						quiz_date, quiz_name,city_privileges,quiz_correct_rate,quiz_exams_id,quiz_exams_count,quiz_employee_id,quiz_start_dt) values (
+						:quiz_date, :quiz_name,:city_privileges,:quiz_correct_rate,:quiz_exams_id,:quiz_exams_count,2,3,6,:quiz_start_dt).
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\QuizForm.php (155)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\QuizForm.php (89)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (83)
+2017/12/25 10:35:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Cannot update.' in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\QuizForm.php:94
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php(83): QuizForm->saveData()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): QuizController->actionSave()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('save')
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('Quiz/save')
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/quiz/quiz/index.php/Quiz/save
+HTTP_REFERER=http://127.0.0.1/quiz/quiz/index.php/Quiz/new
+---
+2017/12/25 10:36:54 [warning] [application] Failed to set unsafe attribute "scenario" of "QuizForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (81)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/25 10:36:55 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY093]: Invalid parameter number: no parameters were bound. The SQL statement executed was: insert into blog_test.quiz(
+						quiz_date, quiz_name,city_privileges,quiz_correct_rate,quiz_exams_id,quiz_exams_count,quiz_employee_id,quiz_start_dt) values (
+						:quiz_date, :quiz_name,:city_privileges,:quiz_correct_rate,:quiz_exams_id,:quiz_exams_count,3,6,:quiz_start_dt).
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\QuizForm.php (155)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\QuizForm.php (89)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (83)
+2017/12/25 10:36:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Cannot update.' in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\QuizForm.php:94
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php(83): QuizForm->saveData()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): QuizController->actionSave()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('save')
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('Quiz/save')
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/quiz/quiz/index.php/Quiz/save
+HTTP_REFERER=http://127.0.0.1/quiz/quiz/index.php/Quiz/new
+---
+2017/12/25 10:37:33 [warning] [application] Failed to set unsafe attribute "scenario" of "QuizForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (81)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/25 10:37:34 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1. The SQL statement executed was: insert into blog_test.quiz(
+						quiz_date, quiz_name,city_privileges,quiz_correct_rate,quiz_exams_id,quiz_exams_count,quiz_employee_id,quiz_start_dt) values (
+						:quiz_date, :quiz_name,:city_privileges,:quiz_correct_rate,:quiz_exams_id,:quiz_exams_count,3,6,:quiz_start_dt).
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\QuizForm.php (155)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\QuizForm.php (89)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (83)
+2017/12/25 10:37:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Cannot update.' in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\QuizForm.php:94
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php(83): QuizForm->saveData()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): QuizController->actionSave()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('save')
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('Quiz/save')
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/quiz/quiz/index.php/Quiz/save
+HTTP_REFERER=http://127.0.0.1/quiz/quiz/index.php/Quiz/new
+---
+2017/12/25 10:37:47 [warning] [application] Failed to set unsafe attribute "scenario" of "QuizForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (81)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/25 10:37:48 [error] [php] A non well formed numeric value encountered (D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\db\CDbCommand.php:251)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\QuizForm.php(89): QuizForm->saveUser()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php(83): QuizForm->saveData()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): QuizController->actionSave()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): QuizController->runAction()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): QuizController->runActionWithFilters()
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): QuizController->run()
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/quiz/quiz/index.php/Quiz/save
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\QuizForm.php (147)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\QuizForm.php (89)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (83)
+2017/12/25 10:42:12 [warning] [application] Failed to set unsafe attribute "scenario" of "QuizForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (81)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/25 10:42:13 [error] [php] A non well formed numeric value encountered (D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\db\CDbCommand.php:251)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\QuizForm.php(89): QuizForm->saveUser()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php(83): QuizForm->saveData()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): QuizController->actionSave()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): QuizController->runAction()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): QuizController->runActionWithFilters()
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): QuizController->run()
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/quiz/quiz/index.php/Quiz/save
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\QuizForm.php (147)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\QuizForm.php (89)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (83)
+2017/12/25 10:44:01 [warning] [application] Failed to set unsafe attribute "scenario" of "QuizForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (81)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/25 10:44:02 [error] [php] A non well formed numeric value encountered (D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\db\CDbCommand.php:249)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\QuizForm.php(89): QuizForm->saveUser()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php(83): QuizForm->saveData()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): QuizController->actionSave()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): QuizController->runAction()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): QuizController->runActionWithFilters()
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): QuizController->run()
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/quiz/quiz/index.php/Quiz/save
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\QuizForm.php (147)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\QuizForm.php (89)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (83)
+2017/12/25 10:45:10 [warning] [application] Failed to set unsafe attribute "scenario" of "QuizForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (81)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/25 10:45:11 [error] [php] A non well formed numeric value encountered (D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\db\CDbCommand.php:251)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\QuizForm.php(89): QuizForm->saveUser()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php(83): QuizForm->saveData()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): QuizController->actionSave()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): QuizController->runAction()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): QuizController->runActionWithFilters()
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): QuizController->run()
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/quiz/quiz/index.php/Quiz/save
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\QuizForm.php (147)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\QuizForm.php (89)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (83)
+2017/12/25 10:47:59 [error] [php] Undefined index: select_employee (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php:80)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): QuizController->runAction()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): QuizController->runActionWithFilters()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): QuizController->run()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/quiz/quiz/index.php/Quiz/save
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (80)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/25 10:51:46 [warning] [application] Failed to set unsafe attribute "scenario" of "QuizForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (83)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/25 10:51:47 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined. The SQL statement executed was: insert into blog_test.quiz(
+						quiz_date, quiz_name,city_privileges,quiz_correct_rate,quiz_exams_id,quiz_exams_count,quiz_employee_id,quiz_start_dt) values (
+						:quiz_date, :quiz_name,:city_privileges,:quiz_correct_rate,:quiz_exams_id,:quiz_exams_count,:select_employee,:quiz_start_dt).
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\QuizForm.php (154)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\QuizForm.php (89)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (85)
+2017/12/25 10:51:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Cannot update.' in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\QuizForm.php:94
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php(85): QuizForm->saveData()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): QuizController->actionSave()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('save')
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('Quiz/save')
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/quiz/quiz/index.php/Quiz/save
+HTTP_REFERER=http://127.0.0.1/quiz/quiz/index.php/Quiz/new
+---
+2017/12/25 10:52:02 [warning] [application] Failed to set unsafe attribute "scenario" of "QuizForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (83)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/25 10:56:30 [warning] [application] Failed to set unsafe attribute "scenario" of "QuizForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (82)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/25 10:57:01 [warning] [application] Failed to set unsafe attribute "scenario" of "QuizForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (82)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/25 10:57:53 [warning] [application] Failed to set unsafe attribute "scenario" of "QuizForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (82)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/25 10:58:56 [warning] [application] Failed to set unsafe attribute "scenario" of "QuizForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (81)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/25 11:04:45 [warning] [application] Failed to set unsafe attribute "scenario" of "QuizForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (84)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/25 11:04:56 [warning] [application] Failed to set unsafe attribute "scenario" of "QuizForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (84)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/25 11:05:34 [warning] [application] Failed to set unsafe attribute "scenario" of "QuizForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (84)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/25 11:06:16 [warning] [application] Failed to set unsafe attribute "scenario" of "QuizForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (84)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/25 11:06:38 [warning] [application] Failed to set unsafe attribute "scenario" of "QuizForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (84)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/25 11:07:00 [error] [php] Undefined index: id (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestStartList.php:77)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): TestStartController->runAction()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): TestStartController->runActionWithFilters()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): TestStartController->run()
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/quiz/quiz/index.php/TestStart/index
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestStartList.php (77)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestStartController.php (31)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/25 11:12:38 [warning] [application] Failed to set unsafe attribute "scenario" of "QuizForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (84)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/25 11:12:51 [warning] [application] Failed to set unsafe attribute "scenario" of "QuizForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (84)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/25 11:13:44 [warning] [application] Failed to set unsafe attribute "scenario" of "ExamsForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php (49)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/25 11:13:44 [warning] [application] Failed to set unsafe attribute "id" of "ExamsForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php (49)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/25 11:13:44 [warning] [application] Failed to set unsafe attribute "detail" of "ExamsForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php (49)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/25 11:14:13 [warning] [application] Failed to set unsafe attribute "scenario" of "ExamsForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php (49)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/25 11:14:13 [warning] [application] Failed to set unsafe attribute "id" of "ExamsForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php (49)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/25 11:14:13 [warning] [application] Failed to set unsafe attribute "detail" of "ExamsForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php (49)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/25 11:15:46 [error] [exception.CException] exception 'CException' with message '属性 "TestSearchForm.quiz_start_dt" 未被定义.' in D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\helpers\CHtml.php(2158): CComponent->__get('quiz_start_dt')
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\helpers\CHtml.php(1887): CHtml::resolveValue(Object(TestSearchForm), 'quiz_start_dt')
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\helpers\TbHtml.php(2688): CHtml::activeInputField('text', Object(TestSearchForm), 'quiz_start_dt', Array)
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\helpers\TbHtml.php(1789): TbHtml::activeTextInputField('text', Object(TestSearchForm), 'quiz_start_dt', Array)
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\helpers\TbHtml.php(2563): TbHtml::activeTextField(Object(TestSearchForm), 'quiz_start_dt', Array)
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\widgets\TbActiveForm.php(443): TbHtml::createActiveInput('textField', Object(TestSearchForm), 'quiz_start_dt', Array, Array)
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\widgets\TbActiveForm.php(187): TbActiveForm->createInput('textField', Object(TestSearchForm), 'quiz_start_dt', Array)
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\TestSearch\form.php(85): TbActiveForm->textField(Object(TestSearchForm), 'quiz_start_dt', Array)
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(127): require('D:\\phpstudy\\PHP...')
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\\phpstudy\\PHP...', Array, true)
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(870): CBaseController->renderFile('D:\\phpstudy\\PHP...', Array, true)
+#11 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(783): CController->renderPartial('form', Array, true)
+#12 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestSearchController.php(46): CController->render('form', Array)
+#13 [internal function]: TestSearchController->actionView('23')
+#14 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(TestSearchController), Array)
+#15 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(TestSearchController), Object(ReflectionMethod), Array)
+#16 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#17 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#18 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('view')
+#20 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('TestSearch/view')
+#21 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#22 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#23 {main}
+REQUEST_URI=/quiz/quiz/index.php/TestSearch/view?index=23
+HTTP_REFERER=http://127.0.0.1/quiz/quiz/index.php/TestSearch/index
+---
+2017/12/25 11:15:58 [error] [php] Undefined index: id (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestStartList.php:77)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): TestStartController->runAction()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): TestStartController->runActionWithFilters()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): TestStartController->run()
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/quiz/quiz/index.php/TestStart/index
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestStartList.php (77)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestStartController.php (31)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/25 11:16:10 [error] [php] Undefined index: id (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestStartList.php:77)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): TestStartController->runAction()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): TestStartController->runActionWithFilters()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): TestStartController->run()
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/quiz/quiz/index.php/TestStart/index
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestStartList.php (77)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestStartController.php (31)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/25 11:36:36 [error] [exception.CException] exception 'CException' with message '属性 "TestSearchForm.quiz_start_dt" 未被定义.' in D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\helpers\CHtml.php(2158): CComponent->__get('quiz_start_dt')
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\helpers\CHtml.php(1887): CHtml::resolveValue(Object(TestSearchForm), 'quiz_start_dt')
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\helpers\TbHtml.php(2688): CHtml::activeInputField('text', Object(TestSearchForm), 'quiz_start_dt', Array)
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\helpers\TbHtml.php(1789): TbHtml::activeTextInputField('text', Object(TestSearchForm), 'quiz_start_dt', Array)
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\helpers\TbHtml.php(2563): TbHtml::activeTextField(Object(TestSearchForm), 'quiz_start_dt', Array)
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\widgets\TbActiveForm.php(443): TbHtml::createActiveInput('textField', Object(TestSearchForm), 'quiz_start_dt', Array, Array)
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\widgets\TbActiveForm.php(187): TbActiveForm->createInput('textField', Object(TestSearchForm), 'quiz_start_dt', Array)
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\TestSearch\form.php(85): TbActiveForm->textField(Object(TestSearchForm), 'quiz_start_dt', Array)
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(127): require('D:\\phpstudy\\PHP...')
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\\phpstudy\\PHP...', Array, true)
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(870): CBaseController->renderFile('D:\\phpstudy\\PHP...', Array, true)
+#11 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(783): CController->renderPartial('form', Array, true)
+#12 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestSearchController.php(46): CController->render('form', Array)
+#13 [internal function]: TestSearchController->actionView('30')
+#14 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(TestSearchController), Array)
+#15 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(TestSearchController), Object(ReflectionMethod), Array)
+#16 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#17 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#18 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('view')
+#20 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('TestSearch/view')
+#21 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#22 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#23 {main}
+REQUEST_URI=/quiz/quiz/index.php/TestSearch/view?index=30
+HTTP_REFERER=http://127.0.0.1/quiz/quiz/index.php/TestSearch/index
+---
+2017/12/25 11:42:07 [error] [exception.CException] exception 'CException' with message '属性 "TestSearchForm.quiz_start_dt" 未被定义.' in D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\helpers\CHtml.php(2158): CComponent->__get('quiz_start_dt')
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\helpers\CHtml.php(1887): CHtml::resolveValue(Object(TestSearchForm), 'quiz_start_dt')
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\helpers\TbHtml.php(2688): CHtml::activeInputField('text', Object(TestSearchForm), 'quiz_start_dt', Array)
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\helpers\TbHtml.php(1789): TbHtml::activeTextInputField('text', Object(TestSearchForm), 'quiz_start_dt', Array)
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\helpers\TbHtml.php(2563): TbHtml::activeTextField(Object(TestSearchForm), 'quiz_start_dt', Array)
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\widgets\TbActiveForm.php(443): TbHtml::createActiveInput('textField', Object(TestSearchForm), 'quiz_start_dt', Array, Array)
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\widgets\TbActiveForm.php(187): TbActiveForm->createInput('textField', Object(TestSearchForm), 'quiz_start_dt', Array)
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\TestSearch\form.php(85): TbActiveForm->textField(Object(TestSearchForm), 'quiz_start_dt', Array)
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(127): require('D:\\phpstudy\\PHP...')
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\\phpstudy\\PHP...', Array, true)
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(870): CBaseController->renderFile('D:\\phpstudy\\PHP...', Array, true)
+#11 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(783): CController->renderPartial('form', Array, true)
+#12 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestSearchController.php(46): CController->render('form', Array)
+#13 [internal function]: TestSearchController->actionView('30')
+#14 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(TestSearchController), Array)
+#15 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(TestSearchController), Object(ReflectionMethod), Array)
+#16 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#17 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#18 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('view')
+#20 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('TestSearch/view')
+#21 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#22 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#23 {main}
+REQUEST_URI=/quiz/quiz/index.php/TestSearch/view?index=30
+HTTP_REFERER=http://127.0.0.1/quiz/quiz/index.php/TestSearch/index
+---
+2017/12/25 11:42:34 [error] [exception.CException] exception 'CException' with message '属性 "TestSearchForm.quiz_start_dt" 未被定义.' in D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\helpers\CHtml.php(2158): CComponent->__get('quiz_start_dt')
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\helpers\CHtml.php(1887): CHtml::resolveValue(Object(TestSearchForm), 'quiz_start_dt')
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\helpers\TbHtml.php(2688): CHtml::activeInputField('text', Object(TestSearchForm), 'quiz_start_dt', Array)
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\helpers\TbHtml.php(1789): TbHtml::activeTextInputField('text', Object(TestSearchForm), 'quiz_start_dt', Array)
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\helpers\TbHtml.php(2563): TbHtml::activeTextField(Object(TestSearchForm), 'quiz_start_dt', Array)
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\widgets\TbActiveForm.php(443): TbHtml::createActiveInput('textField', Object(TestSearchForm), 'quiz_start_dt', Array, Array)
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\widgets\TbActiveForm.php(187): TbActiveForm->createInput('textField', Object(TestSearchForm), 'quiz_start_dt', Array)
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\TestSearch\form.php(85): TbActiveForm->textField(Object(TestSearchForm), 'quiz_start_dt', Array)
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(127): require('D:\\phpstudy\\PHP...')
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\\phpstudy\\PHP...', Array, true)
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(870): CBaseController->renderFile('D:\\phpstudy\\PHP...', Array, true)
+#11 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(783): CController->renderPartial('form', Array, true)
+#12 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestSearchController.php(46): CController->render('form', Array)
+#13 [internal function]: TestSearchController->actionView('34')
+#14 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(TestSearchController), Array)
+#15 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(TestSearchController), Object(ReflectionMethod), Array)
+#16 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#17 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#18 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('view')
+#20 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('TestSearch/view')
+#21 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#22 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#23 {main}
+REQUEST_URI=/quiz/quiz/index.php/TestSearch/view?index=34
+HTTP_REFERER=http://127.0.0.1/quiz/quiz/index.php/TestSearch
+---
+2017/12/25 11:43:29 [error] [exception.CException] exception 'CException' with message '属性 "TestSearchForm.count_import" 未被定义.' in D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\TestSearch\form.php(96): CComponent->__get('count_import')
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(127): require('D:\\phpstudy\\PHP...')
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\\phpstudy\\PHP...', Array, true)
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(870): CBaseController->renderFile('D:\\phpstudy\\PHP...', Array, true)
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(783): CController->renderPartial('form', Array, true)
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestSearchController.php(46): CController->render('form', Array)
+#6 [internal function]: TestSearchController->actionView('34')
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(TestSearchController), Array)
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(TestSearchController), Object(ReflectionMethod), Array)
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#11 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('view')
+#13 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('TestSearch/view')
+#14 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/quiz/quiz/index.php/TestSearch/view?index=34
+HTTP_REFERER=http://127.0.0.1/quiz/quiz/index.php/TestSearch
+---
+2017/12/25 11:44:11 [error] [exception.CException] exception 'CException' with message '属性 "TestSearchForm.quiz_employee_id" 未被定义.' in D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\helpers\CHtml.php(2158): CComponent->__get('quiz_employee_i...')
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\helpers\CHtml.php(1887): CHtml::resolveValue(Object(TestSearchForm), 'quiz_employee_i...')
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\helpers\TbHtml.php(2688): CHtml::activeInputField('text', Object(TestSearchForm), 'quiz_employee_i...', Array)
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\helpers\TbHtml.php(1789): TbHtml::activeTextInputField('text', Object(TestSearchForm), 'quiz_employee_i...', Array)
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\helpers\TbHtml.php(2563): TbHtml::activeTextField(Object(TestSearchForm), 'quiz_employee_i...', Array)
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\widgets\TbActiveForm.php(443): TbHtml::createActiveInput('textField', Object(TestSearchForm), 'quiz_employee_i...', Array, Array)
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\widgets\TbActiveForm.php(187): TbActiveForm->createInput('textField', Object(TestSearchForm), 'quiz_employee_i...', Array)
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\TestSearch\form.php(103): TbActiveForm->textField(Object(TestSearchForm), 'quiz_employee_i...', Array)
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(127): require('D:\\phpstudy\\PHP...')
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\\phpstudy\\PHP...', Array, true)
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(870): CBaseController->renderFile('D:\\phpstudy\\PHP...', Array, true)
+#11 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(783): CController->renderPartial('form', Array, true)
+#12 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestSearchController.php(46): CController->render('form', Array)
+#13 [internal function]: TestSearchController->actionView('34')
+#14 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(TestSearchController), Array)
+#15 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(TestSearchController), Object(ReflectionMethod), Array)
+#16 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#17 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#18 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('view')
+#20 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('TestSearch/view')
+#21 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#22 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#23 {main}
+REQUEST_URI=/quiz/quiz/index.php/TestSearch/view?index=34
+HTTP_REFERER=http://127.0.0.1/quiz/quiz/index.php/TestSearch
+---
+2017/12/25 11:44:31 [error] [exception.CException] exception 'CException' with message '属性 "TestSearchForm.quiz_exams_id" 未被定义.' in D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\helpers\CHtml.php(2158): CComponent->__get('quiz_exams_id')
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\helpers\CHtml.php(1887): CHtml::resolveValue(Object(TestSearchForm), 'quiz_exams_id')
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\helpers\TbHtml.php(2688): CHtml::activeInputField('text', Object(TestSearchForm), 'quiz_exams_id', Array)
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\helpers\TbHtml.php(1789): TbHtml::activeTextInputField('text', Object(TestSearchForm), 'quiz_exams_id', Array)
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\helpers\TbHtml.php(2563): TbHtml::activeTextField(Object(TestSearchForm), 'quiz_exams_id', Array)
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\widgets\TbActiveForm.php(443): TbHtml::createActiveInput('textField', Object(TestSearchForm), 'quiz_exams_id', Array, Array)
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\widgets\TbActiveForm.php(187): TbActiveForm->createInput('textField', Object(TestSearchForm), 'quiz_exams_id', Array)
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\TestSearch\form.php(98): TbActiveForm->textField(Object(TestSearchForm), 'quiz_exams_id', Array)
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(127): require('D:\\phpstudy\\PHP...')
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\\phpstudy\\PHP...', Array, true)
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(870): CBaseController->renderFile('D:\\phpstudy\\PHP...', Array, true)
+#11 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(783): CController->renderPartial('form', Array, true)
+#12 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestSearchController.php(46): CController->render('form', Array)
+#13 [internal function]: TestSearchController->actionView('34')
+#14 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(TestSearchController), Array)
+#15 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(TestSearchController), Object(ReflectionMethod), Array)
+#16 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#17 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#18 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('view')
+#20 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('TestSearch/view')
+#21 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#22 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#23 {main}
+REQUEST_URI=/quiz/quiz/index.php/TestSearch/view?index=34
+HTTP_REFERER=http://127.0.0.1/quiz/quiz/index.php/TestSearch
+---
+2017/12/25 11:45:53 [error] [exception.CException] exception 'CException' with message '属性 "TestSearchForm.quiz_exams_id" 未被定义.' in D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\helpers\CHtml.php(2158): CComponent->__get('quiz_exams_id')
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\helpers\CHtml.php(1887): CHtml::resolveValue(Object(TestSearchForm), 'quiz_exams_id')
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\helpers\TbHtml.php(2688): CHtml::activeInputField('text', Object(TestSearchForm), 'quiz_exams_id', Array)
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\helpers\TbHtml.php(1789): TbHtml::activeTextInputField('text', Object(TestSearchForm), 'quiz_exams_id', Array)
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\helpers\TbHtml.php(2563): TbHtml::activeTextField(Object(TestSearchForm), 'quiz_exams_id', Array)
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\widgets\TbActiveForm.php(443): TbHtml::createActiveInput('textField', Object(TestSearchForm), 'quiz_exams_id', Array, Array)
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\widgets\TbActiveForm.php(187): TbActiveForm->createInput('textField', Object(TestSearchForm), 'quiz_exams_id', Array)
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\TestSearch\form.php(98): TbActiveForm->textField(Object(TestSearchForm), 'quiz_exams_id', Array)
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(127): require('D:\\phpstudy\\PHP...')
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\\phpstudy\\PHP...', Array, true)
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(870): CBaseController->renderFile('D:\\phpstudy\\PHP...', Array, true)
+#11 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(783): CController->renderPartial('form', Array, true)
+#12 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestSearchController.php(46): CController->render('form', Array)
+#13 [internal function]: TestSearchController->actionView('34')
+#14 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(TestSearchController), Array)
+#15 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(TestSearchController), Object(ReflectionMethod), Array)
+#16 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#17 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#18 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('view')
+#20 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('TestSearch/view')
+#21 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#22 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#23 {main}
+REQUEST_URI=/quiz/quiz/index.php/TestSearch/view?index=34
+HTTP_REFERER=http://127.0.0.1/quiz/quiz/index.php/TestSearch
+---
+2017/12/25 11:56:06 [warning] [application] Failed to set unsafe attribute "scenario" of "QuizForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (84)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/25 11:59:54 [error] [php] Undefined index: id (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestStartList.php:76)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): TestStartController->runAction()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): TestStartController->runActionWithFilters()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): TestStartController->run()
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/quiz/quiz/index.php/TestStart/index
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestStartList.php (76)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestStartController.php (31)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/25 12:03:36 [error] [php] Array to string conversion (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestSearchForm.php:57)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): TestSearchController->runAction()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): TestSearchController->runActionWithFilters()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): TestSearchController->run()
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/quiz/quiz/index.php/TestSearch/view?index=34
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestSearchForm.php (57)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestSearchController.php (32)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/25 12:03:49 [error] [php] Array to string conversion (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestSearchForm.php:57)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): TestSearchController->runAction()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): TestSearchController->runActionWithFilters()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): TestSearchController->run()
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/quiz/quiz/index.php/TestSearch/view?index=34
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestSearchForm.php (57)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestSearchController.php (32)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/25 12:03:51 [error] [php] Array to string conversion (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestSearchForm.php:57)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): TestSearchController->runAction()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): TestSearchController->runActionWithFilters()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): TestSearchController->run()
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/quiz/quiz/index.php/TestSearch/view?index=34
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestSearchForm.php (57)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestSearchController.php (32)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/25 12:04:38 [error] [php] Array to string conversion (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestSearchForm.php:57)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): TestSearchController->runAction()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): TestSearchController->runActionWithFilters()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): TestSearchController->run()
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/quiz/quiz/index.php/TestSearch/view?index=34
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestSearchForm.php (57)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestSearchController.php (32)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/25 12:05:00 [error] [php] Array to string conversion (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestSearchForm.php:57)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): TestSearchController->runAction()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): TestSearchController->runActionWithFilters()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): TestSearchController->run()
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/quiz/quiz/index.php/TestSearch/view?index=34
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestSearchForm.php (57)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestSearchController.php (32)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/25 12:05:28 [error] [php] Array to string conversion (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestSearchForm.php:57)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): TestSearchController->runAction()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): TestSearchController->runActionWithFilters()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): TestSearchController->run()
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/quiz/quiz/index.php/TestSearch/view?index=34
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestSearchForm.php (57)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestSearchController.php (32)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/25 12:05:35 [error] [php] Array to string conversion (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestSearchForm.php:57)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): TestSearchController->runAction()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): TestSearchController->runActionWithFilters()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): TestSearchController->run()
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/quiz/quiz/index.php/TestSearch/view?index=34
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestSearchForm.php (57)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestSearchController.php (32)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/25 12:05:46 [error] [php] Array to string conversion (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestSearchForm.php:57)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): TestSearchController->runAction()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): TestSearchController->runActionWithFilters()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): TestSearchController->run()
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/quiz/quiz/index.php/TestSearch/view?index=34
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestSearchForm.php (57)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestSearchController.php (32)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/25 12:05:51 [error] [php] Array to string conversion (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestSearchForm.php:57)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): TestSearchController->runAction()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): TestSearchController->runActionWithFilters()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): TestSearchController->run()
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/quiz/quiz/index.php/TestSearch/view?index=34
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestSearchForm.php (57)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestSearchController.php (32)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/25 12:46:04 [error] [php] Undefined index: id (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestStartList.php:76)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): TestStartController->runAction()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): TestStartController->runActionWithFilters()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): TestStartController->run()
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/quiz/quiz/index.php/TestStart/index
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestStartList.php (76)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestStartController.php (31)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/25 13:08:18 [error] [php] Array to string conversion (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestSearchForm.php:58)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): TestSearchController->runAction()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): TestSearchController->runActionWithFilters()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): TestSearchController->run()
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/quiz/quiz/index.php/TestSearch/view?index=26
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestSearchForm.php (58)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestSearchController.php (32)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/25 14:03:54 [error] [php] Undefined index: id (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestStartList.php:76)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): TestStartController->runAction()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): TestStartController->runActionWithFilters()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): TestStartController->run()
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/quiz/quiz/index.php/TestStart/index
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestStartList.php (76)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestStartController.php (31)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/25 14:05:16 [error] [php] Undefined index: quiz_employee_id (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestSearchForm.php:58)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): TestSearchController->runAction()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): TestSearchController->runActionWithFilters()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): TestSearchController->run()
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/quiz/quiz/index.php/TestSearch/view?index=28
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestSearchForm.php (58)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestSearchController.php (32)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/25 14:06:27 [error] [php] Array to string conversion (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestSearchForm.php:59)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): TestSearchController->runAction()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): TestSearchController->runActionWithFilters()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): TestSearchController->run()
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/quiz/quiz/index.php/TestSearch/view?index=28
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestSearchForm.php (59)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestSearchController.php (32)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/25 14:06:42 [error] [php] Array to string conversion (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestSearchForm.php:59)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): TestSearchController->runAction()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): TestSearchController->runActionWithFilters()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): TestSearchController->run()
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/quiz/quiz/index.php/TestSearch/view?index=28
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestSearchForm.php (59)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestSearchController.php (32)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/25 14:16:44 [error] [php] get_class() expects parameter 1 to be object, string given (D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\helpers\CHtml.php:2123)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\helpers\CHtml.php(1367): resolveNameID()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\helpers\TbHtml.php(1908): activeTextArea()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\helpers\TbHtml.php(2577): activeTextArea()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\widgets\TbActiveForm.php(443): createActiveInput()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\widgets\TbActiveForm.php(277): TbActiveForm->createInput()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\TestSearch\form.php(100): TbActiveForm->textArea()
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(127): require()
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(96): TestSearchController->renderInternal()
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(870): TestSearchController->renderFile()
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(783): TestSearchController->renderPartial()
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestSearchController.php(35): TestSearchController->render()
+#11 unknown(0): TestSearchController->actionView()
+#12 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#13 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#14 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#15 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): TestSearchController->runAction()
+#16 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): TestSearchController->runActionWithFilters()
+#17 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): TestSearchController->run()
+#18 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#19 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#20 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/quiz/quiz/index.php/TestSearch/view?index=28
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\helpers\TbHtml.php (1908)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\helpers\TbHtml.php (2577)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\widgets\TbActiveForm.php (443)
+2017/12/25 14:31:15 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: select * from blog_test.employee_info where id IN ().
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestSearchForm.php (59)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestSearchController.php (32)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/25 14:31:15 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: select * from blog_test.employee_info where id IN ()' in D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestSearchForm.php(59): CDbCommand->queryAll()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestSearchController.php(32): TestSearchForm->retrieveData('29')
+#3 [internal function]: TestSearchController->actionView('29')
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(TestSearchController), Array)
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(TestSearchController), Object(ReflectionMethod), Array)
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('view')
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('TestSearch/view')
+#11 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/quiz/quiz/index.php/TestSearch/view?index=29
+HTTP_REFERER=http://127.0.0.1/quiz/quiz/index.php/TestSearch/index
+---
+2017/12/25 14:31:27 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: select * from blog_test.employee_info where id IN ().
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestSearchForm.php (59)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestSearchController.php (32)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/25 14:31:27 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: select * from blog_test.employee_info where id IN ()' in D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestSearchForm.php(59): CDbCommand->queryAll()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestSearchController.php(32): TestSearchForm->retrieveData('29')
+#3 [internal function]: TestSearchController->actionView('29')
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(TestSearchController), Array)
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(TestSearchController), Object(ReflectionMethod), Array)
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('view')
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('TestSearch/view')
+#11 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/quiz/quiz/index.php/TestSearch/view?index=29
+HTTP_REFERER=http://127.0.0.1/quiz/quiz/index.php/TestSearch/index
+---
+2017/12/25 14:31:29 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: select * from blog_test.employee_info where id IN ().
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestSearchForm.php (59)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestSearchController.php (32)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/25 14:31:29 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: select * from blog_test.employee_info where id IN ()' in D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestSearchForm.php(59): CDbCommand->queryAll()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestSearchController.php(32): TestSearchForm->retrieveData('29')
+#3 [internal function]: TestSearchController->actionView('29')
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(TestSearchController), Array)
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(TestSearchController), Object(ReflectionMethod), Array)
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('view')
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('TestSearch/view')
+#11 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/quiz/quiz/index.php/TestSearch/view?index=29
+HTTP_REFERER=http://127.0.0.1/quiz/quiz/index.php/TestSearch/index
+---
+2017/12/25 14:31:43 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: select * from blog_test.employee_info where id IN ().
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestSearchForm.php (59)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestSearchController.php (32)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/25 14:31:43 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: select * from blog_test.employee_info where id IN ()' in D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestSearchForm.php(59): CDbCommand->queryAll()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestSearchController.php(32): TestSearchForm->retrieveData('29')
+#3 [internal function]: TestSearchController->actionView('29')
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(TestSearchController), Array)
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(TestSearchController), Object(ReflectionMethod), Array)
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('view')
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('TestSearch/view')
+#11 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/quiz/quiz/index.php/TestSearch/view?index=29
+HTTP_REFERER=http://127.0.0.1/quiz/quiz/index.php/TestSearch/index
+---
+2017/12/25 14:31:45 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: select * from blog_test.employee_info where id IN ().
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestSearchForm.php (59)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestSearchController.php (32)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/25 14:31:45 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: select * from blog_test.employee_info where id IN ()' in D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestSearchForm.php(59): CDbCommand->queryAll()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestSearchController.php(32): TestSearchForm->retrieveData('29')
+#3 [internal function]: TestSearchController->actionView('29')
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(TestSearchController), Array)
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(TestSearchController), Object(ReflectionMethod), Array)
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('view')
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('TestSearch/view')
+#11 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/quiz/quiz/index.php/TestSearch/view?index=29
+HTTP_REFERER=http://127.0.0.1/quiz/quiz/index.php/TestSearch/index
+---
+2017/12/25 14:31:46 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: select * from blog_test.employee_info where id IN ().
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestSearchForm.php (59)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestSearchController.php (32)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/25 14:31:46 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: select * from blog_test.employee_info where id IN ()' in D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestSearchForm.php(59): CDbCommand->queryAll()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestSearchController.php(32): TestSearchForm->retrieveData('29')
+#3 [internal function]: TestSearchController->actionView('29')
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(TestSearchController), Array)
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(TestSearchController), Object(ReflectionMethod), Array)
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('view')
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('TestSearch/view')
+#11 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/quiz/quiz/index.php/TestSearch/view?index=29
+HTTP_REFERER=http://127.0.0.1/quiz/quiz/index.php/TestSearch/index
+---
+2017/12/25 14:31:48 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: select * from blog_test.employee_info where id IN ().
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestSearchForm.php (59)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestSearchController.php (32)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/25 14:31:48 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: select * from blog_test.employee_info where id IN ()' in D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestSearchForm.php(59): CDbCommand->queryAll()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestSearchController.php(32): TestSearchForm->retrieveData('29')
+#3 [internal function]: TestSearchController->actionView('29')
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(TestSearchController), Array)
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(TestSearchController), Object(ReflectionMethod), Array)
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('view')
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('TestSearch/view')
+#11 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/quiz/quiz/index.php/TestSearch/view?index=29
+HTTP_REFERER=http://127.0.0.1/quiz/quiz/index.php/TestSearch/index
+---
+2017/12/25 14:31:49 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: select * from blog_test.employee_info where id IN ().
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestSearchForm.php (59)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestSearchController.php (32)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/25 14:31:49 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: select * from blog_test.employee_info where id IN ()' in D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestSearchForm.php(59): CDbCommand->queryAll()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestSearchController.php(32): TestSearchForm->retrieveData('29')
+#3 [internal function]: TestSearchController->actionView('29')
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(TestSearchController), Array)
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(TestSearchController), Object(ReflectionMethod), Array)
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('view')
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('TestSearch/view')
+#11 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/quiz/quiz/index.php/TestSearch/view?index=29
+HTTP_REFERER=http://127.0.0.1/quiz/quiz/index.php/TestSearch/index
+---
+2017/12/25 14:31:50 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: select * from blog_test.employee_info where id IN ().
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestSearchForm.php (59)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestSearchController.php (32)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/25 14:31:50 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: select * from blog_test.employee_info where id IN ()' in D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestSearchForm.php(59): CDbCommand->queryAll()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestSearchController.php(32): TestSearchForm->retrieveData('29')
+#3 [internal function]: TestSearchController->actionView('29')
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(TestSearchController), Array)
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(TestSearchController), Object(ReflectionMethod), Array)
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('view')
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('TestSearch/view')
+#11 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/quiz/quiz/index.php/TestSearch/view?index=29
+HTTP_REFERER=http://127.0.0.1/quiz/quiz/index.php/TestSearch/index
+---
+2017/12/25 14:36:47 [warning] [application] Failed to set unsafe attribute "scenario" of "QuizForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (84)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/25 14:37:07 [error] [php] Undefined index: id (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestStartList.php:76)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): TestStartController->runAction()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): TestStartController->runActionWithFilters()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): TestStartController->run()
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/quiz/quiz/index.php/TestStart/index
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestStartList.php (76)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestStartController.php (31)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)

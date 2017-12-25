@@ -31,8 +31,6 @@ Class TestStartController extends Controller
         $model->retrieveDataByPage($model->pageNum);
         $this->render('index', array('model' => $model));
     }
-
-
     //进入新增页面
     Public function actionNew()
     {

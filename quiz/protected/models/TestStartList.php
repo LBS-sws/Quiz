@@ -65,7 +65,6 @@ class TestStartList extends CListPageModel
         $sql = $sql1 . $clause . $order;
         $sql = $this->sqlWithPageCriteria($sql, $this->pageNum);
         $records = Yii::app()->db->createCommand($sql)->queryAll();
-
         // $list = array();
         $this->attr = array();
         if (count($records) > 0) {

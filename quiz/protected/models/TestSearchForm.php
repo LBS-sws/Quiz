@@ -4,8 +4,9 @@
  * User: Administrator
  * Date: 2017/12/20 0020
  * Time: 14:35
-
- */class TestSearchForm extends CFormModel
+ */
+header("Content-type: text/html; charset=utf-8");
+class TestSearchForm extends CFormModel
 {
     /* User Fields */
     public $id;
@@ -13,7 +14,9 @@
     public $quiz_date;
     public $quiz_name;
     Public $quiz_correct_rate;
-
+    Public $quiz_start_dt;
+    Public $quiz_employee_name;
+    Public $employee_name_show;
     //Public $scenario;
     /**
      * Declares customized attribute labels.
@@ -23,8 +26,9 @@
     public function attributeLabels()
     {
         return array(
+            'employee_name_show'=>Yii::t('quiz','employee_name_show'),
             'quiz_correct_rate'=>Yii::t('quiz','quiz_correct_rate'),
-            'quiz_exams_id'=>Yii::t('quiz','quiz_exams_id'),
+            'quiz_employee_name'=>Yii::t('quiz','quiz_employee_name'),
             'quiz_employee_id'=>Yii::t('quiz','quiz_employee_id'),
             'quiz_exams_count'=>Yii::t('quiz','quiz_exams_count'),
             'quiz_date'=>Yii::t('quiz','Question Name'),
@@ -32,7 +36,6 @@
             'quiz_name'=>Yii::t('quiz','quiz_name'),
             'city_privileges'=>Yii::t('quiz','city_privileges'),
             'quiz_start_dt'=>Yii::t('quiz','quiz_start_dt'),
-
         );
     }
 
@@ -43,18 +46,24 @@
     {
         return array(
             array('quiz_date','required'),
-            array('id,quiz_start_dt,quiz_name,quiz_correct_rate,quiz_exams_id,quiz_employee_id,quiz_exams_count,city_privileges','safe'),
+            array('id,quiz_start_dt,quiz_name,quiz_correct_rate,quiz_employee_name,quiz_employee_id,quiz_exams_count,city_privileges','safe'),
         );
-
     }
-
-    public function retrieveData($index)
+    Public function retrieveData($index)
     {
-
         $tableFuss=Yii::app()->params['jsonTableName'];
         $sql = "select * from blog$tableFuss.quiz where id=".$index."";
         $rows = Yii::app()->db->createCommand($sql)->queryAll();
-
+        $id_array_employee=$rows[0]['quiz_employee_id'];
+        if(!empty($id_array_employee)){
+            $employee_name="select * from blog$tableFuss.employee_info where id IN ($id_array_employee)";
+            $final_info = Yii::app()->db->createCommand($employee_name)->queryAll();
+            if(count($final_info)>0){
+                for($i=0;$i<count($final_info);$i++){
+                    $this->employee_name_show.='姓名:'.$final_info[$i]['employee_info_name']."\n";
+                }
+            }
+        }
         if (count($rows) > 0)
         {
             foreach ($rows as $row)
@@ -67,88 +76,8 @@
                 break;
             }
         }
-
-
         return true;
     }
-
-    public function saveData()
-    {    var_dump($this->count_import);
-        $connection = Yii::app()->db;
-        $transaction=$connection->beginTransaction();
-        try {
-            $this->saveUser($connection);
-            $transaction->commit();
-        }
-        catch(Exception $e) {
-            $transaction->rollback();
-            throw new CHttpException(404,'Cannot update.');
-        }
-    }
-
-    protected function saveUser(&$connection)
-    {
-
-
-        $tableFuss=Yii::app()->params['jsonTableName'];
-        $sql = '';
-        switch ($this->scenario) {
-            case 'delete':
-                $sql = "delete from blog$tableFuss.quiz where id = :id";
-                break;
-            case 'new':
-                $sql = "insert into blog$tableFuss.quiz(
-						quiz_date, quiz_name,city_privileges,quiz_correct_rate,quiz_exams_id,quiz_exams_count,quiz_employee_id,quiz_start_dt) values (
-						:quiz_date, :quiz_name,:city_privileges,:quiz_correct_rate,:quiz_exams_id,:quiz_exams_count,:quiz_employee_id,:quiz_start_dt)";
-                break;
-            case 'edit':
-                $sql = "update blog$tableFuss.quiz set
-					quiz_date = :quiz_date,
-					quiz_name = :quiz_name,
-					quiz_exams_count=:quiz_exams_count,
-					quiz_employee_id=:quiz_employee_id,
-					quiz_exams_id=:quiz_exams_id,
-					quiz_correct_rate=:quiz_correct_rate,
-					city_privileges=:city_privileges,
-					quiz_start_dt=:quiz_start_dt
-					where id = :id";
-                break;
-        }
-
-        $uid = Yii::app()->user->id;
-
-        $command=$connection->createCommand($sql);
-
-        if (strpos($sql,':id')!==false)
-            $command->bindParam(':id',$this->id,PDO::PARAM_INT);
-        if (strpos($sql,':quiz_date')!==false)
-            $command->bindParam(':quiz_date',$this->quiz_date,PDO::PARAM_STR);
-        if (strpos($sql,':quiz_name')!==false)
-            $command->bindParam(':quiz_name',$this->quiz_name,PDO::PARAM_STR);
-
-        if (strpos($sql,':quiz_start_dt')!==false) {
-            $quizDate = General::toMyDate($this->quiz_start_dt);
-            $command->bindParam(':quiz_start_dt',$quizDate,PDO::PARAM_STR);
-        }
-
-        if (strpos($sql,':quiz_exams_count')!==false)
-            $command->bindParam(':quiz_exams_count',$this->quiz_exams_count,PDO::PARAM_INT);
-        if (strpos($sql,':quiz_employee_id')!==false)
-            $command->bindParam(':quiz_employee_id',$this->quiz_employee_id,PDO::PARAM_STR);
-        if (strpos($sql,':quiz_exams_id')!==false)
-            $command->bindParam(':quiz_exams_id',$this->quiz_exams_id,PDO::PARAM_STR);
-        if (strpos($sql,':quiz_correct_rate')!==false)
-            $command->bindParam(':quiz_correct_rate',$this->quiz_correct_rate,PDO::PARAM_STR);
-        if (strpos($sql,':city_privileges')!==false)
-            $command->bindParam(':city_privileges',$this->city_privileges,PDO::PARAM_STR);
-
-        $command->execute();
-
-        if ($this->scenario=='new')
-            $this->id = Yii::app()->db->getLastInsertID();
-        return true;
-    }
-
     public function isOccupied($index) {
         $rtn = false;
         $sql = "select a.id from swo_service a where a.cust_type=".$index." limit 1";

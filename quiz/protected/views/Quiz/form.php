@@ -88,16 +88,16 @@ $this->pageTitle=Yii::app()->name . ' - Customer Type Form';
             </div>
 
 
-
+<!--
             <div class="form-group">
 
-                <?php echo $form->labelEx($model,'quiz_employee_id',array('class'=>"col-sm-2 control-label")); ?>
+                <?php /*echo $form->labelEx($model,'quiz_employee_id',array('class'=>"col-sm-2 control-label")); */?>
                 <div class="col-sm-5">
-                    <?php echo $form->textField($model, 'quiz_employee_id',
+                    <?php /*echo $form->textField($model, 'quiz_employee_id',
                         array('size'=>50,'maxlength'=>100,'readonly'=>($model->scenario=='view'))
-                    ); ?>
+                    ); */?>
                 </div>
-            </div>
+            </div>-->
 
             <div class="form-group">
                 <?php echo $form->labelEx($model,'quiz_exams_id',array('class'=>"col-sm-2 control-label")); ?>
@@ -165,21 +165,14 @@ $this->pageTitle=Yii::app()->name . ' - Customer Type Form';
                 .checkbox{display:inline-block;float:none; width:100px;}
             </style>
             <div class="form-group">
-                <?php echo $form->labelEx($model,'select_employee',array('class'=>"col-sm-2 control-label")); ?>
+                <?php echo $form->labelEx($model,'quiz_employee_id',array('class'=>"col-sm-2 control-label")); ?>
                 <div class="col-sm-5">
-                   <?php echo TbHtml::checkBoxList('select_employee',array('小张','小明','小赵'),Quiz::SelectReturn($model->id),
+                   <?php echo TbHtml::checkBoxList('quiz_employee_id',Quiz::EmployeeIdGet($model->id),Quiz::SelectReturn($model->id),
                        array('labelOptions'=>array('class'=>'labelForRadio',"checked"=>"checked")),''
                    ); ?>
                 </div>
             </div>
-            <div class="form-group">
-                <?php echo $form->labelEx($model,'select_employee',array('class'=>"col-sm-2 control-label")); ?>
-                <div class="col-sm-5">
-                    <?php echo TbHtml::checkBoxList('select_employee',array('1','2','3'),array('1'=>'测试1','2'=>'测试2','3'=>'测试3','4'=>'测试4'),
-                        array('labelOptions'=>array('class'=>'labelForRadio',"checked"=>"checked")),''
-                    ); ?>
-                </div>
-            </div>
+
 
           <div class="form-group">
                 <?php echo $form->labelEx($model,'quiz_exams_count',array('class'=>"col-sm-2 control-label")); ?>
