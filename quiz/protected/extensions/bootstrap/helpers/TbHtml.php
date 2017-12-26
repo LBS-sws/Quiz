@@ -1031,7 +1031,7 @@ class TbHtml extends CHtml // required in order to access the protected methods 
      * @param array $htmlOptions
      * @return string the generated drop down list.
      */
-    public static function dropDownList($name, $select, $data, $htmlOptions = array())
+    Public static function dropDownList($name, $select, $data, $htmlOptions = array())
     {
         $displaySize = TbArray::popValue('displaySize', $htmlOptions);
 

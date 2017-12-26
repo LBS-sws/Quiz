@@ -114,7 +114,7 @@ EOF;
 	}
 	
 	protected function sendReportLink($to, $cc, $param, $qid) {
-		$url = ($qid==0) ? '#' : $this->webroot.'/index.php/queue/download?index='.$qid;
+		$url = ($qid==0) ? '#' : $this->webroot.'/quiz.php/queue/download?index='.$qid;
 		$name = Yii::t('report',$param['RPT_DESC']).(isset($param['CITY_NAME'])?'-'.$param['CITY_NAME']:'');
 		$subject = $name.' ('.Yii::t('report','Date').':'.$param['REQ_DT'].')';
 		$message = str_replace('{url}',$url, Yii::t('report',"Please click <a href=\"{url}\" onClick=\"return popup(this,'Daily Report');\">here</a> to download the report."));
@@ -126,7 +126,7 @@ EOF;
 		$name = Yii::t('report',$param['RPT_DESC']).(isset($param['CITY_NAME'])?'-'.$param['CITY_NAME']:'');
 		$subject = $name.' ('.Yii::t('report','Date').':'.$param['REQ_DT'].')';
 
-		$url = ($qid==0) ? '#' : $this->webroot.'/index.php/queue/download?index='.$qid;
+		$url = ($qid==0) ? '#' : $this->webroot.'/quiz.php/queue/download?index='.$qid;
 		$msgall = Yii::t('report','Dear All');
 		$msgrpt = str_replace('Please','please',str_replace('{url}',$url, Yii::t('report',"Please click <a href=\"{url}\" onClick=\"return popup(this,'Daily Report');\">here</a> to download the report.")));
 
@@ -199,7 +199,7 @@ EOF;
 			$cnt = $command->execute();
 			$id = Yii::app()->db->getLastInsertID();
 		}
-		$url = ($id==0) ? '' : $this->webroot.'/index.php/feedback/edit?index='.$id;
+		$url = ($id==0) ? '' : $this->webroot.'/quiz.php/feedback/edit?index='.$id;
 		return $url;
 	}
 	

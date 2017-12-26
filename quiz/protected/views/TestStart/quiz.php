@@ -12,7 +12,7 @@ $this->pageTitle=Yii::app()->name . ' - Customer Type Form';
 
 <section class="content-header">
     <h1>
-        <strong><?php echo Yii::t('quiz','Quiz DataOrder'); ?></strong>
+        <strong><?php echo Yii::t('quiz','Quiz questions order'); ?></strong>
     </h1>
     <!--
         <ol class="breadcrumb">
@@ -26,12 +26,12 @@ $this->pageTitle=Yii::app()->name . ' - Customer Type Form';
 <section class="content">
     <div class="box"><div class="box-body">
             <div class="btn-group" role="group">
-               <!-- --><?php
-/*                if ($model->scenario!='new' && $model->scenario!='view') {
-                    echo TbHtml::button('<span class="fa fa-file-o"></span> '.Yii::t('misc','Add Another'), array(
-                        'submit'=>Yii::app()->createUrl('TestStart/new')));
-                }
-                */?>
+                <!-- --><?php
+                /*                if ($model->scenario!='new' && $model->scenario!='view') {
+                                    echo TbHtml::button('<span class="fa fa-file-o"></span> '.Yii::t('misc','Add Another'), array(
+                                        'submit'=>Yii::app()->createUrl('TestStart/new')));
+                                }
+                                */?>
                 <?php echo TbHtml::button('<span class="fa fa-reply"></span> '.Yii::t('misc','Back'), array(
                     'submit'=>Yii::app()->createUrl('TestStart/index')));
                 ?>
@@ -40,6 +40,7 @@ $this->pageTitle=Yii::app()->name . ' - Customer Type Form';
                         'submit'=>Yii::app()->createUrl('TestStart/save')));
                     ?>
                 <?php endif ?>
+
                 <?php if ($model->scenario=='edit'): ?>
                     <?php echo TbHtml::button('<span class="fa fa-remove"></span> '.Yii::t('misc','Delete'), array(
                             'name'=>'btnDelete','id'=>'btnDelete','data-toggle'=>'modal','data-target'=>'#removedialog',)
@@ -54,21 +55,19 @@ $this->pageTitle=Yii::app()->name . ' - Customer Type Form';
         <div class="box-body">
             <?php echo $form->hiddenField($model, 'scenario'); ?>
             <?php echo $form->hiddenField($model, 'id'); ?>
-           <!-- <script src="<?php /*echo Yii::app()->baseUrl;*/?>/js/jquery-1.3.2.min.js'"></script>-->
+            <!-- <script src="<?php /*echo Yii::app()->baseUrl;*/?>/js/jquery-1.3.2.min.js'"></script>-->
             <?PHP $this->urlAjaxSubmit=Yii::app()->createUrl('TestStart/AjaxUrl');?>
-           <input type="hidden" id="urlGet" name="urlGet" value="<?php echo $this->urlAjaxSubmit;?>"/>
+            <input type="hidden" id="urlGet" name="urlGet" value="<?php echo $this->urlAjaxSubmit;?>"/>
             <?php $this->selectData=Yii::app()->createUrl('TestStart/SelectQuestions');?>
-         <!--   <input type="hidden" id="urlGetSelect" name="urlGetSelect" value="<?php /*echo $this->selectData;*/?>"/>
-            <input type="text" name="k"  id="searchInput"/>&nbsp;<input type="button" name="startQuiz" value="开始测试" />-->
-            <input type="text" id="getValueSearch" value=""/>
             <div id="showData"></div>
             <div class="form-group">
                 <?php echo $form->labelEx($model,'employee_info',array('class'=>"col-sm-2 control-label")); ?>
                 <div class="col-sm-5">
                     <?php echo $form->textField($model, 'employee_info',
-                        array('size'=>50,'maxlength'=>100,'readonly'=>($model->scenario=='view'),'id'=>'checkInfoName',)
+                        array('size'=>50,'maxlength'=>100,'readonly'=>($model->scenario=='view'),'id'=>'checkInfoName')
                     ); ?>
                 </div>
+                <?php echo $model->employee_id."aaa";?>
             </div>
 
             <div class="form-group">
@@ -79,43 +78,33 @@ $this->pageTitle=Yii::app()->name . ' - Customer Type Form';
                 </div>
             </div>
 
-            <div class="form-group">
-                <?php echo $form->labelEx($model,'quiz_employee_choose_id',array('class'=>"col-sm-2 control-label")); ?>
-                <div class="col-sm-5">
-                    <?php echo $form->dropDownList($model,'quiz_employee_choose_id',Quiz::demoData(),
-                        array('disabled'=>!Yii::app()->user->validRWFunction('HK05'),'id'=>'select_employee_id'));?>
-                </div>
-            </div>
-
-            <?php echo $form->textField($model, 'quiz_id',array('id'=>'QuizIdGet','placeHolder'=>'测验单id')); ?>
-            <?php echo $form->textField($model, 'employee_id',array('id'=>'EmployeeIdGet','placeholder'=>'员工id')); ?>
 
         </div>
-        </div>
+    </div>
 </section>
 <script type="text/javascript">
-  /*  $("#searchInput").keyup(function(){
-        var url=$("#urlGet").val();
-        var value = $("#searchInput").val();
-        $.ajax({
-            type: "post",
-            url: url,
-            data: {searchValue:value},
-            dataType: "text",
-            success: function(msg){
-                console.log(value);
-                $("#getValueSearch").val(msg);
-                console.log(msg);
-            },
-            error:function(msg){
-                console.log(msg);
-            }
-        });
-    });*/
+    /*  $("#searchInput").keyup(function(){
+     var url=$("#urlGet").val();
+     var value = $("#searchInput").val();
+     $.ajax({
+     type: "post",
+     url: url,
+     data: {searchValue:value},
+     dataType: "text",
+     success: function(msg){
+     console.log(value);
+     $("#getValueSearch").val(msg);
+     console.log(msg);
+     },
+     error:function(msg){
+     console.log(msg);
+     }
+     });
+     });*/
 
     $("#select_questions_count").change(function(){
-      $("#QuizIdGet").val("27");
-      $("#EmployeeIdGet").val("5");
+        $("#QuizIdGet").val("27");
+        $("#EmployeeIdGet").val("5");
         var urlGetSelect=$("#urlGetSelect").val();
         var SelectValue=$("#select_questions_count").val();
         console.log(SelectValue);

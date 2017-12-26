@@ -38,6 +38,6 @@ return array(
 	'Remove'=>'删除',
 	'Date'=>'日期',
 	'Download'=>'下载',
-
+	'Quiz Starting!'=>'测验开始!',
 );
 ?>

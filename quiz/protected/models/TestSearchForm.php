@@ -39,7 +39,6 @@ class TestSearchForm extends CFormModel
             'quiz_start_dt'=>Yii::t('quiz','quiz_start_dt'),
         );
     }
-
     /**
      * Declares the validation rules.
      */

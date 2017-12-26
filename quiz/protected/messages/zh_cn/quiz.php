@@ -28,7 +28,7 @@ return array(
     'test_exams_answer_faultf'=>'错解A',
     'test_exams_answer_faults'=>'错解B',
     'test_exams_answer_faultt'=>'错解C',
-
+    'Quiz_select_choose'=>'测验单选择',
     'Questions DataOrder'=>'测验题数据单',
     'selectValueExams'=>'测验题类型',
     'quiz_start_dt'=>'截止时间',
@@ -42,5 +42,7 @@ return array(
     'quiz_employee_name'=>'该测验题测验员工',
     'employee_name_show'=>'可测验的人员',
     'employee_info'=>'员工姓名',
-
+    'quiz_choose_id'=>'测验单获取',
+    'quiz_employee_choose_id'=>'本次测验人员',
+    'Quiz questions order'=>'测验单',
 );

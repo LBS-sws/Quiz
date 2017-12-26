@@ -17,6 +17,11 @@
     Public $quiz_employee_id;
     Public $employee_info;
     Public $scenario;
+    Public $quiz_choose_id;
+    Public $quiz_employee_choose_id;
+    Public $quiz_id;
+    Public $employee_id;
+    Public $idArray;
     /**
      * Declares customized attribute labels.
      * If not declared here, an attribute would have a label that is
@@ -35,7 +40,8 @@
             'city_privileges'=>Yii::t('quiz','city_privileges'),
             'quiz_start_dt'=>Yii::t('quiz','quiz_start_dt'),
             'employee_info'=>Yii::t('quiz','employee_info'),
-
+            'quiz_choose_id'=>Yii::t('quiz','quiz_choose_id'),
+            'quiz_employee_choose_id'=>Yii::t('quiz','quiz_employee_choose_id'),
         );
     }
 
@@ -45,7 +51,7 @@
     public function rules()
     {
         return array(
-            array('employee_info','required'),
+
             array('id,quiz_start_dt,quiz_name,quiz_correct_rate,quiz_exams_id,quiz_employee_id,quiz_exams_count,city_privileges','safe'),
         );
 
@@ -76,23 +82,18 @@
     }
 
     public function saveData()
-    {    var_dump($this->count_import);
-        $connection = Yii::app()->db;
-        $transaction=$connection->beginTransaction();
-        try {
-            $this->saveUser($connection);
-            $transaction->commit();
-        }
-        catch(Exception $e) {
-            $transaction->rollback();
-            throw new CHttpException(404,'Cannot update.');
-        }
+    {
+        $connection = Yii::app()->db2;
+        $sql="INSERT INTO blog_test.employee_correct_rate (employee_correct_rate_info_id,quiz_employee_id)VALUES(1,2);";
+        $command=$connection->createCommand($sql);
+        $command->execute();
+        return true;
     }
-
+/*
+ * $this->scenario=>null
+ */
     protected function saveUser(&$connection)
     {
-
-
         $tableFuss=Yii::app()->params['jsonTableName'];
         $sql = '';
         switch ($this->scenario) {
@@ -117,7 +118,6 @@
 					where id = :id";
                 break;
         }
-
         $uid = Yii::app()->user->id;
 
         $command=$connection->createCommand($sql);
@@ -126,29 +126,8 @@
             $command->bindParam(':id',$this->id,PDO::PARAM_INT);
         if (strpos($sql,':quiz_date')!==false)
             $command->bindParam(':quiz_date',$this->quiz_date,PDO::PARAM_STR);
-        if (strpos($sql,':quiz_name')!==false)
-            $command->bindParam(':quiz_name',$this->quiz_name,PDO::PARAM_STR);
-
-        if (strpos($sql,':quiz_start_dt')!==false) {
-            $quizDate = General::toMyDate($this->quiz_start_dt);
-            $command->bindParam(':quiz_start_dt',$quizDate,PDO::PARAM_STR);
-        }
-
-        if (strpos($sql,':quiz_exams_count')!==false)
-            $command->bindParam(':quiz_exams_count',$this->quiz_exams_count,PDO::PARAM_INT);
-        if (strpos($sql,':quiz_employee_id')!==false)
-            $command->bindParam(':quiz_employee_id',$this->quiz_employee_id,PDO::PARAM_STR);
-        if (strpos($sql,':quiz_exams_id')!==false)
-            $command->bindParam(':quiz_exams_id',$this->quiz_exams_id,PDO::PARAM_STR);
-        if (strpos($sql,':quiz_correct_rate')!==false)
-            $command->bindParam(':quiz_correct_rate',$this->quiz_correct_rate,PDO::PARAM_STR);
-        if (strpos($sql,':city_privileges')!==false)
-            $command->bindParam(':city_privileges',$this->city_privileges,PDO::PARAM_STR);
-
         $command->execute();
 
-        if ($this->scenario=='new')
-            $this->id = Yii::app()->db->getLastInsertID();
         return true;
     }
 

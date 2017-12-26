@@ -12,6 +12,7 @@ Class TestStartController extends Controller
     Public $urlAjaxSubmit;
     Public $arr;
     Public $dataSearch;
+    Public $selectData;
     public function actionIndex($pageNum = 0)
     {
         //searching operation can get the value of searching result
@@ -28,10 +29,8 @@ Class TestStartController extends Controller
                 $model->setCriteria($criteria);
             }
         }
-
         $this->render('form', array('model' => $model));
     }
-
     public function actionView($index)
     {
         $model = new TestStartForm('view');
@@ -42,8 +41,23 @@ Class TestStartController extends Controller
         }
     }
 
+    Public function actionQuizStart(){
+        $model = new TestStartForm();
+        if (isset($_POST['TestStartForm'])) {
+            $model->attributes = $_POST['TestStartForm'];
+        } else {
+            $session = Yii::app()->session;
+            if (isset($session['criteria_c02']) && !empty($session['criteria_c02'])) {
+                $criteria = $session['criteria_c02'];
+                $model->setCriteria($criteria);
+            }
+        }
+        $this->render('quiz', array('model' => $model));
+    }
 
-    //点击保存后  跳转到表单页面 且有提交的保存数据
+    /**
+     * 提交的id employee_id  quiz_id
+     */
     Public function actionSave()
     {
         if (isset($_POST['TestStartForm'])) {
@@ -52,8 +66,8 @@ Class TestStartController extends Controller
             if ($model->validate()) {
                 $model->saveData();
                 //$model->scenario = 'edit';
-                Dialog::message(Yii::t('dialog', 'Information'), Yii::t('dialog', 'Save Done'));
-                $this->redirect(Yii::app()->createUrl('Quiz/edit', array('index' => $model->id)));
+                Dialog::message(Yii::t('dialog', 'Information'), Yii::t('dialog', 'Quiz Starting!'));
+                $this->redirect(Yii::app()->createUrl('TestStart/QuizStart', array('index' => $model->id)));
             } else {
                 $message = CHtml::errorSummary($model);
                 Dialog::message(Yii::t('dialog', 'Validation Message'), $message);
@@ -71,19 +85,20 @@ Class TestStartController extends Controller
     }
 
     Public function actionAjaxUrl(){
-        $this->dataSearch=$_REQUEST['searchValue'];
+    $this->dataSearch=$_REQUEST['searchValue'];
         $searchValue=$_REQUEST['searchValue'];
-        $tableFuss=Yii::app()->params['jsonTableName'];
-        $sql="select employee_info_name from blog$tableFuss.employee_info WHERE employee_info_name=".$searchValue."";
-        $quizEmployeeId = Yii::app()->db2->createCommand($sql)->queryAll();
-        if(!empty($quizEmployeeId)){
-            echo 1;
-        }
-        else{
-            echo 0;
-        }
+    /*    $tableFuss=Yii::app()->params['jsonTableName'];
+        $sql="select employee_info_name from blog$tableFuss.employee_info WHERE employee_info_name=".%$searchValue%."";
+        $quizEmployeeId = Yii::app()->db2->createCommand($sql)->queryAll();*/
+      echo $searchValue;
     }
 
+
+
+Public function actionSelectQuestions(){
+    $selectValueOut=$_REQUEST['selectValueIn'];
+    echo $selectValueOut;
+}
 
     public static function allowReadWrite()
     {

@@ -100,7 +100,6 @@ class QuizForm extends CFormModel
         $_REQUEST['quiz_employee_id']=implode(',',$_REQUEST['quiz_employee_id']);
         $_REQUEST['QuizForm']['quiz_employee_id']=$_REQUEST['quiz_employee_id'];
         $this->quiz_employee_id=$_REQUEST['QuizForm']['quiz_employee_id'];
-
         $tableFuss=Yii::app()->params['jsonTableName'];
         $sql = '';
         switch ($this->scenario) {
