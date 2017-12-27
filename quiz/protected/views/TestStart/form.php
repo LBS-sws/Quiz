@@ -58,18 +58,18 @@ $this->pageTitle=Yii::app()->name . ' - Customer Type Form';
             <?PHP $this->urlAjaxSubmit=Yii::app()->createUrl('TestStart/AjaxUrl');?>
            <input type="hidden" id="urlGet" name="urlGet" value="<?php echo $this->urlAjaxSubmit;?>"/>
             <?php $this->selectData=Yii::app()->createUrl('TestStart/SelectQuestions');?>
-         <!--   <input type="hidden" id="urlGetSelect" name="urlGetSelect" value="<?php /*echo $this->selectData;*/?>"/>
-            <input type="text" name="k"  id="searchInput"/>&nbsp;<input type="button" name="startQuiz" value="开始测试" />-->
+        <input type="hidden" id="urlGetSelect" name="urlGetSelect" value="<?php echo $this->selectData;?>"/>
+            <!--<input type="text" name="k"  id="searchInput"/>&nbsp;<input type="button" name="startQuiz" value="开始测试" />
             <input type="text" id="getValueSearch" value=""/>
             <div id="showData"></div>
             <div class="form-group">
-                <?php echo $form->labelEx($model,'employee_info',array('class'=>"col-sm-2 control-label")); ?>
+                <?php /*echo $form->labelEx($model,'employee_info',array('class'=>"col-sm-2 control-label")); */?>
                 <div class="col-sm-5">
-                    <?php echo $form->textField($model, 'employee_info',
+                    <?php /*echo $form->textField($model, 'employee_info',
                         array('size'=>50,'maxlength'=>100,'readonly'=>($model->scenario=='view'),'id'=>'checkInfoName',)
-                    ); ?>
+                    ); */?>
                 </div>
-            </div>
+            </div>-->
 
             <div class="form-group">
                 <?php echo $form->labelEx($model,'quiz_choose_id',array('class'=>"col-sm-2 control-label")); ?>
@@ -82,61 +82,68 @@ $this->pageTitle=Yii::app()->name . ' - Customer Type Form';
             <div class="form-group">
                 <?php echo $form->labelEx($model,'quiz_employee_choose_id',array('class'=>"col-sm-2 control-label")); ?>
                 <div class="col-sm-5">
-                    <?php echo $form->dropDownList($model,'quiz_employee_choose_id',Quiz::demoData(),
-                        array('disabled'=>!Yii::app()->user->validRWFunction('HK05'),'id'=>'select_employee_id'));?>
+                    <?php echo $form->dropDownList($model,'quiz_choose_id',Quiz::selectEmployee(),
+                        array('disabled'=>!Yii::app()->user->validRWFunction('HK05'),'id'=>'selectResult'));?>
                 </div>
             </div>
 
-            <?php echo $form->textField($model, 'quiz_id',array('id'=>'QuizIdGet','placeHolder'=>'测验单id')); ?>
-            <?php echo $form->textField($model, 'employee_id',array('id'=>'EmployeeIdGet','placeholder'=>'员工id')); ?>
+           <!--  时间自动获取 <div class="form-group">
+                <?php /*echo $form->labelEx($model,'quiz_employee_date',array('class'=>"col-sm-2 control-label")); */?>
+                <div class="col-sm-5">
+                    <?php
+/*                    $this->quiz_employee_date=date("Y-m-d H:i:s",time());
+                    echo $form->textField($model,'quiz_employee_date',$this->quiz_employee_date,
+                        array('disabled'=>!Yii::app()->user->validRWFunction('HK01')));*/?>
+                </div>
+            </div>-->
 
+            <?php echo $form->hiddenField($model, 'quiz_id',array('id'=>'QuizIdGet','placeHolder'=>'测验单id')); ?>
+            <?php echo $form->hiddenField($model, 'employee_id',array('id'=>'EmployeeIdGet','placeholder'=>'员工id')); ?>
         </div>
         </div>
 </section>
-<script type="text/javascript">
-  /*  $("#searchInput").keyup(function(){
-        var url=$("#urlGet").val();
-        var value = $("#searchInput").val();
-        $.ajax({
-            type: "post",
-            url: url,
-            data: {searchValue:value},
-            dataType: "text",
-            success: function(msg){
-                console.log(value);
-                $("#getValueSearch").val(msg);
-                console.log(msg);
-            },
-            error:function(msg){
-                console.log(msg);
-            }
-        });
-    });*/
 
+<script type="text/javascript">
+    $("#selectResult").change(function(){
+        var SelectEmployeeValue=$("#selectResult").val();
+        if(SelectEmployeeValue==0){
+            $("#EmployeeIdGet").val("");
+        }
+        else{
+            $("#EmployeeIdGet").val(SelectEmployeeValue);
+        }
+    });
     $("#select_questions_count").change(function(){
-      $("#QuizIdGet").val("27");
-      $("#EmployeeIdGet").val("5");
-        var urlGetSelect=$("#urlGetSelect").val();
         var SelectValue=$("#select_questions_count").val();
-        console.log(SelectValue);
+        if(SelectValue==0){
+            $("#QuizIdGet").val("");
+        }
+  else{
+            $("#QuizIdGet").val(SelectValue);
+        }
+        var urlGetSelect=$("#urlGetSelect").val();
         $.ajax({
             type: "post",
             url: urlGetSelect,
-            data: {selectValueIn:SelectValue},
+            data: "selectValueIn="+SelectValue,
             dataType: "json",
             async:true,
             success: function(data){
                 console.log(data);
+                var item;
+                $("#selectResult").html('');
+                $.each(data,function(i,result){
+                    item +='<option value="'+result['id']+'">'+result['employee_info_name']+'</option>';
+                });
+                $("#selectResult").html(item);
             },
             error:function(data){
                 console.log(data);
             }
         });
     });
-
 </script>
 <?php $this->renderPartial('//site/removedialog'); ?>
-
 <?php
 $js = "
 $('#QuizForm_quiz_start_dt').on('change',function() {

@@ -22,6 +22,7 @@
     Public $quiz_id;
     Public $employee_id;
     Public $idArray;
+    Public $quiz_employee_date;
     /**
      * Declares customized attribute labels.
      * If not declared here, an attribute would have a label that is
@@ -42,6 +43,9 @@
             'employee_info'=>Yii::t('quiz','employee_info'),
             'quiz_choose_id'=>Yii::t('quiz','quiz_choose_id'),
             'quiz_employee_choose_id'=>Yii::t('quiz','quiz_employee_choose_id'),
+            'quiz_id'=>Yii::t('quiz','quiz_id'),
+            'employee_id'=>Yii::t('quiz','employee_id'),
+            'quiz_employee_date'=>Yii::t('quiz','quiz_employee_date')
         );
     }
 
@@ -51,10 +55,9 @@
     public function rules()
     {
         return array(
-
+            array('quiz_id,employee_id','required'),
             array('id,quiz_start_dt,quiz_name,quiz_correct_rate,quiz_exams_id,quiz_employee_id,quiz_exams_count,city_privileges','safe'),
         );
-
     }
 
     public function retrieveData($index)
@@ -83,8 +86,10 @@
 
     public function saveData()
     {
+        $Qid=$_REQUEST['TestStartForm']['quiz_id'];
+        $Eid=$_REQUEST['TestStartForm']['employee_id'];
         $connection = Yii::app()->db2;
-        $sql="INSERT INTO blog_test.employee_correct_rate (employee_correct_rate_info_id,quiz_employee_id)VALUES(1,2);";
+        $sql="INSERT INTO blog_test.employee_correct_rate (employee_correct_rate_info_id,quiz_employee_id)VALUES($Qid,$Eid);";
         $command=$connection->createCommand($sql);
         $command->execute();
         return true;

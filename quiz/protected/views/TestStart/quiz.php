@@ -36,7 +36,7 @@ $this->pageTitle=Yii::app()->name . ' - Customer Type Form';
                     'submit'=>Yii::app()->createUrl('TestStart/index')));
                 ?>
                 <?php if ($model->scenario!='view'): ?>
-                    <?php echo TbHtml::button('<span class="fa fa-upload"></span> '.Yii::t('misc','Start Quiz'), array(
+                    <?php echo TbHtml::button('<span class="fa fa-upload"></span> '.Yii::t('misc','Submit Quiz Form'), array(
                         'submit'=>Yii::app()->createUrl('TestStart/save')));
                     ?>
                 <?php endif ?>
@@ -53,6 +53,7 @@ $this->pageTitle=Yii::app()->name . ' - Customer Type Form';
 
     <div class="box box-info">
         <div class="box-body">
+
             <?php echo $form->hiddenField($model, 'scenario'); ?>
             <?php echo $form->hiddenField($model, 'id'); ?>
             <!-- <script src="<?php /*echo Yii::app()->baseUrl;*/?>/js/jquery-1.3.2.min.js'"></script>-->
@@ -60,70 +61,18 @@ $this->pageTitle=Yii::app()->name . ' - Customer Type Form';
             <input type="hidden" id="urlGet" name="urlGet" value="<?php echo $this->urlAjaxSubmit;?>"/>
             <?php $this->selectData=Yii::app()->createUrl('TestStart/SelectQuestions');?>
             <div id="showData"></div>
+
             <div class="form-group">
                 <?php echo $form->labelEx($model,'employee_info',array('class'=>"col-sm-2 control-label")); ?>
                 <div class="col-sm-5">
-                    <?php echo $form->textField($model, 'employee_info',
-                        array('size'=>50,'maxlength'=>100,'readonly'=>($model->scenario=='view'),'id'=>'checkInfoName')
-                    ); ?>
-                </div>
-                <?php echo $model->employee_id."aaa";?>
-            </div>
 
-            <div class="form-group">
-                <?php echo $form->labelEx($model,'quiz_choose_id',array('class'=>"col-sm-2 control-label")); ?>
-                <div class="col-sm-5">
-                    <?php echo $form->dropDownList($model,'quiz_choose_id',Quiz::QuestionsSelect(),
-                        array('disabled'=>!Yii::app()->user->validRWFunction('HK05'),'id'=>'select_questions_count'));?>
                 </div>
             </div>
-
 
         </div>
     </div>
 </section>
-<script type="text/javascript">
-    /*  $("#searchInput").keyup(function(){
-     var url=$("#urlGet").val();
-     var value = $("#searchInput").val();
-     $.ajax({
-     type: "post",
-     url: url,
-     data: {searchValue:value},
-     dataType: "text",
-     success: function(msg){
-     console.log(value);
-     $("#getValueSearch").val(msg);
-     console.log(msg);
-     },
-     error:function(msg){
-     console.log(msg);
-     }
-     });
-     });*/
 
-    $("#select_questions_count").change(function(){
-        $("#QuizIdGet").val("27");
-        $("#EmployeeIdGet").val("5");
-        var urlGetSelect=$("#urlGetSelect").val();
-        var SelectValue=$("#select_questions_count").val();
-        console.log(SelectValue);
-        $.ajax({
-            type: "post",
-            url: urlGetSelect,
-            data: {selectValueIn:SelectValue},
-            dataType: "json",
-            async:true,
-            success: function(data){
-                console.log(data);
-            },
-            error:function(data){
-                console.log(data);
-            }
-        });
-    });
-
-</script>
 <?php $this->renderPartial('//site/removedialog'); ?>
 
 <?php

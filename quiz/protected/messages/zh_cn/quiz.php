@@ -45,4 +45,8 @@ return array(
     'quiz_choose_id'=>'测验单获取',
     'quiz_employee_choose_id'=>'本次测验人员',
     'Quiz questions order'=>'测验单',
+    'quiz_id'=>'测验单的值',
+    'employee_id'=>'员工的值',
+    'quiz_employee_date'=>'测试时间',
+    'Submit Quiz Form'=>'提交测验单',
 );
