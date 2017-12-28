@@ -39,7 +39,7 @@ return array(
     'Questions Add'=>'问题增加',
     'count_questions'=>'总计',
     'question_count_choose'=>'问题数量',
-    'quiz_employee_name'=>'该测验题测验员工',
+    'quiz_employee_name'=>'测验员工',
     'employee_name_show'=>'可测验的人员',
     'employee_info'=>'员工姓名',
     'quiz_choose_id'=>'测验单获取',
@@ -49,4 +49,7 @@ return array(
     'employee_id'=>'员工的值',
     'quiz_employee_date'=>'测试时间',
     'Submit Quiz Form'=>'提交测验单',
+    'quiz_exams_count_show'=>'本次测验单的题目数量',
+    'quiz_employee_title'=>'测验单',
+    'now_time'=>'测验时间',
 );

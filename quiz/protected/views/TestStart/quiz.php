@@ -24,7 +24,8 @@ $this->pageTitle=Yii::app()->name . ' - Customer Type Form';
 </section>
 
 <section class="content">
-    <div class="box"><div class="box-body">
+    <div class="box">
+        <div class="box-body">
             <div class="btn-group" role="group">
                 <!-- --><?php
                 /*                if ($model->scenario!='new' && $model->scenario!='view') {
@@ -37,7 +38,7 @@ $this->pageTitle=Yii::app()->name . ' - Customer Type Form';
                 ?>
                 <?php if ($model->scenario!='view'): ?>
                     <?php echo TbHtml::button('<span class="fa fa-upload"></span> '.Yii::t('misc','Submit Quiz Form'), array(
-                        'submit'=>Yii::app()->createUrl('TestStart/save')));
+                        'submit'=>Yii::app()->createUrl('TestResult/SubmitResult')));
                     ?>
                 <?php endif ?>
 
@@ -53,22 +54,76 @@ $this->pageTitle=Yii::app()->name . ' - Customer Type Form';
 
     <div class="box box-info">
         <div class="box-body">
-
             <?php echo $form->hiddenField($model, 'scenario'); ?>
             <?php echo $form->hiddenField($model, 'id'); ?>
             <!-- <script src="<?php /*echo Yii::app()->baseUrl;*/?>/js/jquery-1.3.2.min.js'"></script>-->
-            <?PHP $this->urlAjaxSubmit=Yii::app()->createUrl('TestStart/AjaxUrl');?>
-            <input type="hidden" id="urlGet" name="urlGet" value="<?php echo $this->urlAjaxSubmit;?>"/>
-            <?php $this->selectData=Yii::app()->createUrl('TestStart/SelectQuestions');?>
             <div id="showData"></div>
 
-            <div class="form-group">
-                <?php echo $form->labelEx($model,'employee_info',array('class'=>"col-sm-2 control-label")); ?>
-                <div class="col-sm-5">
 
+            <div class="form-group">
+                <div class="col-sm-5">
+                </div>
+                <?php echo $model->quiz_employee_title; ?>
+            </div>
+
+            <div class="form-group">
+                <?php echo $form->labelEx($model,'quiz_exams_count_show',array('class'=>"col-sm-2 control-label")); ?>
+                <div class="col-sm-2">
+                    <?php echo $form->textField($model, 'quiz_exams_count',
+                        array('size'=>50,'maxlength'=>100,'id'=>'showRate','readonly'=>($model->scenario=='view'),'disabled'=>!Yii::app()->user->validRWFunction('HK01'))
+                    ); ?>
+                </div>
+                <?php echo $form->labelEx($model,'now_time',array('class'=>"col-sm-1 control-label")); ?>
+                <div class="col-sm-2">
+                    <?php echo $form->textField($model, 'quiz_date',
+                        array('size'=>50,'maxlength'=>100,'id'=>'showRate','readonly'=>($model->scenario=='view'),'disabled'=>!Yii::app()->user->validRWFunction('HK01'))
+                    ); ?>
+                </div>
+                <?php echo $form->labelEx($model,'quiz_employee_name',array('class'=>"col-sm-1 control-label")); ?>
+                <div class="col-sm-2">
+                    <?php echo $form->textField($model, 'employee_info',
+                        array('size'=>50,'maxlength'=>100,'id'=>'showRate','readonly'=>($model->scenario=='view'),'disabled'=>!Yii::app()->user->validRWFunction('HK01'))
+                    ); ?>
                 </div>
             </div>
 
+            <?php
+           $dataGet= Quiz::checkRadioValueGet($model->quiz_id,$model->employee_id); //测试题结果
+
+           for($i=0;$i<count($dataGet);$i++){
+               $test_exams_id=$dataGet[$i]['id'];
+               $answerArr=array();
+               $answerStr=$dataGet[$i]['test_exams_answer_right']."-".$dataGet[$i]['test_exams_answer_faultf']."-".$dataGet[$i]['test_exams_answer_faults']."-".$dataGet[$i]['test_exams_answer_faultt'];
+               $answerArr=explode('-',$answerStr);
+               shuffle($answerArr); //随机四个答案
+                    echo "<div class='form-group'>".
+                            "<div class='col-sm-9'>"."第".($i+1)."题:&nbsp;&nbsp;".$dataGet[$i]['test_exams_contents']."(  )"."</div>"
+                          ."</div>" .
+                        "<div class='form-group'>".
+                                "<div class='col-sm-2'></div>".
+                                "<div class='col-sm-4'>".
+                                   "<input type='radio' name='$test_exams_id' id='$test_exams_id.test_exams_answer_right' value='test_exams_answer_right'/>".
+                                   "<label for='$test_exams_id.test_exams_answer_right'>". $dataGet[$i]['test_exams_answer_right']."</label>".
+                                "</div>".
+                                "<div class='col-sm-4'>".
+                                    "<input type='radio' name='$test_exams_id' id='$test_exams_id.test_exams_answer_faultf' value='test_exams_answer_faultf'/>".
+                                    "<label for='$test_exams_id.test_exams_answer_faultf'>".$dataGet[$i]['test_exams_answer_faultf']."</label>".
+                                "</div>".
+                        "</div>".
+                        "<div class='form-group'>".
+                                "<div class='col-sm-2'></div>".
+                             "<div class='col-sm-4'>".
+                                    "<input type='radio' name='$test_exams_id' id='$test_exams_id.test_exams_answer_faults' value='test_exams_answer_faults'/>".
+                                    "<label for='$test_exams_id.test_exams_answer_faults'>".  $dataGet[$i]['test_exams_answer_faults']."</label>".
+                             "</div>".
+                            "<div class='col-sm-4'>".
+                                    "<input type='radio' name='$test_exams_id' id='$test_exams_id.test_exams_answer_faultt' value='test_exams_answer_faultt'/>".
+                                    "<label for='$test_exams_id.test_exams_answer_faultt'>".  $dataGet[$i]['test_exams_answer_faultt']."</label>"
+                            ."</div>"
+                        ."</div>";
+            }
+            $this->widget('ext.layout.QuizStart');
+            ?>
         </div>
     </div>
 </section>

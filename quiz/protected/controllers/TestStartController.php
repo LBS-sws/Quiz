@@ -75,6 +75,10 @@ Class TestStartController extends Controller
         }
     }
 
+    Public function actionSubmitResult(){
+
+    }
+
     protected function performAjaxValidation($model)
     {
         if (isset($_POST['ajax']) && $_POST['ajax'] === 'code-form') {
