@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50553
 File Encoding         : 65001
 
-Date: 2017-12-19 17:04:06
+Date: 2017-12-29 18:11:22
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -23,48 +23,160 @@ CREATE TABLE `employee_correct_rate` (
   `employee_correct_rate_id` int(50) NOT NULL AUTO_INCREMENT COMMENT '员工正确率主键',
   `employee_correct_rate_info_id` int(50) NOT NULL COMMENT '员工外键',
   `quiz_employee_id` int(50) NOT NULL COMMENT '测验外键',
-  `employee_correct_rate` varchar(10) DEFAULT NULL COMMENT '个人正确率',
+  `employee_correct_rate` varchar(20) DEFAULT NULL COMMENT '个人正确率',
   `city_privileges` char(5) DEFAULT NULL COMMENT '地区权限',
+  `employee_quiz_questions_all` varchar(300) DEFAULT NULL COMMENT '员工测验题所有题的外键',
+  `employee_quiz_questions_wrong` varchar(100) DEFAULT NULL COMMENT '员工错题外键',
+  `employee_quiz_questions_count` char(5) DEFAULT NULL COMMENT '本次测验题目数',
+  `employee_quiz_wrong_questions_count` char(5) DEFAULT NULL COMMENT '错误的题目数量',
   PRIMARY KEY (`employee_correct_rate_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=67 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of employee_correct_rate
 -- ----------------------------
+INSERT INTO `employee_correct_rate` VALUES ('1', '5', '27', null, null, null, null, null, null);
+INSERT INTO `employee_correct_rate` VALUES ('2', '1', '2', null, null, null, null, null, null);
+INSERT INTO `employee_correct_rate` VALUES ('3', '1', '2', null, null, null, null, null, null);
+INSERT INTO `employee_correct_rate` VALUES ('4', '1', '2', null, null, null, null, null, null);
+INSERT INTO `employee_correct_rate` VALUES ('5', '1', '2', null, null, null, null, null, null);
+INSERT INTO `employee_correct_rate` VALUES ('6', '1', '2', null, null, null, null, null, null);
+INSERT INTO `employee_correct_rate` VALUES ('7', '1', '2', null, null, null, null, null, null);
+INSERT INTO `employee_correct_rate` VALUES ('8', '1', '2', null, null, null, null, null, null);
+INSERT INTO `employee_correct_rate` VALUES ('9', '30', '3', null, null, null, null, null, null);
+INSERT INTO `employee_correct_rate` VALUES ('10', '31', '3', null, null, null, null, null, null);
+INSERT INTO `employee_correct_rate` VALUES ('11', '28', '0', null, null, null, null, null, null);
+INSERT INTO `employee_correct_rate` VALUES ('12', '30', '3', null, null, null, null, null, null);
+INSERT INTO `employee_correct_rate` VALUES ('13', '27', '6', null, null, null, null, null, null);
+INSERT INTO `employee_correct_rate` VALUES ('14', '26', '4', null, null, null, null, null, null);
+INSERT INTO `employee_correct_rate` VALUES ('15', '27', '6', null, null, null, null, null, null);
+INSERT INTO `employee_correct_rate` VALUES ('16', '26', '2', null, null, null, null, null, null);
+INSERT INTO `employee_correct_rate` VALUES ('17', '38', '2', null, null, null, null, null, null);
+INSERT INTO `employee_correct_rate` VALUES ('18', '32', '3', null, null, null, null, null, null);
+INSERT INTO `employee_correct_rate` VALUES ('19', '32', '3', null, null, null, null, null, null);
+INSERT INTO `employee_correct_rate` VALUES ('20', '23', '1', null, null, null, null, null, null);
+INSERT INTO `employee_correct_rate` VALUES ('21', '23', '1', null, null, null, null, null, null);
+INSERT INTO `employee_correct_rate` VALUES ('22', '23', '1', null, null, null, null, null, null);
+INSERT INTO `employee_correct_rate` VALUES ('23', '23', '1', null, null, null, null, null, null);
+INSERT INTO `employee_correct_rate` VALUES ('24', '38', '6', null, null, null, null, null, null);
+INSERT INTO `employee_correct_rate` VALUES ('25', '23', '1', null, null, null, null, null, null);
+INSERT INTO `employee_correct_rate` VALUES ('26', '23', '1', null, null, null, null, null, null);
+INSERT INTO `employee_correct_rate` VALUES ('27', '23', '1', null, null, null, null, null, null);
+INSERT INTO `employee_correct_rate` VALUES ('28', '29', '2', null, null, null, null, null, null);
+INSERT INTO `employee_correct_rate` VALUES ('29', '23', '1', null, null, null, null, null, null);
+INSERT INTO `employee_correct_rate` VALUES ('30', '29', '2', null, null, null, null, null, null);
+INSERT INTO `employee_correct_rate` VALUES ('31', '38', '1', null, null, null, null, null, null);
+INSERT INTO `employee_correct_rate` VALUES ('32', '38', '6', null, null, null, null, null, null);
+INSERT INTO `employee_correct_rate` VALUES ('33', '32', '3', null, null, null, null, null, null);
+INSERT INTO `employee_correct_rate` VALUES ('34', '38', '6', null, null, null, null, null, null);
+INSERT INTO `employee_correct_rate` VALUES ('35', '38', '6', null, null, null, null, null, null);
+INSERT INTO `employee_correct_rate` VALUES ('36', '38', '6', null, null, null, null, null, null);
+INSERT INTO `employee_correct_rate` VALUES ('37', '30', '2', null, null, null, null, null, null);
+INSERT INTO `employee_correct_rate` VALUES ('38', '31', '5', null, null, null, null, null, null);
+INSERT INTO `employee_correct_rate` VALUES ('39', '38', '2', null, null, null, null, null, null);
+INSERT INTO `employee_correct_rate` VALUES ('40', '29', '5', null, null, null, null, null, null);
+INSERT INTO `employee_correct_rate` VALUES ('41', '29', '5', null, null, null, null, null, null);
+INSERT INTO `employee_correct_rate` VALUES ('42', '29', '5', null, null, null, null, null, null);
+INSERT INTO `employee_correct_rate` VALUES ('43', '31', '2', null, null, null, null, null, null);
+INSERT INTO `employee_correct_rate` VALUES ('44', '29', '2', null, null, null, null, null, null);
+INSERT INTO `employee_correct_rate` VALUES ('45', '29', '2', null, null, null, null, null, null);
+INSERT INTO `employee_correct_rate` VALUES ('46', '29', '2', null, null, null, null, null, null);
+INSERT INTO `employee_correct_rate` VALUES ('47', '29', '2', null, null, null, null, null, null);
+INSERT INTO `employee_correct_rate` VALUES ('48', '29', '2', null, null, null, null, null, null);
+INSERT INTO `employee_correct_rate` VALUES ('49', '29', '2', null, null, null, null, null, null);
+INSERT INTO `employee_correct_rate` VALUES ('50', '29', '2', null, null, null, null, null, null);
+INSERT INTO `employee_correct_rate` VALUES ('51', '29', '2', null, null, null, null, null, null);
+INSERT INTO `employee_correct_rate` VALUES ('52', '29', '2', null, null, null, null, null, null);
+INSERT INTO `employee_correct_rate` VALUES ('53', '29', '2', null, null, null, null, null, null);
+INSERT INTO `employee_correct_rate` VALUES ('54', '29', '2', null, null, null, null, null, null);
+INSERT INTO `employee_correct_rate` VALUES ('55', '38', '2', null, null, null, null, null, null);
+INSERT INTO `employee_correct_rate` VALUES ('56', '38', '6', null, null, null, null, null, null);
+INSERT INTO `employee_correct_rate` VALUES ('57', '38', '6', null, null, null, null, null, null);
+INSERT INTO `employee_correct_rate` VALUES ('58', '38', '6', null, null, null, null, null, null);
+INSERT INTO `employee_correct_rate` VALUES ('59', '38', '6', null, null, null, null, null, null);
+INSERT INTO `employee_correct_rate` VALUES ('60', '38', '6', null, null, null, null, null, null);
+INSERT INTO `employee_correct_rate` VALUES ('61', '38', '6', null, null, null, null, null, null);
+INSERT INTO `employee_correct_rate` VALUES ('62', '38', '6', null, null, null, null, null, null);
+INSERT INTO `employee_correct_rate` VALUES ('63', '23', '6', null, null, null, null, null, null);
+INSERT INTO `employee_correct_rate` VALUES ('64', '38', '6', '28.57', '5', '8-11-12-16-20-35-36', '11-12-16-20-36', '7', '5');
+INSERT INTO `employee_correct_rate` VALUES ('65', '29', '3', '0', '5', '2-5-12-15', '2-5-12-15', '4', '4');
+INSERT INTO `employee_correct_rate` VALUES ('66', '28', '2', null, null, null, null, null, null);
 
 -- ----------------------------
 -- Table structure for `employee_info`
 -- ----------------------------
 DROP TABLE IF EXISTS `employee_info`;
 CREATE TABLE `employee_info` (
-  `employee_info_id` int(50) NOT NULL AUTO_INCREMENT,
+  `id` int(50) NOT NULL AUTO_INCREMENT,
   `employee_info_name` varchar(20) DEFAULT NULL,
   `employee_info_borthdate` varchar(30) DEFAULT NULL,
   `employee_info_phone` varchar(15) DEFAULT NULL,
   `city_privileges` char(5) DEFAULT NULL,
-  PRIMARY KEY (`employee_info_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `employee_info_quiz` char(20) DEFAULT NULL COMMENT '员工是否有测试经历(1为有  0为没有)',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of employee_info
 -- ----------------------------
+INSERT INTO `employee_info` VALUES ('1', '小张', '小张生日', null, null, '');
+INSERT INTO `employee_info` VALUES ('2', '小李', '小李生日', null, null, '');
+INSERT INTO `employee_info` VALUES ('3', '小明', '小明生日', null, null, '');
+INSERT INTO `employee_info` VALUES ('4', '小何', '小何生日', null, null, '');
+INSERT INTO `employee_info` VALUES ('5', '小王', '小王生日', null, null, '');
+INSERT INTO `employee_info` VALUES ('6', '小赵', '小赵生日', null, null, '');
 
 -- ----------------------------
 -- Table structure for `employee_middle_wrong_exams`
 -- ----------------------------
 DROP TABLE IF EXISTS `employee_middle_wrong_exams`;
 CREATE TABLE `employee_middle_wrong_exams` (
-  `employee_middle_wrong_exams_id` int(100) NOT NULL AUTO_INCREMENT COMMENT '员工答错中间表主键',
+  `id` int(100) NOT NULL AUTO_INCREMENT COMMENT '员工答错中间表主键',
   `employee_middle_wrong_info_id` int(50) DEFAULT NULL COMMENT '员工外键',
   `employee_middle_test_exams_id` int(100) DEFAULT NULL COMMENT '题目外键',
   `employee_middle_quiz_id` int(30) DEFAULT NULL COMMENT '测验外键',
   `city_privileges` char(5) DEFAULT NULL COMMENT '地区权限',
-  PRIMARY KEY (`employee_middle_wrong_exams_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `employee_middle_wrong_choice` varchar(30) DEFAULT NULL COMMENT '错误选项是什么',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=35 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of employee_middle_wrong_exams
 -- ----------------------------
+INSERT INTO `employee_middle_wrong_exams` VALUES ('1', '3', '1', '32', null, null);
+INSERT INTO `employee_middle_wrong_exams` VALUES ('2', '3', '2', '32', null, null);
+INSERT INTO `employee_middle_wrong_exams` VALUES ('3', '3', '5', '32', null, null);
+INSERT INTO `employee_middle_wrong_exams` VALUES ('4', '1', '6', '23', null, null);
+INSERT INTO `employee_middle_wrong_exams` VALUES ('5', '1', '8', '23', null, null);
+INSERT INTO `employee_middle_wrong_exams` VALUES ('6', '1', '10', '23', null, null);
+INSERT INTO `employee_middle_wrong_exams` VALUES ('7', '1', '11', '23', null, null);
+INSERT INTO `employee_middle_wrong_exams` VALUES ('8', '1', '12', '23', null, null);
+INSERT INTO `employee_middle_wrong_exams` VALUES ('9', '1', '13', '23', null, null);
+INSERT INTO `employee_middle_wrong_exams` VALUES ('10', '1', '14', '23', null, null);
+INSERT INTO `employee_middle_wrong_exams` VALUES ('11', '1', '15', '23', null, null);
+INSERT INTO `employee_middle_wrong_exams` VALUES ('12', '1', '16', '23', null, null);
+INSERT INTO `employee_middle_wrong_exams` VALUES ('13', '1', '17', '23', null, null);
+INSERT INTO `employee_middle_wrong_exams` VALUES ('14', '1', '18', '23', null, null);
+INSERT INTO `employee_middle_wrong_exams` VALUES ('15', '1', '19', '23', null, null);
+INSERT INTO `employee_middle_wrong_exams` VALUES ('16', '1', '20', '23', null, null);
+INSERT INTO `employee_middle_wrong_exams` VALUES ('17', '1', '21', '23', null, null);
+INSERT INTO `employee_middle_wrong_exams` VALUES ('18', '1', '34', '23', null, null);
+INSERT INTO `employee_middle_wrong_exams` VALUES ('19', '1', '35', '23', null, null);
+INSERT INTO `employee_middle_wrong_exams` VALUES ('20', '1', '36', '23', null, null);
+INSERT INTO `employee_middle_wrong_exams` VALUES ('21', '1', '37', '23', null, null);
+INSERT INTO `employee_middle_wrong_exams` VALUES ('22', '1', '38', '23', null, null);
+INSERT INTO `employee_middle_wrong_exams` VALUES ('23', '1', '39', '23', null, null);
+INSERT INTO `employee_middle_wrong_exams` VALUES ('24', null, null, null, null, null);
+INSERT INTO `employee_middle_wrong_exams` VALUES ('25', '2', '45', '29', null, null);
+INSERT INTO `employee_middle_wrong_exams` VALUES ('26', '2', '46', '29', null, null);
+INSERT INTO `employee_middle_wrong_exams` VALUES ('27', '2', '47', '29', null, null);
+INSERT INTO `employee_middle_wrong_exams` VALUES ('28', '2', '48', '29', null, null);
+INSERT INTO `employee_middle_wrong_exams` VALUES ('29', '2', '49', '29', null, null);
+INSERT INTO `employee_middle_wrong_exams` VALUES ('30', '2', '50', '29', null, null);
+INSERT INTO `employee_middle_wrong_exams` VALUES ('31', '6', '20', '38', null, null);
+INSERT INTO `employee_middle_wrong_exams` VALUES ('32', '3', '15', '32', null, null);
+INSERT INTO `employee_middle_wrong_exams` VALUES ('33', '3', '16', '32', null, null);
+INSERT INTO `employee_middle_wrong_exams` VALUES ('34', '3', '17', '32', null, null);
 
 -- ----------------------------
 -- Table structure for `hd_admin`
@@ -1169,16 +1281,25 @@ CREATE TABLE `quiz` (
   `city_privileges` char(5) DEFAULT NULL COMMENT '地区权限',
   `quiz_start_dt` timestamp NULL DEFAULT NULL COMMENT '时间段',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=30 DEFAULT CHARSET=utf8 COMMENT='测验单表';
+) ENGINE=InnoDB AUTO_INCREMENT=41 DEFAULT CHARSET=utf8 COMMENT='测验单表';
 
 -- ----------------------------
 -- Records of quiz
 -- ----------------------------
-INSERT INTO `quiz` VALUES ('23', '88', '', '问题1修改', '问题1的答案修改', '', '', '', '2017-12-20 00:00:00');
-INSERT INTO `quiz` VALUES ('26', '555', '15555', '描述1.1', '名字555', '151555', '89555', '', '2017-12-22 00:00:00');
-INSERT INTO `quiz` VALUES ('27', '88', '18', '测验单描述', '名字', '16', '88%', 'HK', '2017-12-13 00:00:00');
-INSERT INTO `quiz` VALUES ('28', '18', '15', '描述详情测试单12', '名字12', '17', '77%', 'HK', '2017-12-28 00:00:00');
-INSERT INTO `quiz` VALUES ('29', '13', '员工13', '问题描述13', '名字13', '测验单13', '13%', 'HK13', '2017-12-13 00:00:00');
+INSERT INTO `quiz` VALUES ('23', '11', '1,3,6', '问题1修改', '17年秋季第一次测验', '1,3,5', '', '', '2017-12-20 00:00:00');
+INSERT INTO `quiz` VALUES ('26', '9', '3,4', '描述1.1', '17年秋季第二次测验', '1,2,3', '89555', '', '2017-12-22 00:00:00');
+INSERT INTO `quiz` VALUES ('27', '12', '5,6', '测验单描述', '17年秋季第三次测验', '1,2,3,4', '88%', 'HK', '2017-12-13 00:00:00');
+INSERT INTO `quiz` VALUES ('28', '15', '2,3', '描述详情测试单12', '17年秋季第四次测验', '1,2,3,4,5', '77%', 'HK', '2017-12-28 00:00:00');
+INSERT INTO `quiz` VALUES ('29', '4', '2,3,5,6', '问题描述13', '17年春季第一次测验', '1,2,3,5', '13%', 'HK', '2017-12-13 00:00:00');
+INSERT INTO `quiz` VALUES ('30', '15', '2,3,6', '而是下拉', '17年春季第二次测验', '', '', '', null);
+INSERT INTO `quiz` VALUES ('31', '12', '2,3,5,6', '下拉测试', '17年春季第三次测验', '', '', '', null);
+INSERT INTO `quiz` VALUES ('32', '11', '2,3,5,6', '下拉测试', '17年春季第四次测验', '', '', '', null);
+INSERT INTO `quiz` VALUES ('33', '10', '2,3,5,6', '测试下拉', '17年冬季第一次测验', '', '', '', null);
+INSERT INTO `quiz` VALUES ('34', '8', '2,3,5,6', '描述89', '17年冬季第二次测验', '', '', '', null);
+INSERT INTO `quiz` VALUES ('35', '7', '1,2,3', '描述90', '16年春季第一次测验', '', '', '', null);
+INSERT INTO `quiz` VALUES ('36', '6', '2,3,4', '描述91', '16年春季第二次测验', '', '', '', null);
+INSERT INTO `quiz` VALUES ('37', '8', '3,4', '描述测试58', '16年春季第三次测验', '', '', '', '2017-12-20 00:00:00');
+INSERT INTO `quiz` VALUES ('38', '7', '1,2,3,4,6', '描述91', '18年春季第二次测验', '', '', '', '2017-12-13 00:00:00');
 
 -- ----------------------------
 -- Table structure for `sa_good`
@@ -1284,19 +1405,60 @@ CREATE TABLE `test_exams` (
   `test_exams_kinds` tinyint(1) DEFAULT NULL COMMENT '测验题类型',
   `city_privileges` char(5) DEFAULT NULL COMMENT '地区权限1=>长期,0=>短期,2=>共存',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=66 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of test_exams
 -- ----------------------------
-INSERT INTO `test_exams` VALUES ('1', '如何正确地的使用A?', '答案001', '错解A', '错解B', '错解C', '1', 'HK');
-INSERT INTO `test_exams` VALUES ('2', '101测验题测试', '102正确答案', '102错解A', '102错解B', '102错解C', '1', 'CN');
-INSERT INTO `test_exams` VALUES ('5', '1', null, null, null, null, '1', null);
-INSERT INTO `test_exams` VALUES ('6', '1', null, null, null, null, '1', null);
-INSERT INTO `test_exams` VALUES ('7', '0', null, null, null, null, '0', null);
-INSERT INTO `test_exams` VALUES ('8', '0', null, null, null, null, '0', null);
-INSERT INTO `test_exams` VALUES ('9', '2', null, null, null, null, '2', null);
-INSERT INTO `test_exams` VALUES ('10', '2', null, null, null, null, '2', null);
+INSERT INTO `test_exams` VALUES ('1', '假如您的客户询问您有关产品的问题,您不知道如何回答,您的做法是', '以您认为对的答案,用好像了解的样子来回答', '承认您缺乏这方面的知识,然后去找正确答案', '答应将问题转呈给业务经理', '给他一个听来很好的答案', '3', 'HK141');
+INSERT INTO `test_exams` VALUES ('2', '当客户正在谈论,而且很明显,他所说的是错误的,您的做法是', '打断他的话,并予以纠正', '聆听然后改变话题', '聆听并找出错误之处', '利用反问使他发觉错误', '1', 'CN');
+INSERT INTO `test_exams` VALUES ('5', '假如您觉得有点泄气时,您的做法是', '请一天假不去想公事', '强迫您自己更卖力去做', '尽量减少拜访', '请示业务经理和您一道去', '1', null);
+INSERT INTO `test_exams` VALUES ('6', '当您拜访经常吃闭门羹的客户时,您的做法是', '不必经常去拜访', '根本不去拜访他', '经常去拜访并试图去改善', '请示业务经理换人试试', '1', null);
+INSERT INTO `test_exams` VALUES ('8', '您碰到对方说\"您的价格太贵了\"您的做法是', '同意他的说法,然后改变话题', '先感谢他的看法,然后指出一分钱一分货', '不管客户的说法', '运用您强有力的辩解', '0', null);
+INSERT INTO `test_exams` VALUES ('10', '当您回答客户的相反意见之后,您的做法是', '保持沉默并等待客户开口', '变换主题,并继续销售', '继续举证,以支持您的观点', '试行订约', '2', null);
+INSERT INTO `test_exams` VALUES ('11', '当您进入客户的办公室时,正好他在阅读,他告诉您一边阅读,一边听您的话,那么您的做法是', '开始您的销售说明', '向他说您可以等他阅读完了再开始', '请求合适的时间再访', '请求对方全身聆听', '0', 'HK');
+INSERT INTO `test_exams` VALUES ('12', '您正用电话去约客户安排拜访时间,总机小姐把您的电话转给他的秘书,秘书问您有什么事,您的做法是', '告诉她您希望和他商谈', '告诉她这是私事', '向她解释您的拜访将带给他莫大的好处', '告诉她您希望同他谈论您的商品', null, null);
+INSERT INTO `test_exams` VALUES ('13', '面对一个激进型的客户,您的做法是', '客气的', '过分的客气', '证明他错了', '拍他马屁', null, null);
+INSERT INTO `test_exams` VALUES ('14', '对付一个悲观的客户,您的做法是', '说些乐观的事', '对他的悲观四项一笑了之', '向他解答他的悲观外表是错误的', '引述事实并指出您的论点是完美的', null, null);
+INSERT INTO `test_exams` VALUES ('15', '在展示印刷的视觉辅助工具时,您的做法是', '在他阅读时,解释销售重点', '先销售视觉辅助工具,然后再按重点念给他听', '把辅助工具留下来,以待待查之后让他自己阅读', '希望他把这些印刷物张贴起来', null, null);
+INSERT INTO `test_exams` VALUES ('16', '客户告诉您,他正在考虑竞争者额产品,他征求您对竞争者的产品意见,您的做法是', '指出竞争者产品的不足', '称赞竞争者产品的特征', '表示知道他人的产品,然后继续销售您自己的产品', '开个玩笑以引开他的注意', null, null);
+INSERT INTO `test_exams` VALUES ('17', '当客户有购买的征兆,如\"什么时候可以送货\",您的做法是', '说明送货的时间,然后机修介绍您的产品特点', '告诉他送货时期,并请求订单', '告诉他送货时期,并试做销售提成', '告诉他送货时间并等候客户的下一步骤', null, null);
+INSERT INTO `test_exams` VALUES ('18', '当客户有怨言时,您的做法是', '打断他的话,并指责其错误之处', '注意聆听,虽然认为公司错了但有责任予以否认', '同意他的说法,并将错误归咎于您的业务经理', '注意聆听,判断怨言是否正确,适时答应予以纠正', null, null);
+INSERT INTO `test_exams` VALUES ('19', '假如客户要求打折,您的做法是', '答应回去后向业务经理要求', '告诉他没有折扣了', '解释贵公司的折扣情况,然后热心推介产品的特点', '不予理会', null, null);
+INSERT INTO `test_exams` VALUES ('20', '当销售店向您说:\"这种产品销售不好\"时,您的做法是', '告诉他其他零售店销售成功的实列', '告诉他产品没有照应该陈列方法陈列', '很技巧地建议商品计划的方法', '问他询问小路不好的原因,必要时将货取回', null, null);
+INSERT INTO `test_exams` VALUES ('21', '在获得订单后,您的做法是', '高兴地多谢他后才离开', '略为交谈他的嗜好', '告诉他:\"您做了一个明智的决定\"', '请他到附近去喝一杯', null, null);
+INSERT INTO `test_exams` VALUES ('34', '在开始做销售说明,您的做法是', '视图去发觉对方的嗜好,并交换意见', '谈谈气候', '谈论今早的新闻', '尽快谈您拜访他的理由,并说明他可获得的好处', null, null);
+INSERT INTO `test_exams` VALUES ('35', '在下列的情况,哪一种是销售员充分利用时间的做法,您的做法是', '将客户资料更新', '当他和客户面对面的时候', '在销售会议学习更好的销售方法', '在销售同事谈论时', null, null);
+INSERT INTO `test_exams` VALUES ('36', '当您的客户被第三者打岔时,您的做法是', '继续销售并不予理会', '停止销售并等候有利时间', '建议他在其他时间再来拜访', '请客户去喝一杯咖啡', '1', 'HK');
+INSERT INTO `test_exams` VALUES ('37', '数据测试', '正确答案', '错解A', '错解B', '错解C', null, null);
+INSERT INTO `test_exams` VALUES ('38', '测试', '测试', '测试', '测试', '测试', '1', '测试');
+INSERT INTO `test_exams` VALUES ('39', '数据测试', '正确答案', '错解A', '错解B22222', '错解C22222', null, null);
+INSERT INTO `test_exams` VALUES ('40', '数据测试', '正确答案', '错解A', '错解B22222', '错解C22222', null, null);
+INSERT INTO `test_exams` VALUES ('41', '内容描述35', '答案A35', '错解A35', '错解B35', '错解C35', null, null);
+INSERT INTO `test_exams` VALUES ('42', '在医疗诊治活动中高度危险性物品,必须选用什么处理方法？', '消毒法', '灭菌法', '一般消毒', '清晰处置', null, null);
+INSERT INTO `test_exams` VALUES ('43', '进入组织或器官内部的器械,或与破损的组织、皮肤、粘膜密切接触的器材和用品的危险性分类是?', '高度危险性物品', '中毒危险性物品', '帝都危险性物品', '无危险性物品', null, null);
+INSERT INTO `test_exams` VALUES ('44', '微生物对消毒因子的抗力从高到低的顺序是？', '细菌芽孢、分枝杆菌、亲水性病毒、真菌孢子、真菌繁殖体、细菌繁', '细菌芽孢、真菌孢子、分枝杆菌、亲水性病毒、真菌繁殖体、细菌繁', '细菌芽孢、分枝杆菌、真菌孢子、亲水性病毒、真菌繁殖体、细菌繁', '真菌孢子、细菌芽孢、分枝杆菌、亲水性病毒、真菌繁殖体、细菌繁', null, null);
+INSERT INTO `test_exams` VALUES ('45', '医疗器械用下排气式压力蒸汽灭菌，一般需要维持的温度和时间分别是', '115℃，20—30 min ', '121℃，10—15 min', '121℃，15—30min', '115℃，20—30 min', null, null);
+INSERT INTO `test_exams` VALUES ('46', '压力蒸汽灭菌物品存放时间', '7天', '16天', '10-14天', '10小时', null, null);
+INSERT INTO `test_exams` VALUES ('47', '紫外线消毒的目标微生物不详时，照射计量不应低于', '10000μW*S/cm2', '600000μW*S/cm2', '60000μW*S/cm2', '100000μW*S/cm2', null, null);
+INSERT INTO `test_exams` VALUES ('48', '2%戊二醛对医疗器械浸泡消毒和灭菌的时间分别是', '20分钟达消毒要求，10小时达灭菌要求', '15分钟达消毒要求，4小时达灭菌要求', '45分钟达消毒要求，9小时达灭菌要求', '15分钟达消毒要求，8小时达灭菌要求', null, null);
+INSERT INTO `test_exams` VALUES ('49', '用碘伏对细菌繁殖体污染物品的消毒的浓度和时间分别是', '250mg/L，20min', ' 50mg/L，40min', '500mg/L，30min', '200mg/L，15min ', null, null);
+INSERT INTO `test_exams` VALUES ('50', '消毒是指杀灭或清除传播媒介上的', '病原细菌', '病原真菌', '病原病毒', '病原微生物', null, null);
+INSERT INTO `test_exams` VALUES ('51', '关于影响消毒灭菌效果的因素，下述错误的提法是', '凡是消毒剂，其浓度越高消毒效果越好', '同一消毒剂对不同微生物的杀菌效果不同', '一般温度升高，可提高消毒效果', '消毒剂的杀菌作用受酸碱度影响', null, null);
+INSERT INTO `test_exams` VALUES ('52', '在消毒试验中，可用杀灭对数值（KL）表示消毒效果。当KL＝2时，相应杀灭的微生物的百分率为', ' 99.999％', '99.99％', '99.9％', '99％', null, null);
+INSERT INTO `test_exams` VALUES ('53', '若某消毒方法的D值为15，则表示该方法', '作用15min，微生物杀灭率可达到100％', '作用15min，微生物杀灭率可达到99％', '作用15min，微生物杀灭率可达到90％', '作用10min，微生物杀灭率可达到50％', null, null);
+INSERT INTO `test_exams` VALUES ('54', '残留消毒剂的去除方法包括', '化学中和法', '过滤冲洗法', '稀释法', '离心沉淀法', null, null);
+INSERT INTO `test_exams` VALUES ('55', '一般认为，下列微生物中对消毒因子的敏感性最高的是', '细菌繁殖体', '真菌', '亲水病毒（没有脂质包膜的病毒），例如甲型肝炎病毒、脊髓灰质炎', '亲脂病毒（有脂质膜的病毒），例如乙型肝炎病毒、流感病毒等', null, null);
+INSERT INTO `test_exams` VALUES ('56', '卫生用品的杀菌性能判定为有杀菌作用时，其杀菌率应为', '杀菌率≥50%', '杀菌率≥90%', '杀菌率≥99%', '杀菌率≥99.9% ', null, null);
+INSERT INTO `test_exams` VALUES ('57', '医院消毒效果监测合理的采样时间是', '消毒处理后、医疗活动之前', '医疗活动之中', '医疗活动之后', '随机', null, null);
+INSERT INTO `test_exams` VALUES ('58', '干热灭菌效果监测中，生物法常使用的指标菌是', '枯草杆菌黑色变种芽胞（ATCC9372）', '短小杆菌芽胞（E601）', '嗜热脂肪杆菌芽胞（ATCC7953或SSIK31）', '大肠杆菌（8099）E. 白色念珠菌', null, null);
+INSERT INTO `test_exams` VALUES ('59', '．《一次性使用卫生用品卫生标准》中规定，生产环境中空气采样应该在下列何种状态下进行', '静态（室内设备正常运行，无工作人员）', '动态（室内设备正常运行，人员正常操作）', '空态（室内无设备和人员）', '消毒处理过程中', null, null);
+INSERT INTO `test_exams` VALUES ('60', '《医院消毒卫生标准》中规定，正常情况下物体表面和医护人员手的采样面积分别是', '25cm2，25cm2', '25cm2，30cm2', '50cm2，50cm2', '100cm2，30cm2 ', null, null);
+INSERT INTO `test_exams` VALUES ('61', '《医院消毒卫生标准》中规定，使用中消毒液的合格标准是', '无菌，致病性微生物不得检出；', '细菌菌落总数≤10cfu/ml，致病性微生物不得检出', '细菌菌落总数≤20cfu/ml，致病性微生物不得检出', '细菌菌落总数≤100cfu/ml，致病性微生物不得检出', null, null);
+INSERT INTO `test_exams` VALUES ('62', '空气过滤除菌的原理是', '随流阻挡', '重力沉降', '静电吸附', '扩散粘留', null, null);
+INSERT INTO `test_exams` VALUES ('63', '问题测试的结果', '正解', '错解A', '错解B', '错解C', null, null);
+INSERT INTO `test_exams` VALUES ('64', '问题测试的结果2', '正解2', '错解A2', '错解B2', '错解C2', null, null);
+INSERT INTO `test_exams` VALUES ('65', '问题测试的结果3', '正解3', '错解A3', '错解B3', '错解C3', null, null);
 
 -- ----------------------------
 -- Table structure for `t_exams`
