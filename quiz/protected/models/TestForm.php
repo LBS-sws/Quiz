@@ -20,6 +20,8 @@ class TestForm extends CFormModel
     Public $quiz_exams_count;
     Public $quiz_employee_title;
     Public $radio_value;
+    Public $quiz_correct_employee_id;
+    Public $quiz_count;
     //Public $scenario;
     /**
      * Declares customized attribute labels.
@@ -28,7 +30,6 @@ class TestForm extends CFormModel
      */
     public function attributeLabels()
     {
-
         return array(
             'employee_name_show'=>Yii::t('quiz','employee_name_show'),
             'quiz_correct_rate'=>Yii::t('quiz','quiz_correct_rate'),
@@ -62,7 +63,7 @@ class TestForm extends CFormModel
      * @param $employee_id::employee_correct_rate表的employee_info外键
      * @return bool
      */
-    Public function retrieveData($quiz_id,$employee_id)
+    Public function retrieveData($quiz_id,$employee_id,$quiz_Correct_rate_id)
     {
         $sql = "select * from quiz where id=".$quiz_id."";
         $rows = Yii::app()->db2->createCommand($sql)->queryAll();
@@ -81,9 +82,47 @@ class TestForm extends CFormModel
                 break;
             }
         }
+        $this->quiz_correct_employee_id=$quiz_Correct_rate_id;
         $this->quiz_id=$quiz_id;
         $this->employee_id=$employee_id;
+
         return true;
+    }
+
+    /**
+     * @param $final_result
+     * final_result:员工提交的做的题id 和 做题结果(选择的参数)array(n)([0]=>array(2){('id'=>'','test_result'=>'')}[1]...)
+     * 员工id=>employee_id  测验单id=>id  每次测验的数据单quiz_correct_employee_id
+     * count($_REQUEST['contents']) represents the counts of the exams which have been done in this test(代表了本次测验实际做的题目数量)
+     * $_REQUEST['quiz_exams_count']代表了本次测验实际的测验题目数量
+     *在做过的题目上进行正错判断  对于没有做的题目不会做任何判断 且正确率是做过的题除以$_REQUEST['quiz_exams_count'] 不是指做的题目count($_REQUEST['contents'])
+     * 这里不再记录员工的未做的题目,原因:该员工没有做对 也没有做错 所以不做记录,也不录入错误表
+     */
+    Public function saveData($final_result){
+        $fact_exams_count=count($final_result);
+        $k=0;  //本测验单的本次错题的数量
+        $should_exams_count=$_REQUEST['TestForm']['quiz_exams_count'];   //本次测验应当做的测验题目数量int
+        $correct_id=$_REQUEST['TestForm']['quiz_correct_employee_id'];  //employee_correct_rate 表主键int
+        $quiz_id=$_REQUEST['TestForm']['id'];                         //quiz主键
+        $employee_id=$_REQUEST['TestForm']['employee_id'];                  //employee_info主键int
+        $wrong_test_exams_id="";
+        $all_test_exams_id="";
+        for($i=0;$i<$fact_exams_count;$i++){
+            $all_test_exams_id.=$final_result[$i]['id'].'-';
+            if($final_result[$i]['test_result']!='test_exams_answer_right'){
+                $wrong_test_exams_id.=$final_result[$i]['id'].'-';
+                $k++;
+            }
+        }
+        $all_test_exams_id=trim($all_test_exams_id,'-');    //本次测验做的题目
+        $wrong_test_exams_id=trim($wrong_test_exams_id,'-'); //错题的题目主键集合(char)
+        $right_test_exams_count=$fact_exams_count-$k;
+        $rate=round($right_test_exams_count/$should_exams_count*100,2)."%";  //本次测验的正确率char
+        //echo $k."个错题";
+        $correct_id_set="update employee_correct_rate set
+(employee_correct_rate,employee_quiz_questions_all,employee_quiz_questions_wrong,employee_quiz_questions_count,employee_quiz_wrong_questions_count) VALUES (".$rate.",".$all_test_exams_id.",".$wrong_test_exams_id.",".$should_exams_count.",".$k.")WHERE employee_correct_rate_id=$correct_id";
+        $correct_id_get=Yii::app()->db2->createCommand($correct_id_set)->execute();
+        var_dump($correct_id_get);die;
     }
     public function isOccupied($index) {
         $rtn = false;

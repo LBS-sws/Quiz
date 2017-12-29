@@ -23,6 +23,8 @@
     Public $employee_id;
     Public $idArray;
     Public $quiz_employee_date;
+    Public $quiz_correct_employee_id;
+
     /**
      * Declares customized attribute labels.
      * If not declared here, an attribute would have a label that is
@@ -86,10 +88,10 @@
     {
         $Qid=$_REQUEST['TestStartForm']['quiz_id'];
         $Eid=$_REQUEST['TestStartForm']['employee_id'];
-        $connection = Yii::app()->db2;
-        $sql="INSERT INTO blog_test.employee_correct_rate (employee_correct_rate_info_id,quiz_employee_id)VALUES($Qid,$Eid);";
-        $command=$connection->createCommand($sql);
-        $command->execute();
+        $sql="INSERT INTO blog_test.employee_correct_rate (employee_correct_rate_info_id,quiz_employee_id)VALUES($Qid,$Eid)";
+        Yii::app()->db2->createCommand($sql)->execute();
+        $id= Yii::app()->db2->getLastInsertID();
+        $this->quiz_correct_employee_id=$id;
         return true;
     }
 /*

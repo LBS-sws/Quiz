@@ -56,9 +56,12 @@ $this->pageTitle=Yii::app()->name . ' - Customer Type Form';
         <div class="box-body">
             <?php echo $form->hiddenField($model, 'scenario'); ?>
             <?php echo $form->hiddenField($model, 'id'); ?>
+            <?php echo $form->hiddenField($model,'employee_id')?>
+            <?php echo $form->hiddenField($model,'quiz_correct_employee_id');?>
+            <?php echo $form->hiddenField($model,'quiz_exams_count')?>
+            <?php echo $form->hiddenField($model,'quiz_date')?>
             <!-- <script src="<?php /*echo Yii::app()->baseUrl;*/?>/js/jquery-1.3.2.min.js'"></script>-->
             <div id="showData"></div>
-
 
             <div class="form-group">
                 <div class="col-sm-5">
@@ -86,39 +89,65 @@ $this->pageTitle=Yii::app()->name . ' - Customer Type Form';
                     ); ?>
                 </div>
             </div>
-
             <?php
            $dataGet= Quiz::checkRadioValueGet($model->quiz_id,$model->employee_id); //测试题结果
-
            for($i=0;$i<count($dataGet);$i++){
-               $test_exams_id=$dataGet[$i]['id'];
+               $test_exams_id=$dataGet[$i]['id'];  //题目id
                $answerArr=array();
                $answerStr=$dataGet[$i]['test_exams_answer_right']."-".$dataGet[$i]['test_exams_answer_faultf']."-".$dataGet[$i]['test_exams_answer_faults']."-".$dataGet[$i]['test_exams_answer_faultt'];
-               $answerArr=explode('-',$answerStr);
-               shuffle($answerArr); //随机四个答案
+               $answerArr=explode('-',$answerStr); //正确答案一定是在第一个
+              $finalResultTestExams=array();
+             for($j=0;$j<count($answerArr);$j++){
+                 $finalResultTestExams[$j]['right']='';
+                 $finalResultTestExams[$j]['answer']='';
+                 switch($j)
+                 {
+                     case 0:
+                         $finalResultTestExams[$j]['right']='test_exams_answer_right';
+                         $finalResultTestExams[$j]['answer']=$answerArr[$j];
+                         break;
+                     case 1:
+                         $finalResultTestExams[$j]['right']='test_exams_answer_faultf';
+                         $finalResultTestExams[$j]['answer']=$answerArr[$j];
+                         break;
+                     case 2:
+                         $finalResultTestExams[$j]['right']='test_exams_answer_faults';
+                         $finalResultTestExams[$j]['answer']=$answerArr[$j];
+                         break;
+                     case 3:
+                         $finalResultTestExams[$j]['right']='test_exams_answer_faultt';
+                         $finalResultTestExams[$j]['answer']=$answerArr[$j];
+                         break;
+                 }
+             }
+               shuffle($finalResultTestExams); //随机四个答案
+               $oneArray=$finalResultTestExams[0];
+               $twoArray=$finalResultTestExams[1];
+               $threeArray=$finalResultTestExams[2];
+               $fourArray=$finalResultTestExams[3];
                     echo "<div class='form-group'>".
                             "<div class='col-sm-9'>"."第".($i+1)."题:&nbsp;&nbsp;".$dataGet[$i]['test_exams_contents']."(  )"."</div>"
                           ."</div>" .
                         "<div class='form-group'>".
                                 "<div class='col-sm-2'></div>".
                                 "<div class='col-sm-4'>".
-                                   "<input type='radio' name='$test_exams_id' id='$test_exams_id.test_exams_answer_right' value='test_exams_answer_right'/>".
-                                   "<label for='$test_exams_id.test_exams_answer_right'>". $dataGet[$i]['test_exams_answer_right']."</label>".
+                                   "<input type='radio' name='contents[$test_exams_id]' id='$test_exams_id.test_exams_answer_right' value='$oneArray[right]'/>".
+                                   "<label for='$test_exams_id.test_exams_answer_right'>". $oneArray['answer']."</label>".
                                 "</div>".
                                 "<div class='col-sm-4'>".
-                                    "<input type='radio' name='$test_exams_id' id='$test_exams_id.test_exams_answer_faultf' value='test_exams_answer_faultf'/>".
-                                    "<label for='$test_exams_id.test_exams_answer_faultf'>".$dataGet[$i]['test_exams_answer_faultf']."</label>".
+                                    "<input type='radio' name='contents[$test_exams_id]' id='$test_exams_id.test_exams_answer_faultf' value='$twoArray[right]'/>".
+                                    "<label for='$test_exams_id.test_exams_answer_faultf'>".$twoArray['answer']."</label>".
                                 "</div>".
                         "</div>".
                         "<div class='form-group'>".
                                 "<div class='col-sm-2'></div>".
                              "<div class='col-sm-4'>".
-                                    "<input type='radio' name='$test_exams_id' id='$test_exams_id.test_exams_answer_faults' value='test_exams_answer_faults'/>".
-                                    "<label for='$test_exams_id.test_exams_answer_faults'>".  $dataGet[$i]['test_exams_answer_faults']."</label>".
+                                    "<input type='radio' name='contents[$test_exams_id]' id='$test_exams_id.test_exams_answer_faults' value='$threeArray[right]'/>".
+                                    "<label for='$test_exams_id.test_exams_answer_faults'>".  $threeArray['answer']."</label>".
                              "</div>".
                             "<div class='col-sm-4'>".
-                                    "<input type='radio' name='$test_exams_id' id='$test_exams_id.test_exams_answer_faultt' value='test_exams_answer_faultt'/>".
-                                    "<label for='$test_exams_id.test_exams_answer_faultt'>".  $dataGet[$i]['test_exams_answer_faultt']."</label>"
+                                    "<input type='radio' name='contents[$test_exams_id]' id='$test_exams_id.test_exams_answer_faultt' value='$fourArray[right]'/>".
+                                    "<label for='$test_exams_id.test_exams_answer_faultt'>".  $fourArray['answer']."</label>"
                             ."</div>"
                         ."</div>";
             }

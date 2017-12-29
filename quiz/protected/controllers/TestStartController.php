@@ -42,12 +42,14 @@ Class TestStartController extends Controller
     /**
      * @param employee_id,quiz_id
      * @throws
+     * 进入测验单测试页面
      */
     Public function actionQuizStart(){
      $quiz_id=$_REQUEST['quiz_id'];
      $employee_id=$_REQUEST['employee_id'];
+        $quiz_correct_employee_id=$_REQUEST['quiz_correct_employee_id'];
         $model = new TestForm('view');
-        if (!$model->retrieveData($quiz_id,$employee_id)) {
+        if (!$model->retrieveData($quiz_id,$employee_id,$quiz_correct_employee_id)) {
             throw new CHttpException(404, 'The requested page does not exist.');
         } else {
             $this->render('quiz', array('model' => $model,));
@@ -66,7 +68,7 @@ Class TestStartController extends Controller
                 $model->saveData();
                 //$model->scenario = 'edit';
                 Dialog::message(Yii::t('dialog', 'Information'), Yii::t('dialog', 'Quiz Starting!'));
-                $this->redirect(Yii::app()->createUrl('TestStart/QuizStart', array('index' => 'quiz','quiz_id'=>$model->quiz_id,'employee_id'=>$model->employee_id)));
+                $this->redirect(Yii::app()->createUrl('TestStart/QuizStart', array('index' => 'quiz','quiz_id'=>$model->quiz_id,'employee_id'=>$model->employee_id,'quiz_correct_employee_id'=>$model->quiz_correct_employee_id)));
             } else {
                 $message = CHtml::errorSummary($model);
                 Dialog::message(Yii::t('dialog', 'Validation Message'), $message);

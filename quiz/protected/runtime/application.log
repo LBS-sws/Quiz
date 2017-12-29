@@ -6727,3 +6727,1602 @@ in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
 2017/12/28 18:20:57 [warning] [application] Failed to set unsafe attribute "quiz_choose_id" of "TestStartForm".
 in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestStartController.php (64)
 in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 09:23:08 [error] [php] session_regenerate_id(): Session object destruction failed (D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CHttpSession.php:182)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\auth\CWebUser.php(228): WebUser->changeIdentity()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\LoginForm.php(81): WebUser->login()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\SiteController.php(117): LoginForm->login()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\SiteController.php(54): SiteController->actionLogin()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\filters\CFilterChain.php(134): SiteController->runAction()
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\components\Controller.php(71): CFilterChain->run()
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\filters\CInlineFilter.php(59): SiteController->filterEnforceNoConcurrentLogin()
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\components\Controller.php(95): CFilterChain->run()
+#11 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\filters\CInlineFilter.php(59): SiteController->filterEnforceSessionExpiration()
+#12 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#13 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\components\Controller.php(51): CFilterChain->run()
+#14 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\filters\CInlineFilter.php(59): SiteController->filterEnforceRegisteredStation()
+#15 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#16 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(292): CFilterChain->run()
+#17 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#18 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#19 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#20 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#21 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/Quiz/quiz/index.php
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\LoginForm.php (81)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\SiteController.php (117)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\SiteController.php (54)
+2017/12/29 09:26:26 [warning] [application] Failed to set unsafe attribute "scenario" of "TestStartForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestStartController.php (64)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 09:26:26 [warning] [application] Failed to set unsafe attribute "quiz_choose_id" of "TestStartForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestStartController.php (64)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 09:32:48 [error] [php] Undefined index: test_contents (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php:33)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): TestResultController->runAction()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): TestResultController->runActionWithFilters()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): TestResultController->run()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/Quiz/quiz/index.php/TestResult/SubmitResult
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (33)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 09:35:31 [error] [php] Undefined index: test_exams_answer_right (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php:36)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): TestResultController->runAction()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): TestResultController->runActionWithFilters()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): TestResultController->run()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/Quiz/quiz/index.php/TestResult/SubmitResult
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (36)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 09:36:07 [error] [php] Undefined index: test_exams_answer_right (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php:37)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): TestResultController->runAction()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): TestResultController->runActionWithFilters()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): TestResultController->run()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/Quiz/quiz/index.php/TestResult/SubmitResult
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (37)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 09:36:52 [error] [php] Undefined index: test_exams_answer_right (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php:37)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): TestResultController->runAction()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): TestResultController->runActionWithFilters()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): TestResultController->run()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/Quiz/quiz/index.php/TestResult/SubmitResult
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (37)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 09:36:53 [error] [php] Undefined index: test_exams_answer_right (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php:37)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): TestResultController->runAction()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): TestResultController->runActionWithFilters()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): TestResultController->run()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/Quiz/quiz/index.php/TestResult/SubmitResult
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (37)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 09:36:53 [error] [php] Undefined index: test_exams_answer_right (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php:37)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): TestResultController->runAction()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): TestResultController->runActionWithFilters()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): TestResultController->run()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/Quiz/quiz/index.php/TestResult/SubmitResult
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (37)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 09:36:53 [error] [php] Undefined index: test_exams_answer_right (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php:37)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): TestResultController->runAction()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): TestResultController->runActionWithFilters()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): TestResultController->run()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/Quiz/quiz/index.php/TestResult/SubmitResult
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (37)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 09:36:54 [error] [php] Undefined index: test_exams_answer_right (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php:37)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): TestResultController->runAction()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): TestResultController->runActionWithFilters()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): TestResultController->run()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/Quiz/quiz/index.php/TestResult/SubmitResult
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (37)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 09:36:54 [error] [php] Undefined index: test_exams_answer_right (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php:37)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): TestResultController->runAction()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): TestResultController->runActionWithFilters()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): TestResultController->run()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/Quiz/quiz/index.php/TestResult/SubmitResult
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (37)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 09:36:54 [error] [php] Undefined index: test_exams_answer_right (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php:37)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): TestResultController->runAction()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): TestResultController->runActionWithFilters()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): TestResultController->run()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/Quiz/quiz/index.php/TestResult/SubmitResult
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (37)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 09:36:54 [error] [php] Undefined index: test_exams_answer_right (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php:37)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): TestResultController->runAction()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): TestResultController->runActionWithFilters()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): TestResultController->run()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/Quiz/quiz/index.php/TestResult/SubmitResult
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (37)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 09:48:36 [error] [php] Undefined offset: 35 (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php:37)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): TestResultController->runAction()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): TestResultController->runActionWithFilters()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): TestResultController->run()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/Quiz/quiz/index.php/TestResult/SubmitResult
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (37)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 09:48:49 [error] [php] Undefined index: test_exams_answer_right (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php:38)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): TestResultController->runAction()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): TestResultController->runActionWithFilters()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): TestResultController->run()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/Quiz/quiz/index.php/TestResult/SubmitResult
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (38)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 09:48:50 [error] [php] Undefined index: test_exams_answer_right (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php:38)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): TestResultController->runAction()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): TestResultController->runActionWithFilters()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): TestResultController->run()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/Quiz/quiz/index.php/TestResult/SubmitResult
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (38)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 09:52:07 [warning] [application] Failed to set unsafe attribute "scenario" of "TestStartForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestStartController.php (64)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 09:52:07 [warning] [application] Failed to set unsafe attribute "quiz_choose_id" of "TestStartForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestStartController.php (64)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 10:00:05 [warning] [application] Failed to set unsafe attribute "scenario" of "TestStartForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestStartController.php (64)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 10:00:05 [warning] [application] Failed to set unsafe attribute "quiz_choose_id" of "TestStartForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestStartController.php (64)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 10:00:28 [error] [php] Undefined index: contents (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php:33)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): TestResultController->runAction()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): TestResultController->runActionWithFilters()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): TestResultController->run()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/Quiz/quiz/index.php/TestResult/SubmitResult
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (33)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 10:01:39 [error] [exception.CException] exception 'CException' with message 'TestResultController 无法找到请求的视图 "form".' in D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php:879
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(783): CController->renderPartial('form', Array, true)
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php(29): CController->render('form', Array)
+#2 [internal function]: TestResultController->actionIndex(0)
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(TestResultController), Array)
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(TestResultController), Object(ReflectionMethod), Array)
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('')
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('TestResult')
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/Quiz/quiz/index.php/TestResult/
+---
+2017/12/29 10:01:55 [warning] [application] Failed to set unsafe attribute "scenario" of "TestStartForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestStartController.php (64)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 10:01:55 [warning] [application] Failed to set unsafe attribute "quiz_choose_id" of "TestStartForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestStartController.php (64)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 10:18:00 [warning] [application] Failed to set unsafe attribute "scenario" of "TestForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (60)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 10:18:00 [error] [exception.CException] exception 'CException' with message 'TestResultController 无法找到请求的视图 "form".' in D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php:879
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(783): CController->renderPartial('form', Array, true)
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php(69): CController->render('form', Array)
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): TestResultController->actionSubmitResult()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('SubmitResult')
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('TestResult/Subm...')
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/Quiz/quiz/index.php/TestResult/SubmitResult
+HTTP_REFERER=http://127.0.0.1/Quiz/quiz/index.php/TestStart/QuizStart?index=quiz&quiz_id=29&employee_id=2
+---
+2017/12/29 10:27:00 [warning] [application] Failed to set unsafe attribute "scenario" of "TestStartForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestStartController.php (64)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 10:27:00 [warning] [application] Failed to set unsafe attribute "quiz_choose_id" of "TestStartForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestStartController.php (64)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 11:09:52 [warning] [application] Failed to set unsafe attribute "scenario" of "TestStartForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestStartController.php (65)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 11:09:52 [warning] [application] Failed to set unsafe attribute "quiz_choose_id" of "TestStartForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestStartController.php (65)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 11:09:53 [error] [php] Missing argument 1 for CDbCommand::insert(), called in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestStartForm.php on line 92 and defined (D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\db\CDbCommand.php:1155)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): TestStartController->actionSave()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): TestStartController->runAction()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): TestStartController->runActionWithFilters()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): TestStartController->run()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/Quiz/quiz/index.php/TestStart/save
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestStartForm.php (92)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestStartController.php (67)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 11:10:08 [warning] [application] Failed to set unsafe attribute "scenario" of "TestStartForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestStartController.php (65)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 11:10:08 [warning] [application] Failed to set unsafe attribute "quiz_choose_id" of "TestStartForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestStartController.php (65)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 11:10:09 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[HY000]: General error. The SQL statement executed was: INSERT INTO blog_test.employee_correct_rate (employee_correct_rate_info_id,quiz_employee_id)VALUES(29,2).
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestStartForm.php (92)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestStartController.php (67)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 11:10:09 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[HY000]: General error. The SQL statement executed was: INSERT INTO blog_test.employee_correct_rate (employee_correct_rate_info_id,quiz_employee_id)VALUES(29,2)' in D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestStartForm.php(92): CDbCommand->queryAll()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestStartController.php(67): TestStartForm->saveData()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): TestStartController->actionSave()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('save')
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('TestStart/save')
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/Quiz/quiz/index.php/TestStart/save
+HTTP_REFERER=http://127.0.0.1/Quiz/quiz/index.php/TestStart/index
+---
+2017/12/29 11:13:44 [warning] [application] Failed to set unsafe attribute "scenario" of "TestStartForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestStartController.php (65)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 11:13:44 [warning] [application] Failed to set unsafe attribute "quiz_choose_id" of "TestStartForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestStartController.php (65)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 11:14:48 [error] [exception.CException] exception 'CException' with message '属性 "TestForm.quiz_correct_employee_id" 未被定义.' in D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\helpers\CHtml.php(2158): CComponent->__get('quiz_correct_em...')
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\helpers\CHtml.php(1887): CHtml::resolveValue(Object(TestForm), 'quiz_correct_em...')
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\helpers\TbHtml.php(2688): CHtml::activeInputField('text', Object(TestForm), 'quiz_correct_em...', Array)
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\helpers\TbHtml.php(1789): TbHtml::activeTextInputField('text', Object(TestForm), 'quiz_correct_em...', Array)
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\helpers\TbHtml.php(2563): TbHtml::activeTextField(Object(TestForm), 'quiz_correct_em...', Array)
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\widgets\TbActiveForm.php(443): TbHtml::createActiveInput('textField', Object(TestForm), 'quiz_correct_em...', Array, Array)
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\widgets\TbActiveForm.php(187): TbActiveForm->createInput('textField', Object(TestForm), 'quiz_correct_em...', Array)
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\TestStart\quiz.php(60): TbActiveForm->textField(Object(TestForm), 'quiz_correct_em...')
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(127): require('D:\\phpstudy\\PHP...')
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\\phpstudy\\PHP...', Array, true)
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(870): CBaseController->renderFile('D:\\phpstudy\\PHP...', Array, true)
+#11 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(783): CController->renderPartial('quiz', Array, true)
+#12 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestStartController.php(54): CController->render('quiz', Array)
+#13 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): TestStartController->actionQuizStart()
+#14 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#15 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#16 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('QuizStart')
+#18 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('TestStart/QuizS...')
+#19 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#20 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/Quiz/quiz/index.php/TestStart/QuizStart?index=quiz&quiz_id=29&employee_id=2&quiz_correct_employee_id=50
+HTTP_REFERER=http://127.0.0.1/Quiz/quiz/index.php/TestStart/index
+---
+2017/12/29 11:30:16 [warning] [application] Failed to set unsafe attribute "scenario" of "TestForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (59)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 11:30:16 [warning] [application] Failed to set unsafe attribute "quiz_correct_employee_id" of "TestForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (59)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 11:30:16 [error] [php] Array to string conversion (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestForm.php:98)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): TestResultController->runAction()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): TestResultController->runActionWithFilters()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): TestResultController->run()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/Quiz/quiz/index.php/TestResult/SubmitResult
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestForm.php (98)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (61)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 11:30:49 [warning] [application] Failed to set unsafe attribute "scenario" of "TestForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (59)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 11:30:49 [warning] [application] Failed to set unsafe attribute "quiz_correct_employee_id" of "TestForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (59)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 11:30:50 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'field list'. The SQL statement executed was: select id from employee_correct_rate WHERE id=50.
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestForm.php (100)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (61)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 11:30:50 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'field list'. The SQL statement executed was: select id from employee_correct_rate WHERE id=50' in D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestForm.php(100): CDbCommand->queryAll()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php(61): TestForm->saveData(Array)
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): TestResultController->actionSubmitResult()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('SubmitResult')
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('TestResult/Subm...')
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/Quiz/quiz/index.php/TestResult/SubmitResult
+HTTP_REFERER=http://127.0.0.1/Quiz/quiz/index.php/TestStart/QuizStart?index=quiz&quiz_id=29&employee_id=2&quiz_correct_employee_id=50
+---
+2017/12/29 11:31:42 [warning] [application] Failed to set unsafe attribute "scenario" of "TestForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (59)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 11:31:42 [warning] [application] Failed to set unsafe attribute "quiz_correct_employee_id" of "TestForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (59)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 11:31:43 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'employee_corect_rate_id' in 'field list'. The SQL statement executed was: select employee_corect_rate_id from employee_correct_rate WHERE id=50.
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestForm.php (100)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (61)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 11:31:43 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'employee_corect_rate_id' in 'field list'. The SQL statement executed was: select employee_corect_rate_id from employee_correct_rate WHERE id=50' in D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestForm.php(100): CDbCommand->queryAll()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php(61): TestForm->saveData(Array)
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): TestResultController->actionSubmitResult()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('SubmitResult')
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('TestResult/Subm...')
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/Quiz/quiz/index.php/TestResult/SubmitResult
+HTTP_REFERER=http://127.0.0.1/Quiz/quiz/index.php/TestStart/QuizStart?index=quiz&quiz_id=29&employee_id=2&quiz_correct_employee_id=50
+---
+2017/12/29 11:31:55 [warning] [application] Failed to set unsafe attribute "scenario" of "TestForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (59)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 11:31:55 [warning] [application] Failed to set unsafe attribute "quiz_correct_employee_id" of "TestForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (59)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 11:31:56 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'where clause'. The SQL statement executed was: select employee_correct_rate_id from employee_correct_rate WHERE id=50.
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestForm.php (100)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (61)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 11:31:56 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'where clause'. The SQL statement executed was: select employee_correct_rate_id from employee_correct_rate WHERE id=50' in D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestForm.php(100): CDbCommand->queryAll()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php(61): TestForm->saveData(Array)
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): TestResultController->actionSubmitResult()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('SubmitResult')
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('TestResult/Subm...')
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/Quiz/quiz/index.php/TestResult/SubmitResult
+HTTP_REFERER=http://127.0.0.1/Quiz/quiz/index.php/TestStart/QuizStart?index=quiz&quiz_id=29&employee_id=2&quiz_correct_employee_id=50
+---
+2017/12/29 11:41:43 [warning] [application] Failed to set unsafe attribute "scenario" of "TestStartForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestStartController.php (66)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 11:41:43 [warning] [application] Failed to set unsafe attribute "quiz_choose_id" of "TestStartForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestStartController.php (66)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 11:41:45 [error] [exception.CException] exception 'CException' with message '属性 "TestForm.quiz_count" 未被定义.' in D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\helpers\CHtml.php(2158): CComponent->__get('quiz_count')
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\helpers\CHtml.php(1887): CHtml::resolveValue(Object(TestForm), 'quiz_count')
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\helpers\TbHtml.php(2688): CHtml::activeInputField('text', Object(TestForm), 'quiz_count', Array)
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\helpers\TbHtml.php(1789): TbHtml::activeTextInputField('text', Object(TestForm), 'quiz_count', Array)
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\helpers\TbHtml.php(2563): TbHtml::activeTextField(Object(TestForm), 'quiz_count', Array)
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\widgets\TbActiveForm.php(443): TbHtml::createActiveInput('textField', Object(TestForm), 'quiz_count', Array, Array)
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\extensions\bootstrap\widgets\TbActiveForm.php(187): TbActiveForm->createInput('textField', Object(TestForm), 'quiz_count', Array)
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\TestStart\quiz.php(61): TbActiveForm->textField(Object(TestForm), 'quiz_count')
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(127): require('D:\\phpstudy\\PHP...')
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\\phpstudy\\PHP...', Array, true)
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(870): CBaseController->renderFile('D:\\phpstudy\\PHP...', Array, true)
+#11 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(783): CController->renderPartial('quiz', Array, true)
+#12 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestStartController.php(55): CController->render('quiz', Array)
+#13 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): TestStartController->actionQuizStart()
+#14 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#15 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#16 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('QuizStart')
+#18 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('TestStart/QuizS...')
+#19 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#20 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/Quiz/quiz/index.php/TestStart/QuizStart?index=quiz&quiz_id=29&employee_id=2&quiz_correct_employee_id=51
+HTTP_REFERER=http://127.0.0.1/Quiz/quiz/index.php/TestStart/index
+---
+2017/12/29 11:44:12 [error] [exception.CException] exception 'CException' with message 'TbActiveForm and its behaviors do not have a method or closure named "hiddenFiled".' in D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\TestStart\quiz.php(62): CComponent->__call('hiddenFiled', Array)
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\TestStart\quiz.php(62): TbActiveForm->hiddenFiled(Object(TestForm), 'quiz_date')
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(127): require('D:\\phpstudy\\PHP...')
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\\phpstudy\\PHP...', Array, true)
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(870): CBaseController->renderFile('D:\\phpstudy\\PHP...', Array, true)
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(783): CController->renderPartial('quiz', Array, true)
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestStartController.php(55): CController->render('quiz', Array)
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): TestStartController->actionQuizStart()
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('QuizStart')
+#12 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('TestStart/QuizS...')
+#13 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/Quiz/quiz/index.php/TestStart/QuizStart?index=quiz&quiz_id=29&employee_id=2&quiz_correct_employee_id=51
+HTTP_REFERER=http://127.0.0.1/Quiz/quiz/index.php/TestStart/index
+---
+2017/12/29 11:44:17 [error] [exception.CException] exception 'CException' with message 'TbActiveForm and its behaviors do not have a method or closure named "hiddenFiled".' in D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\TestStart\quiz.php(62): CComponent->__call('hiddenFiled', Array)
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\TestStart\quiz.php(62): TbActiveForm->hiddenFiled(Object(TestForm), 'quiz_date')
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(127): require('D:\\phpstudy\\PHP...')
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\\phpstudy\\PHP...', Array, true)
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(870): CBaseController->renderFile('D:\\phpstudy\\PHP...', Array, true)
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(783): CController->renderPartial('quiz', Array, true)
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestStartController.php(55): CController->render('quiz', Array)
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): TestStartController->actionQuizStart()
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('QuizStart')
+#12 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('TestStart/QuizS...')
+#13 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/Quiz/quiz/index.php/TestStart/QuizStart?index=quiz&quiz_id=29&employee_id=2&quiz_correct_employee_id=51
+HTTP_REFERER=http://127.0.0.1/Quiz/quiz/index.php/TestStart/index
+---
+2017/12/29 11:44:26 [error] [exception.CException] exception 'CException' with message 'TbActiveForm and its behaviors do not have a method or closure named "hiddenFiled".' in D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\TestStart\quiz.php(62): CComponent->__call('hiddenFiled', Array)
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\TestStart\quiz.php(62): TbActiveForm->hiddenFiled(Object(TestForm), 'quiz_date')
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(127): require('D:\\phpstudy\\PHP...')
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\\phpstudy\\PHP...', Array, true)
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(870): CBaseController->renderFile('D:\\phpstudy\\PHP...', Array, true)
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(783): CController->renderPartial('quiz', Array, true)
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestStartController.php(55): CController->render('quiz', Array)
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): TestStartController->actionQuizStart()
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('QuizStart')
+#12 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('TestStart/QuizS...')
+#13 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/Quiz/quiz/index.php/TestStart/QuizStart?index=quiz&quiz_id=29&employee_id=2&quiz_correct_employee_id=51
+HTTP_REFERER=http://127.0.0.1/Quiz/quiz/index.php/TestStart/index
+---
+2017/12/29 11:44:30 [error] [exception.CException] exception 'CException' with message 'TbActiveForm and its behaviors do not have a method or closure named "hiddenFiled".' in D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\TestStart\quiz.php(62): CComponent->__call('hiddenFiled', Array)
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\TestStart\quiz.php(62): TbActiveForm->hiddenFiled(Object(TestForm), 'quiz_date')
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(127): require('D:\\phpstudy\\PHP...')
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\\phpstudy\\PHP...', Array, true)
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(870): CBaseController->renderFile('D:\\phpstudy\\PHP...', Array, true)
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(783): CController->renderPartial('quiz', Array, true)
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestStartController.php(55): CController->render('quiz', Array)
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): TestStartController->actionQuizStart()
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('QuizStart')
+#12 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('TestStart/QuizS...')
+#13 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/Quiz/quiz/index.php/TestStart/QuizStart?index=quiz&quiz_id=29&employee_id=2&quiz_correct_employee_id=51
+HTTP_REFERER=http://127.0.0.1/Quiz/quiz/index.php/TestStart/index
+---
+2017/12/29 11:44:40 [warning] [application] Failed to set unsafe attribute "scenario" of "TestStartForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestStartController.php (66)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 11:44:40 [warning] [application] Failed to set unsafe attribute "quiz_choose_id" of "TestStartForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestStartController.php (66)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 11:44:42 [error] [exception.CException] exception 'CException' with message 'TbActiveForm and its behaviors do not have a method or closure named "hiddenFiled".' in D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\TestStart\quiz.php(62): CComponent->__call('hiddenFiled', Array)
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\TestStart\quiz.php(62): TbActiveForm->hiddenFiled(Object(TestForm), 'quiz_date')
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(127): require('D:\\phpstudy\\PHP...')
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\\phpstudy\\PHP...', Array, true)
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(870): CBaseController->renderFile('D:\\phpstudy\\PHP...', Array, true)
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(783): CController->renderPartial('quiz', Array, true)
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestStartController.php(55): CController->render('quiz', Array)
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): TestStartController->actionQuizStart()
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('QuizStart')
+#12 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('TestStart/QuizS...')
+#13 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/Quiz/quiz/index.php/TestStart/QuizStart?index=quiz&quiz_id=29&employee_id=2&quiz_correct_employee_id=52
+HTTP_REFERER=http://127.0.0.1/Quiz/quiz/index.php/TestStart/index
+---
+2017/12/29 11:46:34 [warning] [application] Failed to set unsafe attribute "scenario" of "TestStartForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestStartController.php (66)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 11:46:34 [warning] [application] Failed to set unsafe attribute "quiz_choose_id" of "TestStartForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestStartController.php (66)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 11:57:34 [warning] [application] Failed to set unsafe attribute "scenario" of "TestStartForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestStartController.php (66)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 11:57:34 [warning] [application] Failed to set unsafe attribute "quiz_choose_id" of "TestStartForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestStartController.php (66)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 12:01:06 [error] [php] Illegal string offset 'is_right' (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\TestStart\quiz.php:103)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(870): TestStartController->renderFile()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(783): TestStartController->renderPartial()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestStartController.php(55): TestStartController->render()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): TestStartController->actionQuizStart()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): TestStartController->runAction()
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): TestStartController->runActionWithFilters()
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): TestStartController->run()
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/Quiz/quiz/index.php/TestStart/QuizStart?index=quiz&quiz_id=29&employee_id=2&quiz_correct_employee_id=54
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\TestStart\quiz.php (103)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestStartController.php (55)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 12:01:26 [error] [php] Illegal string offset 'right' (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\TestStart\quiz.php:103)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(870): TestStartController->renderFile()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(783): TestStartController->renderPartial()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestStartController.php(55): TestStartController->render()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): TestStartController->actionQuizStart()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): TestStartController->runAction()
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): TestStartController->runActionWithFilters()
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): TestStartController->run()
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/Quiz/quiz/index.php/TestStart/QuizStart?index=quiz&quiz_id=29&employee_id=2&quiz_correct_employee_id=54
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\TestStart\quiz.php (103)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestStartController.php (55)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 12:02:28 [error] [php] Illegal string offset 'right' (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\TestStart\quiz.php:103)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(870): TestStartController->renderFile()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(783): TestStartController->renderPartial()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestStartController.php(55): TestStartController->render()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): TestStartController->actionQuizStart()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): TestStartController->runAction()
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): TestStartController->runActionWithFilters()
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): TestStartController->run()
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/Quiz/quiz/index.php/TestStart/QuizStart?index=quiz&quiz_id=29&employee_id=2&quiz_correct_employee_id=54
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\TestStart\quiz.php (103)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestStartController.php (55)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 12:02:36 [error] [php] Illegal string offset 'answer' (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\TestStart\quiz.php:104)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(870): TestStartController->renderFile()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(783): TestStartController->renderPartial()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestStartController.php(55): TestStartController->render()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): TestStartController->actionQuizStart()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): TestStartController->runAction()
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): TestStartController->runActionWithFilters()
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): TestStartController->run()
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/Quiz/quiz/index.php/TestStart/QuizStart?index=quiz&quiz_id=29&employee_id=2&quiz_correct_employee_id=54
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\TestStart\quiz.php (104)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestStartController.php (55)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 12:04:26 [error] [php] Illegal string offset 'right' (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\TestStart\quiz.php:102)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(870): TestStartController->renderFile()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(783): TestStartController->renderPartial()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestStartController.php(55): TestStartController->render()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): TestStartController->actionQuizStart()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): TestStartController->runAction()
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): TestStartController->runActionWithFilters()
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): TestStartController->run()
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/Quiz/quiz/index.php/TestStart/QuizStart?index=quiz&quiz_id=29&employee_id=2&quiz_correct_employee_id=54
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\TestStart\quiz.php (102)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestStartController.php (55)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 12:08:48 [error] [php] Array to string conversion (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\TestStart\quiz.php:122)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(870): TestStartController->renderFile()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(783): TestStartController->renderPartial()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestStartController.php(55): TestStartController->render()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): TestStartController->actionQuizStart()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): TestStartController->runAction()
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): TestStartController->runActionWithFilters()
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): TestStartController->run()
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/Quiz/quiz/index.php/TestStart/QuizStart?index=quiz&quiz_id=29&employee_id=2&quiz_correct_employee_id=54
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\TestStart\quiz.php (122)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestStartController.php (55)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 12:09:48 [error] [php] Array to string conversion (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\TestStart\quiz.php:122)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(870): TestStartController->renderFile()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(783): TestStartController->renderPartial()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestStartController.php(55): TestStartController->render()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): TestStartController->actionQuizStart()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): TestStartController->runAction()
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): TestStartController->runActionWithFilters()
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): TestStartController->run()
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/Quiz/quiz/index.php/TestStart/QuizStart?index=quiz&quiz_id=29&employee_id=2&quiz_correct_employee_id=54
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\TestStart\quiz.php (122)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestStartController.php (55)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 12:10:49 [error] [php] Array to string conversion (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\TestStart\quiz.php:126)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(870): TestStartController->renderFile()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(783): TestStartController->renderPartial()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestStartController.php(55): TestStartController->render()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): TestStartController->actionQuizStart()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): TestStartController->runAction()
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): TestStartController->runActionWithFilters()
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): TestStartController->run()
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/Quiz/quiz/index.php/TestStart/QuizStart?index=quiz&quiz_id=29&employee_id=2&quiz_correct_employee_id=54
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\TestStart\quiz.php (126)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestStartController.php (55)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 12:43:52 [error] [php] Array to string conversion (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\TestStart\quiz.php:121)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(870): TestStartController->renderFile()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(783): TestStartController->renderPartial()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestStartController.php(55): TestStartController->render()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): TestStartController->actionQuizStart()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): TestStartController->runAction()
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): TestStartController->runActionWithFilters()
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): TestStartController->run()
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/Quiz/quiz/index.php/TestStart/QuizStart?index=quiz&quiz_id=29&employee_id=2&quiz_correct_employee_id=54
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\TestStart\quiz.php (121)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestStartController.php (55)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 12:43:54 [error] [php] Array to string conversion (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\TestStart\quiz.php:121)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(870): TestStartController->renderFile()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(783): TestStartController->renderPartial()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestStartController.php(55): TestStartController->render()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): TestStartController->actionQuizStart()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): TestStartController->runAction()
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): TestStartController->runActionWithFilters()
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): TestStartController->run()
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/Quiz/quiz/index.php/TestStart/QuizStart?index=quiz&quiz_id=29&employee_id=2&quiz_correct_employee_id=54
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\views\TestStart\quiz.php (121)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestStartController.php (55)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 13:52:51 [warning] [application] Failed to set unsafe attribute "scenario" of "TestStartForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestStartController.php (66)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 13:52:51 [warning] [application] Failed to set unsafe attribute "quiz_choose_id" of "TestStartForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestStartController.php (66)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 13:58:32 [warning] [application] Failed to set unsafe attribute "scenario" of "TestStartForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestStartController.php (66)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 13:58:32 [warning] [application] Failed to set unsafe attribute "quiz_choose_id" of "TestStartForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestStartController.php (66)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 14:02:49 [warning] [application] Failed to set unsafe attribute "scenario" of "TestStartForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestStartController.php (66)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 14:02:49 [warning] [application] Failed to set unsafe attribute "quiz_choose_id" of "TestStartForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestStartController.php (66)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 14:03:34 [warning] [application] Failed to set unsafe attribute "scenario" of "TestStartForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestStartController.php (66)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 14:03:34 [warning] [application] Failed to set unsafe attribute "quiz_choose_id" of "TestStartForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestStartController.php (66)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 14:03:42 [warning] [application] Failed to set unsafe attribute "scenario" of "TestStartForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestStartController.php (66)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 14:03:42 [warning] [application] Failed to set unsafe attribute "quiz_choose_id" of "TestStartForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestStartController.php (66)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 14:18:42 [warning] [application] Failed to set unsafe attribute "scenario" of "TestForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (59)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 14:18:42 [warning] [application] Failed to set unsafe attribute "quiz_correct_employee_id" of "TestForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (59)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 14:18:42 [warning] [application] Failed to set unsafe attribute "quiz_date" of "TestForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (59)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 14:18:42 [error] [php] Undefined index: quiz_id (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestForm.php:103)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): TestResultController->runAction()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): TestResultController->runActionWithFilters()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): TestResultController->run()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/Quiz/quiz/index.php/TestResult/SubmitResult
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestForm.php (103)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (61)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 14:18:49 [warning] [application] Failed to set unsafe attribute "scenario" of "TestForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (59)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 14:18:49 [warning] [application] Failed to set unsafe attribute "quiz_correct_employee_id" of "TestForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (59)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 14:18:49 [warning] [application] Failed to set unsafe attribute "quiz_date" of "TestForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (59)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 14:18:49 [error] [php] Undefined index: quiz_id (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestForm.php:103)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): TestResultController->runAction()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): TestResultController->runActionWithFilters()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): TestResultController->run()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/Quiz/quiz/index.php/TestResult/SubmitResult
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestForm.php (103)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (61)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 14:18:51 [warning] [application] Failed to set unsafe attribute "scenario" of "TestForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (59)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 14:18:51 [warning] [application] Failed to set unsafe attribute "quiz_correct_employee_id" of "TestForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (59)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 14:18:51 [warning] [application] Failed to set unsafe attribute "quiz_date" of "TestForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (59)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 14:18:51 [error] [php] Undefined index: quiz_id (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestForm.php:103)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): TestResultController->runAction()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): TestResultController->runActionWithFilters()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): TestResultController->run()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/Quiz/quiz/index.php/TestResult/SubmitResult
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestForm.php (103)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (61)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 14:19:08 [warning] [application] Failed to set unsafe attribute "scenario" of "TestForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (59)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 14:19:08 [warning] [application] Failed to set unsafe attribute "quiz_correct_employee_id" of "TestForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (59)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 14:19:08 [warning] [application] Failed to set unsafe attribute "quiz_date" of "TestForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (59)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 14:19:08 [error] [php] Undefined index: quiz_id (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestForm.php:103)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): TestResultController->runAction()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): TestResultController->runActionWithFilters()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): TestResultController->run()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/Quiz/quiz/index.php/TestResult/SubmitResult
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestForm.php (103)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (61)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 14:19:10 [warning] [application] Failed to set unsafe attribute "scenario" of "TestForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (59)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 14:19:10 [warning] [application] Failed to set unsafe attribute "quiz_correct_employee_id" of "TestForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (59)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 14:19:10 [warning] [application] Failed to set unsafe attribute "quiz_date" of "TestForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (59)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 14:19:10 [error] [php] Undefined index: quiz_id (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestForm.php:103)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): TestResultController->runAction()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): TestResultController->runActionWithFilters()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): TestResultController->run()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/Quiz/quiz/index.php/TestResult/SubmitResult
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestForm.php (103)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (61)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 14:35:24 [warning] [application] Failed to set unsafe attribute "scenario" of "TestForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (60)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 14:35:24 [warning] [application] Failed to set unsafe attribute "quiz_correct_employee_id" of "TestForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (60)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 14:35:24 [warning] [application] Failed to set unsafe attribute "quiz_date" of "TestForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (60)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 14:35:24 [error] [php] Undefined index: quiz_exams_count (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestForm.php:102)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): TestResultController->runAction()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): TestResultController->runActionWithFilters()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): TestResultController->run()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/Quiz/quiz/index.php/TestResult/SubmitResult
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestForm.php (102)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (62)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 14:49:09 [warning] [application] Failed to set unsafe attribute "scenario" of "TestStartForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestStartController.php (66)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 14:49:09 [warning] [application] Failed to set unsafe attribute "quiz_choose_id" of "TestStartForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestStartController.php (66)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 14:57:45 [warning] [application] Failed to set unsafe attribute "scenario" of "TestForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (60)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 14:57:45 [warning] [application] Failed to set unsafe attribute "quiz_correct_employee_id" of "TestForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (60)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 14:57:45 [warning] [application] Failed to set unsafe attribute "quiz_date" of "TestForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (60)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 14:57:45 [error] [php] Array to string conversion (D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestForm.php:110)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): TestResultController->runAction()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): TestResultController->runActionWithFilters()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): TestResultController->run()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/Quiz/quiz/index.php/TestResult/SubmitResult
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestForm.php (110)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (62)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 15:18:03 [warning] [application] Failed to set unsafe attribute "scenario" of "TestStartForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestStartController.php (66)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 15:18:03 [warning] [application] Failed to set unsafe attribute "quiz_choose_id" of "TestStartForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestStartController.php (66)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 15:18:30 [warning] [application] Failed to set unsafe attribute "scenario" of "TestForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (60)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 15:18:30 [warning] [application] Failed to set unsafe attribute "quiz_correct_employee_id" of "TestForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (60)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 15:18:30 [warning] [application] Failed to set unsafe attribute "quiz_date" of "TestForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (60)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 15:18:31 [error] [exception.CException] exception 'CException' with message 'CDbCommand and its behaviors do not have a method or closure named "excute".' in D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestForm.php(126): CComponent->__call('excute', Array)
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestForm.php(126): CDbCommand->excute()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php(62): TestForm->saveData(Array)
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): TestResultController->actionSubmitResult()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('SubmitResult')
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('TestResult/Subm...')
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/Quiz/quiz/index.php/TestResult/SubmitResult
+HTTP_REFERER=http://127.0.0.1/Quiz/quiz/index.php/TestStart/QuizStart?index=quiz&quiz_id=38&employee_id=6&quiz_correct_employee_id=60
+---
+2017/12/29 15:19:10 [warning] [application] Failed to set unsafe attribute "scenario" of "TestForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (60)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 15:19:10 [warning] [application] Failed to set unsafe attribute "quiz_correct_employee_id" of "TestForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (60)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 15:19:10 [warning] [application] Failed to set unsafe attribute "quiz_date" of "TestForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (60)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 15:19:11 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(employee_correct_rate,employee_quiz_questions_all,employee_quiz_questions_wrong' at line 2. The SQL statement executed was: update employee_correct_rate set
+(employee_correct_rate,employee_quiz_questions_all,employee_quiz_questions_wrong,employee_quiz_questions_count,employee_quiz_wrong_questions_count) VALUES(28.57%,8,12,13,18,37,38,8,13,37,38,7,4)WHERE employee_correct_rate_id=60.
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestForm.php (126)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (62)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 15:19:11 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(employee_correct_rate,employee_quiz_questions_all,employee_quiz_questions_wrong' at line 2. The SQL statement executed was: update employee_correct_rate set
+(employee_correct_rate,employee_quiz_questions_all,employee_quiz_questions_wrong,employee_quiz_questions_count,employee_quiz_wrong_questions_count) VALUES(28.57%,8,12,13,18,37,38,8,13,37,38,7,4)WHERE employee_correct_rate_id=60' in D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\db\CDbCommand.php:354
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestForm.php(126): CDbCommand->execute()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php(62): TestForm->saveData(Array)
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): TestResultController->actionSubmitResult()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('SubmitResult')
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('TestResult/Subm...')
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/Quiz/quiz/index.php/TestResult/SubmitResult
+HTTP_REFERER=http://127.0.0.1/Quiz/quiz/index.php/TestStart/QuizStart?index=quiz&quiz_id=38&employee_id=6&quiz_correct_employee_id=60
+---
+2017/12/29 15:20:55 [warning] [application] Failed to set unsafe attribute "scenario" of "TestForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (60)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 15:20:55 [warning] [application] Failed to set unsafe attribute "quiz_correct_employee_id" of "TestForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (60)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 15:20:55 [warning] [application] Failed to set unsafe attribute "quiz_date" of "TestForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (60)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 15:20:56 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(employee_correct_rate,employee_quiz_questions_all,employee_quiz_questions_wrong' at line 2. The SQL statement executed was: update employee_correct_rate set
+(employee_correct_rate,employee_quiz_questions_all,employee_quiz_questions_wrong,employee_quiz_questions_count,employee_quiz_wrong_questions_count) VALUES(28.57%,8,12,13,18,37,38,8,13,37,38,7,4)WHERE employee_correct_rate_id=60.
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestForm.php (124)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (62)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 15:20:56 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(employee_correct_rate,employee_quiz_questions_all,employee_quiz_questions_wrong' at line 2. The SQL statement executed was: update employee_correct_rate set
+(employee_correct_rate,employee_quiz_questions_all,employee_quiz_questions_wrong,employee_quiz_questions_count,employee_quiz_wrong_questions_count) VALUES(28.57%,8,12,13,18,37,38,8,13,37,38,7,4)WHERE employee_correct_rate_id=60' in D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\db\CDbCommand.php:354
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestForm.php(124): CDbCommand->execute()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php(62): TestForm->saveData(Array)
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): TestResultController->actionSubmitResult()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('SubmitResult')
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('TestResult/Subm...')
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/Quiz/quiz/index.php/TestResult/SubmitResult
+HTTP_REFERER=http://127.0.0.1/Quiz/quiz/index.php/TestStart/QuizStart?index=quiz&quiz_id=38&employee_id=6&quiz_correct_employee_id=60
+---
+2017/12/29 15:23:39 [warning] [application] Failed to set unsafe attribute "scenario" of "TestForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (60)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 15:23:39 [warning] [application] Failed to set unsafe attribute "quiz_correct_employee_id" of "TestForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (60)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 15:23:39 [warning] [application] Failed to set unsafe attribute "quiz_date" of "TestForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (60)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 15:23:40 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'employee_quiz_questions_all=8,12,13,18,37,38,employee_quiz_questions_wrong=8,13,' at line 1. The SQL statement executed was: update employee_correct_rate set employee_correct_rate=28.57%,employee_quiz_questions_all=8,12,13,18,37,38,employee_quiz_questions_wrong=8,13,37,38,employee_quiz_questions_count=7,employee_quiz_wrong_questions_count=4 WHERE employee_correct_rate_id=60.
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestForm.php (123)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (62)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 15:23:40 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'employee_quiz_questions_all=8,12,13,18,37,38,employee_quiz_questions_wrong=8,13,' at line 1. The SQL statement executed was: update employee_correct_rate set employee_correct_rate=28.57%,employee_quiz_questions_all=8,12,13,18,37,38,employee_quiz_questions_wrong=8,13,37,38,employee_quiz_questions_count=7,employee_quiz_wrong_questions_count=4 WHERE employee_correct_rate_id=60' in D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\db\CDbCommand.php:354
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestForm.php(123): CDbCommand->execute()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php(62): TestForm->saveData(Array)
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): TestResultController->actionSubmitResult()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('SubmitResult')
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('TestResult/Subm...')
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/Quiz/quiz/index.php/TestResult/SubmitResult
+HTTP_REFERER=http://127.0.0.1/Quiz/quiz/index.php/TestStart/QuizStart?index=quiz&quiz_id=38&employee_id=6&quiz_correct_employee_id=60
+---
+2017/12/29 15:26:54 [warning] [application] Failed to set unsafe attribute "scenario" of "TestForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (60)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 15:26:54 [warning] [application] Failed to set unsafe attribute "quiz_correct_employee_id" of "TestForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (60)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 15:26:54 [warning] [application] Failed to set unsafe attribute "quiz_date" of "TestForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (60)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 15:26:55 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'employee_quiz_questions_all=8,12,13,18,37,38,employee_quiz_questions_wrong=8,13,' at line 1. The SQL statement executed was: update employee_correct_rate set employee_correct_rate=28.57%,employee_quiz_questions_all=8,12,13,18,37,38,employee_quiz_questions_wrong=8,13,37,38,employee_quiz_questions_count=7,employee_quiz_wrong_questions_count=4 WHERE employee_correct_rate_id=60.
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestForm.php (123)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (62)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 15:26:55 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'employee_quiz_questions_all=8,12,13,18,37,38,employee_quiz_questions_wrong=8,13,' at line 1. The SQL statement executed was: update employee_correct_rate set employee_correct_rate=28.57%,employee_quiz_questions_all=8,12,13,18,37,38,employee_quiz_questions_wrong=8,13,37,38,employee_quiz_questions_count=7,employee_quiz_wrong_questions_count=4 WHERE employee_correct_rate_id=60' in D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\db\CDbCommand.php:354
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestForm.php(123): CDbCommand->execute()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php(62): TestForm->saveData(Array)
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): TestResultController->actionSubmitResult()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('SubmitResult')
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('TestResult/Subm...')
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/Quiz/quiz/index.php/TestResult/SubmitResult
+HTTP_REFERER=http://127.0.0.1/Quiz/quiz/index.php/TestStart/QuizStart?index=quiz&quiz_id=38&employee_id=6&quiz_correct_employee_id=60
+---
+2017/12/29 15:28:43 [warning] [application] Failed to set unsafe attribute "scenario" of "TestForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (60)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 15:28:43 [warning] [application] Failed to set unsafe attribute "quiz_correct_employee_id" of "TestForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (60)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 15:28:43 [warning] [application] Failed to set unsafe attribute "quiz_date" of "TestForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (60)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 15:28:44 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(employee_correct_rate,employee_quiz_questions_all,employee_quiz_questions_wrong' at line 2. The SQL statement executed was: update employee_correct_rate set
+(employee_correct_rate,employee_quiz_questions_all,employee_quiz_questions_wrong,employee_quiz_questions_count,employee_quiz_wrong_questions_count) VALUES(28.57%,8,12,13,18,37,38,8,13,37,38,7,4)WHERE employee_correct_rate_id=60.
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestForm.php (124)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (62)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 15:28:44 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(employee_correct_rate,employee_quiz_questions_all,employee_quiz_questions_wrong' at line 2. The SQL statement executed was: update employee_correct_rate set
+(employee_correct_rate,employee_quiz_questions_all,employee_quiz_questions_wrong,employee_quiz_questions_count,employee_quiz_wrong_questions_count) VALUES(28.57%,8,12,13,18,37,38,8,13,37,38,7,4)WHERE employee_correct_rate_id=60' in D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\db\CDbCommand.php:354
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestForm.php(124): CDbCommand->execute()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php(62): TestForm->saveData(Array)
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): TestResultController->actionSubmitResult()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('SubmitResult')
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('TestResult/Subm...')
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/Quiz/quiz/index.php/TestResult/SubmitResult
+HTTP_REFERER=http://127.0.0.1/Quiz/quiz/index.php/TestStart/QuizStart?index=quiz&quiz_id=38&employee_id=6&quiz_correct_employee_id=60
+---
+2017/12/29 15:29:33 [warning] [application] Failed to set unsafe attribute "scenario" of "TestStartForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestStartController.php (66)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 15:29:33 [warning] [application] Failed to set unsafe attribute "quiz_choose_id" of "TestStartForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestStartController.php (66)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 15:29:51 [warning] [application] Failed to set unsafe attribute "scenario" of "TestForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (60)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 15:29:51 [warning] [application] Failed to set unsafe attribute "quiz_correct_employee_id" of "TestForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (60)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 15:29:51 [warning] [application] Failed to set unsafe attribute "quiz_date" of "TestForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (60)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 15:29:52 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(employee_correct_rate,employee_quiz_questions_all,employee_quiz_questions_wrong' at line 2. The SQL statement executed was: update employee_correct_rate set
+(employee_correct_rate,employee_quiz_questions_all,employee_quiz_questions_wrong,employee_quiz_questions_count,employee_quiz_wrong_questions_count) VALUES(14.29%,6,13,18,20,35,36,39,6,13,18,20,35,36,7,6)WHERE employee_correct_rate_id=61.
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestForm.php (125)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (62)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 15:29:52 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(employee_correct_rate,employee_quiz_questions_all,employee_quiz_questions_wrong' at line 2. The SQL statement executed was: update employee_correct_rate set
+(employee_correct_rate,employee_quiz_questions_all,employee_quiz_questions_wrong,employee_quiz_questions_count,employee_quiz_wrong_questions_count) VALUES(14.29%,6,13,18,20,35,36,39,6,13,18,20,35,36,7,6)WHERE employee_correct_rate_id=61' in D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\db\CDbCommand.php:354
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestForm.php(125): CDbCommand->execute()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php(62): TestForm->saveData(Array)
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): TestResultController->actionSubmitResult()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('SubmitResult')
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('TestResult/Subm...')
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/Quiz/quiz/index.php/TestResult/SubmitResult
+HTTP_REFERER=http://127.0.0.1/Quiz/quiz/index.php/TestStart/QuizStart?index=quiz&quiz_id=38&employee_id=6&quiz_correct_employee_id=61
+---
+2017/12/29 15:31:56 [warning] [application] Failed to set unsafe attribute "scenario" of "TestForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (60)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 15:31:56 [warning] [application] Failed to set unsafe attribute "quiz_correct_employee_id" of "TestForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (60)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 15:31:56 [warning] [application] Failed to set unsafe attribute "quiz_date" of "TestForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (60)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 15:31:57 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(employee_correct_rate,employee_quiz_questions_all,employee_quiz_questions_wrong' at line 2. The SQL statement executed was: update employee_correct_rate set
+(employee_correct_rate,employee_quiz_questions_all,employee_quiz_questions_wrong,employee_quiz_questions_count,employee_quiz_wrong_questions_count) VALUES ('14.29%','6,13,18,20,35,36,39','6,13,18,20,35,36','7','6')WHERE employee_correct_rate_id=61.
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestForm.php (125)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (62)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 15:31:57 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(employee_correct_rate,employee_quiz_questions_all,employee_quiz_questions_wrong' at line 2. The SQL statement executed was: update employee_correct_rate set
+(employee_correct_rate,employee_quiz_questions_all,employee_quiz_questions_wrong,employee_quiz_questions_count,employee_quiz_wrong_questions_count) VALUES ('14.29%','6,13,18,20,35,36,39','6,13,18,20,35,36','7','6')WHERE employee_correct_rate_id=61' in D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\db\CDbCommand.php:354
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestForm.php(125): CDbCommand->execute()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php(62): TestForm->saveData(Array)
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): TestResultController->actionSubmitResult()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('SubmitResult')
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('TestResult/Subm...')
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/Quiz/quiz/index.php/TestResult/SubmitResult
+HTTP_REFERER=http://127.0.0.1/Quiz/quiz/index.php/TestStart/QuizStart?index=quiz&quiz_id=38&employee_id=6&quiz_correct_employee_id=61
+---
+2017/12/29 15:32:47 [warning] [application] Failed to set unsafe attribute "scenario" of "TestForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (60)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 15:32:47 [warning] [application] Failed to set unsafe attribute "quiz_correct_employee_id" of "TestForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (60)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 15:32:47 [warning] [application] Failed to set unsafe attribute "quiz_date" of "TestForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (60)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 15:32:48 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(employee_correct_rate,employee_quiz_questions_all,employee_quiz_questions_wrong' at line 2. The SQL statement executed was: update employee_correct_rate set
+(employee_correct_rate,employee_quiz_questions_all,employee_quiz_questions_wrong,employee_quiz_questions_count,employee_quiz_wrong_questions_count) VALUES (14.29%,6-13-18-20-35-36-39,6-13-18-20-35-36,7,6)WHERE employee_correct_rate_id=61.
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestForm.php (125)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (62)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 15:32:48 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(employee_correct_rate,employee_quiz_questions_all,employee_quiz_questions_wrong' at line 2. The SQL statement executed was: update employee_correct_rate set
+(employee_correct_rate,employee_quiz_questions_all,employee_quiz_questions_wrong,employee_quiz_questions_count,employee_quiz_wrong_questions_count) VALUES (14.29%,6-13-18-20-35-36-39,6-13-18-20-35-36,7,6)WHERE employee_correct_rate_id=61' in D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\db\CDbCommand.php:354
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestForm.php(125): CDbCommand->execute()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php(62): TestForm->saveData(Array)
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): TestResultController->actionSubmitResult()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('SubmitResult')
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('TestResult/Subm...')
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/Quiz/quiz/index.php/TestResult/SubmitResult
+HTTP_REFERER=http://127.0.0.1/Quiz/quiz/index.php/TestStart/QuizStart?index=quiz&quiz_id=38&employee_id=6&quiz_correct_employee_id=61
+---
+2017/12/29 15:33:32 [warning] [application] Failed to set unsafe attribute "scenario" of "TestForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (60)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 15:33:32 [warning] [application] Failed to set unsafe attribute "quiz_correct_employee_id" of "TestForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (60)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 15:33:32 [warning] [application] Failed to set unsafe attribute "quiz_date" of "TestForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (60)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 15:33:33 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(employee_correct_rate,employee_quiz_questions_all,employee_quiz_questions_wrong' at line 2. The SQL statement executed was: update employee_correct_rate set
+(employee_correct_rate,employee_quiz_questions_all,employee_quiz_questions_wrong,employee_quiz_questions_count,employee_quiz_wrong_questions_count) VALUES (14.29%,6-13-18-20-35-36-39,6-13-18-20-35-36,7,6)WHERE employee_correct_rate_id=61.
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestForm.php (125)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (62)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 15:33:33 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(employee_correct_rate,employee_quiz_questions_all,employee_quiz_questions_wrong' at line 2. The SQL statement executed was: update employee_correct_rate set
+(employee_correct_rate,employee_quiz_questions_all,employee_quiz_questions_wrong,employee_quiz_questions_count,employee_quiz_wrong_questions_count) VALUES (14.29%,6-13-18-20-35-36-39,6-13-18-20-35-36,7,6)WHERE employee_correct_rate_id=61' in D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\db\CDbCommand.php:354
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestForm.php(125): CDbCommand->execute()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php(62): TestForm->saveData(Array)
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): TestResultController->actionSubmitResult()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('SubmitResult')
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('TestResult/Subm...')
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/Quiz/quiz/index.php/TestResult/SubmitResult
+HTTP_REFERER=http://127.0.0.1/Quiz/quiz/index.php/TestStart/QuizStart?index=quiz&quiz_id=38&employee_id=6&quiz_correct_employee_id=61
+---
+2017/12/29 15:34:04 [warning] [application] Failed to set unsafe attribute "scenario" of "TestStartForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestStartController.php (66)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 15:34:04 [warning] [application] Failed to set unsafe attribute "quiz_choose_id" of "TestStartForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestStartController.php (66)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 15:34:16 [warning] [application] Failed to set unsafe attribute "scenario" of "TestForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (60)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 15:34:16 [warning] [application] Failed to set unsafe attribute "quiz_correct_employee_id" of "TestForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (60)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 15:34:16 [warning] [application] Failed to set unsafe attribute "quiz_date" of "TestForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (60)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 15:34:17 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(employee_correct_rate,employee_quiz_questions_all,employee_quiz_questions_wrong' at line 2. The SQL statement executed was: update employee_correct_rate set
+(employee_correct_rate,employee_quiz_questions_all,employee_quiz_questions_wrong,employee_quiz_questions_count,employee_quiz_wrong_questions_count) VALUES (0%,5-11-16-17-20-34-38,5-11-16-17-20-34-38,7,7)WHERE employee_correct_rate_id=62.
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestForm.php (125)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (62)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 15:34:17 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(employee_correct_rate,employee_quiz_questions_all,employee_quiz_questions_wrong' at line 2. The SQL statement executed was: update employee_correct_rate set
+(employee_correct_rate,employee_quiz_questions_all,employee_quiz_questions_wrong,employee_quiz_questions_count,employee_quiz_wrong_questions_count) VALUES (0%,5-11-16-17-20-34-38,5-11-16-17-20-34-38,7,7)WHERE employee_correct_rate_id=62' in D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\db\CDbCommand.php:354
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestForm.php(125): CDbCommand->execute()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php(62): TestForm->saveData(Array)
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): TestResultController->actionSubmitResult()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('SubmitResult')
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('TestResult/Subm...')
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/Quiz/quiz/index.php/TestResult/SubmitResult
+HTTP_REFERER=http://127.0.0.1/Quiz/quiz/index.php/TestStart/QuizStart?index=quiz&quiz_id=38&employee_id=6&quiz_correct_employee_id=62
+---
+2017/12/29 15:34:35 [warning] [application] Failed to set unsafe attribute "scenario" of "TestForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (60)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 15:34:35 [warning] [application] Failed to set unsafe attribute "quiz_correct_employee_id" of "TestForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (60)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 15:34:35 [warning] [application] Failed to set unsafe attribute "quiz_date" of "TestForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (60)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 15:34:36 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(employee_correct_rate,employee_quiz_questions_all,employee_quiz_questions_wrong' at line 2. The SQL statement executed was: update employee_correct_rate set
+(employee_correct_rate,employee_quiz_questions_all,employee_quiz_questions_wrong,employee_quiz_questions_count,employee_quiz_wrong_questions_count) VALUES (0%,5-11-16-17-20-34-38,5-11-16-17-20-34-38,7,7)WHERE employee_correct_rate_id=62.
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestForm.php (125)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (62)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 15:34:36 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(employee_correct_rate,employee_quiz_questions_all,employee_quiz_questions_wrong' at line 2. The SQL statement executed was: update employee_correct_rate set
+(employee_correct_rate,employee_quiz_questions_all,employee_quiz_questions_wrong,employee_quiz_questions_count,employee_quiz_wrong_questions_count) VALUES (0%,5-11-16-17-20-34-38,5-11-16-17-20-34-38,7,7)WHERE employee_correct_rate_id=62' in D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\db\CDbCommand.php:354
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestForm.php(125): CDbCommand->execute()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php(62): TestForm->saveData(Array)
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): TestResultController->actionSubmitResult()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('SubmitResult')
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('TestResult/Subm...')
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/Quiz/quiz/index.php/TestResult/SubmitResult
+HTTP_REFERER=http://127.0.0.1/Quiz/quiz/index.php/TestStart/QuizStart?index=quiz&quiz_id=38&employee_id=6&quiz_correct_employee_id=62
+---
+2017/12/29 15:34:38 [warning] [application] Failed to set unsafe attribute "scenario" of "TestForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (60)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 15:34:38 [warning] [application] Failed to set unsafe attribute "quiz_correct_employee_id" of "TestForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (60)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 15:34:38 [warning] [application] Failed to set unsafe attribute "quiz_date" of "TestForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (60)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 15:34:39 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(employee_correct_rate,employee_quiz_questions_all,employee_quiz_questions_wrong' at line 2. The SQL statement executed was: update employee_correct_rate set
+(employee_correct_rate,employee_quiz_questions_all,employee_quiz_questions_wrong,employee_quiz_questions_count,employee_quiz_wrong_questions_count) VALUES (0%,5-11-16-17-20-34-38,5-11-16-17-20-34-38,7,7)WHERE employee_correct_rate_id=62.
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestForm.php (125)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (62)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 15:34:39 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(employee_correct_rate,employee_quiz_questions_all,employee_quiz_questions_wrong' at line 2. The SQL statement executed was: update employee_correct_rate set
+(employee_correct_rate,employee_quiz_questions_all,employee_quiz_questions_wrong,employee_quiz_questions_count,employee_quiz_wrong_questions_count) VALUES (0%,5-11-16-17-20-34-38,5-11-16-17-20-34-38,7,7)WHERE employee_correct_rate_id=62' in D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\db\CDbCommand.php:354
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestForm.php(125): CDbCommand->execute()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php(62): TestForm->saveData(Array)
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): TestResultController->actionSubmitResult()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('SubmitResult')
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('TestResult/Subm...')
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/Quiz/quiz/index.php/TestResult/SubmitResult
+HTTP_REFERER=http://127.0.0.1/Quiz/quiz/index.php/TestStart/QuizStart?index=quiz&quiz_id=38&employee_id=6&quiz_correct_employee_id=62
+---
+2017/12/29 15:36:58 [warning] [application] Failed to set unsafe attribute "scenario" of "TestForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (60)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 15:36:58 [warning] [application] Failed to set unsafe attribute "quiz_correct_employee_id" of "TestForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (60)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 15:36:58 [warning] [application] Failed to set unsafe attribute "quiz_date" of "TestForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (60)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 15:36:59 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(employee_correct_rate,employee_quiz_questions_all,employee_quiz_questions_wrong' at line 2. The SQL statement executed was: update employee_correct_rate set
+(employee_correct_rate,employee_quiz_questions_all,employee_quiz_questions_wrong,employee_quiz_questions_count,employee_quiz_wrong_questions_count) VALUES (0%,5-11-16-17-20-34-38,5-11-16-17-20-34-38,7,7)WHERE employee_correct_rate_id=62.
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestForm.php (125)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (62)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 15:36:59 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(employee_correct_rate,employee_quiz_questions_all,employee_quiz_questions_wrong' at line 2. The SQL statement executed was: update employee_correct_rate set
+(employee_correct_rate,employee_quiz_questions_all,employee_quiz_questions_wrong,employee_quiz_questions_count,employee_quiz_wrong_questions_count) VALUES (0%,5-11-16-17-20-34-38,5-11-16-17-20-34-38,7,7)WHERE employee_correct_rate_id=62' in D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\db\CDbCommand.php:354
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestForm.php(125): CDbCommand->execute()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php(62): TestForm->saveData(Array)
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): TestResultController->actionSubmitResult()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('SubmitResult')
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('TestResult/Subm...')
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/Quiz/quiz/index.php/TestResult/SubmitResult
+HTTP_REFERER=http://127.0.0.1/Quiz/quiz/index.php/TestStart/QuizStart?index=quiz&quiz_id=38&employee_id=6&quiz_correct_employee_id=62
+---
+2017/12/29 15:37:06 [warning] [application] Failed to set unsafe attribute "scenario" of "TestForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (60)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 15:37:06 [warning] [application] Failed to set unsafe attribute "quiz_correct_employee_id" of "TestForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (60)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 15:37:06 [warning] [application] Failed to set unsafe attribute "quiz_date" of "TestForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (60)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 15:37:07 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(employee_correct_rate,employee_quiz_questions_all,employee_quiz_questions_wrong' at line 2. The SQL statement executed was: update employee_correct_rate set
+(employee_correct_rate,employee_quiz_questions_all,employee_quiz_questions_wrong,employee_quiz_questions_count,employee_quiz_wrong_questions_count) VALUES (0%,5-11-16-17-20-34-38,5-11-16-17-20-34-38,7,7)WHERE employee_correct_rate_id=62.
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestForm.php (125)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php (62)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 15:37:07 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(employee_correct_rate,employee_quiz_questions_all,employee_quiz_questions_wrong' at line 2. The SQL statement executed was: update employee_correct_rate set
+(employee_correct_rate,employee_quiz_questions_all,employee_quiz_questions_wrong,employee_quiz_questions_count,employee_quiz_wrong_questions_count) VALUES (0%,5-11-16-17-20-34-38,5-11-16-17-20-34-38,7,7)WHERE employee_correct_rate_id=62' in D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\db\CDbCommand.php:354
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\models\TestForm.php(125): CDbCommand->execute()
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestResultController.php(62): TestForm->saveData(Array)
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\actions\CInlineAction.php(50): TestResultController->actionSubmitResult()
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('SubmitResult')
+#7 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('TestResult/Subm...')
+#8 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/Quiz/quiz/index.php/TestResult/SubmitResult
+HTTP_REFERER=http://127.0.0.1/Quiz/quiz/index.php/TestStart/QuizStart?index=quiz&quiz_id=38&employee_id=6&quiz_correct_employee_id=62
+---
+2017/12/29 15:47:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "js/jquery.js'"。' in D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('js/jquery.js'')
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Quiz/quiz/js/jquery.js'
+HTTP_REFERER=http://127.0.0.1/Quiz/quiz/index.php/Quiz/edit?index=23
+---
+2017/12/29 15:47:12 [warning] [application] Failed to set unsafe attribute "scenario" of "QuizForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (84)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 15:47:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "js/jquery.js'"。' in D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('js/jquery.js'')
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Quiz/quiz/js/jquery.js'
+HTTP_REFERER=http://127.0.0.1/Quiz/quiz/index.php/Quiz/edit?index=23
+---
+2017/12/29 15:59:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "js/jquery.js'"。' in D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('js/jquery.js'')
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Quiz/quiz/js/jquery.js'
+HTTP_REFERER=http://127.0.0.1/Quiz/quiz/index.php/Quiz/edit?index=23
+---
+2017/12/29 16:01:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "js/jquery.js'"。' in D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('js/jquery.js'')
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Quiz/quiz/js/jquery.js'
+HTTP_REFERER=http://127.0.0.1/Quiz/quiz/index.php/Quiz/new
+---
+2017/12/29 16:09:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "js/jquery.js'"。' in D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('js/jquery.js'')
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Quiz/quiz/js/jquery.js'
+HTTP_REFERER=http://127.0.0.1/Quiz/quiz/index.php/Quiz/edit?index=23
+---
+2017/12/29 16:14:26 [warning] [application] Failed to set unsafe attribute "scenario" of "QuizForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (84)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 16:14:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "js/jquery.js'"。' in D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('js/jquery.js'')
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Quiz/quiz/js/jquery.js'
+HTTP_REFERER=http://127.0.0.1/Quiz/quiz/index.php/Quiz/edit?index=23
+---
+2017/12/29 16:19:38 [warning] [application] Failed to set unsafe attribute "scenario" of "TestStartForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestStartController.php (66)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 16:19:38 [warning] [application] Failed to set unsafe attribute "quiz_choose_id" of "TestStartForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestStartController.php (66)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 16:20:26 [warning] [application] Failed to set unsafe attribute "scenario" of "TestStartForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestStartController.php (66)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 16:20:26 [warning] [application] Failed to set unsafe attribute "quiz_choose_id" of "TestStartForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestStartController.php (66)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 16:21:29 [warning] [application] Failed to set unsafe attribute "scenario" of "TestStartForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestStartController.php (66)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 16:21:29 [warning] [application] Failed to set unsafe attribute "quiz_choose_id" of "TestStartForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\TestStartController.php (66)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 16:25:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "js/jquery.js'"。' in D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('js/jquery.js'')
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Quiz/quiz/js/jquery.js'
+HTTP_REFERER=http://127.0.0.1/Quiz/quiz/index.php/Quiz/new
+---
+2017/12/29 16:26:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "js/jquery.js'"。' in D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('js/jquery.js'')
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Quiz/quiz/js/jquery.js'
+HTTP_REFERER=http://127.0.0.1/Quiz/quiz/index.php/Quiz/new
+---
+2017/12/29 16:28:45 [warning] [application] Failed to set unsafe attribute "scenario" of "QuizForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (84)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 16:28:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "js/jquery.js'"。' in D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('js/jquery.js'')
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Quiz/quiz/js/jquery.js'
+HTTP_REFERER=http://127.0.0.1/Quiz/quiz/index.php/Quiz/edit?index=39
+---
+2017/12/29 16:29:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "js/jquery.js'"。' in D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('js/jquery.js'')
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Quiz/quiz/js/jquery.js'
+HTTP_REFERER=http://127.0.0.1/Quiz/quiz/index.php/Quiz/edit?index=39
+---
+2017/12/29 16:29:27 [warning] [application] Failed to set unsafe attribute "scenario" of "QuizForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (64)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 16:30:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "js/jquery.js'"。' in D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('js/jquery.js'')
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Quiz/quiz/js/jquery.js'
+HTTP_REFERER=http://127.0.0.1/Quiz/quiz/index.php/Quiz/new
+---
+2017/12/29 16:30:18 [warning] [application] Failed to set unsafe attribute "scenario" of "QuizForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (84)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 16:30:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "js/jquery.js'"。' in D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('js/jquery.js'')
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Quiz/quiz/js/jquery.js'
+HTTP_REFERER=http://127.0.0.1/Quiz/quiz/index.php/Quiz/edit?index=40
+---
+2017/12/29 16:30:24 [warning] [application] Failed to set unsafe attribute "scenario" of "QuizForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuizController.php (64)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 16:34:27 [warning] [application] Failed to set unsafe attribute "scenario" of "QuestionsForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuestionsController.php (70)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 16:35:05 [warning] [application] Failed to set unsafe attribute "scenario" of "QuestionsForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\QuestionsController.php (70)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 16:37:28 [warning] [application] Failed to set unsafe attribute "scenario" of "ExamsForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php (49)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 16:37:28 [warning] [application] Failed to set unsafe attribute "id" of "ExamsForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php (49)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 16:37:28 [warning] [application] Failed to set unsafe attribute "detail" of "ExamsForm".
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\protected\controllers\ExamsController.php (49)
+in D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php (13)
+2017/12/29 16:38:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "manage" 动作.' in D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php:484
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CController.php(271): CController->missingAction('manage')
+#1 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('manage')
+#2 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('Quiz/manage')
+#3 D:\phpstudy\PHPTutorial\WWW\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\phpstudy\PHPTutorial\WWW\Quiz\quiz\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Quiz/quiz/index.php/Quiz/manage
+HTTP_REFERER=http://127.0.0.1/Quiz/quiz/index.php/exams/index?pageNum=2
+---

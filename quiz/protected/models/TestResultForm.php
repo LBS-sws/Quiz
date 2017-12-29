@@ -46,8 +46,7 @@ class TestResultForm extends CFormModel
     public function rules()
     {
         return array(
-            array('quiz_date','required'),
-            array('id,quiz_start_dt,quiz_name,quiz_correct_rate,quiz_exams_id,quiz_employee_id,quiz_exams_count,city_privileges','safe'),
+            array('id','safe'),
         );
     }
 
