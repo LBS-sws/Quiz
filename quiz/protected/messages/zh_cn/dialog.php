@@ -39,5 +39,6 @@ return array(
 	'Date'=>'日期',
 	'Download'=>'下载',
 	'Quiz Starting!'=>'测验开始!',
+	'Look through the result!'=>'浏览您的本次测验结果',
 );
 ?>

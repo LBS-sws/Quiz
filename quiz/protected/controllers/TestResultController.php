@@ -14,27 +14,11 @@ Class TestResultController extends Controller
     Public $dataSearch;
     Public $selectData;
     Public $quiz_employee_date;
-    public function actionIndex($pageNum = 0)
-    {
-        $model = new TestStartForm();
-        if (isset($_POST['TestStartForm'])) {
-            $model->attributes = $_POST['TestStartForm'];
-        } else {
-            $session = Yii::app()->session;
-            if (isset($session['criteria_c02']) && !empty($session['criteria_c02'])){
-                $criteria = $session['criteria_c02'];
-                $model->setCriteria($criteria);
-            }
-        }
-        $this->render('form', array('model' => $model));
-    }
-
     /**
      * 获取员工提交的测验题
      */
     Public function actionSubmitResult(){
      $contentArray=$_REQUEST['contents'];  //提交的 且做了的题目(错与对的题都包含)
-
         $final_result = array();
         if(!empty($contentArray)) {
             $newNewArray = array();
@@ -59,20 +43,24 @@ Class TestResultController extends Controller
             $model = new TestForm($_POST['TestForm']['scenario']);
             $model->attributes = $_POST['TestForm'];
             if (!empty($contentArray)){
-                $model->saveData($final_result);
+                $correct_id=$model->saveData($final_result);
                 //$model->scenario = 'edit';
-                Dialog::message(Yii::t('dialog', 'Information'), Yii::t('dialog', 'Quiz Starting!'));
-                $this->redirect(Yii::app()->createUrl('TestStart/QuizResult', array('index' => 'quiz','quiz_id'=>$model->quiz_id,'employee_id'=>$model->employee_id)));
+                Dialog::message(Yii::t('dialog', 'Information'), Yii::t('dialog', 'Look through the result!'));
+                $this->redirect(Yii::app()->createUrl('TestResult/LookThrough', array('index' => 'quiz','correct_id'=>$correct_id)));
             } else {
-                var_dump($_POST['TestForm']);die;
                 $message = CHtml::errorSummary($model);
                 Dialog::message(Yii::t('dialog', 'Validation Message'), $message);
                 $this->render('form', array('model' => $model,));
             }
         }
     }
-    Public function actionGetResultData($quiz_id,$employee_id){
-
+    Public function actionLookThrough($correct_id){
+        $model = new TestLookForm('view');
+        if (!$model->retrieveData($correct_id)) {
+            throw new CHttpException(404,'The requested page does not exist.');
+        } else {
+            $this->render('form',array('model'=>$model,));
+        }
     }
 
     public static function allowReadWrite()

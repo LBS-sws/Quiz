@@ -86,9 +86,10 @@
 
     public function saveData()
     {
+        $city = Yii::app()->user->city();
         $Qid=$_REQUEST['TestStartForm']['quiz_id'];
         $Eid=$_REQUEST['TestStartForm']['employee_id'];
-        $sql="INSERT INTO blog_test.employee_correct_rate (employee_correct_rate_info_id,quiz_employee_id)VALUES($Qid,$Eid)";
+        $sql="INSERT INTO employee_correct_rate (employee_correct_rate_info_id,quiz_employee_id,city_privileges) VALUES ($Qid,$Eid,'$city')";
         Yii::app()->db2->createCommand($sql)->execute();
         $id= Yii::app()->db2->getLastInsertID();
         $this->quiz_correct_employee_id=$id;
@@ -124,15 +125,12 @@
                 break;
         }
         $uid = Yii::app()->user->id;
-
         $command=$connection->createCommand($sql);
-
         if (strpos($sql,':id')!==false)
             $command->bindParam(':id',$this->id,PDO::PARAM_INT);
         if (strpos($sql,':quiz_date')!==false)
             $command->bindParam(':quiz_date',$this->quiz_date,PDO::PARAM_STR);
         $command->execute();
-
         return true;
     }
 

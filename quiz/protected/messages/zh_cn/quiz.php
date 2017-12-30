@@ -52,4 +52,5 @@ return array(
     'quiz_exams_count_show'=>'本次测验单的题目数量',
     'quiz_employee_title'=>'测验单',
     'now_time'=>'测验时间',
+    'Quiz resultOrder'=>'测验查询单',
 );

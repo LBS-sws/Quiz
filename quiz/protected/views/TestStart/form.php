@@ -1,5 +1,4 @@
 <?php
-
 $this->pageTitle=Yii::app()->name . ' - Customer Type Form';
 ?>
 

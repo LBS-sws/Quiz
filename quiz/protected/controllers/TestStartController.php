@@ -29,6 +29,7 @@ Class TestStartController extends Controller
         }
         $this->render('form', array('model' => $model));
     }
+
     public function actionView($index)
     {
         $model = new TestStartForm('view');
