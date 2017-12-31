@@ -136,10 +136,10 @@ class ListPageWidget extends CWidget
 		$modelName = get_class($this->model);
 		$link = '/'.$this->controller->uniqueId.'/'.$this->controller->action->id;
 		$list = array(
-			'2'=>'2',
-			'4'=>'4',
-			'6'=>'6',
-			'8'=>'8',
+			'25'=>'25',
+			'50'=>'50',
+			'150'=>'150',
+			'200'=>'200',
 			'0'=>Yii::t('misc','All'),
 		);
 		$fldname = $modelName.'[noOfItem]';

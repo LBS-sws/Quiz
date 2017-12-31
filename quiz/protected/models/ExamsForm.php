@@ -74,8 +74,6 @@ class ExamsForm extends CFormModel
             array('test_exams_contents', 'required'),
         );
     }*/
-
-
     public function retrieveData($index)
     {
 

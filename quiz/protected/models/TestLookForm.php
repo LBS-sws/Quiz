@@ -19,6 +19,7 @@ class TestLookForm extends CFormModel
     Public $this_time_for; //本次答题的时间段
     Public $quiz_exams_count;
     Public $employee_info;
+    Public $answer_wrong_contents=array();
     //Public $scenario;
     /**
      * Declares customized attribute labels.
@@ -57,6 +58,7 @@ class TestLookForm extends CFormModel
      * @return bool
      *
      */
+
     Public function retrieveData($correct_id)
     {
         $city = Yii::app()->user->city_allow();
@@ -85,14 +87,16 @@ class TestLookForm extends CFormModel
                 $temporary[$ct]['id']=$demo[0];
                 $temporary[$ct]['contents']=$demo[1];
             }
+            $outContents=array();
             for($y=0;$y<count($temporary);$y++){
-                $temporary_id_test=$temporary[$y]['id'];
+                $temporary_id_test=$temporary[$y]['id'];      //题目主键
+                $temporary_contents_test=$temporary[$y]['contents']; //错误选项(字段名)
                 $sql_select_test_set="select * from test_exams WHERE id=$temporary_id_test";
+                $sql_select_test_get=Yii::app()->db2->createCommand($sql_select_test_set)->queryAll();
+                $outContents[$y][]=$sql_select_test_get[0];
+                $outContents[$y][]=$sql_select_test_get[0][$temporary_contents_test];
             }
-
-
-
-
+            $this->answer_wrong_contents=$outContents;
 
             $this->should_answer_count=$correct_data['employee_quiz_questions_count'];//应做数量
             $this->wrong_answer_count=$correct_data['employee_quiz_wrong_questions_count']; //错的题目数量

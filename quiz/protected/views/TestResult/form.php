@@ -97,8 +97,17 @@ $this->pageTitle=Yii::app()->name . ' - Customer Type Form';
                 <label class="col-sm-5 control-label" >本次错题记录如下</label>
             </div>
            <?php
-
-           echo "<div class='form-group'>"."</div>"
+           for($c=0;$c<count($model->answer_wrong_contents);$c++){
+                echo "<div class='form-group'>".
+                    "<label>"."测试题第".$model->answer_wrong_contents[$c][0]['id']."题"."&nbsp;&nbsp;&nbsp;".$model->answer_wrong_contents[$c][0]['test_exams_contents']."</label>"
+                    ."</div>".
+                "<div class='from-group'>"
+                    .
+                    "<label class='col-sm-5 control-label'>"."您的选择:"."&nbsp;&nbsp;".$model->answer_wrong_contents[$c][1]."</label>".
+                    "<label class='col-sm-5 control-label'>"."正确答案:"."&nbsp;&nbsp;".$model->answer_wrong_contents[$c][0]['test_exams_answer_right']."</label>"
+                    ."</div>"
+                ;
+           }
            ?>
 
         </div>

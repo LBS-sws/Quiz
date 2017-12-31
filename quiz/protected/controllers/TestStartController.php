@@ -16,7 +16,6 @@ Class TestStartController extends Controller
     Public $quiz_employee_date;
     public function actionIndex($pageNum = 0)
     {
-
         $model = new TestStartForm();
         if (isset($_POST['TestStartForm'])) {
             $model->attributes = $_POST['TestStartForm'];
@@ -39,7 +38,6 @@ Class TestStartController extends Controller
             $this->render('form', array('model' => $model,));
         }
     }
-
     /**
      * @param employee_id,quiz_id
      * @throws
