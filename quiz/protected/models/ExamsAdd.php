@@ -118,7 +118,6 @@ class ExamsAdd extends CFormModel
 					where id = :id";
                 break;
         }
-
         $uid = Yii::app()->user->id;
 
         $command=$connection->createCommand($sql);

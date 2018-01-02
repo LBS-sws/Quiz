@@ -16,6 +16,7 @@ class QuizForm extends CFormModel
     Public $count_questions;
     Public $checkBoxValue;
     Public $select_employee;
+
     //Public $scenario;
     /**
      * Declares customized attribute labels.
@@ -46,17 +47,15 @@ class QuizForm extends CFormModel
     public function rules()
     {
         return array(
-            array('quiz_date','required'),
-            array('id,quiz_start_dt,quiz_name,quiz_correct_rate,quiz_exams_id,quiz_employee_id,quiz_exams_count,city_privileges','safe'),
+            array('quiz_date,quiz_exams_count','required'),
+            array('id,quiz_start_dt,quiz_name,quiz_correct_rate,quiz_exams_id,city_privileges','safe'),
             );
     }
-
     public function retrieveData($index)
     {
-
+        $city = Yii::app()->user->city_allow();
         $tableFuss=Yii::app()->params['jsonTableName'];
-        $sql = "select * from blog$tableFuss.quiz where id=".$index."";
-
+        $sql = "select * from blog$tableFuss.quiz where id=".$index." and city_privileges in ($city)";
         $rows = Yii::app()->db->createCommand($sql)->queryAll();
 
         if (count($rows) > 0)
@@ -77,12 +76,10 @@ class QuizForm extends CFormModel
             }
         }
         $this->count_import=array();
-
         return true;
     }
     public function saveData()
     {
-
         $connection = Yii::app()->db;
         $transaction=$connection->beginTransaction();
         try {
@@ -97,7 +94,12 @@ class QuizForm extends CFormModel
 
     protected function saveUser(&$connection)
     {
-        $_REQUEST['quiz_employee_id']=implode(',',$_REQUEST['quiz_employee_id']);
+        if(isset($_REQUEST['quiz_employee_id'])){
+            $_REQUEST['quiz_employee_id']=implode(',',$_REQUEST['quiz_employee_id']);
+        }
+        else{
+            $_REQUEST['quiz_employee_id']='';
+        }
         $_REQUEST['QuizForm']['quiz_employee_id']=$_REQUEST['quiz_employee_id'];
         $this->quiz_employee_id=$_REQUEST['QuizForm']['quiz_employee_id'];
         $tableFuss=Yii::app()->params['jsonTableName'];
@@ -124,11 +126,9 @@ class QuizForm extends CFormModel
 					where id = :id";
                 break;
         }
-
         $uid = Yii::app()->user->id;
-
+        $city = Yii::app()->user->city();
         $command=$connection->createCommand($sql);
-
         if (strpos($sql,':id')!==false)
             $command->bindParam(':id',$this->id,PDO::PARAM_INT);
         if (strpos($sql,':quiz_date')!==false)
@@ -139,6 +139,8 @@ class QuizForm extends CFormModel
             $quizDate = General::toMyDate($this->quiz_start_dt);
             $command->bindParam(':quiz_start_dt',$quizDate,PDO::PARAM_STR);
         }
+        if (strpos($sql,':city_privileges')!==false)
+            $command->bindParam(':city_privileges',$city,PDO::PARAM_STR);
         if (strpos($sql,':quiz_exams_count')!==false)
             $command->bindParam(':quiz_exams_count',$this->quiz_exams_count,PDO::PARAM_INT);
         if (strpos($sql,':quiz_employee_id')!==false)
@@ -147,8 +149,6 @@ class QuizForm extends CFormModel
             $command->bindParam(':quiz_exams_id',$this->quiz_exams_id,PDO::PARAM_STR);
         if (strpos($sql,':quiz_correct_rate')!==false)
             $command->bindParam(':quiz_correct_rate',$this->quiz_correct_rate,PDO::PARAM_STR);
-        if (strpos($sql,':city_privileges')!==false)
-            $command->bindParam(':city_privileges',$this->city_privileges,PDO::PARAM_STR);
 
             $command->execute();
 

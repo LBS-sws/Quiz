@@ -20,7 +20,6 @@ Class Quiz{
         }
         return $list;
     }
-
 /*
  * add info_id
  */
@@ -72,14 +71,25 @@ Class Quiz{
         return $list;
     }
     Public static function QuestionsSelect(){
-        $city = Yii::app()->user->city();
+        $city = Yii::app()->user->city_allow();
         $list = array(0=>Yii::t('quiz','Quiz_select_choose'));
         $tableFuss=Yii::app()->params['jsonTableName'];
-        $sql="select id,quiz_name from blog$tableFuss.quiz WHERE 1=1";
+        $sql="select id,quiz_name,quiz_start_dt from blog$tableFuss.quiz WHERE 1=1 and city_privileges in($city)";
         $select_quiz_result = Yii::app()->db2->createCommand($sql)->queryAll();
+        $result=array();
+        $nowTime=strtotime(date("Y-m-d H:i:s")); //当前时间
+    /*    $zero2=strtotime($select_quiz_result[0]['quiz_start_dt']);  //测验时间
+        $dateShow=ceil(($zero2-$nowTime)/86400); //60s*60min*24h*/
+        for($k=0;$k<count($select_quiz_result);$k++){
+            $quiz_time=strtotime($select_quiz_result[$k]['quiz_start_dt']);
+            $dateShow=ceil(($quiz_time-$nowTime)/86400);
+            if($dateShow>0){
+                $result[]=$select_quiz_result[$k];
+            }
+        }
 
-        if (count($select_quiz_result) > 0) {
-            foreach ($select_quiz_result as $row) {
+        if (count($result) > 0) {
+            foreach ($result as $row) {
                 $list[$row['id']] = $row['quiz_name'];
             }
         }

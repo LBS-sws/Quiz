@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50553
 File Encoding         : 65001
 
-Date: 2017-12-19 17:04:32
+Date: 2018-01-02 19:59:53
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -736,6 +736,171 @@ INSERT INTO `sec_login_log` VALUES ('N/A', 'admin', '127.0.0.1', '2017-12-19 15:
 INSERT INTO `sec_login_log` VALUES ('N/A', 'admin', '127.0.0.1', '2017-12-19 15:57:02');
 INSERT INTO `sec_login_log` VALUES ('N/A', 'admin', '127.0.0.1', '2017-12-19 16:06:43');
 INSERT INTO `sec_login_log` VALUES ('N/A', 'admin', '127.0.0.1', '2017-12-19 16:09:01');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'admin', '127.0.0.1', '2017-12-19 18:26:05');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'admin', '127.0.0.1', '2017-12-20 09:28:24');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'admin', '127.0.0.1', '2017-12-20 09:31:18');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'admin', '127.0.0.1', '2017-12-20 09:33:31');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'admin', '127.0.0.1', '2017-12-20 09:37:09');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'user', '127.0.0.1', '2017-12-20 09:41:51');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'user', '127.0.0.1', '2017-12-20 09:41:52');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'admin', '127.0.0.1', '2017-12-20 09:42:02');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'admin', '127.0.0.1', '2017-12-20 09:45:24');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'admin', '127.0.0.1', '2017-12-20 09:45:53');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'admin', '127.0.0.1', '2017-12-20 09:50:37');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'user', '127.0.0.1', '2017-12-20 10:50:53');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'user', '127.0.0.1', '2017-12-20 10:52:59');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'admin', '127.0.0.1', '2017-12-20 10:57:11');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'user', '127.0.0.1', '2017-12-20 10:57:21');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'user', '127.0.0.1', '2017-12-20 10:58:05');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'admin', '127.0.0.1', '2017-12-20 11:50:40');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'user', '127.0.0.1', '2017-12-20 11:51:10');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'admin', '127.0.0.1', '2017-12-20 11:51:27');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'user', '127.0.0.1', '2017-12-20 11:52:12');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'admin', '127.0.0.1', '2017-12-20 11:53:25');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'user', '127.0.0.1', '2017-12-20 11:54:11');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'admin', '127.0.0.1', '2017-12-20 13:58:10');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'user', '127.0.0.1', '2017-12-20 13:58:42');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'user', '127.0.0.1', '2017-12-20 14:24:52');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'user', '127.0.0.1', '2017-12-20 14:25:25');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'admin', '127.0.0.1', '2017-12-20 14:54:06');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'user', '127.0.0.1', '2017-12-20 14:57:44');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'admin', '127.0.0.1', '2017-12-20 14:58:32');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'user', '127.0.0.1', '2017-12-20 15:06:31');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'user', '127.0.0.1', '2017-12-20 15:09:25');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'user', '127.0.0.1', '2017-12-20 15:13:26');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'user', '127.0.0.1', '2017-12-20 15:14:59');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'admin', '127.0.0.1', '2017-12-20 15:17:19');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'user', '127.0.0.1', '2017-12-20 15:17:49');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'admin', '127.0.0.1', '2017-12-20 16:32:08');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'user', '127.0.0.1', '2017-12-20 16:35:57');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'admin', '127.0.0.1', '2017-12-20 16:37:52');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'admin', '127.0.0.1', '2017-12-20 16:42:33');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'admin', '127.0.0.1', '2017-12-20 16:50:25');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'admin', '127.0.0.1', '2017-12-20 16:57:36');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'admin', '127.0.0.1', '2017-12-20 17:13:22');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'admin', '127.0.0.1', '2017-12-20 17:27:40');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'admin', '127.0.0.1', '2017-12-20 17:51:16');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'user', '127.0.0.1', '2017-12-20 17:51:29');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'user', '127.0.0.1', '2017-12-20 17:51:30');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'admin', '127.0.0.1', '2017-12-20 17:54:04');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'admin', '127.0.0.1', '2017-12-21 09:32:13');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'admin', '127.0.0.1', '2017-12-21 10:28:49');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'admin', '127.0.0.1', '2017-12-21 10:28:53');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'admin', '127.0.0.1', '2017-12-21 10:28:55');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'admin', '127.0.0.1', '2017-12-21 13:17:15');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'admin', '127.0.0.1', '2017-12-21 14:26:06');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'admin', '127.0.0.1', '2017-12-21 15:32:26');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'admin', '127.0.0.1', '2017-12-22 09:39:25');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'user', '127.0.0.1', '2017-12-22 14:01:44');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'admin', '127.0.0.1', '2017-12-22 14:02:06');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'user', '127.0.0.1', '2017-12-22 17:04:42');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'user', '127.0.0.1', '2017-12-22 17:05:15');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'admin', '127.0.0.1', '2017-12-22 17:05:24');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'admin', '127.0.0.1', '2017-12-25 09:40:59');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'user', '127.0.0.1', '2017-12-25 11:06:55');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'admin', '127.0.0.1', '2017-12-25 11:12:19');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'user', '127.0.0.1', '2017-12-25 11:14:57');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'admin', '127.0.0.1', '2017-12-25 11:55:49');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'user', '127.0.0.1', '2017-12-25 11:56:39');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'admin', '127.0.0.1', '2017-12-25 12:08:57');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'user', '127.0.0.1', '2017-12-25 12:11:47');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'user', '127.0.0.1', '2017-12-25 14:03:47');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'admin', '127.0.0.1', '2017-12-25 14:36:27');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'user', '127.0.0.1', '2017-12-25 14:37:03');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'admin', '127.0.0.1', '2017-12-25 14:58:02');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'user', '127.0.0.1', '2017-12-25 15:01:12');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'admin', '127.0.0.1', '2017-12-25 17:13:05');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'user', '127.0.0.1', '2017-12-25 17:13:44');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'admin', '127.0.0.1', '2017-12-25 17:18:26');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'admin', '127.0.0.1', '2017-12-25 17:18:28');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'user', '127.0.0.1', '2017-12-25 17:20:01');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'admin', '127.0.0.1', '2017-12-25 17:20:16');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'user', '127.0.0.1', '2017-12-25 17:21:05');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'admin', '127.0.0.1', '2017-12-25 17:21:25');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'user', '127.0.0.1', '2017-12-25 17:22:14');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'user', '127.0.0.1', '2017-12-25 17:25:00');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'admin', '127.0.0.1', '2017-12-25 17:25:14');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'user', '127.0.0.1', '2017-12-25 17:47:49');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'admin', '127.0.0.1', '2017-12-26 09:42:31');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'user', '127.0.0.1', '2017-12-26 09:51:59');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'admin', '127.0.0.1', '2017-12-26 09:55:24');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'user', '127.0.0.1', '2017-12-26 09:56:12');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'admin', '127.0.0.1', '2017-12-26 10:27:01');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'user', '127.0.0.1', '2017-12-26 10:42:35');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'admin', '127.0.0.1', '2017-12-26 11:02:54');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'admin', '127.0.0.1', '2017-12-26 11:02:55');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'user', '127.0.0.1', '2017-12-26 11:03:36');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'user', '127.0.0.1', '2017-12-26 12:50:28');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'user', '127.0.0.1', '2017-12-26 13:59:25');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'user', '127.0.0.1', '2017-12-26 14:06:30');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'user', '127.0.0.1', '2017-12-26 14:43:27');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'admin', '127.0.0.1', '2017-12-26 16:19:00');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'admin', '127.0.0.1', '2017-12-26 16:19:01');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'user', '127.0.0.1', '2017-12-26 16:19:09');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'user', '127.0.0.1', '2017-12-26 17:32:42');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'user', '127.0.0.1', '2017-12-27 09:29:24');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'admin', '127.0.0.1', '2017-12-27 11:27:15');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'user', '127.0.0.1', '2017-12-27 11:28:56');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'user', '127.0.0.1', '2017-12-27 11:28:57');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'admin', '127.0.0.1', '2017-12-27 11:49:01');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'user', '127.0.0.1', '2017-12-27 11:52:11');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'admin', '127.0.0.1', '2017-12-27 15:58:32');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'user', '127.0.0.1', '2017-12-27 15:58:42');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'admin', '127.0.0.1', '2017-12-27 16:35:57');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'user', '127.0.0.1', '2017-12-27 16:36:35');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'user', '127.0.0.1', '2017-12-27 17:38:22');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'user', '127.0.0.1', '2017-12-28 09:40:47');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'user', '127.0.0.1', '2017-12-28 09:40:49');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'user', '127.0.0.1', '2017-12-28 10:45:28');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'user', '127.0.0.1', '2017-12-28 10:45:29');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'admin', '127.0.0.1', '2017-12-28 10:45:57');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'user', '127.0.0.1', '2017-12-28 10:46:48');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'admin', '127.0.0.1', '2017-12-28 11:43:19');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'user', '127.0.0.1', '2017-12-28 11:43:34');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'user', '127.0.0.1', '2017-12-28 14:03:27');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'admin', '127.0.0.1', '2017-12-28 14:04:28');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'admin', '127.0.0.1', '2017-12-28 14:08:35');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'user', '127.0.0.1', '2017-12-28 14:08:58');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'user', '127.0.0.1', '2017-12-28 15:56:28');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'user', '127.0.0.1', '2017-12-28 16:57:27');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'user', '127.0.0.1', '2017-12-29 09:23:40');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'user', '127.0.0.1', '2017-12-29 13:49:11');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'admin', '127.0.0.1', '2017-12-29 15:46:57');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'user', '127.0.0.1', '2017-12-29 15:56:25');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'admin', '127.0.0.1', '2017-12-29 15:58:27');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'user', '127.0.0.1', '2017-12-29 16:16:27');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'admin', '127.0.0.1', '2017-12-29 16:25:01');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'user', '127.0.0.1', '2017-12-29 17:44:51');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'user', '127.0.0.1', '2017-12-30 09:33:08');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'user', '127.0.0.1', '2017-12-30 09:33:09');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'user', '127.0.0.1', '2017-12-30 10:55:04');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'user', '127.0.0.1', '2017-12-30 13:38:01');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'admin', '127.0.0.1', '2017-12-30 15:03:33');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'admin', '127.0.0.1', '2017-12-30 15:03:36');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'user', '127.0.0.1', '2017-12-30 15:06:41');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'user', '127.0.0.1', '2017-12-30 17:14:50');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'user', '127.0.0.1', '2017-12-31 10:15:29');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'user', '127.0.0.1', '2017-12-31 11:20:11');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'user', '127.0.0.1', '2017-12-31 13:47:49');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'admin', '127.0.0.1', '2017-12-31 14:25:24');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'user', '127.0.0.1', '2017-12-31 14:31:53');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'admin', '127.0.0.1', '2017-12-31 14:34:20');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'user', '127.0.0.1', '2017-12-31 14:35:13');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'admin', '127.0.0.1', '2017-12-31 14:36:10');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'user', '127.0.0.1', '2017-12-31 14:37:59');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'admin', '127.0.0.1', '2017-12-31 14:39:01');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'user', '127.0.0.1', '2017-12-31 15:51:42');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'user', '127.0.0.1', '2018-01-02 09:20:41');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'admin', '127.0.0.1', '2018-01-02 09:21:47');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'user', '127.0.0.1', '2018-01-02 09:24:33');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'user', '127.0.0.1', '2018-01-02 09:29:35');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'user', '127.0.0.1', '2018-01-02 10:54:12');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'user', '127.0.0.1', '2018-01-02 11:23:16');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'user', '127.0.0.1', '2018-01-02 13:54:46');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'user', '127.0.0.1', '2018-01-02 14:40:05');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'user', '127.0.0.1', '2018-01-02 17:32:20');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'user', '127.0.0.1', '2018-01-02 18:32:52');
+INSERT INTO `sec_login_log` VALUES ('N/A', 'user', '127.0.0.1', '2018-01-02 19:33:01');
 
 -- ----------------------------
 -- Table structure for `sec_station`
@@ -830,13 +995,14 @@ CREATE TABLE `sec_user` (
 -- ----------------------------
 -- Records of sec_user
 -- ----------------------------
-INSERT INTO `sec_user` VALUES ('admin', 'fec07b35669a433938f367c87b100d91', 'administrator', 'admin@lbsgroup.com.hk', '2017-12-19 16:09:01', '2017-12-19 16:08:58', 'A', '0', 'N', 'ed132f266e2772ab3487f0f4f1be36b0', 'HK', 'admin', 'admin', '2017-02-15 12:27:28', '2017-05-29 19:14:18');
+INSERT INTO `sec_user` VALUES ('admin', 'fec07b35669a433938f367c87b100d91', 'administrator', 'admin@lbsgroup.com.hk', '2018-01-02 09:21:47', '2018-01-02 09:24:29', 'A', '0', 'N', '', 'HK', 'admin', 'admin', '2017-02-15 12:27:28', '2017-05-29 19:14:18');
 INSERT INTO `sec_user` VALUES ('boss', '319153b210a3f6efde35e1486638f2cd', 'Boss', 'boss@lbsgroup.com.hk', '2017-04-27 18:05:26', '2017-04-27 18:06:07', 'A', '0', 'N', '', 'CN', 'admin', 'admin', '2017-03-31 10:43:50', '2017-04-27 18:06:07');
 INSERT INTO `sec_user` VALUES ('director', '319153b210a3f6efde35e1486638f2cd', 'Director', 'director@lbsgroup.com.hk', '2017-04-09 12:27:30', '2017-04-09 12:27:44', 'A', '0', 'N', '', 'CE', 'admin', 'admin', '2017-03-31 10:43:13', '2017-04-09 12:27:44');
 INSERT INTO `sec_user` VALUES ('director1', '319153b210a3f6efde35e1486638f2cd', 'Director 1', 'director1@lbsgroup.com.hk', '2017-05-19 09:45:00', '2017-05-19 10:47:54', 'A', '0', 'N', '', 'CE', 'admin', 'admin', '2017-04-07 10:11:03', '2017-05-19 10:47:54');
 INSERT INTO `sec_user` VALUES ('manager', '319153b210a3f6efde35e1486638f2cd', 'Manager', 'manager@lbsgroup.com.hk', '2017-05-29 15:41:19', '2017-05-29 15:42:13', 'A', '0', 'N', '', 'SH', 'admin', 'admin', '2017-03-31 10:33:26', '2017-05-29 15:42:13');
 INSERT INTO `sec_user` VALUES ('manager1', '319153b210a3f6efde35e1486638f2cd', 'Manager 1', 'manager1@lbsgroup.com.hk', '2017-05-17 12:29:48', '2017-05-17 12:30:12', 'A', '0', 'N', '', 'SH', 'admin', 'admin', '2017-04-07 10:09:52', '2017-05-17 12:30:12');
 INSERT INTO `sec_user` VALUES ('test', '319153b210a3f6efde35e1486638f2cd', 'Test User', 'test@lbsgroup.com.cn', '2017-06-01 12:45:38', '2017-06-01 14:06:44', 'A', '0', 'N', '', 'SH', 'admin', 'admin', '2017-02-22 00:35:16', '2017-06-01 14:06:44');
+INSERT INTO `sec_user` VALUES ('user', 'fec07b35669a433938f367c87b100d91', 'teen', 'admin@lbsgroup.com.hk', '2018-01-02 19:33:01', '2018-01-02 19:32:56', 'A', '0', 'N', '6be846ef328a154556aa7ea367148424', 'HK', 'admin', 'admin', '2017-12-19 18:26:05', '2017-12-19 18:26:05');
 
 -- ----------------------------
 -- Table structure for `sec_user_access`
@@ -859,7 +1025,7 @@ CREATE TABLE `sec_user_access` (
 -- Records of sec_user_access
 -- ----------------------------
 INSERT INTO `sec_user_access` VALUES ('admin', 'acct', '', 'XB01XC01XD01XD02', '', 'admin', 'admin', '2017-02-15 12:28:30', '2017-02-27 10:10:17');
-INSERT INTO `sec_user_access` VALUES ('admin', 'drs', '', 'C01C02C05C06C07D01D02D03D04D05A07A04A05', '', 'admin', 'admin', '2017-02-15 12:28:30', '2017-02-15 12:28:30');
+INSERT INTO `sec_user_access` VALUES ('admin', 'drs', '', 'C01C02C05C06C07D01D02D03D04D05A07A04A05A10A01A08', '', 'admin', 'admin', '2017-02-15 12:28:30', '2017-02-15 12:28:30');
 INSERT INTO `sec_user_access` VALUES ('admin', 'quiz', '', 'HK01HK02HK03HK04', '', 'admin', 'admin', '2017-03-22 10:43:50', '2017-03-31 10:43:50');
 INSERT INTO `sec_user_access` VALUES ('boss', 'acct', '', 'XA04XA05XA06XA07XE01XE02XB01XC01XC03XC02XC04XD01XD02', '', 'admin', 'admin', '2017-03-31 10:43:50', '2017-05-12 18:35:59');
 INSERT INTO `sec_user_access` VALUES ('boss', 'drs', '', '', '', 'admin', 'admin', '2017-03-31 10:43:50', '2017-03-31 10:43:50');
@@ -873,7 +1039,8 @@ INSERT INTO `sec_user_access` VALUES ('manager1', 'acct', '', 'XA04XA05XA06XA07X
 INSERT INTO `sec_user_access` VALUES ('manager1', 'drs', '', '', '', 'admin', 'admin', '2017-04-07 10:09:52', '2017-04-07 10:09:52');
 INSERT INTO `sec_user_access` VALUES ('test', 'acct', '', 'XA04XA05XA06XA07XE01XE02XE04XB02XB01XC01XC03XC06XC05XC02XC04', 'CN02CN03', 'admin', 'admin', '2017-02-22 00:35:16', '2017-05-29 19:14:15');
 INSERT INTO `sec_user_access` VALUES ('test', 'drs', '', 'A07A01A02A03A04A10A05A06A08A09B01B02B15B03B04B05B10B06B07B08B09B11B13B16B17B14B12', '', 'admin', 'admin', '2017-02-22 00:35:16', '2017-04-10 10:52:09');
-INSERT INTO `sec_user_access` VALUES ('test', 'ops', '', 'YA01YB02YB01', '', 'admin', 'admin', '2017-05-22 09:39:03', '2017-05-29 18:01:52');
+INSERT INTO `sec_user_access` VALUES ('test', 'ops', '', 'YA01YB02YB01', '', 'admin', 'admin', '2017-02-22 00:35:16', '2017-05-29 18:01:52');
+INSERT INTO `sec_user_access` VALUES ('user', 'quiz', '', 'HK05HK06HK07', '', 'admin', 'admin', '2017-12-26 09:41:36', '2017-02-22 00:35:16');
 
 -- ----------------------------
 -- Table structure for `sec_user_info`
@@ -930,6 +1097,8 @@ INSERT INTO `sec_user_option` VALUES ('manager', 'system', 'acct');
 INSERT INTO `sec_user_option` VALUES ('manager1', 'system', 'acct');
 INSERT INTO `sec_user_option` VALUES ('test', 'lang', 'zh_cn');
 INSERT INTO `sec_user_option` VALUES ('test', 'system', 'acct');
+INSERT INTO `sec_user_option` VALUES ('user', 'lang', 'zh_cn');
+INSERT INTO `sec_user_option` VALUES ('user', 'system', 'quiz');
 
 -- ----------------------------
 -- Table structure for `swo_wservice`

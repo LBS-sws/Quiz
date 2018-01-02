@@ -10,9 +10,6 @@ $this->pageTitle=Yii::app()->name . ' - Nature';
 )); ?>
 
 <section class="content-header">
-    <h1>
-        <strong><?php echo Yii::t('quiz','Question List'); ?></strong>
-    </h1>
     <!--
         <ol class="breadcrumb">
             <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
@@ -21,32 +18,16 @@ $this->pageTitle=Yii::app()->name . ' - Nature';
         </ol>
     -->
 </section>
-
 <section class="content">
-    <div class="box">
-        <div class="box-body">
-            <div class="btn-group" role="group">
-                <?php
-                if (Yii::app()->user->validRWFunction('HK01'))
-                    echo TbHtml::button('<span class="fa fa-file-o"></span> '.Yii::t('misc','Add Record'), array(
-                        'submit'=>Yii::app()->createUrl('Quiz/new'),
-                    ));
-                ?>
-            </div>
-        </div>
-    </div>
     <?php $this->widget('ext.layout.ListPageWidget', array(
-        'title'=>Yii::t('quiz','Quiz List'),
+        'title'=>Yii::t('quiz','employee_name_show'),
         'model'=>$model,
-        'viewhdr'=>'//quiz/_listhdr',
-        'viewdtl'=>'//quiz/_listdtl',
+        'viewhdr'=>'//TestHistory/_employeetl',
+        'viewdtl'=>'//TestHistory/_employeedr',
         'gridsize'=>'24',
         'height'=>'600',
         'search'=>array(
-            'quiz_date',
-            'quiz_name',
-            'quiz_correct_rate',
-            'quiz_start_dt'
+            'employee_info_name',
         ),
     ));
     ?>

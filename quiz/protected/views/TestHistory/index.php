@@ -38,8 +38,8 @@ $this->pageTitle=Yii::app()->name . ' - Nature';
     <?php $this->widget('ext.layout.ListPageWidget', array(
         'title'=>Yii::t('quiz','Quiz List'),
         'model'=>$model,
-        'viewhdr'=>'//quiz/_listhdr',
-        'viewdtl'=>'//quiz/_listdtl',
+        'viewhdr'=>'//TestHistory/_listhdr',
+        'viewdtl'=>'//TestHistory/_listdtl',
         'gridsize'=>'24',
         'height'=>'600',
         'search'=>array(

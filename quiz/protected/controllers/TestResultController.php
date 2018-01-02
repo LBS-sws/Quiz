@@ -18,27 +18,32 @@ Class TestResultController extends Controller
      * 获取员工提交的测验题
      */
     Public function actionSubmitResult(){
-     $contentArray=$_REQUEST['contents'];  //提交的 且做了的题目(错与对的题都包含)
         $final_result = array();
-        if(!empty($contentArray)) {
-            $newNewArray = array();
-            foreach ($contentArray as $v) {
-                $newNewArray[] = $v;
-            }
-            $test_exams_id_array = array_keys($contentArray);
-            if (count($test_exams_id_array) == count($newNewArray)) {
-                for ($i = 0; $i < count($test_exams_id_array); $i++) {
-                    $final_result[$i]['id'] = $test_exams_id_array[$i];
-                    $final_result[$i]['test_result'] = $newNewArray[$i];
+        if(isset($_REQUEST['contents'])){
+            $contentArray=$_REQUEST['contents'];  //提交的 且做了的题目(错与对的题都包含)
+            if(!empty($contentArray)) {
+                $newNewArray = array();
+                foreach ($contentArray as $v) {
+                    $newNewArray[] = $v;
+                }
+                $test_exams_id_array = array_keys($contentArray);
+                if (count($test_exams_id_array) == count($newNewArray)) {
+                    for ($i = 0; $i < count($test_exams_id_array); $i++) {
+                        $final_result[$i]['id'] = $test_exams_id_array[$i];
+                        $final_result[$i]['test_result'] = $newNewArray[$i];
+                    }
+                }
+                else{
+                    $final_result=array();
                 }
             }
             else{
                 $final_result=array();
             }
         }
-        else{
-            $final_result=array();
-        }
+     else{
+         $final_result=array();
+     }
         if (isset($_POST['TestForm'])) {
             $model = new TestForm($_POST['TestForm']['scenario']);
             $model->attributes = $_POST['TestForm'];
@@ -48,9 +53,8 @@ Class TestResultController extends Controller
                 Dialog::message(Yii::t('dialog', 'Information'), Yii::t('dialog', 'Look through the result!'));
                 $this->redirect(Yii::app()->createUrl('TestResult/LookThrough', array('index' => 'quiz','correct_id'=>$correct_id)));
             } else {
-                $message = CHtml::errorSummary($model);
-                Dialog::message(Yii::t('dialog', 'Validation Message'), $message);
-                $this->render('form', array('model' => $model,));
+                Dialog::message(Yii::t('dialog', 'Information'), Yii::t('dialog', 'Look through the result wrong!'));
+                $this->redirect(Yii::app()->createUrl('TestStart/Index', array('index' => 'quiz','correct_id'=>'')));
             }
         }
     }

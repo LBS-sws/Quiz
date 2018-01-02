@@ -20,6 +20,7 @@ class TestLookForm extends CFormModel
     Public $quiz_exams_count;
     Public $employee_info;
     Public $answer_wrong_contents=array();
+    Public $check;
     //Public $scenario;
     /**
      * Declares customized attribute labels.
@@ -61,6 +62,7 @@ class TestLookForm extends CFormModel
 
     Public function retrieveData($correct_id)
     {
+        if(!empty($correct_id)){
         $city = Yii::app()->user->city_allow();
         //$select_set="select * from employee_correct_rate where employee_correct_rate_id=$correct_id";
         $select_set = "select * from employee_correct_rate where employee_correct_rate_id=".$correct_id." and city_privileges in ($city)";
@@ -80,27 +82,38 @@ class TestLookForm extends CFormModel
             $this->fact_answer_count=count($answer_count);
             $count_questions_wrong_str=$correct_data['employee_quiz_questions_wrong']; //做错的题目以及错误选项
             $count_questions_wrong_arr_str=explode('-',$count_questions_wrong_str);
-            $temporary=array();  //错题id以及错题的错误选项
-            for($ct=0;$ct<count($count_questions_wrong_arr_str);$ct++){
-                $demo=array();
-                $demo=explode('*',$count_questions_wrong_arr_str[$ct]);
-                $temporary[$ct]['id']=$demo[0];
-                $temporary[$ct]['contents']=$demo[1];
+            if(!empty($count_questions_wrong_str)) {
+                $temporary = array();  //错题id以及错题的错误选项
+                for ($ct = 0; $ct < count($count_questions_wrong_arr_str); $ct++) {
+                    $demo = array();
+                    $demo = explode('*', $count_questions_wrong_arr_str[$ct]);
+                    $temporary[$ct]['id'] = $demo[0];
+                    $temporary[$ct]['contents'] = $demo[1];
+                }
+                $outContents = array();
+                for ($y = 0; $y < count($temporary); $y++) {
+                    $temporary_id_test = $temporary[$y]['id'];      //题目主键
+                    $temporary_contents_test = $temporary[$y]['contents']; //错误选项(字段名)
+                    $sql_select_test_set = "select * from test_exams WHERE id=$temporary_id_test";
+                    $sql_select_test_get = Yii::app()->db2->createCommand($sql_select_test_set)->queryAll();
+                    $outContents[$y][] = $sql_select_test_get[0];
+                    $outContents[$y][] = $sql_select_test_get[0][$temporary_contents_test];
+                }
+                $this->answer_wrong_contents=$outContents;
+            }else{
+                $this->answer_wrong_contents="";
             }
-            $outContents=array();
-            for($y=0;$y<count($temporary);$y++){
-                $temporary_id_test=$temporary[$y]['id'];      //题目主键
-                $temporary_contents_test=$temporary[$y]['contents']; //错误选项(字段名)
-                $sql_select_test_set="select * from test_exams WHERE id=$temporary_id_test";
-                $sql_select_test_get=Yii::app()->db2->createCommand($sql_select_test_set)->queryAll();
-                $outContents[$y][]=$sql_select_test_get[0];
-                $outContents[$y][]=$sql_select_test_get[0][$temporary_contents_test];
-            }
-            $this->answer_wrong_contents=$outContents;
-
             $this->should_answer_count=$correct_data['employee_quiz_questions_count'];//应做数量
             $this->wrong_answer_count=$correct_data['employee_quiz_wrong_questions_count']; //错的题目数量
             $this->this_time_for=$correct_data['employee_correct_rate_date'];  //答题时间段
+        }
+        }
+        else{
+            $this->check=0;
+            $this->answer_wrong_contents='';
+            $this->should_answer_count='0';
+            $this->wrong_answer_count='0';
+            $this->this_time_for='0';
         }
         return true;
     }

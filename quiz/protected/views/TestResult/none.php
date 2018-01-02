@@ -63,60 +63,13 @@ $this->pageTitle=Yii::app()->name . ' - Customer Type Form';
                 </div>
             </div>
             <div class="form-group">
-                <label class="col-sm-5 control-label" >
-                    <?php echo
-                        "您在本次的测验中应答题目"."&nbsp;".$model->should_answer_count."道题".
-                        "<br/>".
-                        "实际答题"."&nbsp;".$model->fact_answer_count."道题".
-                        "<br/>".
-                        "正确率为"."&nbsp;".$model->employee_rate."%"."&nbsp;".
-                        "<br/>".
-                        "错题数量"."&nbsp;".$model->wrong_answer_count."&nbsp;&nbsp;&nbsp;".
-                        "<br/>"
-                        .$model->quiz_name."的平均正确率为"."&nbsp;".$model->quiz_rate."%"."&nbsp;".
-                        "<br/>".
-                        "测验用时:".$model->this_time_for."秒". "<br/>". "<br/>". "<br/>"
-                    ?>
-                </label>
-                <label class="col-sm-3 control-label">
-                    <?php
-                    if($model->quiz_rate>$model->employee_rate){
-                        echo "您当前的正确率低于本次测验的平均水平,请继续加油！";
-                    }
-                    elseif($model->quiz_rate=$model->employee_rate){
-                        echo "您当前的正确率等于本次测验的平均水平,请继续努力！";
-                    }
-                    else{
-                        echo "您此次的正确率虽然高于本次测验的平均水平,不要懈怠哦！";
-                    }
-                    ?>
-                </label>
+
+
             </div>
 
             <div class="form-group">
                 <label class="col-sm-5 control-label" >本次错题记录如下</label>
             </div>
-           <?php
-           if(!empty($model->answer_wrong_contents)) {
-               for ($c = 0; $c < count($model->answer_wrong_contents); $c++) {
-                   echo "<div class='form-group'>" .
-                       "<label class='col-sm-5 control-label '>" . "测试题第" . $model->answer_wrong_contents[$c][0]['id'] . "题" . "&nbsp;&nbsp;&nbsp;" . $model->answer_wrong_contents[$c][0]['test_exams_contents'] . "</label>"
-                       . "</div>" .
-                       "<div class='from-group'>"
-                       .
-                       "<label class='col-sm-5 control-label label-danger'>" . "您的选择:" . "&nbsp;&nbsp;" . $model->answer_wrong_contents[$c][1] . "</label>" .
-                       "<label class='col-sm-5 control-label label-success'>" . "正确答案:" . "&nbsp;&nbsp;" . $model->answer_wrong_contents[$c][0]['test_exams_answer_right'] . "</label>"
-                       . "</div>";
-               }
-           }else{
-               if($model->check==1){
-                   echo "<div class='form-group'>"."<label class='cols-sm-5 control-label'>不做题的您- -</label>"."</div>'";
-               }else{
-                   echo "<div class='form-group'>"."<label class='cols-sm-5 control-label'>您可真厉害,居然全对</label>"."</div>'";
-               }
-
-           }
-           ?>
 
         </div>
     </div>

@@ -7,9 +7,8 @@
  */
 header("Content-type: text/html; charset=utf-8");
  Class QuizController extends Controller{
-Public $urlAjaxSelect;
-Public $arr;
-
+    Public $urlAjaxSelect;
+    Public $arr;
      public function actionIndex($pageNum=0){
          //searching operation can get the value of searching result
       //var_dump($_REQUEST['QuizList']['searchField']);die;
@@ -103,7 +102,6 @@ Public $arr;
              $this->render('form',array('model'=>$model,));
          }
      }
-
      protected function performAjaxValidation($model)
      {
          if(isset($_POST['ajax']) && $_POST['ajax']==='code-form')
@@ -112,7 +110,6 @@ Public $arr;
              Yii::app()->end();
          }
      }
-
      public static function allowReadWrite() {
          return Yii::app()->user->validRWFunction('C02');
      }

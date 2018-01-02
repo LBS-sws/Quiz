@@ -87,7 +87,6 @@ Class TestStartController extends Controller
             Yii::app()->end();
         }
     }
-
     Public function actionAjaxUrl(){
     $this->dataSearch=$_REQUEST['searchValue'];
         $searchValue=$_REQUEST['searchValue'];
@@ -96,11 +95,7 @@ Class TestStartController extends Controller
         $quizEmployeeId = Yii::app()->db2->createCommand($sql)->queryAll();*/
       echo $searchValue;
     }
-
-
-
 Public function actionSelectQuestions(){
-
     $selectValueOut=$_REQUEST['selectValueIn'];
     $tableFuss=Yii::app()->params['jsonTableName'];
     $sql="select quiz_employee_id from blog$tableFuss.quiz WHERE id=$selectValueOut";

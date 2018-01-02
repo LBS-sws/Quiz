@@ -9,22 +9,22 @@ return array(
 				'access'=>'HK01',
 				'url'=>'/Quiz/index',
 				'tag'=>'@',
-			),
+			),/*
 			'Quiz questions'=>array(
 				'access'=>'HK02',
 				'url'=>'/Questions/index',
 				'tag'=>'@',
-			),
+			),*/
 			'Quiz questions add'=>array(
 				'access'=>'HK03',
 				'url'=>'/Exams/index',
 				'tag'=>'@',
 			),
-			'Quiz questions manage'=>array(
+		/*	'Quiz questions manage'=>array(
 				'access'=>'HK04',
 				'url'=>'/Quiz/manage',
 				'tag'=>'@',
-			),
+			),*/
 			'Quiz test manage'=>array(
 				'access'=>'HK05',
 				'url'=>'/TestStart/index',
@@ -35,6 +35,11 @@ return array(
 	'url'=>'/TestSearch/index',
 	'tag'=>'@',
 			),
+			'Quiz test History'=>array(
+				'access'=>'HK07',
+				'url'=>'/TestHistory/index',
+				'tag'=>'@',
+			)
 		),
 	),
 

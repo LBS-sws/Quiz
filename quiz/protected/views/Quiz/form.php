@@ -100,18 +100,18 @@ $this->pageTitle=Yii::app()->name . ' - Customer Type Form';
             </div>-->
 
             <div class="form-group">
-                <?php echo $form->labelEx($model,'quiz_exams_id',array('class'=>"col-sm-2 control-label")); ?>
+              <!--  --><?php /*echo $form->labelEx($model,'quiz_exams_id',array('class'=>"col-sm-2 control-label")); */?>
                 <div class="col-sm-5">
-                    <?php echo $form->textField($model, 'quiz_exams_id',
+                    <?php echo $form->hiddenField($model, 'quiz_exams_id',
                         array('size'=>50,'maxlength'=>100,'readonly'=>($model->scenario=='view'))
                     ); ?>
                 </div>
             </div>
 
             <div class="form-group">
-                <?php echo $form->labelEx($model,'quiz_correct_rate',array('class'=>"col-sm-2 control-label")); ?>
+             <!--   --><?php /*echo $form->labelEx($model,'quiz_correct_rate',array('class'=>"col-sm-2 control-label")); */?>
                 <div class="col-sm-5">
-                    <?php echo $form->textField($model, 'quiz_correct_rate',
+                    <?php echo $form->hiddenField($model, 'quiz_correct_rate',
                         array('size'=>50,'maxlength'=>100,'id'=>'showRate','readonly'=>($model->scenario=='view'))
                     ); ?>
                 </div>
@@ -128,11 +128,19 @@ $this->pageTitle=Yii::app()->name . ' - Customer Type Form';
             <?PHP /*$this->urlAjaxSelect=Yii::app()->createUrl('Quiz/AjaxUrl');*/?>
             <input type="hidden" id="urlGet" name="urlGet" value="<?php echo $this->urlAjaxSelect;?>"/>
             <?php echo $form->hiddenField($model, 'id'); ?>
+
             <script>
                 $("#select_questions_count").change(function(){
                   var selectValue= $("#select_questions_count").find("option:selected").text();
+                    var reg=/^[0-9]*$/;
+                    if (!reg.test(selectValue)){
+                        $("#getCountValue2").val("");
+                        alert("请选择一个适合本次测验的数字");
+                    }
+                else{
                     $("#getCountValue").val(selectValue);
                     $("#getCountValue2").val(selectValue);
+                }
                     //console.log(selectValue);
                     var url = $("#urlGet").val();
                     var username='1';
@@ -151,11 +159,12 @@ $this->pageTitle=Yii::app()->name . ' - Customer Type Form';
                     });
                 });
             </script>
+
           <?php echo $form->hiddenField($model, 'quiz_exams_count',array('id'=>'getCountValue')); ?>
             <div class="form-group">
-                <?php echo $form->labelEx($model,'city_privileges',array('class'=>"col-sm-2 control-label")); ?>
+                <?php /*echo $form->labelEx($model,'city_privileges',array('class'=>"col-sm-2 control-label")); */?>
                 <div class="col-sm-5">
-                    <?php echo $form->textField($model, 'city_privileges',
+                    <?php echo $form->hiddenField($model, 'city_privileges',
                         array('size'=>50,'maxlength'=>100,'readonly'=>($model->scenario=='view'))
                     ); ?>
                 </div>
