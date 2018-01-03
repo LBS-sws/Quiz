@@ -1,5 +1,5 @@
-<tr class='clickable-row' data-href='<?php echo $this->getLink('HK01', 'TestHistory/edit', 'TestHistory/view', array('quiz_id'=>$this->record['id']));?>'>
-	<td><?php echo $this->drawEditButton('HK01', 'TestHistory/edit', 'TestHistory/view', array('quiz_id'=>$this->record['id'])); ?></td>
+<tr class='clickable-row' data-href='<?php echo $this->getLink('HK01', 'testhistory/edit', 'testhistory/view', array('quiz_id'=>$this->record['id']));?>'>
+	<td><?php echo $this->drawEditButton('HK01', 'testhistory/edit', 'testhistory/view', array('quiz_id'=>$this->record['id'])); ?></td>
 	<td><?php echo $this->record['quiz_date']; ?></td>
 	<td><?php echo $this->record['quiz_name']; ?></td>
 	<td><?php echo $this->record['quiz_correct_rate']; ?></td>

@@ -29,14 +29,14 @@ $this->pageTitle=Yii::app()->name . ' - Nature';
                 <?php
                 if (Yii::app()->user->validRWFunction('HK01'))
                     echo TbHtml::button('<span class="fa fa-file-o"></span> '.Yii::t('misc','Add Record'), array(
-                        'submit'=>Yii::app()->createUrl('Quiz/new'),
+                        'submit'=>Yii::app()->createUrl('quiz/new'),
                     ));
                 ?>
             </div>
         </div>
     </div>
     <?php $this->widget('ext.layout.ListPageWidget', array(
-        'title'=>Yii::t('quiz','Quiz List'),
+        'title'=>Yii::t('quiz','quiz List'),
         'model'=>$model,
         'viewhdr'=>'//quiz/_listhdr',
         'viewdtl'=>'//quiz/_listdtl',

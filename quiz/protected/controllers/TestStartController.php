@@ -66,8 +66,8 @@ Class TestStartController extends Controller
             if ($model->validate()) {
                 $model->saveData();
                 //$model->scenario = 'edit';
-                Dialog::message(Yii::t('dialog', 'Information'), Yii::t('dialog', 'Quiz Starting!'));
-                $this->redirect(Yii::app()->createUrl('TestStart/QuizStart', array('index' => 'quiz','quiz_id'=>$model->quiz_id,'employee_id'=>$model->employee_id,'quiz_correct_employee_id'=>$model->quiz_correct_employee_id)));
+                Dialog::message(Yii::t('dialog', 'Information'), Yii::t('dialog', 'quiz Starting!'));
+                $this->redirect(Yii::app()->createUrl('teststart/QuizStart', array('index' => 'quiz','quiz_id'=>$model->quiz_id,'employee_id'=>$model->employee_id,'quiz_correct_employee_id'=>$model->quiz_correct_employee_id)));
             } else {
                 $message = CHtml::errorSummary($model);
                 Dialog::message(Yii::t('dialog', 'Validation Message'), $message);

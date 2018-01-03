@@ -22,8 +22,8 @@ $this->pageTitle=Yii::app()->name . ' - Nature';
     <?php $this->widget('ext.layout.ListPageWidget', array(
         'title'=>Yii::t('quiz','employee_name_show'),
         'model'=>$model,
-        'viewhdr'=>'//TestHistory/_employeetl',
-        'viewdtl'=>'//TestHistory/_employeedr',
+        'viewhdr'=>'//testhistory/_employeetl',
+        'viewdtl'=>'//testhistory/_employeedr',
         'gridsize'=>'24',
         'height'=>'600',
         'search'=>array(

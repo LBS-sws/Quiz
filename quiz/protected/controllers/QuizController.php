@@ -63,11 +63,11 @@ header("Content-type: text/html; charset=utf-8");
              $model->attributes = $_POST['QuizForm'];
              if ($model->isOccupied($model->id)) {
                  Dialog::message(Yii::t('dialog','Warning'), Yii::t('dialog','This record is already in use'));
-                 $this->redirect(Yii::app()->createUrl('Quiz/edit',array('index'=>$model->id)));
+                 $this->redirect(Yii::app()->createUrl('quiz/edit',array('index'=>$model->id)));
              } else {
                  $model->saveData();
                  Dialog::message(Yii::t('dialog','Information'), Yii::t('dialog','Record Deleted'));
-                 $this->redirect(Yii::app()->createUrl('Quiz/index'));
+                 $this->redirect(Yii::app()->createUrl('quiz/index'));
              }
          }
 //		$this->actionIndex();
@@ -85,7 +85,7 @@ header("Content-type: text/html; charset=utf-8");
                  $model->saveData();
 		            //$model->scenario = 'edit';
                  Dialog::message(Yii::t('dialog','Information'), Yii::t('dialog','Save Done'));
-                 $this->redirect(Yii::app()->createUrl('Quiz/edit',array('index'=>$model->id)));
+                 $this->redirect(Yii::app()->createUrl('quiz/edit',array('index'=>$model->id)));
              } else {
                  $message = CHtml::errorSummary($model);
                  Dialog::message(Yii::t('dialog','Validation Message'), $message);

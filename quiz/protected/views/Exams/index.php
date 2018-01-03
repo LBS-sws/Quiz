@@ -29,7 +29,7 @@ $this->pageTitle=Yii::app()->name . ' - Nature';
 				<?php
 				if (Yii::app()->user->validRWFunction('HK02'))
 					echo TbHtml::button('<span class="fa fa-file-o"></span> '.Yii::t('misc','Add Record'), array(
-						'submit'=>Yii::app()->createUrl('Exams/new'),
+						'submit'=>Yii::app()->createUrl('exams/new'),
 					));
 				?>
 			</div>
@@ -38,8 +38,8 @@ $this->pageTitle=Yii::app()->name . ' - Nature';
 	<?php $this->widget('ext.layout.ListPageWidget', array(
 		'title'=>Yii::t('quiz','Question List'),
 		'model'=>$model,
-		'viewhdr'=>'//Exams/_listhdr',
-		'viewdtl'=>'//Exams/_listdtl',
+		'viewhdr'=>'//exams/_listhdr',
+		'viewdtl'=>'//exams/_listdtl',
 		'gridsize'=>'24',
 		'height'=>'600',
 		'search'=>array(

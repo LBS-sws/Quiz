@@ -3,7 +3,7 @@ $this->pageTitle=Yii::app()->name . ' - Product Delivery Form';
 ?>
 
 <?php $form=$this->beginWidget('TbActiveForm', array(
-	'id'=>'Exams-form',
+	'id'=>'exams-form',
 	'enableClientValidation'=>true,
 	'clientOptions'=>array('validateOnSubmit'=>true,),
 	'layout'=>TbHtml::FORM_LAYOUT_HORIZONTAL,
@@ -30,15 +30,15 @@ $this->pageTitle=Yii::app()->name . ' - Product Delivery Form';
 				<?php
 				if ($model->scenario!='new' && $model->scenario!='view') {
 					echo TbHtml::button('<span class="fa fa-file-o"></span> '.Yii::t('misc','Add Another'), array(
-						'submit'=>Yii::app()->createUrl('Exams/new')));
+						'submit'=>Yii::app()->createUrl('exams/new')));
 				}
 				?>
 				<?php echo TbHtml::button('<span class="fa fa-reply"></span> '.Yii::t('misc','Back'), array(
-					'submit'=>Yii::app()->createUrl('Exams/index')));
+					'submit'=>Yii::app()->createUrl('exams/index')));
 				?>
 				<?php if ($model->scenario!='view'): ?>
 					<?php echo TbHtml::button('<span class="fa fa-upload"></span> '.Yii::t('misc','Save'), array(
-						'submit'=>Yii::app()->createUrl('Exams/save')));
+						'submit'=>Yii::app()->createUrl('exams/save')));
 					?>
 				<?php endif ?>
 				<?php if ($model->scenario=='edit'): ?>
@@ -64,8 +64,8 @@ $this->pageTitle=Yii::app()->name . ' - Product Delivery Form';
 					<?php $this->widget('ext.layout.TableView2Widget', array(
 						'model'=>$model,
 						'attribute'=>'detail',
-						'viewhdr'=>'//Exams/_formhdr',
-						'viewdtl'=>'//Exams/_formdtl',
+						'viewhdr'=>'//exams/_formhdr',
+						'viewdtl'=>'//exams/_formdtl',
 						'gridsize'=>'24',
 						'height'=>'200',
 					));

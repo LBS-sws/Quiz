@@ -6,8 +6,7 @@
  * Time: 17:50
  */
 header("Content-type: text/html; charset=utf-8");
-Class TestResultController extends Controller
-
+Class TestresultController extends Controller
 {
     Public $urlAjaxSubmit;
     Public $arr;
@@ -51,10 +50,10 @@ Class TestResultController extends Controller
                 $correct_id=$model->saveData($final_result);
                 //$model->scenario = 'edit';
                 Dialog::message(Yii::t('dialog', 'Information'), Yii::t('dialog', 'Look through the result!'));
-                $this->redirect(Yii::app()->createUrl('TestResult/LookThrough', array('index' => 'quiz','correct_id'=>$correct_id)));
+                $this->redirect(Yii::app()->createUrl('testresult/LookThrough', array('index' => 'quiz','correct_id'=>$correct_id)));
             } else {
                 Dialog::message(Yii::t('dialog', 'Information'), Yii::t('dialog', 'Look through the result wrong!'));
-                $this->redirect(Yii::app()->createUrl('TestStart/Index', array('index' => 'quiz','correct_id'=>'')));
+                $this->redirect(Yii::app()->createUrl('teststart/Index', array('index' => 'quiz','correct_id'=>'')));
             }
         }
     }

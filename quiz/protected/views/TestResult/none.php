@@ -11,7 +11,7 @@ $this->pageTitle=Yii::app()->name . ' - Customer Type Form';
 
 <section class="content-header">
     <h1>
-        <strong><?php echo Yii::t('quiz','Quiz resultOrder'); ?></strong>
+        <strong><?php echo Yii::t('quiz','quiz resultOrder'); ?></strong>
     </h1>
     <!--
         <ol class="breadcrumb">
@@ -28,15 +28,15 @@ $this->pageTitle=Yii::app()->name . ' - Customer Type Form';
                 <!-- --><?php
                 /*                if ($model->scenario!='new' && $model->scenario!='view') {
                                     echo TbHtml::button('<span class="fa fa-file-o"></span> '.Yii::t('misc','Add Another'), array(
-                                        'submit'=>Yii::app()->createUrl('TestStart/new')));
+                                        'submit'=>Yii::app()->createUrl('teststart/new')));
                                 }
                                 */?>
                 <?php echo TbHtml::button('<span class="fa fa-reply"></span> '.Yii::t('misc','Back'), array(
-                    'submit'=>Yii::app()->createUrl('TestStart/index')));
+                    'submit'=>Yii::app()->createUrl('teststart/index')));
                 ?>
                 <?php if ($model->scenario!='view'): ?>
-                    <?php echo TbHtml::button('<span class="fa fa-upload"></span> '.Yii::t('misc','Start Quiz'), array(
-                        'submit'=>Yii::app()->createUrl('TestStart/save')));
+                    <?php echo TbHtml::button('<span class="fa fa-upload"></span> '.Yii::t('misc','Start quiz'), array(
+                        'submit'=>Yii::app()->createUrl('teststart/save')));
                     ?>
                 <?php endif ?>
                 <?php if ($model->scenario=='edit'): ?>

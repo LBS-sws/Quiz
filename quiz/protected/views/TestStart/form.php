@@ -11,7 +11,7 @@ $this->pageTitle=Yii::app()->name . ' - Customer Type Form';
 
 <section class="content-header">
     <h1>
-        <strong><?php echo Yii::t('quiz','Quiz DataOrder'); ?></strong>
+        <strong><?php echo Yii::t('quiz','quiz DataOrder'); ?></strong>
     </h1>
     <!--
         <ol class="breadcrumb">
@@ -28,15 +28,15 @@ $this->pageTitle=Yii::app()->name . ' - Customer Type Form';
                <!-- --><?php
 /*                if ($model->scenario!='new' && $model->scenario!='view') {
                     echo TbHtml::button('<span class="fa fa-file-o"></span> '.Yii::t('misc','Add Another'), array(
-                        'submit'=>Yii::app()->createUrl('TestStart/new')));
+                        'submit'=>Yii::app()->createUrl('teststart/new')));
                 }
                 */?>
                 <?php echo TbHtml::button('<span class="fa fa-reply"></span> '.Yii::t('misc','Back'), array(
-                    'submit'=>Yii::app()->createUrl('TestStart/index')));
+                    'submit'=>Yii::app()->createUrl('teststart/index')));
                 ?>
                 <?php if ($model->scenario!='view'): ?>
-                    <?php echo TbHtml::button('<span class="fa fa-upload"></span> '.Yii::t('misc','Start Quiz'), array(
-                        'submit'=>Yii::app()->createUrl('TestStart/save')));
+                    <?php echo TbHtml::button('<span class="fa fa-upload"></span> '.Yii::t('misc','Start quiz'), array(
+                        'submit'=>Yii::app()->createUrl('teststart/save')));
                     ?>
                 <?php endif ?>
                 <?php if ($model->scenario=='edit'): ?>
@@ -54,9 +54,9 @@ $this->pageTitle=Yii::app()->name . ' - Customer Type Form';
             <?php echo $form->hiddenField($model, 'scenario'); ?>
             <?php echo $form->hiddenField($model, 'id'); ?>
            <!-- <script src="<?php /*echo Yii::app()->baseUrl;*/?>/js/jquery-1.3.2.min.js'"></script>-->
-            <?PHP $this->urlAjaxSubmit=Yii::app()->createUrl('TestStart/AjaxUrl');?>
+            <?PHP $this->urlAjaxSubmit=Yii::app()->createUrl('teststart/AjaxUrl');?>
            <input type="hidden" id="urlGet" name="urlGet" value="<?php echo $this->urlAjaxSubmit;?>"/>
-            <?php $this->selectData=Yii::app()->createUrl('TestStart/SelectQuestions');?>
+            <?php $this->selectData=Yii::app()->createUrl('teststart/SelectQuestions');?>
         <input type="hidden" id="urlGetSelect" name="urlGetSelect" value="<?php echo $this->selectData;?>"/>
             <!--<input type="text" name="k"  id="searchInput"/>&nbsp;<input type="button" name="startQuiz" value="开始测试" />
             <input type="text" id="getValueSearch" value=""/>
@@ -175,7 +175,7 @@ function IsNumeric(n) {
   return !isNaN(parseFloat(n)) && isFinite(n);
 }
 ";
-$js = Script::genDeleteData(Yii::app()->createUrl('TestStart/delete'));
+$js = Script::genDeleteData(Yii::app()->createUrl('teststart/delete'));
 Yii::app()->clientScript->registerScript('deleteRecord',$js,CClientScript::POS_READY);
 $js = Script::genReadonlyField();
 Yii::app()->clientScript->registerScript('readonlyClass',$js,CClientScript::POS_READY);

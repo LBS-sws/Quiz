@@ -11,7 +11,7 @@ $this->pageTitle=Yii::app()->name . ' - Customer Type Form';
 
 <section class="content-header">
     <h1>
-        <strong><?php echo Yii::t('quiz','Quiz DataOrder'); ?></strong>
+        <strong><?php echo Yii::t('quiz','quiz DataOrder'); ?></strong>
     </h1>
 
 </section>
@@ -23,15 +23,15 @@ $this->pageTitle=Yii::app()->name . ' - Customer Type Form';
                 <?php
                 /*                if ($model->scenario!='new' && $model->scenario!='view') {
                                     echo TbHtml::button('<span class="fa fa-file-o"></span> '.Yii::t('misc','Add Another'), array(
-                                        'submit'=>Yii::app()->createUrl('TestStart/new')));
+                                        'submit'=>Yii::app()->createUrl('teststart/new')));
                                 }
                                 */?>
                 <?php echo TbHtml::button('<span class="fa fa-reply"></span> '.Yii::t('misc','Back'), array(
-                    'submit'=>Yii::app()->createUrl('TestHistory/index')));
+                    'submit'=>Yii::app()->createUrl('testhistory/index')));
                 ?>
                 <?php if ($model->scenario!='view'): ?>
-                    <?php echo TbHtml::button('<span class="fa fa-upload"></span> '.Yii::t('misc','Start Quiz'), array(
-                        'submit'=>Yii::app()->createUrl('TestStart/save')));
+                    <?php echo TbHtml::button('<span class="fa fa-upload"></span> '.Yii::t('misc','Start quiz'), array(
+                        'submit'=>Yii::app()->createUrl('teststart/save')));
                     ?>
                 <?php endif ?>
                 <?php if ($model->scenario=='edit'): ?>
@@ -57,7 +57,7 @@ $this->pageTitle=Yii::app()->name . ' - Customer Type Form';
             </div>
 
             <?php echo $form->hiddenField($model,'quiz_id',array('id'=>"get_quiz_id"));?>
-            <?php $this->info_id_pass=Yii::app()->createUrl('TestHistory/EmployeeInfoShow');?>
+            <?php $this->info_id_pass=Yii::app()->createUrl('testhistory/EmployeeInfoShow');?>
             <input type="hidden" id="urlGetInfo" value="<?php echo $this->info_id_pass;?>"/>
 
             <div class="form-group">

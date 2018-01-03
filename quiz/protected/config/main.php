@@ -9,7 +9,7 @@ return array(
 	'id'=>'swoper_w',
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'charset'=>'UTF-8',
-	'name'=>'LBS Quiz Management',
+	'name'=>'LBS quiz Management',
 	'timeZone'=>'Asia/Hong_Kong',
 	'sourceLanguage'=> 'en',
 	'language'=>'zh_cn',

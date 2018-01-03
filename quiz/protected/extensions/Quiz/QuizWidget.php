@@ -14,7 +14,7 @@ Class QuizWidget extends Cwidget{
         $quizEmployeeId = Yii::app()->db2->createCommand($sql)->queryAll();
 
      $demo="aaa".$quizEmployeeId[0]['employee_info_name'];
-     $html="<div style='height: 200px;width: 50px;border: 1px solid dimgrey;'>$demo.Quiz::demoData()</div>";
+     $html="<div style='height: 200px;width: 50px;border: 1px solid dimgrey;'>$demo.quiz::demoData()</div>";
         echo $html;
     }
 }

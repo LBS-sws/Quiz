@@ -28,7 +28,7 @@ class ExamsController extends Controller
                 $model->saveData();
                 //$model->scenario = 'edit';
                 Dialog::message(Yii::t('dialog','Information'), Yii::t('dialog','Save Done'));
-                $this->redirect(Yii::app()->createUrl('Exams/index',array('index'=>$model->id)));
+                $this->redirect(Yii::app()->createUrl('exams/index',array('index'=>$model->id)));
             } else {
 
                 $message = CHtml::errorSummary($model);
@@ -50,7 +50,7 @@ class ExamsController extends Controller
                     throw new CHttpException(404,'The requested page does not exist.');
                 }
                 Dialog::message(Yii::t('dialog','Information'), Yii::t('dialog','Save Done'));
-                $this->redirect(Yii::app()->createUrl('Exams/index',array('index'=>$model->id)));
+                $this->redirect(Yii::app()->createUrl('exams/index',array('index'=>$model->id)));
             } else {
                 $message = CHtml::errorSummary($model);
                 Dialog::message(Yii::t('dialog','Validation Message'), $message);
@@ -94,7 +94,7 @@ class ExamsController extends Controller
             $model->saveData();
             Dialog::message(Yii::t('dialog','Information'), Yii::t('dialog','Record Deleted'));
         }
-        $this->redirect(Yii::app()->createUrl('Exams/index'));
+        $this->redirect(Yii::app()->createUrl('exams/index'));
     }
 
     /**
@@ -103,7 +103,7 @@ class ExamsController extends Controller
      */
     protected function performAjaxValidation($model)
     {
-        if(isset($_POST['ajax']) && $_POST['ajax']==='Exams-form')
+        if(isset($_POST['ajax']) && $_POST['ajax']==='exams-form')
         {
             echo CActiveForm::validate($model);
             Yii::app()->end();

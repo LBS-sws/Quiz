@@ -2,42 +2,42 @@
 
 return array(
 
-	'Quiz'=>array(
+	'quiz'=>array(
 		'access'=>'HK',
 		'items'=>array(
 			'All quiz records'=>array(
 				'access'=>'HK01',
-				'url'=>'/Quiz/index',
+				'url'=>'/quiz/index',
 				'tag'=>'@',
 			),/*
-			'Quiz questions'=>array(
+			'quiz questions'=>array(
 				'access'=>'HK02',
 				'url'=>'/Questions/index',
 				'tag'=>'@',
 			),*/
-			'Quiz questions add'=>array(
+			'quiz questions add'=>array(
 				'access'=>'HK03',
-				'url'=>'/Exams/index',
+				'url'=>'/exams/index',
 				'tag'=>'@',
 			),
-		/*	'Quiz questions manage'=>array(
+		/*	'quiz questions manage'=>array(
 				'access'=>'HK04',
-				'url'=>'/Quiz/manage',
+				'url'=>'/quiz/manage',
 				'tag'=>'@',
 			),*/
-			'Quiz test manage'=>array(
+			'quiz test manage'=>array(
 				'access'=>'HK05',
-				'url'=>'/TestStart/index',
+				'url'=>'/teststart/index',
 				'tag'=>'@',
 			),
-	'Quiz test search'=>array(
+	'quiz test search'=>array(
 	'access'=>'HK06',
-	'url'=>'/TestSearch/index',
+	'url'=>'/testsearch/index',
 	'tag'=>'@',
 			),
-			'Quiz test History'=>array(
+			'quiz test History'=>array(
 				'access'=>'HK07',
-				'url'=>'/TestHistory/index',
+				'url'=>'/testhistory/index',
 				'tag'=>'@',
 			)
 		),

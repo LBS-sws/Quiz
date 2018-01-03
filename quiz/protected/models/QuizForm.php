@@ -32,7 +32,7 @@ class QuizForm extends CFormModel
             'quiz_employee_id'=>Yii::t('quiz','quiz_employee_id'),
             'quiz_exams_count'=>Yii::t('quiz','quiz_exams_count'),
             'quiz_date'=>Yii::t('quiz','Question Name'),
-            'QuizDate'=>Yii::t('quiz','Quiz Date'),
+            'QuizDate'=>Yii::t('quiz','quiz Date'),
             'quiz_name'=>Yii::t('quiz','quiz_name'),
             'city_privileges'=>Yii::t('quiz','city_privileges'),
             'quiz_start_dt'=>Yii::t('quiz','quiz_start_dt'),

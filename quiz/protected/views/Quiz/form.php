@@ -11,7 +11,7 @@ $this->pageTitle=Yii::app()->name . ' - Customer Type Form';
 
 <section class="content-header">
     <h1>
-        <strong><?php echo Yii::t('quiz','Quiz DataOrder'); ?></strong>
+        <strong><?php echo Yii::t('quiz','quiz DataOrder'); ?></strong>
     </h1>
     <!--
         <ol class="breadcrumb">
@@ -28,15 +28,15 @@ $this->pageTitle=Yii::app()->name . ' - Customer Type Form';
                 <?php
                 if ($model->scenario!='new' && $model->scenario!='view') {
                     echo TbHtml::button('<span class="fa fa-file-o"></span> '.Yii::t('misc','Add Another'), array(
-                        'submit'=>Yii::app()->createUrl('Quiz/new')));
+                        'submit'=>Yii::app()->createUrl('quiz/new')));
                 }
                 ?>
                 <?php echo TbHtml::button('<span class="fa fa-reply"></span> '.Yii::t('misc','Back'), array(
-                    'submit'=>Yii::app()->createUrl('Quiz/index')));
+                    'submit'=>Yii::app()->createUrl('quiz/index')));
                 ?>
                 <?php if ($model->scenario!='view'): ?>
                     <?php echo TbHtml::button('<span class="fa fa-upload"></span> '.Yii::t('misc','Save'), array(
-                        'submit'=>Yii::app()->createUrl('Quiz/save')));
+                        'submit'=>Yii::app()->createUrl('quiz/save')));
                     ?>
                 <?php endif ?>
                 <?php if ($model->scenario=='edit'): ?>
@@ -125,7 +125,7 @@ $this->pageTitle=Yii::app()->name . ' - Customer Type Form';
             ); ?>
                 </div>
     </div>
-            <?PHP /*$this->urlAjaxSelect=Yii::app()->createUrl('Quiz/AjaxUrl');*/?>
+            <?PHP /*$this->urlAjaxSelect=Yii::app()->createUrl('quiz/AjaxUrl');*/?>
             <input type="hidden" id="urlGet" name="urlGet" value="<?php echo $this->urlAjaxSelect;?>"/>
             <?php echo $form->hiddenField($model, 'id'); ?>
 
@@ -231,7 +231,7 @@ function IsNumeric(n) {
 }
 ";
 
-$js = Script::genDeleteData(Yii::app()->createUrl('Quiz/delete'));
+$js = Script::genDeleteData(Yii::app()->createUrl('quiz/delete'));
 Yii::app()->clientScript->registerScript('deleteRecord',$js,CClientScript::POS_READY);
 
 $js = Script::genReadonlyField();

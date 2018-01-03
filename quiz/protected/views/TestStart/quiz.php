@@ -12,7 +12,7 @@ $this->pageTitle=Yii::app()->name . ' - Customer Type Form';
 
 <section class="content-header">
     <h1>
-        <strong><?php echo Yii::t('quiz','Quiz questions order'); ?></strong>
+        <strong><?php echo Yii::t('quiz','quiz questions order'); ?></strong>
     </h1>
     <!--
         <ol class="breadcrumb">
@@ -30,15 +30,15 @@ $this->pageTitle=Yii::app()->name . ' - Customer Type Form';
                 <!-- --><?php
                 /*                if ($model->scenario!='new' && $model->scenario!='view') {
                                     echo TbHtml::button('<span class="fa fa-file-o"></span> '.Yii::t('misc','Add Another'), array(
-                                        'submit'=>Yii::app()->createUrl('TestStart/new')));
+                                        'submit'=>Yii::app()->createUrl('teststart/new')));
                                 }
                                 */?>
                 <?php echo TbHtml::button('<span class="fa fa-reply"></span> '.Yii::t('misc','Back'), array(
-                    'submit'=>Yii::app()->createUrl('TestStart/index')));
+                    'submit'=>Yii::app()->createUrl('teststart/index')));
                 ?>
                 <?php if ($model->scenario!='view'): ?>
-                    <?php echo TbHtml::button('<span class="fa fa-upload"></span> '.Yii::t('misc','Submit Quiz Form'), array(
-                        'submit'=>Yii::app()->createUrl('TestResult/SubmitResult')));
+                    <?php echo TbHtml::button('<span class="fa fa-upload"></span> '.Yii::t('misc','Submit quiz Form'), array(
+                        'submit'=>Yii::app()->createUrl('testresult/SubmitResult')));
                     ?>
                 <?php endif ?>
 
@@ -191,7 +191,7 @@ function IsNumeric(n) {
   return !isNaN(parseFloat(n)) && isFinite(n);
 }
 ";
-$js = Script::genDeleteData(Yii::app()->createUrl('TestStart/delete'));
+$js = Script::genDeleteData(Yii::app()->createUrl('teststart/delete'));
 Yii::app()->clientScript->registerScript('deleteRecord',$js,CClientScript::POS_READY);
 $js = Script::genReadonlyField();
 Yii::app()->clientScript->registerScript('readonlyClass',$js,CClientScript::POS_READY);
