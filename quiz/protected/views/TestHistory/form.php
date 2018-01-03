@@ -117,7 +117,7 @@ $this->pageTitle=Yii::app()->name . ' - Customer Type Form';
                         if(data[i]['correct_rate']==null){
                             data[i]['correct_rate']='无正确率记录';
                         }
-                        content+="<div class='form-group'>"+"<div class='col-sm-3'>"+"本次应答题目数:"+data[i]['should_done_counts']+"</div>";
+                        content+="<div class='form-group'>"+"<div class='col-sm-3'>"+"第"+i+"次本测验应答题目数:"+data[i]['should_done_counts']+"</div>";
                         console.log("有错题");
                         content+="<div class='col-sm-3'>"+"实做题目数"+data[i]['fact_done_counts']+"</div>";
                         content+="<div class='col-sm-3'>"+"正确率"+data[i]['correct_rate']+"</div>";
