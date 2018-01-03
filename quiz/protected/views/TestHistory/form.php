@@ -100,40 +100,45 @@ $this->pageTitle=Yii::app()->name . ' - Customer Type Form';
                 //console.log(data['countTime']);
                 var item;
                 var content;
-                var lang=data.length-1;
+                var lang=data.length;
                 console.log(lang);
                 if(lang>1){   //如果有错题
-                    $("#showTitle").html("<label class='control-label col-sm-6'>" + "共有" + "<font color='red'>"+data[lang]['countTime']+"</font>" + "在本次测验的次数&nbsp;&nbsp;&nbsp;该测验单平均正确率:" +"<font color='red'>"+ data[lang]['quiz_correct_rate'] +"</font>"+
-                        "</label>" + "<label class='control-label col-sm-5'>" + "一共出题" + "<font color='red'>"+data[lang]['quiz_total_test_all'] +"</font>"+"道"+ "参加测试的人一共答错:" + "<font color='red'>"+data[lang]['quiz_total_wrong_all'] +"</font>"+ "</label>");
-                    $("#showEmployeeInfo").html();
-                    console.log(data[12]['demo']);
-                    for (var i = 0; i<data.length -2; i++) {
-                        if(data[i]['demo']==0){
-                            console.log(data[i]['demo']);
-                            //console.log("无错题");
-                           // content+="<div class='form-group'>"+"本次在该测验单的正确率"+data[i]['shouldAnswerCount']+"</div>";
-                        }else{
-                            content+="<div class='form-group'>"+"<div class='col-sm-8'>"+"该测验单的应答题目数:"+data[i]['shouldAnswerCount']+"</div>"+"</div>";
-                            for(var k=0;k<data[i].length-6;k++){
-                                console.log("有错题");
-                                content+="<div class='form-group'>"+"<div class='col-sm-8'>"+"问题:"+data[i][k]['test_contents']+"</div>"+"</div>";
-                            }
+                   $("#showEmployeeInfo").html();
+                    for (var i = 0; i<data.length ; i++) {
+                        if(data[i]['should_done_counts']==null){
+                            data[i]['should_done_counts']='无记录';
                         }
+                        if(data[i]['wrong_done_counts']==null){
+                            data[i]['wrong_done_counts']='无错题记录';
+                        }
+                        if(data[i]['fact_done_counts']==null){
+                            data[i]['fact_done_counts']='无实际做题记录';
+                        }
+                        if(data[i]['correct_rate']==null){
+                            data[i]['correct_rate']='无正确率记录';
+                        }
+                        content+="<div class='form-group'>"+"<div class='col-sm-3'>"+"本次应答题目数:"+data[i]['should_done_counts']+"</div>";
+                        console.log("有错题");
+                        content+="<div class='col-sm-3'>"+"实做题目数"+data[i]['fact_done_counts']+"</div>";
+                        content+="<div class='col-sm-3'>"+"正确率"+data[i]['correct_rate']+"</div>";
+                        content+="<div class='col-sm-3'>"+"错题数量:"+data[i]['wrong_done_counts']+"</div>"+"</div>";
                         //额外参数固定数量
                     }
                     $("#showEmployeeInfo").html(content);
                 }
                 else{
-                    $("#showTitle").html("<label class='control-label col-sm-6'>" + "共有" + data[lang]['countTime'] + "在本次测验的次数&nbsp;&nbsp;&nbsp;本次测验单平均正确率:" + data[lang]['quiz_correct_rate'] +
+                    lang=lang-1;
+                   $("#showEmployeeInfo").html("<label class='control-label col-sm-6'>" + "<font color='red'>"+"无任何记录"+"</font>"+"共有" + data[lang]['countTime'] + "在本次测验的次数&nbsp;&nbsp;&nbsp;本次测验单平均正确率:" + data[lang]['quiz_correct_rate'] +
                         "</label>" + "<label class='control-label col-sm-5'>" + "一共出题" + data[lang]['quiz_total_test_all'] + "参加测试的人一共答错:" + data[lang]['quiz_total_wrong_all'] + "</label>");
                 }
+                /*
                     $("#showEmployeeInfo").html();
 
-                /*    $("#showEmployeeInfo").html('');
+                    $("#showEmployeeInfo").html('');
                 $.each(data,function(i,result){
                     item +='<div class="form-group">'+'您的数值:'+result['employee_correct_rate']+'城市权限为:'+result['city_privileges']+'</div>';
-                });*/
-                $("#showEmployeeInfo").html(item);
+                });
+                $("#showEmployeeInfo").html(item);*/
             },
             error:function(data){
                 console.log(data);

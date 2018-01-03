@@ -6,5 +6,3 @@
 	<td><?php echo $this->record['quiz_exams_id']; ?></td>
 	<td><?php echo $this->record['quiz_start_dt']; ?></td>
 </tr>
-
-
