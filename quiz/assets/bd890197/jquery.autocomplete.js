@@ -296,12 +296,12 @@ $.Autocompleter = function(input, options) {
 	// q: the term entered
 	// sValue: the first matching result
 	function autoFill(q, sValue){
-		// autofill in the complete box w/the first match as long as the user hasn't entered in more data
-		// if the last user key pressed was backspace, don't autofill
+		// autofill in the complete box w/the first match as long as the User hasn't entered in more data
+		// if the last User key pressed was backspace, don't autofill
 		if( options.autoFill && (lastWord($input.val()).toLowerCase() == q.toLowerCase()) && lastKeyPressCode != KEY.BACKSPACE ) {
-			// fill in the value (keep the case the user has typed)
+			// fill in the value (keep the case the User has typed)
 			$input.val($input.val() + sValue.substring(lastWord(previousValue).length));
-			// select the portion of the value not typed by the user (so the next character will erase)
+			// select the portion of the value not typed by the User (so the next character will erase)
 			$(input).selection(previousValue.length, previousValue.length + sValue.length);
 		}
 	};

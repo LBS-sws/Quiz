@@ -723,11 +723,11 @@ function _init() {
   $.fn.todolist = function (options) {
     // Render options
     var settings = $.extend({
-      //When the user checks the input
+      //When the User checks the input
       onCheck: function (ele) {
         return ele;
       },
-      //When the user unchecks the input
+      //When the User unchecks the input
       onUncheck: function (ele) {
         return ele;
       }

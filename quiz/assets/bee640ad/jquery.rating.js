@@ -139,7 +139,7 @@
 			
 			// readOnly?
 			if(control.readOnly)//{ //save a byte!
-				// Mark star as readOnly so user can customize display
+				// Mark star as readOnly so User can customize display
 				star.addClass('star-rating-readonly');
 			//}  //save a byte!
 			else//{ //save a byte!
@@ -274,7 +274,7 @@
 			if(control.readOnly) return;
 			// clear selection
 			control.current = null;
-			// programmatically (based on user input)
+			// programmatically (based on User input)
 			if(typeof value!='undefined'){
 			 // select by index (0 based)
 				if(typeof value=='number')
@@ -348,7 +348,7 @@
 	*/
 	$.fn.rating.options = { //$.extend($.fn.rating, { options: {
 			cancel: 'Cancel Rating',   // advisory title for the 'cancel' link
-			cancelValue: '',           // value to submit when user click the 'cancel' link
+			cancelValue: '',           // value to submit when User click the 'cancel' link
 			split: 0,                  // split the star into how many parts?
 			
 			// Width of star image in case the plugin can't work it out. This can happen if
@@ -357,7 +357,7 @@
 			
 			//NB.: These don't need to be pre-defined (can be undefined/null) so let's save some code!
 			//half:     false,         // just a shortcut to control.split = 2
-			//required: false,         // disables the 'cancel' button so user can only select one of the specified values
+			//required: false,         // disables the 'cancel' button so User can only select one of the specified values
 			//readOnly: false,         // disable rating plugin interaction/ values cannot be changed
 			//focus:    function(){},  // executed when stars are focused
 			//blur:     function(){},  // executed when stars are focused

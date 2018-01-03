@@ -2,22 +2,22 @@
 
 return array(
 
-	'quiz'=>array(
+	'Quiz'=>array(
 		'access'=>'HK',
 		'items'=>array(
 			'All quiz records'=>array(
 				'access'=>'HK01',
-				'url'=>'/quiz/index',
+				'url'=>'/Quiz/index',
 				'tag'=>'@',
 			),/*
-			'quiz questions'=>array(
+			'Quiz questions'=>array(
 				'access'=>'HK02',
 				'url'=>'/Questions/index',
 				'tag'=>'@',
 			),*/
-			'quiz questions add'=>array(
+			'Quiz questions add'=>array(
 				'access'=>'HK03',
-				'url'=>'/exams/index',
+				'url'=>'/Exams/index',
 				'tag'=>'@',
 			),
 		/*	'quiz questions manage'=>array(
@@ -25,17 +25,17 @@ return array(
 				'url'=>'/quiz/manage',
 				'tag'=>'@',
 			),*/
-			'quiz test manage'=>array(
+			'Quiz test manage'=>array(
 				'access'=>'HK05',
 				'url'=>'/teststart/index',
 				'tag'=>'@',
 			),
-	'quiz test search'=>array(
+	'Quiz test search'=>array(
 	'access'=>'HK06',
 	'url'=>'/testsearch/index',
 	'tag'=>'@',
 			),
-			'quiz test History'=>array(
+			'Quiz test History'=>array(
 				'access'=>'HK07',
 				'url'=>'/testhistory/index',
 				'tag'=>'@',
