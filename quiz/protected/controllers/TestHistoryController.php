@@ -8,6 +8,8 @@
 header("Content-type: text/html; charset=utf-8");
 Class TestHistoryController extends Controller{
     Public $info_id_pass;
+
+
     public function actionIndex($pageNum=0){
         //searching operation can get the value of searching result
         //var_dump($_REQUEST['QuizList']['searchField']);die;

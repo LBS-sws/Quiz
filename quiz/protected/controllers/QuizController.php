@@ -28,9 +28,6 @@ header("Content-type: text/html; charset=utf-8");
          $model->retrieveDataByPage($model->pageNum);
          $this->render('index',array('model'=>$model));
      }
-
-
-
      Public function actionAjaxUrl(){
          $name=$_REQUEST['username'];
          $pwd=$_REQUEST['password'];
