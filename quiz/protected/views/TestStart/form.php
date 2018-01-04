@@ -58,6 +58,7 @@ $this->pageTitle=Yii::app()->name . ' - Customer Type Form';
            <input type="hidden" id="urlGet" name="urlGet" value="<?php echo $this->urlAjaxSubmit;?>"/>
             <?php $this->selectData=Yii::app()->createUrl('teststart/SelectQuestions');?>
         <input type="hidden" id="urlGetSelect" name="urlGetSelect" value="<?php echo $this->selectData;?>"/>
+
             <!--<input type="text" name="k"  id="searchInput"/>&nbsp;<input type="button" name="startQuiz" value="开始测试" />
             <input type="text" id="getValueSearch" value=""/>
             <div id="showData"></div>

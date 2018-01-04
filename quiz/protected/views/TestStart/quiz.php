@@ -120,7 +120,7 @@ $this->pageTitle=Yii::app()->name . ' - Customer Type Form';
                          break;
                  }
              }
-               shuffle($finalResultTestExams); //随机四个答案
+               shuffle($finalResultTestExams); //随机四个选项
                $oneArray=$finalResultTestExams[0];
                $twoArray=$finalResultTestExams[1];
                $threeArray=$finalResultTestExams[2];

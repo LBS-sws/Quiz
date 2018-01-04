@@ -150,7 +150,7 @@ Class TestHistoryController extends Controller{
     }
     public function actionEdit()
     {
-        echo 'edit';die;
+        echo '有HK01权限也不能修改';die;
         $model = new QuizForm('edit');
         if (!$model->retrieveData($index)) {
             throw new CHttpException(404,'The requested page does not exist.');
