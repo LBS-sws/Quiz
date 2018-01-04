@@ -6,7 +6,7 @@
  * Time: 09:28
  */
 header("Content-type: text/html; charset=utf-8");
-Class TestHistoryController extends Controller{
+Class TesthistoryController extends Controller{
     Public $info_id_pass;
 
 

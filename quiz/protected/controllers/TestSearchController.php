@@ -5,7 +5,7 @@
  * Date: 2017/12/20 0020
  * Time: 11:02
  */
-Class TestSearchController extends Controller
+Class TestsearchController extends Controller
 {
     Public $arr;
     public function actionIndex($pageNum = 0)

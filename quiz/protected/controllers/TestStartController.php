@@ -6,7 +6,7 @@
  * Time: 11:02
  */
 header("Content-type: text/html; charset=utf-8");
-Class TestStartController extends Controller
+Class TeststartController extends Controller
 
 {
     Public $urlAjaxSubmit;
