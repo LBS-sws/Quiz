@@ -13,6 +13,8 @@ class EmployeeForm extends CFormModel
     Public $employee_info_arr=array();
     public $employee_info_name;
     Public $quiz_info_show;
+    Public $employee_id;
+    Public $employee_name;
     //Public $scenario;
     /**
      * Declares customized attribute labels.
@@ -38,13 +40,20 @@ class EmployeeForm extends CFormModel
     }
     public function retrieveData($quiz_id)
     {
-
         $city = Yii::app()->user->city_allow();
-        $sql = "select quiz_employee_id,quiz_name from quiz where id=".$quiz_id." AND city_privileges IN ($city)";
+        $quiz_session_login_id=$_SESSION['quiz_session_login_id']; //sec_user主键
+        $employee_info_set="SELECT * from employee_user_bind_v WHERE user_id='$quiz_session_login_id' AND city IN ($city)";
+        $employee_info_get=Yii::app()->db2->createCommand($employee_info_set)->queryAll();
+        if(count($employee_info_get)>0){
+           $this->employee_id=$employee_info_get[0]['employee_id'];
+            $this->employee_name=$employee_info_get[0]['employee_name'];
+        }
+        $sql = "select id,quiz_employee_id,quiz_name from quiz where id=".$quiz_id." AND city_privileges IN ($city)";
         $rows = Yii::app()->db2->createCommand($sql)->queryAll();
         if(count($rows)>0){
             $this->quiz_info_show=$rows[0]['quiz_name'];
-            $employee_id_str=$rows[0]['quiz_employee_id'];
+            $this->quiz_id=$rows[0]['id'];
+            /*$employee_id_str=$rows[0]['quiz_employee_id'];
             $employee_info_set="select * from employee_info WHERE id IN ($employee_id_str) AND city_privileges IN ($city)";
             $employee_info_get=Yii::app()->db2->createCommand($employee_info_set)->queryAll();
             if(count($employee_info_get)>0){
@@ -53,9 +62,8 @@ class EmployeeForm extends CFormModel
                         $this->employee_info_arr[$i]['employee_info_name']=$employee_info_get[$i]['employee_info_name'];
                         }
             }
-            $this->quiz_id=$quiz_id;
+            $this->quiz_id=$quiz_id;*/
         }
-
         return true;
     }
 }

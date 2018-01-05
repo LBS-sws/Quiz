@@ -64,11 +64,12 @@ class TestForm extends CFormModel
      */
     Public function retrieveData($quiz_id,$employee_id,$quiz_Correct_rate_id)
     {
+
         $sql = "select * from quiz where id=".$quiz_id."";
         $rows = Yii::app()->db2->createCommand($sql)->queryAll();
-        $sql_employee="select * from employee_info WHERE id=".$employee_id."";
+        $sql_employee="select * from employee_user_bind_v WHERE employee_id=".$employee_id."";
         $sql_employee_get=Yii::app()->db2->createCommand($sql_employee)->queryAll();
-        $this->employee_info=$sql_employee_get[0]['employee_info_name'];
+        $this->employee_info=$sql_employee_get[0]['employee_name'];
         if (count($rows) > 0)
         {
             foreach ($rows as $row)
@@ -109,7 +110,7 @@ class TestForm extends CFormModel
         $wrong_test_exams_id="";
         $all_test_exams_id="";
         $test_each_exams_id=array();  //当前错题主键集合
-        for($i=0;$i<$fact_exams_count;$i++){
+        for($i=0;$i<$fact_exams_count;$i++){   //实际做题数量
             $all_test_exams_id.=$final_result[$i]['id'].'-';
             if($final_result[$i]['test_result']!='test_exams_answer_right'){
                 $wrong_test_exams_id.=$final_result[$i]['id'].'*'.$final_result[$i]['test_result'].'-';
@@ -151,7 +152,8 @@ class TestForm extends CFormModel
         Yii::app()->db2->createCommand($quiz_data_update_set)->execute();
         $all_test_exams_id=trim($all_test_exams_id,'-');    //本次测验实做的题目
         $wrong_test_exams_id=trim($wrong_test_exams_id,'-'); //错题的题目主键集合(char)
-        $right_test_exams_count=$should_exams_count-$this_count_wrong;
+        $right_test_exams_count=$fact_exams_count-$this_count_wrong;
+
         $rate=round($right_test_exams_count/$should_exams_count*100,2);  //本次测验的正确率char
         $correct_id_set="UPDATE employee_correct_rate SET employee_correct_rate_info_id=$quiz_id,quiz_employee_id=$employee_id,employee_correct_rate=$rate,city_privileges='$city_user',employee_quiz_questions_all='$all_test_exams_id',employee_quiz_questions_wrong='$wrong_test_exams_id',employee_quiz_questions_count=$should_exams_count,employee_quiz_wrong_questions_count=$this_count_wrong,employee_correct_rate_date='$quiz_date'
         WHERE employee_correct_rate_id=$correct_id;";

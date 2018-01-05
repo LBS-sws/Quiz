@@ -66,7 +66,6 @@ class User extends CActiveRecord
 	{
 		// Warning: Please modify the following code to remove attributes that
 		// should not be searched.
-
 		$criteria=new CDbCriteria;
 		$criteria->compare('username',$this->username,true);
 		$criteria->compare('password',$this->password,true);
@@ -99,8 +98,7 @@ class User extends CActiveRecord
 			);
 		$sql = "select system_id, a_read_only, a_read_write, a_control 
 				from security$suffix.sec_user_access 
-				where username='$username'
-			";
+				where username='$username'";
 		$rows = Yii::app()->db->createCommand($sql)->queryAll();
 		if (count($rows) > 0) {
 			foreach ($rows as $row) {
@@ -132,8 +130,7 @@ class User extends CActiveRecord
 		$sql = "replace into security$suffix.sec_user_option 
 					(username, option_key, option_value)
 				values
-					(:username, :option_key, :option_value)
-			";
+					(:username, :option_key, :option_value)";
 		$command = $connection->createCommand($sql);
 		$command->bindParam(':username', $name, PDO::PARAM_STR);
 		$command->bindParam(':option_key', $key, PDO::PARAM_STR);

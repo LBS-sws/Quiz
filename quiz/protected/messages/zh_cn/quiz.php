@@ -19,6 +19,7 @@ return array(
     'quiz_employee_id'=>'员工外键',
     'city_privileges'=>'地区权限',
     'quiz_correct_rate'=>'正确率',
+    'quiz_average_correct_rate'=>'测验总正确率',
     'Quiz DataOrder'=>'测验数据单',
     'select_employee'=>'下拉选择',
     //QuestionList model
@@ -56,4 +57,6 @@ return array(
     'employee_info_name'=>'该测验单人员',
     'quiz_info_show'=>'查询的测验单为:',
     'employee_info_name_get'=>'点击人员查看各自在该测验单的测验记录',
+    'sorry,you do not have the power to start quizing!'=>'对不起,你未被授权可以参与测验!',
+    'sorry,none of the quiz tests allows you to start quizing!'=>'对不起,你未被任何测验单授权可以进行测验!',
 );

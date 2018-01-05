@@ -10,7 +10,6 @@ Class TestsearchController extends Controller
     Public $arr;
     public function actionIndex($pageNum = 0)
     {
-
         $model = new TestSearchList();
         if (isset($_POST['TestSearchList'])) {
             $model->attributes = $_POST['TestSearchList'];

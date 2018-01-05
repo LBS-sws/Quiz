@@ -14,6 +14,7 @@ Class TeststartController extends Controller
     Public $dataSearch;
     Public $selectData;
     Public $quiz_employee_date;
+
     public function actionIndex($pageNum = 0)
     {
         $model = new TestStartForm();
@@ -26,7 +27,6 @@ Class TeststartController extends Controller
                 $model->setCriteria($criteria);
             }
         }
-
         $this->render('form', array('model' => $model));
     }
 
@@ -45,6 +45,7 @@ Class TeststartController extends Controller
      * 进入测验单测试页面
      */
     Public function actionQuizStart(){
+        //var_dump($_REQUEST);die;
      $quiz_id=$_REQUEST['quiz_id'];
      $employee_id=$_REQUEST['employee_id'];
         $quiz_correct_employee_id=$_REQUEST['quiz_correct_employee_id'];
@@ -66,6 +67,7 @@ Class TeststartController extends Controller
             $model->attributes = $_POST['TestStartForm'];
             if ($model->validate()) {
                 $model->saveData();
+                //var_dump("测验单主键:".$model->quiz_id."员工id:".$model->employee_id."测验单次主键:".$model->quiz_correct_employee_id);die;
                 //$model->scenario = 'edit';
                 Dialog::message(Yii::t('dialog', 'Information'), Yii::t('dialog', 'quiz Starting!'));
                 $this->redirect(Yii::app()->createUrl('teststart/QuizStart', array('index' => 'quiz','quiz_id'=>$model->quiz_id,'employee_id'=>$model->employee_id,'quiz_correct_employee_id'=>$model->quiz_correct_employee_id)));

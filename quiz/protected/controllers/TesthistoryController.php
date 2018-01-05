@@ -8,8 +8,6 @@
 header("Content-type: text/html; charset=utf-8");
 Class TesthistoryController extends Controller{
     Public $info_id_pass;
-
-
     public function actionIndex($pageNum=0){
         //searching operation can get the value of searching result
         //var_dump($_REQUEST['QuizList']['searchField']);die;
@@ -38,7 +36,6 @@ Class TesthistoryController extends Controller{
     }
     //进入新增页面
     Public function actionNew(){
-
         $model = new QuizForm('new');
         $this->render('form',array('model'=>$model,));
     }
@@ -101,8 +98,7 @@ Class TesthistoryController extends Controller{
             $resultOutPut[0]['quiz_total_wrong_all']='错误题量无';
             $resultOutPut[0]['countTime']="0条记录";
         }*/
-
-
+        //var_dump($_REQUEST);die;
         $quiz_id=$_REQUEST['quiz_id'];
         $model = new EmployeeForm('view');
         if (!$model->retrieveData($quiz_id)) {
@@ -111,7 +107,6 @@ Class TesthistoryController extends Controller{
             $this->render('form',array('model'=>$model,));
         }
     }
-
 
     public function actionDelete()
     {
@@ -209,4 +204,22 @@ Class TesthistoryController extends Controller{
     public static function allowReadOnly() {
         return Yii::app()->user->validFunction('C02');
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

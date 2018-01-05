@@ -28,7 +28,7 @@ class TestSearchForm extends CFormModel
     {
         return array(
             'employee_name_show'=>Yii::t('quiz','employee_name_show'),
-            'quiz_correct_rate'=>Yii::t('quiz','quiz_correct_rate'),
+            'quiz_average_correct_rate'=>Yii::t('quiz','quiz_average_correct_rate'),
             'quiz_employee_name'=>Yii::t('quiz','quiz_employee_name'),
             'quiz_employee_id'=>Yii::t('quiz','quiz_employee_id'),
             'quiz_exams_count'=>Yii::t('quiz','quiz_exams_count'),
@@ -51,19 +51,19 @@ class TestSearchForm extends CFormModel
     }
     Public function retrieveData($index)
     {
-        $tableFuss=Yii::app()->params['jsonTableName'];
-        $sql = "select * from blog$tableFuss.quiz where id=".$index."";
-        $rows = Yii::app()->db->createCommand($sql)->queryAll();
+        $sql = "select * from quiz where id=".$index."";
+        $rows = Yii::app()->db2->createCommand($sql)->queryAll();
         $id_array_employee=$rows[0]['quiz_employee_id'];
         if(!empty($id_array_employee)){
-            $employee_name="select * from blog$tableFuss.employee_info where id IN ($id_array_employee)";
-            $final_info = Yii::app()->db->createCommand($employee_name)->queryAll();
+            $employee_name="select * from employee_user_bind_v where employee_id IN ($id_array_employee)";
+            $final_info = Yii::app()->db2->createCommand($employee_name)->queryAll();
             if(count($final_info)>0){
                 for($i=0;$i<count($final_info);$i++){
-                    $this->employee_name_show.='姓名:'.$final_info[$i]['employee_info_name']."\n";
+                    $this->employee_name_show.='姓名:'.$final_info[$i]['employee_name']."\n";
                 }
             }
         }
+
         if (count($rows) > 0)
         {
             foreach ($rows as $row)
@@ -77,6 +77,7 @@ class TestSearchForm extends CFormModel
                 break;
             }
         }
+
         return true;
     }
     public function isOccupied($index) {

@@ -10,10 +10,7 @@ header("Content-type: text/html; charset=utf-8");
     Public $urlAjaxSelect;
     Public $arr;
      public function actionIndex($pageNum=0){
-         //searching operation can get the value of searching result
-      //var_dump($_REQUEST['QuizList']['searchField']);die;
-         //$k=$_REQUEST['QuizList']['searchField'];
-         //$v=$_REQUEST['QuizList']['searchValue'];
+
          $model=new QuizList();
          if (isset($_POST['QuizList'])) {
              $model->attributes = $_POST['QuizList'];
@@ -36,7 +33,6 @@ header("Content-type: text/html; charset=utf-8");
      }
             //进入新增页面
      Public function actionNew(){
-
          $model = new QuizForm('new');
          $this->render('form',array('model'=>$model,));
      }

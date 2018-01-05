@@ -21,6 +21,7 @@ class TestSearchList extends CListPageModel
     }
     public function retrieveDataByPage($pageNum = 1)
     {
+
         $tableFuss = Yii::app()->params['jsonTableName'];
         $sql1 = "select *
 				from blog$tableFuss.quiz

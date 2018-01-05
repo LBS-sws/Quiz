@@ -114,6 +114,7 @@ class SiteController extends Controller
 			// /验证用户输入，如果有效，则重定向到上一页
 			if($model->validate() && $model->login())
 			{
+				$_SESSION['quiz_session_login_id']=$_REQUEST['LoginForm']['username'];
 				$show=Yii::app()->user->setUrlAfterLogin();
 				$this->redirect(Yii::app()->user->returnUrl);
 			}

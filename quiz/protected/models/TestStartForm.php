@@ -33,7 +33,7 @@
     public function attributeLabels()
     {
         return array(
-            'quiz_correct_rate'=>Yii::t('quiz','quiz_correct_rate'),
+            'quiz_average_correct_rate'=>Yii::t('quiz','quiz_average_correct_rate'),
             'quiz_exams_id'=>Yii::t('quiz','quiz_exams_id'),
             'quiz_employee_id'=>Yii::t('quiz','quiz_employee_id'),
             'quiz_exams_count'=>Yii::t('quiz','quiz_exams_count'),
@@ -57,14 +57,13 @@
     public function rules()
     {
         return array(
-            array('quiz_id,employee_id','required'),
+            array('quiz_id','required'),
             array('id,quiz_start_dt,quiz_name,quiz_correct_rate,quiz_exams_id,quiz_employee_id,quiz_exams_count,city_privileges','safe'),
         );
     }
 
     public function retrieveData($index)
     {
-
         $tableFuss=Yii::app()->params['jsonTableName'];
         $sql = "select * from blog$tableFuss.quiz where id=".$index."";
         $rows = Yii::app()->db->createCommand($sql)->queryAll();
@@ -86,13 +85,20 @@
 
     public function saveData()
     {
-        $city = Yii::app()->user->city();
-        $Qid=$_REQUEST['TestStartForm']['quiz_id'];
-        $Eid=$_REQUEST['TestStartForm']['employee_id'];
-        $sql="INSERT INTO employee_correct_rate (employee_correct_rate_info_id,quiz_employee_id,city_privileges) VALUES ($Qid,$Eid,'$city')";
-        Yii::app()->db2->createCommand($sql)->execute();
-        $id= Yii::app()->db2->getLastInsertID();
-        $this->quiz_correct_employee_id=$id;
+        $city=Yii::app()->user->city_allow();
+        $employee_id=$_SESSION['quiz_session_login_id'];
+        $employee_id_set="select * from employee_user_bind_v WHERE user_id='$employee_id' AND city IN ($city)";
+        $employee_id_get=Yii::app()->db2->createCommand($employee_id_set)->queryAll();
+        if(count($employee_id_get)>0){
+            $employee_id_output=$employee_id_get[0]['employee_id'];
+            $this->employee_id=$employee_id_output;
+            $city = Yii::app()->user->city();
+            $Qid=$_REQUEST['TestStartForm']['quiz_id'];
+            $sql="INSERT INTO employee_correct_rate (employee_correct_rate_info_id,quiz_employee_id,city_privileges) VALUES ($Qid,$employee_id_output,'$city')";
+            Yii::app()->db2->createCommand($sql)->execute();
+            $id= Yii::app()->db2->getLastInsertID();
+            $this->quiz_correct_employee_id=$id;
+        }
         return true;
     }
 /*
