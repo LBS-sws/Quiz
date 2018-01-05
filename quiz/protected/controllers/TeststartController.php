@@ -26,6 +26,7 @@ Class TeststartController extends Controller
                 $model->setCriteria($criteria);
             }
         }
+
         $this->render('form', array('model' => $model));
     }
 

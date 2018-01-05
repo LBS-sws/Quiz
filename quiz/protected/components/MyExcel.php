@@ -113,7 +113,6 @@ class MyExcel {
 		
 		spl_autoload_register(array('YiiBase','autoload'));
 		return $output;
-		
 	}
 
 	protected function setReportFormat() {

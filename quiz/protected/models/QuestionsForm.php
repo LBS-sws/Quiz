@@ -81,6 +81,7 @@ class QuestionsForm extends CFormModel
 
     public function saveData()
     {
+        var_dump($_REQUEST);die;
         $connection = Yii::app()->db;
         $transaction=$connection->beginTransaction();
         try {
@@ -95,6 +96,7 @@ class QuestionsForm extends CFormModel
 
     protected function saveUser(&$connection)
     {
+
         $tableFuss=Yii::app()->params['jsonTableName'];
         $sql = '';
         switch ($this->scenario) {

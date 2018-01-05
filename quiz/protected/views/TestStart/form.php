@@ -78,7 +78,6 @@ $this->pageTitle=Yii::app()->name . ' - Customer Type Form';
                         array('disabled'=>!Yii::app()->user->validRWFunction('HK05'),'id'=>'select_questions_count'));?>
                 </div>
             </div>
-
             <div class="form-group">
                 <?php echo $form->labelEx($model,'quiz_employee_choose_id',array('class'=>"col-sm-2 control-label")); ?>
                 <div class="col-sm-5">
@@ -86,7 +85,6 @@ $this->pageTitle=Yii::app()->name . ' - Customer Type Form';
                         array('disabled'=>!Yii::app()->user->validRWFunction('HK05'),'id'=>'selectResult'));?>
                 </div>
             </div>
-
            <!--  时间自动获取 <div class="form-group">
                 <?php /*echo $form->labelEx($model,'quiz_employee_date',array('class'=>"col-sm-2 control-label")); */?>
                 <div class="col-sm-5">

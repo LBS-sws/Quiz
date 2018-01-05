@@ -123,7 +123,7 @@ $this->pageTitle=Yii::app()->name . ' - Customer Type Form';
 <?php $this->renderPartial('//site/removedialog'); ?>
 
 <?php
-$js = Script::genDeleteData(Yii::app()->createUrl('Questions/delete'));
+$js = Script::genDeleteData(Yii::app()->createUrl('Exams/delete'));
 Yii::app()->clientScript->registerScript('deleteRecord',$js,CClientScript::POS_READY);
 ?>
 <?php $this->endWidget(); ?>

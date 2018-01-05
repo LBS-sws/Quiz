@@ -24,7 +24,6 @@ class ExamsController extends Controller
             $model = new ExamsAdd($_POST['ExamsAdd']['scenario']);
             $model->attributes = $_POST['ExamsAdd'];
             if ($model->validate()) {
-
                 $model->saveData();
                 //$model->scenario = 'edit';
                 Dialog::message(Yii::t('dialog','Information'), Yii::t('dialog','Save Done'));
@@ -88,13 +87,21 @@ class ExamsController extends Controller
 
     public function actionDelete()
     {
+
         $model = new ExamsAdd('delete');
-        if (isset($_POST['ExamsForm'])) {
-            $model->attributes = $_POST['ExamsForm'];
-            $model->saveData();
-            Dialog::message(Yii::t('dialog','Information'), Yii::t('dialog','Record Deleted'));
+        if (isset($_POST['ExamsAdd'])) {
+            $model->attributes = $_POST['ExamsAdd'];
+            if ($model->isOccupied($model->id)) {
+
+                Dialog::message(Yii::t('dialog','Warning'), Yii::t('dialog','This record is already in use'));
+                $this->redirect(Yii::app()->createUrl('Exams/edit',array('index'=>$model->id)));
+            } else {
+
+                $model->saveData();
+                Dialog::message(Yii::t('dialog','Information'), Yii::t('dialog','Record Deleted'));
+                $this->redirect(Yii::app()->createUrl('Exams/index'));
+            }
         }
-        $this->redirect(Yii::app()->createUrl('exams/index'));
     }
 
     /**

@@ -1,4 +1,5 @@
 <?php
+
 class SiteController extends Controller
 {
 	public function filters()
@@ -98,9 +99,7 @@ class SiteController extends Controller
 	 */
 	public function actionLogin()
 	{
-
 		$model=new LoginForm;
-
 		// if it is ajax validation request
 		if(isset($_POST['ajax']) && $_POST['ajax']==='login-form')
 		{
@@ -115,9 +114,7 @@ class SiteController extends Controller
 			// /验证用户输入，如果有效，则重定向到上一页
 			if($model->validate() && $model->login())
 			{
-
 				$show=Yii::app()->user->setUrlAfterLogin();
-
 				$this->redirect(Yii::app()->user->returnUrl);
 			}
 			else
@@ -128,6 +125,7 @@ class SiteController extends Controller
 		}
 		// display the login form
 		$this->layout = "main_nm";
+
 		$this->render('login',array('model'=>$model));
 	}
 
