@@ -56,14 +56,13 @@ $this->pageTitle=Yii::app()->name . ' - Customer Type Form';
                 </div>
             </div>
 
-            <?php echo $form->hiddenField($model,'quiz_id',array('id'=>"get_quiz_id"));?>
+          <!--  --><?php /*echo $form->hiddenField($model,'quiz_id',array('id'=>"get_quiz_id"));*/?>
             <?php $this->info_id_pass=Yii::app()->createUrl('testhistory/EmployeeInfoShow');?>
             <input type="hidden" id="urlGetInfo" value="<?php echo $this->info_id_pass;?>"/>
-
-            <div class="form-group">
-                <?php echo $form->labelEx($model,'employee_info_name_get',array('class'=>"col-sm-2 control-label")); ?>
+           <!-- <div class="form-group">
+                <?php /*echo $form->labelEx($model,'employee_info_name_get',array('class'=>"col-sm-2 control-label")); */?>
                 <?php
-                echo "<div class='col-sm-5'>";
+/*                echo "<div class='col-sm-5'>";
                 $show_employee_info=$model->employee_info_arr;
                for($k=0;$k<count($show_employee_info);$k++){  //$show_employee_info[$k]['id']
                    $info_id="";
@@ -71,14 +70,20 @@ $this->pageTitle=Yii::app()->name . ' - Customer Type Form';
                    echo "<a onclick='changeIdInfo($info_id);' id='FontChange'>".$show_employee_info[$k]['employee_info_name']."</a>"."&nbsp;&nbsp;&nbsp;&nbsp;";
                }
                 echo "</div>";
-                ?>
-            </div>
-
+                */?>
+            </div>-->
+<!--
             <div class="form-group" id="showTitle">
-
             </div>
             <div class="form-group" id="showEmployeeInfo">
-
+            </div>-->
+            <div class="form-group">
+                <?php
+                $dataGetArr=Quiz::historyShow($model->employee_id,$model->quiz_id);
+                if(count($dataGetArr)>0){
+                  /*  echo "<div class='form-group'>".."</div>";*/
+                }
+                ?>
             </div>
         </div>
     </div>
@@ -131,14 +136,6 @@ $this->pageTitle=Yii::app()->name . ' - Customer Type Form';
                    $("#showEmployeeInfo").html("<label class='control-label col-sm-6'>" + "<font color='red'>"+"无任何记录"+"</font>"+"共有" + data[lang]['countTime'] + "在本次测验的次数&nbsp;&nbsp;&nbsp;本次测验单平均正确率:" + data[lang]['quiz_correct_rate'] +
                         "</label>" + "<label class='control-label col-sm-5'>" + "一共出题" + data[lang]['quiz_total_test_all'] + "参加测试的人一共答错:" + data[lang]['quiz_total_wrong_all'] + "</label>");
                 }
-                /*
-                    $("#showEmployeeInfo").html();
-
-                    $("#showEmployeeInfo").html('');
-                $.each(data,function(i,result){
-                    item +='<div class="form-group">'+'您的数值:'+result['employee_correct_rate']+'城市权限为:'+result['city_privileges']+'</div>';
-                });
-                $("#showEmployeeInfo").html(item);*/
             },
             error:function(data){
                 console.log(data);

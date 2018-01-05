@@ -16,11 +16,11 @@
 		;
 		?>
 	</th>
-	<th>
-		<?php echo TbHtml::link($this->getLabelName('quiz_exams_id').$this->drawOrderArrow('quiz_exams_id'),'#',$this->createOrderLink('quiz-list','quiz_exams_id'))
+<!--	<th>
+		<?php /*echo TbHtml::link($this->getLabelName('quiz_exams_id').$this->drawOrderArrow('quiz_exams_id'),'#',$this->createOrderLink('quiz-list','quiz_exams_id'))
 		;
-		?>
-	</th>
+		*/?>
+	</th>-->
 	<th>
 		<?php echo TbHtml::link($this->getLabelName('quiz_start_dt').$this->drawOrderArrow('quiz_start_dt'),'#',$this->createOrderLink('quiz-list','quiz_start_dt'))
 		;

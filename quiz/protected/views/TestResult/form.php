@@ -73,21 +73,22 @@ $this->pageTitle=Yii::app()->name . ' - Customer Type Form';
                         "<br/>".
                         "错题数量"."&nbsp;".$model->wrong_answer_count."&nbsp;&nbsp;&nbsp;".
                         "<br/>"
-                        .$model->quiz_name."的平均正确率为"."&nbsp;".$model->quiz_rate."%"."&nbsp;".
+                        ."<font color='red'>《".$model->quiz_name."》</font>"."的平均正确率为"."&nbsp;".$model->quiz_rate."%"."&nbsp;".
                         "<br/>".
                         "测验用时:".$model->this_time_for."秒". "<br/>". "<br/>". "<br/>"
                     ?>
                 </label>
                 <label class="col-sm-3 control-label">
                     <?php
+                    echo "平均正确率:".$model->quiz_rate."个人正确率:".$model->employee_rate;
                     if($model->quiz_rate>$model->employee_rate){
                         echo "您当前的正确率低于本次测验的平均水平,请继续加油！";
                     }
-                    elseif($model->quiz_rate=$model->employee_rate){
+                    elseif($model->quiz_rate==$model->employee_rate){
                         echo "您当前的正确率等于本次测验的平均水平,请继续努力！";
                     }
                     else{
-                        echo "您此次的正确率虽然高于本次测验的平均水平,不要懈怠哦！";
+                        echo "您此次的正确率虽然高于《"."<font color='red'>".$model->quiz_name."</font>"."》测验的平均水平,不要懈怠哦！";
                     }
                     ?>
                 </label>

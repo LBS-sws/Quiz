@@ -25,12 +25,7 @@ $this->pageTitle=Yii::app()->name . ' - Customer Type Form';
 <section class="content">
     <div class="box"><div class="box-body">
             <div class="btn-group" role="group">
-               <!-- --><?php
-/*                if ($model->scenario!='new' && $model->scenario!='view') {
-                    echo TbHtml::button('<span class="fa fa-file-o"></span> '.Yii::t('misc','Add Another'), array(
-                        'submit'=>Yii::app()->createUrl('teststart/new')));
-                }
-                */?>
+
                 <?php echo TbHtml::button('<span class="fa fa-reply"></span> '.Yii::t('misc','Back'), array(
                     'submit'=>Yii::app()->createUrl('teststart/index')));
                 ?>
@@ -59,17 +54,6 @@ $this->pageTitle=Yii::app()->name . ' - Customer Type Form';
             <?php $this->selectData=Yii::app()->createUrl('teststart/SelectQuestions');?>
         <input type="hidden" id="urlGetSelect" name="urlGetSelect" value="<?php echo $this->selectData;?>"/>
 
-            <!--<input type="text" name="k"  id="searchInput"/>&nbsp;<input type="button" name="startQuiz" value="开始测试" />
-            <input type="text" id="getValueSearch" value=""/>
-            <div id="showData"></div>
-            <div class="form-group">
-                <?php /*echo $form->labelEx($model,'employee_info',array('class'=>"col-sm-2 control-label")); */?>
-                <div class="col-sm-5">
-                    <?php /*echo $form->textField($model, 'employee_info',
-                        array('size'=>50,'maxlength'=>100,'readonly'=>($model->scenario=='view'),'id'=>'checkInfoName',)
-                    ); */?>
-                </div>
-            </div>-->
 
             <div class="form-group">
                 <?php echo $form->labelEx($model,'quiz_choose_id',array('class'=>"col-sm-2 control-label")); ?>
@@ -78,23 +62,13 @@ $this->pageTitle=Yii::app()->name . ' - Customer Type Form';
                         array('disabled'=>!Yii::app()->user->validRWFunction('HK05'),'id'=>'select_questions_count'));?>
                 </div>
             </div>
-            <div class="form-group">
-                <?php echo $form->labelEx($model,'quiz_employee_choose_id',array('class'=>"col-sm-2 control-label")); ?>
+            <!--<div class="form-group">
+                <?php /*echo $form->labelEx($model,'quiz_employee_choose_id',array('class'=>"col-sm-2 control-label")); */?>
                 <div class="col-sm-5">
-                    <?php echo $form->dropDownList($model,'quiz_choose_id',Quiz::selectEmployee(),
-                        array('disabled'=>!Yii::app()->user->validRWFunction('HK05'),'id'=>'selectResult'));?>
-                </div>
-            </div>
-           <!--  时间自动获取 <div class="form-group">
-                <?php /*echo $form->labelEx($model,'quiz_employee_date',array('class'=>"col-sm-2 control-label")); */?>
-                <div class="col-sm-5">
-                    <?php
-/*                    $this->quiz_employee_date=date("Y-m-d H:i:s",time());
-                    echo $form->textField($model,'quiz_employee_date',$this->quiz_employee_date,
-                        array('disabled'=>!Yii::app()->user->validRWFunction('HK01')));*/?>
+                    <?php /*echo $form->dropDownList($model,'quiz_choose_id',Quiz::selectEmployee(),
+                        array('disabled'=>!Yii::app()->user->validRWFunction('HK05'),'id'=>'selectResult'));*/?>
                 </div>
             </div>-->
-
             <?php echo $form->hiddenField($model, 'quiz_id',array('id'=>'QuizIdGet','placeHolder'=>'测验单id')); ?>
             <?php echo $form->hiddenField($model, 'employee_id',array('id'=>'EmployeeIdGet','placeholder'=>'员工id')); ?>
         </div>
@@ -102,7 +76,7 @@ $this->pageTitle=Yii::app()->name . ' - Customer Type Form';
 </section>
 
 <script type="text/javascript">
-    $("#selectResult").change(function(){
+   /* $("#selectResult").change(function(){
         var SelectEmployeeValue=$("#selectResult").val();
         if(SelectEmployeeValue==0){
             $("#EmployeeIdGet").val("");
@@ -110,7 +84,7 @@ $this->pageTitle=Yii::app()->name . ' - Customer Type Form';
         else{
             $("#EmployeeIdGet").val(SelectEmployeeValue);
         }
-    });
+    });*/
     $("#select_questions_count").change(function(){
         var SelectValue=$("#select_questions_count").val();
         if(SelectValue==0){
