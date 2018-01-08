@@ -38,7 +38,6 @@ Class Quiz{
  */
     Public static function SelectReturn($info_id){
         $city = Yii::app()->user->city_allow();
-/*        $list = array(0=>Yii::t('quiz','question_count_choose'));*/
         $list=array();
         if(!empty($info_id)){   //修改测验单员工
             $sql = "select employee_id,employee_name from employee_user_bind_v where 1=1 AND city IN ($city)";
@@ -83,6 +82,42 @@ Class Quiz{
         return $list;
     }
 
+    /**
+     * $wrongArr
+     * 答错详情数组返回
+     */
+    Public static function getWrongDetail($wrongArr){
+        $city=Yii::app()->user->city_allow();
+        $detailAnswer=explode('-',$wrongArr);
+        $outPutData=array();
+        if(!empty($wrongArr)) {
+            for ($k = 0; $k < count($detailAnswer); $k++) {
+                $temporaryArr = array();
+                $temporaryArr = explode('*', $detailAnswer[$k]);
+                $temporaryStr = $temporaryArr[0];
+                $wrongDataSet = "select * from test_exams WHERE id=$temporaryStr AND city_privileges IN ($city)";
+                $wrongDataGet = Yii::app()->db2->createCommand($wrongDataSet)->queryAll();
+                if (count($wrongDataGet) > 0) {
+                    $outPutData[$k]['id'] = $temporaryStr;
+                    $outPutData[$k]['content'] = $wrongDataGet[0]['test_exams_contents'];
+                    $outPutData[$k]['wrong_answer'] = $wrongDataGet[0][$temporaryArr[1]];
+                    $outPutData[$k]['right_answer'] = $wrongDataGet[0]['test_exams_answer_right'];
+                } else {
+                    $outPutData[0]['id'] = null;
+                    $outPutData[0]['content'] = "无地区权限,请联系管理员";
+                    $outPutData[0]['wrong_answer'] = "无地区权限,请联系管理员";
+                    $outPutData[0]['right_answer'] = "无地区权限,请联系管理员";
+                }
+            }
+        }
+        else{
+            $outPutData[0]['id'] = null;
+            $outPutData[0]['content'] = "你真厉害,这次测验没有错误";
+            $outPutData[0]['wrong_answer'] = "";
+            $outPutData[0]['right_answer'] = "";
+        }
+        return $outPutData;
+    }
     /**
      * @return array
      * 唯一标识id进入 判断quiz_employee_id

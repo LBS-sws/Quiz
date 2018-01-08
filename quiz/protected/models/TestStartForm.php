@@ -85,6 +85,7 @@
 
     public function saveData()
     {
+        $date=date('Y-m-d H:i:s',time());
         $city=Yii::app()->user->city_allow();
         $employee_id=$_SESSION['quiz_session_login_id'];
         $employee_id_set="select * from employee_user_bind_v WHERE user_id='$employee_id' AND city IN ($city)";
@@ -94,7 +95,7 @@
             $this->employee_id=$employee_id_output;
             $city = Yii::app()->user->city();
             $Qid=$_REQUEST['TestStartForm']['quiz_id'];
-            $sql="INSERT INTO employee_correct_rate (employee_correct_rate_info_id,quiz_employee_id,city_privileges) VALUES ($Qid,$employee_id_output,'$city')";
+            $sql="INSERT INTO employee_correct_rate (employee_correct_rate_info_id,quiz_employee_id,city_privileges,employee_quiz_start_date) VALUES ($Qid,$employee_id_output,'$city','$date')";
             Yii::app()->db2->createCommand($sql)->execute();
             $id= Yii::app()->db2->getLastInsertID();
             $this->quiz_correct_employee_id=$id;

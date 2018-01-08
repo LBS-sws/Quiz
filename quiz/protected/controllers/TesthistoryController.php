@@ -43,62 +43,7 @@ Class TesthistoryController extends Controller{
  * 员工数据历史记录页
  */
     public function actionView()
-    {/*
-        $employee_id= $_REQUEST['employee_id'];
-        $get_quiz_id=$_REQUEST['get_quiz_id'];
-        $employee_correct_rate_set="select * from employee_correct_rate WHERE quiz_employee_id=$employee_id AND employee_correct_rate_info_id=$get_quiz_id";
-        $employee_correct_rate_get=Yii::app()->db2->createCommand($employee_correct_rate_set)->queryAll();
-        $count=count($employee_correct_rate_get); //该测验同事的测验条数
-        $resultOutPut=array();
-        if($count>0) {  //如果该员工在该测验单有测验历史
-            for ($i = 0; $i < $count; $i++) {
-                //$wrongForEachTest=array(); //存入错误题目数组,错题id  和错题 内容  (长期)
-                $wrongExamsArr = array();  //临时存的错误选项
-                if(!empty($employee_correct_rate_get[$i]['employee_quiz_questions_wrong'])){  //判断该员工在$i的测验中是否有错题
-                    $resultOutPut[$i]=array('demo'=>1);
-                    $wrongExamsArr = explode('-', $employee_correct_rate_get[$i]['employee_quiz_questions_wrong']);
-                    for($k=0;$k<count($wrongExamsArr);$k++){
-                        $eachWrongTestArr=array(); //临时存的每次题目的错题
-                        //$eachWrongTestStr="";        //临时存的每次题目 错题 答案 错误选项
-                        $eachWrongTestArr=explode('*',$wrongExamsArr[$k]);  //$eachWrongTestArr =array(0=>'id',1=>'wrongChoice');
-                        $wrong_Answer_set="select * from test_exams WHERE id=$eachWrongTestArr[0]";
-                        $wrong_Answer_get=Yii::app()->db2->createCommand($wrong_Answer_set)->queryAll();
-                        $resultOutPut[$i][$k]['test_id']=$wrong_Answer_get[0]['id'];
-                        $resultOutPut[$i][$k]['test_contents']=$wrong_Answer_get[0]['test_exams_contents'];    //问题
-                        $resultOutPut[$i][$k]['test_rightChoice']=$wrong_Answer_get[0]['test_exams_answer_right'];//正确选项
-                        $resultOutPut[$i][$k]['test_wrongChoice']=$wrong_Answer_get[0][$eachWrongTestArr[1]]; //错误选项
-                    }
-                    $resultOutPut[$i]['correct_rate']=$employee_correct_rate_get[$i]['employee_correct_rate']."%";     //答题正确率
-                    $resultOutPut[$i]['answer_time']=$employee_correct_rate_get[$i]['employee_correct_rate_date']."秒"; //答题时长
-                    $resultOutPut[$i]['shouldAnswerCount']=$employee_correct_rate_get[$i]['employee_quiz_questions_count'];//应答题目数量
-                    $resultOutPut[$i]['countAll'] = $count."次";  //该同事$employee_id 在本次测验单的测验次数
-                }
-                else{
-                    $resultOutPut[$i]=array('demo'=>0);
-                    $resultOutPut[$i]['correct_rate']=$employee_correct_rate_get[$i]['employee_correct_rate']."%";     //答题正确率
-                    $resultOutPut[$i]['answer_time']=$employee_correct_rate_get[$i]['employee_correct_rate_date']."秒"; //答题时长
-                    $resultOutPut[$i]['shouldAnswerCount']=$employee_correct_rate_get[$i]['employee_quiz_questions_count'];//应答题目数量
-                }
-            }
-            $city=Yii::app()->user->city_allow();
-            $quiz_info_set="select quiz_total_test_all,quiz_total_test_wrong_all,quiz_correct_rate from quiz where id=$get_quiz_id AND city_privileges IN ($city)";
-            $quiz_info_get=Yii::app()->db2->createCommand($quiz_info_set)->queryAll();
-            $countGetValue=count($resultOutPut);
-            if(count($quiz_info_get)>0){
-                $resultOutPut[$countGetValue]['quiz_correct_rate']=$quiz_info_get[0]['quiz_correct_rate'];
-                $resultOutPut[$countGetValue]['quiz_total_test_all']=$quiz_info_get[0]['quiz_total_test_all'];
-                $resultOutPut[$countGetValue]['quiz_total_wrong_all']=$quiz_info_get[0]['quiz_total_test_wrong_all'];
-                $resultOutPut[$countGetValue]['countTime']=$count."条记录";
-            }
-        }
-        else{
-            $resultOutPut=array();
-            $resultOutPut[0]['quiz_correct_rate']='无胜率记录';
-            $resultOutPut[0]['quiz_total_test_all']='总计数量无';
-            $resultOutPut[0]['quiz_total_wrong_all']='错误题量无';
-            $resultOutPut[0]['countTime']="0条记录";
-        }*/
-        //var_dump($_REQUEST);die;
+    {
         $quiz_id=$_REQUEST['quiz_id'];
         $model = new EmployeeForm('view');
         if (!$model->retrieveData($quiz_id)) {
