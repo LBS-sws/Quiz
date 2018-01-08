@@ -41,16 +41,16 @@ Class Quiz{
 /*        $list = array(0=>Yii::t('quiz','question_count_choose'));*/
         $list=array();
         if(!empty($info_id)){   //修改测验单员工
-            $sql = "select id,employee_name from employee_user_bind_v where 1=1 AND city IN ($city)";
+            $sql = "select employee_id,employee_name from employee_user_bind_v where 1=1 AND city IN ($city)";
             $data = Yii::app()->db2->createCommand($sql)->queryAll();
         }
         else{   //新增测验单员工
-            $sql = "select id,employee_name from employee_user_bind_v where 1=1 AND city IN ($city)";
+            $sql = "select employee_id,employee_name from employee_user_bind_v where 1=1 AND city IN ($city)";
             $data = Yii::app()->db2->createCommand($sql)->queryAll();
         }
         if (count($data) > 0) {
             foreach ($data as $row) {
-                $list[$row['id']] = $row["employee_name"];
+                $list[$row['employee_id']] = $row["employee_name"];
             }
         }
         return $list;
