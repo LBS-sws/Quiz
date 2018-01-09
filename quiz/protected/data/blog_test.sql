@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50553
 File Encoding         : 65001
 
-Date: 2018-01-08 11:51:28
+Date: 2018-01-09 18:01:40
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -32,7 +32,7 @@ CREATE TABLE `employee_correct_rate` (
   `employee_correct_rate_date` varchar(20) DEFAULT NULL COMMENT '每次测验的时间',
   `employee_quiz_start_date` varchar(50) DEFAULT NULL COMMENT '开始的时间',
   PRIMARY KEY (`employee_correct_rate_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=143 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=147 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of employee_correct_rate
@@ -179,6 +179,10 @@ INSERT INTO `employee_correct_rate` VALUES ('139', '26', '1', '11.11', 'HK', '8-
 INSERT INTO `employee_correct_rate` VALUES ('140', '26', '1', null, 'HK', null, null, null, null, null, '');
 INSERT INTO `employee_correct_rate` VALUES ('141', '26', '1', '11.11', 'HK', '2-6-45-46-47-48-56-57', '2*test_exams_answer_faultt-45*test_exams_answer_faultt-46*test_exams_answer_faultt-47*test_exams_answer_faults-48*test_exams_answer_faults-56*test_exams_answer_faults-57*test_exams_answer_faultt', '9', '7', '17', '2018-01-08 11:45:51');
 INSERT INTO `employee_correct_rate` VALUES ('142', '33', '1', '10', 'HK', '2-8-20-34-42-45-48-58-67', '2*test_exams_answer_faults-8*test_exams_answer_faultf-20*test_exams_answer_faultf-34*test_exams_answer_faults-45*test_exams_answer_faultt-48*test_exams_answer_faultt-58*test_exams_answer_faults-67*test_exams_answer_faults', '10', '8', '11', '2018-01-08 11:50:14');
+INSERT INTO `employee_correct_rate` VALUES ('143', '23', '39', null, 'HK', null, null, null, null, null, '2018-01-09 11:32:05');
+INSERT INTO `employee_correct_rate` VALUES ('144', '23', '39', null, 'HK', null, null, null, null, null, '2018-01-09 11:32:36');
+INSERT INTO `employee_correct_rate` VALUES ('145', '23', '47', '18.18', 'HK', '13-15-20-42-43-46-48-63-65-67', '13*test_exams_answer_faultf-15*test_exams_answer_faultf-20*test_exams_answer_faults-43*test_exams_answer_faults-46*test_exams_answer_faults-48*test_exams_answer_faultt-63*test_exams_answer_faultt-65*test_exams_answer_faultt', '11', '8', '13', '2018-01-09 14:06:40');
+INSERT INTO `employee_correct_rate` VALUES ('146', '23', '217', '18.18', 'HK', '53-55-72-73-54-56-64-17-62-67-19', '53*test_exams_answer_faultt-55*test_exams_answer_faults-72*test_exams_answer_faults-56*test_exams_answer_faultt-64*test_exams_answer_faultf-17*test_exams_answer_faultf-62*test_exams_answer_faultf-67*test_exams_answer_faultf-19*test_exams_answer_faultf', '11', '9', '17', '2018-01-09 14:22:29');
 
 -- ----------------------------
 -- Table structure for `employee_info`
@@ -410,7 +414,7 @@ CREATE TABLE `employee_middle_wrong_exams` (
   `city_privileges` char(5) DEFAULT NULL COMMENT '地区权限',
   `employee_middle_wrong_choice` varchar(30) DEFAULT NULL COMMENT '错误选项是什么',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=1164 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=1187 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of employee_middle_wrong_exams
@@ -527,16 +531,6 @@ INSERT INTO `employee_middle_wrong_exams` VALUES ('1067', '7', '40', '44', 'HK',
 INSERT INTO `employee_middle_wrong_exams` VALUES ('1068', '7', '43', '44', 'HK', '');
 INSERT INTO `employee_middle_wrong_exams` VALUES ('1069', '7', '44', '44', 'HK', '');
 INSERT INTO `employee_middle_wrong_exams` VALUES ('1070', '7', '45', '44', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1105', '47', '12', '26', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1106', '47', '13', '26', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1107', '47', '43', '26', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1108', '47', '44', '26', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1109', '47', '45', '26', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1110', '47', '51', '26', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1111', '47', '62', '26', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1112', '47', '42', '26', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1113', '47', '46', '26', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1114', '47', '48', '26', 'HK', '');
 INSERT INTO `employee_middle_wrong_exams` VALUES ('1146', '1', '2', '33', 'HK', '');
 INSERT INTO `employee_middle_wrong_exams` VALUES ('1147', '1', '8', '33', 'HK', '');
 INSERT INTO `employee_middle_wrong_exams` VALUES ('1148', '1', '20', '33', 'HK', '');
@@ -555,6 +549,29 @@ INSERT INTO `employee_middle_wrong_exams` VALUES ('1160', '1', '66', '33', 'HK',
 INSERT INTO `employee_middle_wrong_exams` VALUES ('1161', '1', '68', '33', 'HK', '');
 INSERT INTO `employee_middle_wrong_exams` VALUES ('1162', '1', '70', '33', 'HK', '');
 INSERT INTO `employee_middle_wrong_exams` VALUES ('1163', '1', '42', '33', 'HK', '');
+INSERT INTO `employee_middle_wrong_exams` VALUES ('1164', '47', '13', '23', 'HK', '');
+INSERT INTO `employee_middle_wrong_exams` VALUES ('1165', '47', '15', '23', 'HK', '');
+INSERT INTO `employee_middle_wrong_exams` VALUES ('1166', '47', '20', '23', 'HK', '');
+INSERT INTO `employee_middle_wrong_exams` VALUES ('1167', '47', '43', '23', 'HK', '');
+INSERT INTO `employee_middle_wrong_exams` VALUES ('1168', '47', '46', '23', 'HK', '');
+INSERT INTO `employee_middle_wrong_exams` VALUES ('1169', '47', '48', '23', 'HK', '');
+INSERT INTO `employee_middle_wrong_exams` VALUES ('1170', '47', '63', '23', 'HK', '');
+INSERT INTO `employee_middle_wrong_exams` VALUES ('1171', '47', '65', '23', 'HK', '');
+INSERT INTO `employee_middle_wrong_exams` VALUES ('1172', '47', '12', '23', 'HK', '');
+INSERT INTO `employee_middle_wrong_exams` VALUES ('1173', '47', '44', '23', 'HK', '');
+INSERT INTO `employee_middle_wrong_exams` VALUES ('1174', '47', '45', '23', 'HK', '');
+INSERT INTO `employee_middle_wrong_exams` VALUES ('1175', '47', '51', '23', 'HK', '');
+INSERT INTO `employee_middle_wrong_exams` VALUES ('1176', '47', '62', '23', 'HK', '');
+INSERT INTO `employee_middle_wrong_exams` VALUES ('1177', '47', '42', '23', 'HK', '');
+INSERT INTO `employee_middle_wrong_exams` VALUES ('1178', '217', '53', '23', 'HK', '');
+INSERT INTO `employee_middle_wrong_exams` VALUES ('1179', '217', '55', '23', 'HK', '');
+INSERT INTO `employee_middle_wrong_exams` VALUES ('1180', '217', '72', '23', 'HK', '');
+INSERT INTO `employee_middle_wrong_exams` VALUES ('1181', '217', '56', '23', 'HK', '');
+INSERT INTO `employee_middle_wrong_exams` VALUES ('1182', '217', '64', '23', 'HK', '');
+INSERT INTO `employee_middle_wrong_exams` VALUES ('1183', '217', '17', '23', 'HK', '');
+INSERT INTO `employee_middle_wrong_exams` VALUES ('1184', '217', '62', '23', 'HK', '');
+INSERT INTO `employee_middle_wrong_exams` VALUES ('1185', '217', '67', '23', 'HK', '');
+INSERT INTO `employee_middle_wrong_exams` VALUES ('1186', '217', '19', '23', 'HK', '');
 
 -- ----------------------------
 -- Table structure for `employee_user_bind_v`
@@ -568,14 +585,15 @@ CREATE TABLE `employee_user_bind_v` (
   `user_name` varchar(255) NOT NULL,
   `city` char(5) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of employee_user_bind_v
 -- ----------------------------
 INSERT INTO `employee_user_bind_v` VALUES ('2', '47', '车核桃', '400047', 'employee_400047', 'HK');
 INSERT INTO `employee_user_bind_v` VALUES ('3', '48', '沟参与', '400048', 'employee_400048', 'HK');
-INSERT INTO `employee_user_bind_v` VALUES ('4', '1', 'boss', 'admin', 'administrator', 'HK');
+INSERT INTO `employee_user_bind_v` VALUES ('4', '39', 'boss', 'admin', 'administrator', 'HK');
+INSERT INTO `employee_user_bind_v` VALUES ('5', '217', '张山', '400217', 'employee_400217', 'HK');
 
 -- ----------------------------
 -- Table structure for `quiz`
@@ -593,31 +611,33 @@ CREATE TABLE `quiz` (
   `quiz_start_dt` timestamp NULL DEFAULT NULL COMMENT '时间段',
   `quiz_total_test_all` int(100) DEFAULT NULL COMMENT '该测验单的所考过的所有题目数量',
   `quiz_total_test_wrong_all` int(50) DEFAULT NULL COMMENT '错题数量',
+  `quiz_end_dt` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=45 DEFAULT CHARSET=utf8 COMMENT='测验单表';
+) ENGINE=InnoDB AUTO_INCREMENT=46 DEFAULT CHARSET=utf8 COMMENT='测验单表';
 
 -- ----------------------------
 -- Records of quiz
 -- ----------------------------
-INSERT INTO `quiz` VALUES ('23', '11', '1,3,6,47', '问题1修改2542', '17年秋季第一次测验', '1,3,5', '47.46', 'HK', '2018-02-16 00:00:00', '59', '31');
-INSERT INTO `quiz` VALUES ('26', '9', '48,1', '描述1.1', '17年秋季第二次测验', '1,2,3', '30.77', 'HK', '2018-01-26 00:00:00', '39', '27');
-INSERT INTO `quiz` VALUES ('27', '11', '5,6,470', '测验单描述', '17年秋季第三次测验', '1,2,3,4', '31.94', 'HK', '2018-01-25 00:00:00', '72', '49');
-INSERT INTO `quiz` VALUES ('28', '15', '2,3,407', '描述详情测试单12', '17年秋季第四次测验', '1,2,3,4,5', '31.48', 'HK', '2018-01-31 19:54:32', '162', '111');
-INSERT INTO `quiz` VALUES ('29', '8', '2,3,5,6,7,047', '问题描述13', '17年春季第一次测验', '1,2,3,5', '39.71', 'HK', '2018-01-31 19:54:36', '68', '41');
-INSERT INTO `quiz` VALUES ('30', '12', '2,3,4', '而是下拉', '17年春季第二次测验', '', '48.48', 'HK', '2017-12-28 00:00:00', '132', '68');
-INSERT INTO `quiz` VALUES ('31', '12', '2,3,5,6', '下拉测试', '17年春季第三次测验', '', '58.33', 'HK', '2018-01-20 19:54:42', '108', '63');
-INSERT INTO `quiz` VALUES ('32', '8', '2,3,4', '下拉测试', '17年春季第四次测验', '', '26.09', 'HK', '2018-01-28 00:00:00', '23', '17');
-INSERT INTO `quiz` VALUES ('33', '10', '1', '测试下拉', '17年冬季第一次测验', '', '28.13', 'HK', '2018-01-27 00:00:00', '32', '23');
-INSERT INTO `quiz` VALUES ('34', '8', '2,3,5,6', '描述89', '17年冬季第二次测验', '', '40', 'HK', null, '20', '12');
-INSERT INTO `quiz` VALUES ('35', '7', '1,2,3', '描述90', '16年春季第一次测验', '', '42.11', 'HK', '2018-01-19 17:17:30', '19', '11');
-INSERT INTO `quiz` VALUES ('36', '6', '2,3,4', '描述91', '16年春季第二次测验', '', '', 'HK', null, '12', '7');
-INSERT INTO `quiz` VALUES ('37', '8', '3,4', '描述测试58', '16年春季第三次测验', '', '', 'HK', '2018-01-19 15:45:58', '12', '7');
-INSERT INTO `quiz` VALUES ('38', '7', '1,2,3,4,6', '描述91', '18年春季第二次测验', '', '29.79', 'HK', '0000-00-00 00:00:00', '47', '33');
-INSERT INTO `quiz` VALUES ('40', '11', '1,2,3,4,6', '141414444444444', '', '', '', 'HK', null, null, null);
-INSERT INTO `quiz` VALUES ('41', '11', '2,3', '描述19', '', '', '', 'HK', null, null, null);
-INSERT INTO `quiz` VALUES ('42', '14', '2,3,4,6', '测试单测试115', '答案88', '', '', 'HK', null, null, null);
-INSERT INTO `quiz` VALUES ('43', '12', '3,4', '2018年春季第一次销售测试', '2018年春季第一次', '', '41.67', 'HK', '2018-01-24 00:00:00', '24', '14');
-INSERT INTO `quiz` VALUES ('44', '13', '2,3,6,7', '2018年春季第三次测验', '2018年春季第三次', '', '76.92', 'HK', '2018-01-17 00:00:00', '26', '6');
+INSERT INTO `quiz` VALUES ('23', '5', '39,47,217', '问题1修改', '17年秋季第一次测验', '', '40.74', 'HK', '2018-01-18 00:00:00', '81', '48', '2018-01-11 00:00:00');
+INSERT INTO `quiz` VALUES ('26', '15', '39,48,66,70,217', '描述1.1', '17年秋季第二次测验', '1', '30.77', 'HK', '2018-01-26 00:00:00', '39', '27', '2018-01-18 00:00:00');
+INSERT INTO `quiz` VALUES ('27', '11', '5,6,470,217,39', '测验单描述', '17年秋季第三次测验', '1', '31.94', 'HK', '2018-01-25 00:00:00', '72', '49', null);
+INSERT INTO `quiz` VALUES ('28', '15', '2,3,407', '描述详情测试单12', '17年秋季第四次测验', '1', '31.48', 'HK', '2018-01-31 19:54:32', '162', '111', null);
+INSERT INTO `quiz` VALUES ('29', '8', '2,3,5,6,7,047', '问题描述13', '17年春季第一次测验', '0', '39.71', 'HK', '2018-01-31 19:54:36', '68', '41', null);
+INSERT INTO `quiz` VALUES ('30', '12', '2,3,4', '而是下拉', '17年春季第二次测验', '0', '48.48', 'HK', '2017-12-28 00:00:00', '132', '68', null);
+INSERT INTO `quiz` VALUES ('31', '12', '2,3,5,6', '下拉测试', '17年春季第三次测验', '1', '58.33', 'HK', '2018-01-20 19:54:42', '108', '63', null);
+INSERT INTO `quiz` VALUES ('32', '8', '2,3,4', '下拉测试', '17年春季第四次测验', '0', '26.09', 'HK', '2018-01-28 00:00:00', '23', '17', null);
+INSERT INTO `quiz` VALUES ('33', '10', '1', '测试下拉', '17年冬季第一次测验', '1', '28.13', 'HK', '2018-01-27 00:00:00', '32', '23', null);
+INSERT INTO `quiz` VALUES ('34', '8', '2,3,5,6', '描述89', '17年冬季第二次测验', '0', '40', 'HK', null, '20', '12', null);
+INSERT INTO `quiz` VALUES ('35', '7', '1,2,3', '描述90', '16年春季第一次测验', '1', '42.11', 'HK', '2018-01-19 17:17:30', '19', '11', null);
+INSERT INTO `quiz` VALUES ('36', '6', '2,3,4', '描述91', '16年春季第二次测验', '0', '', 'HK', null, '12', '7', null);
+INSERT INTO `quiz` VALUES ('37', '8', '3,4', '描述测试58', '16年春季第三次测验', '1', '', 'HK', '2018-01-19 15:45:58', '12', '7', null);
+INSERT INTO `quiz` VALUES ('38', '7', '1,2,3,4,6', '描述91', '18年春季第二次测验', '0', '29.79', 'HK', '0000-00-00 00:00:00', '47', '33', null);
+INSERT INTO `quiz` VALUES ('40', '11', '1,2,3,4,6', '141414444444444', '', '1', '', 'HK', null, null, null, null);
+INSERT INTO `quiz` VALUES ('41', '11', '2,3', '描述19', '', '0', '', 'HK', null, null, null, null);
+INSERT INTO `quiz` VALUES ('42', '14', '2,3,4,6', '测试单测试115', '答案88', '1', '', 'HK', null, null, null, null);
+INSERT INTO `quiz` VALUES ('43', '12', '3,4', '2018年春季第一次销售测试', '2018年春季第一次', '0', '41.67', 'HK', '2018-01-24 00:00:00', '24', '14', null);
+INSERT INTO `quiz` VALUES ('44', '13', '2,3,6,7', '2018年春季第三次测验', '2018年春季第三次', '1', '76.92', 'HK', '2018-01-17 00:00:00', '26', '6', null);
+INSERT INTO `quiz` VALUES ('45', '12', '56,61,66', '销售测试', '', '', '', 'HK', '2018-01-09 00:00:00', null, null, '2018-01-03 00:00:00');
 
 -- ----------------------------
 -- Table structure for `test_exams`
@@ -633,7 +653,7 @@ CREATE TABLE `test_exams` (
   `test_exams_kinds` tinyint(1) DEFAULT NULL COMMENT '测验题类型',
   `city_privileges` char(5) DEFAULT NULL COMMENT '地区权限1=>长期,0=>短期,2=>共存',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=72 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=173 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of test_exams
@@ -682,9 +702,11 @@ INSERT INTO `test_exams` VALUES ('62', '空气过滤除菌的原理是', '随流
 INSERT INTO `test_exams` VALUES ('63', '问题测试的结果', '正解', '错解A', '错解B', '错解C', null, 'HK');
 INSERT INTO `test_exams` VALUES ('64', '问题测试的结果2', '正解2', '错解A2', '错解B2', '错解C2', null, 'HK');
 INSERT INTO `test_exams` VALUES ('65', '问题测试的结果3', '正解3', '错解A3', '错解B3', '错解C3', null, 'HK');
-INSERT INTO `test_exams` VALUES ('66', '测试问题1231', '测试问题1231', '测试问题1231', '测试问题1231', '测试问题1231', null, null);
-INSERT INTO `test_exams` VALUES ('67', '测试问题1231', '测试问题1232', '测试问题1232', '测试问题1232', '测试问题1232', null, null);
-INSERT INTO `test_exams` VALUES ('68', '测试问题1231', '测试问题1233', '测试问题1233', '测试问题1233', '测试问题1233', null, null);
-INSERT INTO `test_exams` VALUES ('69', '内容测试', '答案', '错解AAAA', 'BBBBB', 'CCCC', null, null);
-INSERT INTO `test_exams` VALUES ('70', '内容测试', '答案', '错解Aaaaa', 'BBBBBBB', 'BBBBBBBBBBB', null, null);
-INSERT INTO `test_exams` VALUES ('71', '内容测试1', '正确大暗暗', '错解A', '错解B', '错解C', null, null);
+INSERT INTO `test_exams` VALUES ('66', '测试问题1231', '测试问题1231', '测试问题1231', '测试问题1231', '测试问题1231', null, 'HK');
+INSERT INTO `test_exams` VALUES ('67', '测试问题1231', '测试问题1232', '测试问题1232', '测试问题1232', '测试问题1232', null, 'HK');
+INSERT INTO `test_exams` VALUES ('68', '测试问题1231', '测试问题1233', '测试问题1233', '测试问题1233', '测试问题1233', null, 'HK');
+INSERT INTO `test_exams` VALUES ('69', '内容测试', '答案', '错解AAAA', 'BBBBB', 'CCCC', null, 'HK');
+INSERT INTO `test_exams` VALUES ('70', '内容测试', '答案', '错解Aaaaa', 'BBBBBBB', 'BBBBBBBBBBB', null, 'HK');
+INSERT INTO `test_exams` VALUES ('71', '内容测试1', '正确大暗暗', '错解A', '错解B', '错解C', null, 'HK');
+INSERT INTO `test_exams` VALUES ('72', '', '', '', '', '', null, 'HK');
+INSERT INTO `test_exams` VALUES ('73', '内容1', '正解1', '错解1', '错解11', '错解111', null, 'HK');

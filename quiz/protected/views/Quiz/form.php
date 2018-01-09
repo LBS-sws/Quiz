@@ -87,6 +87,19 @@ $this->pageTitle=Yii::app()->name . ' - Customer Type Form';
                 </div>
             </div>
 
+            <div class="form-group">
+                <?php echo $form->labelEx($model,'quiz_end_dt',array('class'=>"col-sm-2 control-label")); ?>
+                <div class="col-sm-3">
+                    <div class="input-group date">
+                        <div class="input-group-addon">
+                            <i class="fa fa-calendar"></i>
+                        </div>
+                        <?php echo $form->textField($model, 'quiz_end_dt',
+                            array('class'=>'form-control pull-right','readonly'=>($model->scenario=='view'),));
+                        ?>
+                    </div>
+                </div>
+            </div>
 
 <!--
             <div class="form-group">
@@ -99,14 +112,7 @@ $this->pageTitle=Yii::app()->name . ' - Customer Type Form';
                 </div>
             </div>-->
 
-            <div class="form-group">
-              <!--  --><?php /*echo $form->labelEx($model,'quiz_exams_id',array('class'=>"col-sm-2 control-label")); */?>
-                <div class="col-sm-5">
-                    <?php echo $form->hiddenField($model, 'quiz_exams_id',
-                        array('size'=>50,'maxlength'=>100,'readonly'=>($model->scenario=='view'))
-                    ); ?>
-                </div>
-            </div>
+
 
             <div class="form-group">
              <!--   --><?php /*echo $form->labelEx($model,'quiz_correct_rate',array('class'=>"col-sm-2 control-label")); */?>
@@ -116,6 +122,7 @@ $this->pageTitle=Yii::app()->name . ' - Customer Type Form';
                     ); ?>
                 </div>
             </div>
+
             <script src="<?php echo Yii::app()->baseUrl;?>/js/jquery.js'"></script>
     <div class="form-group">
             <?php echo $form->labelEx($model,'quiz_exams_count_set',array('class'=>"col-sm-2 control-label")); ?>
@@ -125,6 +132,14 @@ $this->pageTitle=Yii::app()->name . ' - Customer Type Form';
             ); ?>
                 </div>
     </div>
+            <div class="form-group">
+                <?php echo $form->labelEx($model,'quiz_exams_count',array('class'=>"col-sm-2 control-label")); ?>
+                <div class="col-sm-5">
+                    <?php echo $form->textField($model, 'quiz_exams_count',
+                        array('size'=>50,'maxlength'=>100,'readonly'=>($model->scenario=='view'),'disabled'=>'disabled','id'=>'getCountValue2')
+                    );?>
+                </div>
+            </div>
             <?PHP /*$this->urlAjaxSelect=Yii::app()->createUrl('quiz/AjaxUrl');*/?>
             <input type="hidden" id="urlGet" name="urlGet" value="<?php echo $this->urlAjaxSelect;?>"/>
             <?php echo $form->hiddenField($model, 'id'); ?>
@@ -158,6 +173,7 @@ $this->pageTitle=Yii::app()->name . ' - Customer Type Form';
                         }
                     });
                 });
+
             </script>
 
           <?php echo $form->hiddenField($model, 'quiz_exams_count',array('id'=>'getCountValue')); ?>
@@ -173,22 +189,24 @@ $this->pageTitle=Yii::app()->name . ' - Customer Type Form';
                 label .labelForRadio{display:inline-block;width:auto;float:none;}
                 .checkbox{display:inline-block;float:none; width:100px;}
             </style>
+
+           <!-- <div class="form-group">
+                <?php /*echo $form->labelEx($model,'quiz_exams_id',array('class'=>"col-sm-2 control-label")); */?>
+                <div class="col-sm-5">
+                    <?php /*echo TbHtml::dropDownList('quiz_exams_id',$model->quiz_exams_id,Quiz::kindsReturn(),
+                        array('disabled'=>!Yii::app()->user->validRWFunction('HK01'),'id'=>'kindsGet')
+                    ); */?>
+                </div>
+            </div>-->
+            <?php echo $form->hiddenField($model, 'quiz_exams_id',
+                array('size'=>50,'maxlength'=>100,'readonly'=>($model->scenario=='view'))
+            ); ?>
             <div class="form-group">
                 <?php echo $form->labelEx($model,'quiz_employee_id',array('class'=>"col-sm-2 control-label")); ?>
                 <div class="col-sm-5">
                    <?php echo TbHtml::checkBoxList('quiz_employee_id',Quiz::EmployeeIdGet($model->id),Quiz::SelectReturn($model->id),
                        array('labelOptions'=>array('class'=>'labelForRadio',"checked"=>"checked")),''
                    ); ?>
-                </div>
-            </div>
-
-
-          <div class="form-group">
-                <?php echo $form->labelEx($model,'quiz_exams_count',array('class'=>"col-sm-2 control-label")); ?>
-                <div class="col-sm-5">
-                    <?php echo $form->textField($model, 'quiz_exams_count',
-                        array('size'=>50,'maxlength'=>100,'readonly'=>($model->scenario=='view'),'disabled'=>'disabled','id'=>'getCountValue2')
-                    );?>
                 </div>
             </div>
 
@@ -200,7 +218,7 @@ $this->pageTitle=Yii::app()->name . ' - Customer Type Form';
 
 <?php
 $js = "
-$('#QuizForm_quiz_start_dt').on('change',function() {
+$('#QuizForm_quiz_start_dt,#QuizForm_quiz_end_dt').on('change',function() {
 	showRenewDate();
 });
 function showRenewDate() {
@@ -240,6 +258,7 @@ Yii::app()->clientScript->registerScript('readonlyClass',$js,CClientScript::POS_
 if ($model->scenario!='view') {
     $js = Script::genDatePicker(array(
         'QuizForm_quiz_start_dt',
+        'QuizForm_quiz_end_dt',
     ));
     Yii::app()->clientScript->registerScript('datePick',$js,CClientScript::POS_READY);
 }

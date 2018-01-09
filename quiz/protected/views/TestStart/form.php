@@ -26,9 +26,9 @@ $this->pageTitle=Yii::app()->name . ' - Customer Type Form';
     <div class="box"><div class="box-body">
             <div class="btn-group" role="group">
 
-                <?php echo TbHtml::button('<span class="fa fa-reply"></span> '.Yii::t('misc','Back'), array(
+               <!-- --><?php /*echo TbHtml::button('<span class="fa fa-reply"></span> '.Yii::t('misc','Back'), array(
                     'submit'=>Yii::app()->createUrl('teststart/index')));
-                ?>
+                */?>
                 <?php if ($model->scenario!='view'): ?>
                     <?php echo TbHtml::button('<span class="fa fa-upload"></span> '.Yii::t('misc','Start quiz'), array(
                         'submit'=>Yii::app()->createUrl('teststart/save')));
