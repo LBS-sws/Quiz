@@ -62,14 +62,14 @@ Class TeststartController extends Controller
      */
     Public function actionSave()
     {
-        if (isset($_POST['TestStartForm'])) {
+        if (isset($_POST['TestStartForm'])){
             $model = new TestStartForm($_POST['TestStartForm']['scenario']);
             $model->attributes = $_POST['TestStartForm'];
             if ($model->validate()) {
                 $model->saveData();
                 //var_dump("测验单主键:".$model->quiz_id."员工id:".$model->employee_id."测验单次主键:".$model->quiz_correct_employee_id);die;
                 //$model->scenario = 'edit';
-                Dialog::message(Yii::t('dialog', 'Information'), Yii::t('dialog', 'quiz Starting!'));
+                Dialog::message(Yii::t('dialog', 'Information'), Yii::t('dialog', 'Quiz Starting!'));
                 $this->redirect(Yii::app()->createUrl('teststart/QuizStart', array('index' => 'quiz','quiz_id'=>$model->quiz_id,'employee_id'=>$model->employee_id,'quiz_correct_employee_id'=>$model->quiz_correct_employee_id)));
             } else {
                 $message = CHtml::errorSummary($model);

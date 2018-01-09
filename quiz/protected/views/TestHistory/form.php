@@ -43,6 +43,7 @@ $this->pageTitle=Yii::app()->name . ' - Customer Type Form';
             </div>
         </div>
     </div>
+
     <div class="box box-info">
         <div class="box-body">
             <?php echo $form->hiddenField($model, 'scenario'); ?>
@@ -79,9 +80,34 @@ $this->pageTitle=Yii::app()->name . ' - Customer Type Form';
             </div>-->
             <div class="form-group">
                 <?php
+                echo "<div class='col-sm-11'>";
                 $dataGetArr=Quiz::historyShow($model->employee_id,$model->quiz_id);
                 if(count($dataGetArr)>0){
-                  /*  echo "<div class='form-group'>".."</div>";*/
+                    echo "<table class='table table-condensed'>"."<tr><td>计数</td><td>应做题目数量</td><td>实际做题数量</td><td>错题数量</td><td>解题时长(s)</td><td>本次正确率(%)</td><td>本次测验时间</td></tr>";
+                 for($ct=0;$ct<count($dataGetArr);$ct++){
+                        if(!empty($dataGetArr[$ct]['employee_quiz_questions_all'])){
+                            $temporaryArr=array();
+                            $temporaryArr=explode('-',$dataGetArr[$ct]['employee_quiz_questions_all']);
+                            echo "<tr class='success'>"."<td>".($ct+1)."</td>"."<td>".$dataGetArr[$ct]['employee_quiz_questions_count']."</td>"."<td>".count($temporaryArr)."</td>"."<td>".$dataGetArr[$ct]['employee_quiz_wrong_questions_count']."</td>"."<td>".$dataGetArr[$ct]['employee_correct_rate_date']."秒"."</td>"."<td>".$dataGetArr[$ct]['employee_correct_rate']."%"."</td>"."<td>".$dataGetArr[$ct]['employee_quiz_start_date']."</td>"."</tr>";
+                            echo "<tr class='active'>"
+                                ."<td>"."第".($ct+1)."次测验错题详细"."</td>".
+                                "<td>"."题目内容"."</td>"."<td>"."错误选项"."</td>"."<td>"."正确选项"
+                               .
+                                "</td>"
+                                ."</tr>";
+                                    $wrong_detail_array=Quiz::getWrongDetail($dataGetArr[$ct]['employee_quiz_questions_wrong']);
+                                    for($qg=0;$qg<count($wrong_detail_array);$qg++){
+                                        echo "<tr>"."<td>"."</td>"."<td>".$wrong_detail_array[$qg]['content']."</td>"."<td class='info'>".$wrong_detail_array[$qg]['wrong_answer']."</td>"."<td class='success'>".$wrong_detail_array[$qg]['right_answer']."</td>"."</tr>";
+                                    }
+                        }
+                     else{
+                         echo "<tr class='warning'>"."<td>".($ct+1)."</td>"."</tr>";
+                     }
+                 }
+                    echo "</table>"."</div>";
+                }
+                else{
+                    echo "<div class='form-group'>"."<div class='col-sm-5'>"."您在本测验中尚未有测验记录,快去参加测验吧!"."</div>"."</div>";
                 }
                 ?>
             </div>

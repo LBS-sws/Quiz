@@ -95,6 +95,32 @@ class ExamsForm extends CFormModel
         }
     }
 
+    Public function saveListData($newData){
+        $city=Yii::app()->user->city();
+        for($i=0;$i<count($newData);$i++) {
+            if(!empty($newData[$i]['content'])) {
+                if (!empty($newData[$i]['right'])) {
+                    Yii::app()->db2->createCommand()->insert("test_exams",
+                        array("test_exams_contents" => $newData[$i]['content'],
+                            "test_exams_answer_right" => $newData[$i]['right'],
+                            "test_exams_answer_faultf" => $newData[$i]['faultf'],
+                            "test_exams_answer_faults" => $newData[$i]['faults'],
+                            "test_exams_answer_faultt" => $newData[$i]['faultt'],
+                            'city_privileges' => $city
+                        ));
+                }
+            }
+          /*  $content=$newData[$i][0];
+            $right=$newData[$i][1];
+            $faultf=$newData[$i][2];
+            $faults=$newData[$i][3];
+            $faultt=$newData[$i][4];
+            $questions_add_set="insert into test_exams (test_exams_contents,test_exams_answer_right,test_exams_answer_faultf,test_exams_answer_faults,test_exams_answer_faultt,city_privileges)
+            VALUES('$content','$right','$faultf','$faults','$faultt','$city')";
+            Yii::app()->db2->createCommand($questions_add_set)->execute();*/
+        }
+        return true;
+    }
     protected function saveLogistic(&$connection)
     {
         $sql = '';
@@ -197,6 +223,7 @@ class ExamsForm extends CFormModel
             ->from('test_exams')
             ->where('id=:id', array(':id'=>1))
             ->queryRow();
+        $city=Yii::app()->user->city();
         $arrAdd=$_REQUEST['ExamsForm']['detail'];
         foreach($arrAdd as $kArr){
             Yii::app()->db2->createCommand()->insert("test_exams",
@@ -204,7 +231,8 @@ class ExamsForm extends CFormModel
                     "test_exams_answer_right"=>$kArr['test_exams_answer_right'],
                     "test_exams_answer_faultf"=>$kArr['test_exams_answer_faultf'],
                     "test_exams_answer_faults"=>$kArr['test_exams_answer_faults'],
-                    "test_exams_answer_faultt"=>$kArr['test_exams_answer_faultt']));
+                    "test_exams_answer_faultt"=>$kArr['test_exams_answer_faultt'],
+                    'city_privileges'=>$city));
         }
         return true;
     }

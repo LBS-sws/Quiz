@@ -45,7 +45,7 @@ return array(
 	'About'=>'关于',
 	'City'=>'地区',
 	'Attachment'=>'附件',
-	'Start Quiz'=>'开始测验',
+	'Start quiz'=>'开始测验',
 	'Invalid Station. Please register first.'=>'工作站无效。请先登记。',
 	'User ID has been logged in more than one station.'=>'帐户已被登录到另一工作站。',
 	'Session expired.'=>'系统连接已经过期。请重新登录。',

@@ -36,6 +36,20 @@ class ExamsController extends Controller
             }
         }
     }
+
+    /**
+     * 文件上传
+     */
+    Public function actionDemo(){
+        try{
+            //上传成功
+            Yii::app()->file->upload();
+        }catch (CException $e){
+            $errors = Yii::app()->file->getError();
+            //errors错误信息数组
+        }
+    }
+
     public function actionSave()
     {
         if (isset($_POST['ExamsForm'])) {
@@ -70,9 +84,54 @@ class ExamsController extends Controller
 
     public function actionNew()
     {
+       /*  excel上传为csv文件读取上传到数据库
+       $goods_list=array();
+        $file = fopen(Yii::app()->basePath.'/data/demo.csv','r');
+        $data = fgetcsv($file);
+        while ($data = fgetcsv($file)) {
+            //每次读取CSV里面的一行内容
+            $goods_list[] = $data;
+        }
+        fclose($file);
+        $newData=array();
+        for($k=0;$k<count($goods_list);$k++){
+            $newData[$k]['content']=$goods_list[$k][0];
+            $newData[$k]['right']=$goods_list[$k][1];
+            $newData[$k]['faultf']=$goods_list[$k][2];
+            $newData[$k]['faults']=$goods_list[$k][3];
+            $newData[$k]['faultt']=$goods_list[$k][4];
+        }
+        //$model = new ExamsForm('new');
+        $result=true;
+        $city = Yii::app()->user->city();
+        for($i=0;$i<count($newData);$i++){
+            $command = Yii::app()->db2->createCommand();
+            $command->insert('test_exams', array(
+                'test_exams_contents'=>$newData[$i]['content'],
+                'test_exams_answer_right'=>$newData[$i]['right'],
+                'test_exams_answer_faultf'=>$newData[$i]['faultf'],
+                'test_exams_answer_faults'=>$newData[$i]['faults'],
+                'test_exams_answer_faultt'=>$newData[$i]['faultt'],
+                'city_privileges'=>$city,
+            ));
+        }
+      if($result){
+          Dialog::message(Yii::t('dialog','Warning'), Yii::t('Quiz','File data uploads successfully'));
+          $this->redirect(Yii::app()->createUrl('Exams/Index'));
+      }
+        else{
+            Dialog::message(Yii::t('dialog','Warning'), Yii::t('Quiz','File data uploads failed'));
+            $this->redirect(Yii::app()->createUrl('Exams/Index'));
+        }*/
         $model = new ExamsForm('new');
         $model->log_dt = date("Y/m/d");
         $this->render('form',array('model'=>$model,));
+    }
+
+
+    Public function actionSaveFileData($goods_list){
+
+        return true;
     }
 
     public function actionEdit($index)

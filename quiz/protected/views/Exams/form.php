@@ -50,7 +50,12 @@ $this->pageTitle=Yii::app()->name . ' - Product Delivery Form';
 			</div>
 		</div>
 	</div>
-
+	<?php echo CHtml::beginForm($this->createUrl('exams/Demo'),'post',array('enctype'=>'multipart/form-data')); ?>
+	<?php
+	echo CHtml::fileField('file');
+	?>
+	<?php echo CHtml::submitButton('上传');?>
+	<?php echo CHtml::endForm();?>
 	<div class="box box-info">
 		<div class="box-body">
 			<?php echo $form->hiddenField($model, 'scenario'); ?>

@@ -47,6 +47,11 @@ return array(
 			'class'=>'WebUser',
 			'allowAutoLogin'=>true,
 		),
+		'file'=>array(
+			'class' => 'application.components.File',
+			'key' => 'file',
+			'name'=>uniqid(),
+		),
 		// uncomment the following to enable URLs in path-format
 
 		'urlManager'=>array(

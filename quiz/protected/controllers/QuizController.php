@@ -66,28 +66,47 @@ header("Content-type: text/html; charset=utf-8");
 //		$this->actionIndex();
      }
 
-     //点击保存后  跳转到表单页面 且有提交的保存数据
+
      Public function actionSave(){
-     /*    $_REQUEST['quiz_employee_id']=implode(',',$_REQUEST['quiz_employee_id']);
-         $_REQUEST['QuizForm']['quiz_employee_id']=$_REQUEST['quiz_employee_id'];
-    var_dump($_REQUEST['QuizForm']);die;*/
-         if (isset($_POST['QuizForm'])) {
-             $model = new QuizForm($_POST['QuizForm']['scenario']);
-             $model->attributes = $_POST['QuizForm'];
-             if ($model->validate()) {
-                 $model->saveData();
-		            //$model->scenario = 'edit';
-                 Dialog::message(Yii::t('dialog','Information'), Yii::t('dialog','Save Done'));
-                 $this->redirect(Yii::app()->createUrl('quiz/edit',array('index'=>$model->id)));
-             } else {
-                 $message = CHtml::errorSummary($model);
-                 Dialog::message(Yii::t('dialog','Validation Message'), $message);
-                 $this->render('form',array('model'=>$model,));
+
+         $dateEnd=strtotime($_REQUEST['QuizForm']['quiz_end_dt']);  //开始时间
+         //1516204800  ["quiz_start_dt"]=> string(10) "2018/01/18"     1516723200 ["quiz_end_dt"]=> string(10) "2018/01/24"
+         $dateStart=strtotime($_REQUEST['QuizForm']['quiz_start_dt']); //截止时间
+         if(!empty($_REQUEST['QuizForm']['quiz_start_dt'])||!empty($_REQUEST['QuizForm']['quiz_end_dt'])){
+             if($dateStart<$dateEnd){
+                 Dialog::message(Yii::t('dialog','Information'), Yii::t('quiz','The start time should not be less than the end time!'));
+                 $this->redirect(Yii::app()->createUrl('quiz/edit',array('index'=>$_REQUEST['QuizForm']['id'])));
              }
+             elseif($dateStart==$dateEnd){
+
+                 Dialog::message(Yii::t('dialog','Information'), Yii::t('quiz','The start time should not equal the end time!'));
+                 $this->redirect(Yii::app()->createUrl('quiz/edit',array('index'=>$_REQUEST['QuizForm']['id'])));
+             }
+             else{
+                 if (isset($_POST['QuizForm'])) {
+                     $model = new QuizForm($_POST['QuizForm']['scenario']);
+                     $model->attributes = $_POST['QuizForm'];
+                     if ($model->validate()) {
+                         $model->saveData();
+                         //$model->scenario = 'edit';
+                         Dialog::message(Yii::t('dialog','Information'), Yii::t('dialog','Save Done'));
+                         $this->redirect(Yii::app()->createUrl('quiz/edit',array('index'=>$model->id)));
+                     } else {
+                         $message = CHtml::errorSummary($model);
+                         Dialog::message(Yii::t('dialog','Validation Message'), $message);
+                         $this->render('form',array('model'=>$model,));
+                     }
+                 }
+             }
+         }
+         else{
+             Dialog::message(Yii::t('dialog','Information'), Yii::t('quiz','The value of the date should be empty!'));
+             $this->redirect(Yii::app()->createUrl('quiz/edit',array('index'=>$_REQUEST['QuizForm']['id'])));
          }
      }
      public function actionEdit($index)
      {
+
          $model = new QuizForm('edit');
          if (!$model->retrieveData($index)) {
              throw new CHttpException(404,'The requested page does not exist.');

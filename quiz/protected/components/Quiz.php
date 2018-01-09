@@ -6,7 +6,6 @@ Class Quiz{
      * just for selecting the numbers
      */
     Public static function listReturn(){
-        $city = Yii::app()->user->city();
         $list = array(0=>Yii::t('quiz','question_count_choose'));
         $data=array();  //需求数组
         for($i=5;$i<101;$i++){
@@ -18,7 +17,14 @@ Class Quiz{
                 $list[$row['id']] = $row['value_count'];
             }
         }
+        return $list;
+    }
 
+    /**
+     * the kinds of quiz
+     */
+    Public static function kindsReturn(){
+        $list = array(0=>Yii::t('quiz','quiz_kinds_choose'),1=>Yii::t('quiz','forever'),2=>Yii::t('quiz','temporary'));
         return $list;
     }
 
@@ -37,19 +43,18 @@ Class Quiz{
  * add info_id
  */
     Public static function SelectReturn($info_id){
-        $city = Yii::app()->user->city_allow();
         $list=array();
         if(!empty($info_id)){   //修改测验单员工
-            $sql = "select employee_id,employee_name from employee_user_bind_v where 1=1 AND city IN ($city)";
+            $sql = "select id,employee_info_name from employee_info_v where 1=1";
             $data = Yii::app()->db2->createCommand($sql)->queryAll();
         }
         else{   //新增测验单员工
-            $sql = "select employee_id,employee_name from employee_user_bind_v where 1=1 AND city IN ($city)";
+            $sql = "select id,employee_info_name from employee_info_v where 1=1";
             $data = Yii::app()->db2->createCommand($sql)->queryAll();
         }
         if (count($data) > 0) {
             foreach ($data as $row) {
-                $list[$row['employee_id']] = $row["employee_name"];
+                $list[$row['id']] = $row["employee_info_name"];
             }
         }
         return $list;
@@ -127,24 +132,24 @@ Class Quiz{
     Public static function QuestionsSelect(){
         $city = Yii::app()->user->city_allow();
         $tableFuss=Yii::app()->params['jsonTableName'];
-        $sql="select id,quiz_name,quiz_start_dt,quiz_employee_id from blog$tableFuss.quiz WHERE 1=1 and city_privileges in($city)";
+        $sql="select id,quiz_name,quiz_start_dt,quiz_employee_id from blog$tableFuss.quiz WHERE 1=1 ";
         $select_quiz_result = Yii::app()->db2->createCommand($sql)->queryAll();
         $result=array();  //判断条件获取结果的测验单
         $nowTime=strtotime(date("Y-m-d H:i:s")); //当前时间
         $newResultForEmployee=array();
+
         $quiz_session_login_id=$_SESSION['quiz_session_login_id'];
-        $employee_middle_value_set="select * from employee_user_bind_v WHERE user_id='$quiz_session_login_id' AND city IN ($city)";
+        $employee_middle_value_set="select * from employee_user_bind_v WHERE user_id='$quiz_session_login_id'";
         //var_dump($employee_middle_value_set);die;
         $employee_middle_value_get=Yii::app()->db2->createCommand($employee_middle_value_set)->queryAll();
         $employee_id_middle="";
         if(count($employee_middle_value_get)>0){
-            $employee_id_middle=$employee_middle_value_get[0]['employee_id'];//员工主键
+            $employee_id_middle=$employee_middle_value_get[0]['employee_id'];//员工主键获取
         }
         else{
             $list=array(0=>Yii::t('quiz','sorry,you do not have the power to start quizing!'));//对不起,你未被授权可以参与测验
         }
         $list=array();
-        if(count($employee_middle_value_get)>0) {  //可以登录且有测验权力的员工
                 for ($k = 0; $k < count($select_quiz_result); $k++) {   //外层(测验单能够在city授权输出的条件)走一次 内层(每个测验单的授权员工id)走一圈
                     $quiz_time = strtotime($select_quiz_result[$k]['quiz_start_dt']);
                     $dateShow = ceil(($quiz_time - $nowTime) / 86400);
@@ -160,17 +165,16 @@ Class Quiz{
             if(count($result)==0){
                 $list=array(0=>Yii::t('quiz','sorry,none of the quiz tests allows you to start quizing!'));//对不起,你未被任何测验单授权可以进行测验
             }
-        }
+      /*
         else{
             $list=array(0=>Yii::t('quiz','sorry,you do not have the power to start quizing!'));//对不起,你未被授权可以参与测验
-        }
+        }*/
         if (count($result) > 0) {
             $list = array(0=>Yii::t('quiz','Quiz_select_choose'));
             foreach ($result as $row) {
                 $list[$row['id']] = $row['quiz_name'];
             }
         }
-        //var_dump($result);die;
         return $list;
     }
     Public static function arrDealForEmployee($employee_id,$arrFor){

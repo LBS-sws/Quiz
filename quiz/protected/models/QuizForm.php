@@ -16,6 +16,8 @@ class QuizForm extends CFormModel
     Public $count_questions;
     Public $checkBoxValue;
     Public $select_employee;
+    Public $quiz_end_dt;
+    Public $quiz_exams_id_get;
 
     //Public $scenario;
     /**
@@ -38,6 +40,8 @@ class QuizForm extends CFormModel
             'quiz_start_dt'=>Yii::t('quiz','quiz_start_dt'),
             'count_questions'=>Yii::t('quiz','count_questions'),
             'quiz_exams_count_set'=>Yii::t('quiz','quiz_exams_count_set'),
+            'quiz_end_dt'=>Yii::t('quiz','quiz_end_dt'),
+            'quiz_exams_id_get'=>Yii::t('quiz','quiz_exams_id_get'),
         );
     }
 
@@ -48,7 +52,7 @@ class QuizForm extends CFormModel
     {
         return array(
             array('quiz_date,quiz_exams_count','required'),
-            array('id,quiz_start_dt,quiz_name,quiz_correct_rate,quiz_exams_id,city_privileges','safe'),
+            array('id,quiz_start_dt,quiz_end_dt,quiz_name,quiz_correct_rate,quiz_exams_id,city_privileges','safe'),
             );
     }
     public function retrieveData($index)
@@ -56,6 +60,7 @@ class QuizForm extends CFormModel
         $city = Yii::app()->user->city_allow();
         $tableFuss=Yii::app()->params['jsonTableName'];
         $sql = "select * from blog$tableFuss.quiz where id=".$index." and city_privileges in ($city)";
+
         $rows = Yii::app()->db->createCommand($sql)->queryAll();
 
         if (count($rows) > 0)
@@ -72,6 +77,7 @@ class QuizForm extends CFormModel
                 $this->quiz_exams_count = $row['quiz_exams_count'];
                 $this->quiz_employee_id=$row['quiz_employee_id'];
                 $this->count_questions='';
+                $this->quiz_end_dt=General::toDate($row['quiz_end_dt']);
                 break;
             }
         }
@@ -80,6 +86,7 @@ class QuizForm extends CFormModel
     }
     public function saveData()
     {
+
         $connection = Yii::app()->db;
         $transaction=$connection->beginTransaction();
         try {
@@ -100,6 +107,7 @@ class QuizForm extends CFormModel
         else{
             $_REQUEST['quiz_employee_id']='';
         }
+        //$_REQUEST['QuizForm']['quiz_exams_id']=$_REQUEST['quiz_exams_id'];
         $_REQUEST['QuizForm']['quiz_employee_id']=$_REQUEST['quiz_employee_id'];
         $this->quiz_employee_id=$_REQUEST['QuizForm']['quiz_employee_id'];
         $tableFuss=Yii::app()->params['jsonTableName'];
@@ -110,8 +118,8 @@ class QuizForm extends CFormModel
                 break;
             case 'new':
                 $sql = "insert into blog$tableFuss.quiz(
-						quiz_date, quiz_name,city_privileges,quiz_correct_rate,quiz_exams_id,quiz_exams_count,quiz_employee_id,quiz_start_dt) values (
-						:quiz_date, :quiz_name,:city_privileges,:quiz_correct_rate,:quiz_exams_id,:quiz_exams_count,:quiz_employee_id,:quiz_start_dt)";
+						quiz_date, quiz_name,city_privileges,quiz_correct_rate,quiz_exams_id,quiz_exams_count,quiz_employee_id,quiz_start_dt,quiz_end_dt) values (
+						:quiz_date, :quiz_name,:city_privileges,:quiz_correct_rate,:quiz_exams_id,:quiz_exams_count,:quiz_employee_id,:quiz_start_dt,:quiz_end_dt)";
                 break;
             case 'edit':
                 $sql = "update blog$tableFuss.quiz set
@@ -122,7 +130,8 @@ class QuizForm extends CFormModel
 					quiz_exams_id=:quiz_exams_id,
 					quiz_correct_rate=:quiz_correct_rate,
 					city_privileges=:city_privileges,
-					quiz_start_dt=:quiz_start_dt
+					quiz_start_dt=:quiz_start_dt,
+					quiz_end_dt=:quiz_end_dt
 					where id = :id";
                 break;
         }
@@ -135,10 +144,17 @@ class QuizForm extends CFormModel
             $command->bindParam(':quiz_date',$this->quiz_date,PDO::PARAM_STR);
         if (strpos($sql,':quiz_name')!==false)
             $command->bindParam(':quiz_name',$this->quiz_name,PDO::PARAM_STR);
+
+
         if (strpos($sql,':quiz_start_dt')!==false) {
             $quizDate = General::toMyDate($this->quiz_start_dt);
             $command->bindParam(':quiz_start_dt',$quizDate,PDO::PARAM_STR);
         }
+        if (strpos($sql,':quiz_end_dt')!==false) {
+            $quizDateS = General::toMyDate($this->quiz_end_dt);
+            $command->bindParam(':quiz_end_dt',$quizDateS,PDO::PARAM_STR);
+        }
+
         if (strpos($sql,':city_privileges')!==false)
             $command->bindParam(':city_privileges',$city,PDO::PARAM_STR);
         if (strpos($sql,':quiz_exams_count')!==false)
