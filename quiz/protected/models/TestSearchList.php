@@ -30,7 +30,6 @@ class TestSearchList extends CListPageModel
         }else{
             $employee_id_pass=0;
         }
-
         $tableFuss = Yii::app()->params['jsonTableName'];
         $sql1 = "select *
 				from blog$tableFuss.quiz

@@ -82,7 +82,7 @@ class ExamsForm extends CFormModel
 
     public function saveData()
     {
-        $connection = Yii::app()->db;
+        $connection = Yii::app()->db2;
         $transaction=$connection->beginTransaction();
         try {
      /*       $this->saveLogistic($connection);*/
@@ -218,11 +218,7 @@ class ExamsForm extends CFormModel
 
     protected function saveLogisticDtl(&$connection)
     {
-        $user = Yii::app()->db2->createCommand()
-            ->select('test_exams_contents')
-            ->from('test_exams')
-            ->where('id=:id', array(':id'=>1))
-            ->queryRow();
+
         $city=Yii::app()->user->city();
         $arrAdd=$_REQUEST['ExamsForm']['detail'];
         foreach($arrAdd as $kArr){

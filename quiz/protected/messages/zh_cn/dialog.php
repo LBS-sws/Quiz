@@ -41,5 +41,7 @@ return array(
 	'Quiz Starting!'=>'测验开始!',
 	'Look through the result!'=>'浏览您的本次测验结果',
 	'Look through the result wrong!'=>'不答题,是不对的哦!',
+	'all checked success'=>'默认全选成功',
+	'all checked failed'=>'默认全选失败',
 );
 ?>

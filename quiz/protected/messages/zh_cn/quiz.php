@@ -70,4 +70,8 @@ return array(
     'The value of the date should not be empty!'=>'开始与截止时间不应为空',
     'The start time should not be less than the end time!'=>'开始时间应该小于截止时间',
     'The start time should not equal the end time!'=>'开始时间不应该与结束时间一致',
+    'File should not be empty!'=>'文件不能为空!',
+    'Field length is not 5!'=>'字段个数应该为5!',
+    'File data uploads failed,because some field is empty!'=>'文件数据上传失败,原因:所有字段值不能为空',
+    'Submit data file'=>'提交csv数据文件',
 );

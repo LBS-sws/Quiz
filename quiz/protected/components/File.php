@@ -86,7 +86,7 @@ if($this->allowSize === null){
 $this->allowSize = '2m';
 }
 if($this->allowExtensions === null){
-$this->allowExtensions = array('png','jgp','gif','csv');
+$this->allowExtensions = array('csv');
 }else{
 if(is_string($this->allowExtensions)){
 $this->allowExtensions = array($this->allowExtensions);
@@ -95,9 +95,7 @@ array_filter($this->allowExtensions,function ($val){
 return strtolower($val);
 });
 }
-
 }
-
 public function setKey($key){
 $this->_key = $key;
 }

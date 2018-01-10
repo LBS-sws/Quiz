@@ -14,6 +14,7 @@
  */
 class TbActiveForm extends CActiveForm
 {
+
     /**
      * @var string the form layout.
      */

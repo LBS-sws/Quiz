@@ -57,12 +57,8 @@ class QuizForm extends CFormModel
     }
     public function retrieveData($index)
     {
-        $city = Yii::app()->user->city_allow();
-        $tableFuss=Yii::app()->params['jsonTableName'];
-        $sql = "select * from blog$tableFuss.quiz where id=".$index." and city_privileges in ($city)";
-
-        $rows = Yii::app()->db->createCommand($sql)->queryAll();
-
+        $sql = "select * from quiz where id=$index";
+        $rows = Yii::app()->db2->createCommand($sql)->queryAll();
         if (count($rows) > 0)
         {
             foreach ($rows as $row)
@@ -86,7 +82,6 @@ class QuizForm extends CFormModel
     }
     public function saveData()
     {
-
         $connection = Yii::app()->db;
         $transaction=$connection->beginTransaction();
         try {
