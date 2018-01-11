@@ -109,7 +109,7 @@ class ExamsController extends Controller
                         Dialog::message(Yii::t('dialog', 'Information'), Yii::t('Quiz', 'File data uploads successfully'));
                         $this->redirect(Yii::app()->createUrl('Exams/Index'));
                     } else {
-                        Dialog::message(Yii::t('dialog', 'Warning'), Yii::t('Quiz', 'File data uploads failed,because some field is empty!'));
+                        Dialog::message(Yii::t('dialog', 'Warning'), Yii::t('Quiz', 'File data uploads failed,because some field is empty!please confirm your file‘s encoding format is utf-8!'));
                         $this->redirect(Yii::app()->createUrl('Exams/Index'));
                     }
                 }

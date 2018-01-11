@@ -1,14 +1,18 @@
 <?php
 $this->pageTitle=Yii::app()->name . ' - Product Delivery Form';
 ?>
-
+<?php echo CHtml::beginForm($this->createUrl('exams/Demo'),'post',array('enctype'=>'multipart/form-data')); ?>
+<?php
+echo CHtml::fileField('file','',array('class'=>'btn btn-default'));
+?>
+<?php echo CHtml::submitButton(Yii::t('quiz','Submit data file'),'','',array('class'=>'btn btn-default'));?>
+<?php echo CHtml::endForm();?>
 <?php $form=$this->beginWidget('TbActiveForm', array(
 	'id'=>'exams-form',
 	'enableClientValidation'=>true,
 	'clientOptions'=>array('validateOnSubmit'=>true,),
 	'layout'=>TbHtml::FORM_LAYOUT_HORIZONTAL,
 )); ?>
-
 <section class="content-header">
 	<h1>
 		<strong><?php echo Yii::t('quiz','Questions Add'); ?></strong>
@@ -27,6 +31,7 @@ $this->pageTitle=Yii::app()->name . ' - Product Delivery Form';
 	<div class="box">
 		<div class="box-body">
 			<div class="btn-group" role="group">
+				<div class="btn-group" role="group"></div>
 				<?php
 				if ($model->scenario!='new' && $model->scenario!='view') {
 					echo TbHtml::button('<span class="fa fa-file-o"></span> '.Yii::t('misc','Add Another'), array(
@@ -50,12 +55,6 @@ $this->pageTitle=Yii::app()->name . ' - Product Delivery Form';
 			</div>
 		</div>
 	</div>
-	<?php echo CHtml::beginForm($this->createUrl('exams/Demo'),'post',array('enctype'=>'multipart/form-data')); ?>
-	<?php
-	echo CHtml::fileField('file');
-	?>
-	<?php echo CHtml::submitButton('上传');?>
-	<?php echo CHtml::endForm();?>
 	<div class="box box-info">
 		<div class="box-body">
 			<?php echo $form->hiddenField($model, 'scenario'); ?>

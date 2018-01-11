@@ -33,6 +33,14 @@ $this->pageTitle=Yii::app()->name . ' - Nature';
                     ));
                 ?>
             </div>
+            <div class="btn-group" role="group">
+                <?php
+                if (Yii::app()->user->validRWFunction('HK01'))
+                    echo TbHtml::button('<span class="fa fa-file-o"></span> '.Yii::t('misc','default all checked'), array(
+                        'submit'=>Yii::app()->createUrl('quiz/default'),
+                    ));
+                ?>
+            </div>
         </div>
     </div>
     <?php $this->widget('ext.layout.ListPageWidget', array(
