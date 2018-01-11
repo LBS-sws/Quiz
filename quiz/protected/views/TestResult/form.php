@@ -93,7 +93,6 @@ $this->pageTitle=Yii::app()->name . ' - Customer Type Form';
                     ?>
                 </label>
             </div>
-
             <div class="form-group">
                 <label class="col-sm-5 control-label" >本次错题记录如下</label>
             </div>
@@ -118,7 +117,6 @@ $this->pageTitle=Yii::app()->name . ' - Customer Type Form';
 
            }
            ?>
-
         </div>
     </div>
 </section>

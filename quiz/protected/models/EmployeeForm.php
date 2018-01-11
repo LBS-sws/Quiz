@@ -41,7 +41,7 @@ class EmployeeForm extends CFormModel
     public function retrieveData($quiz_id)
     {
         $city = Yii::app()->user->city_allow();
-        $quiz_session_login_id=$_SESSION['quiz_session_login_id']; //sec_user主键
+        $quiz_session_login_id=Yii::app()->user->name; //sec_user主键
         $employee_info_set="SELECT * from employee_user_bind_v WHERE user_id='$quiz_session_login_id' AND city IN ($city)";
         $employee_info_get=Yii::app()->db2->createCommand($employee_info_set)->queryAll();
         if(count($employee_info_get)>0){

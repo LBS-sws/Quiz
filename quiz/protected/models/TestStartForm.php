@@ -87,7 +87,7 @@
     {
         $date=date('Y-m-d H:i:s',time());
         $city=Yii::app()->user->city_allow();
-        $employee_id=$_SESSION['quiz_session_login_id'];
+        $employee_id=Yii::app()->user->name;
         $employee_id_set="select * from employee_user_bind_v WHERE user_id='$employee_id' AND city IN ($city)";
         $employee_id_get=Yii::app()->db2->createCommand($employee_id_set)->queryAll();
         if(count($employee_id_get)>0){

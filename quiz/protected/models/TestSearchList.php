@@ -21,7 +21,7 @@ class TestSearchList extends CListPageModel
     }
     public function retrieveDataByPage($pageNum = 1)
     {
-        $quiz_session_login_id=$_SESSION['quiz_session_login_id'];
+        $quiz_session_login_id=Yii::app()->user->name;
         $employee_middle_value_set="select * from employee_user_bind_v WHERE user_id='$quiz_session_login_id'";
         $employee_middle_value_get=Yii::app()->db2->createCommand($employee_middle_value_set)->queryAll();
         $employee_id_pass="";

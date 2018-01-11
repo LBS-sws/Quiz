@@ -73,19 +73,19 @@ $this->pageTitle=Yii::app()->name . ' - Customer Type Form';
                 <?php echo $form->labelEx($model,'quiz_exams_count_show',array('class'=>"col-sm-2 control-label")); ?>
                 <div class="col-sm-2">
                     <?php echo $form->textField($model, 'quiz_exams_count',
-                        array('size'=>50,'maxlength'=>100,'id'=>'showRate','readonly'=>($model->scenario=='view'),'disabled'=>!Yii::app()->user->validRWFunction('HK01'))
+                        array('size'=>50,'maxlength'=>100,'id'=>'showRate','readonly'=>($model->scenario=='view'),'disabled'=>true)
                     ); ?>
                 </div>
                 <?php echo $form->labelEx($model,'now_time',array('class'=>"col-sm-1 control-label")); ?>
                 <div class="col-sm-2">
                     <?php echo $form->textField($model, 'quiz_date',
-                        array('size'=>50,'maxlength'=>100,'id'=>'showRate','readonly'=>($model->scenario=='view'),'disabled'=>!Yii::app()->user->validRWFunction('HK01'))
+                        array('size'=>50,'maxlength'=>100,'id'=>'showRate','readonly'=>($model->scenario=='view'),'disabled'=>true)
                     ); ?>
                 </div>
                 <?php echo $form->labelEx($model,'quiz_employee_name',array('class'=>"col-sm-1 control-label")); ?>
                 <div class="col-sm-2">
                     <?php echo $form->textField($model, 'employee_info',
-                        array('size'=>50,'maxlength'=>100,'id'=>'showRate','readonly'=>($model->scenario=='view'),'disabled'=>!Yii::app()->user->validRWFunction('HK01'))
+                        array('size'=>50,'maxlength'=>100,'id'=>'showRate','readonly'=>($model->scenario=='view'),'disabled'=>true)
                     ); ?>
                 </div>
             </div>
@@ -156,6 +156,8 @@ $this->pageTitle=Yii::app()->name . ' - Customer Type Form';
         </div>
     </div>
 </section>
+
+
 
 <?php $this->renderPartial('//site/removedialog'); ?>
 

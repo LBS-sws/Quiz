@@ -138,7 +138,7 @@ Class Quiz{
         $nowTime=strtotime(date("Y-m-d H:i:s")); //当前时间
         $newResultForEmployee=array();
 
-        $quiz_session_login_id=$_SESSION['quiz_session_login_id'];
+        $quiz_session_login_id=Yii::app()->user->name;
         $employee_middle_value_set="select * from employee_user_bind_v WHERE user_id='$quiz_session_login_id'";
         //var_dump($employee_middle_value_set);die;
         $employee_middle_value_get=Yii::app()->db2->createCommand($employee_middle_value_set)->queryAll();

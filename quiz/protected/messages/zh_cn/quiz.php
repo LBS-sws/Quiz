@@ -23,7 +23,7 @@ return array(
     'quiz DataOrder'=>'测验数据单',
     'select_employee'=>'下拉选择',
     //QuestionList model
-    'Question List'=>'测验题列表',
+    'Question List'=>'测验题单列表',
     'test_exams_contents'=>'问题内容',
     'test_exams_answer_right'=>'正确答案',
     'test_exams_answer_faultf'=>'错解A',
