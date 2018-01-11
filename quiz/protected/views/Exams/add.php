@@ -99,14 +99,15 @@ $this->pageTitle=Yii::app()->name . ' - Customer Type Form';
                 </div>
             </div>
 
-            <div class="form-group">
-                <?php echo $form->labelEx($model,'city_privileges',array('class'=>"col-sm-2 control-label")); ?>
+            <!--<div class="form-group">
+                <?php /*echo $form->labelEx($model,'city_privileges',array('class'=>"col-sm-2 control-label")); */?>
                 <div class="col-sm-5">
-                    <?php echo $form->textField($model, 'city_privileges',
+                    <?php /*echo $form->textField($model, 'city_privileges',
                         array('size'=>50,'maxlength'=>100,'readonly'=>($model->scenario=='view'))
-                    ); ?>
+                    ); */?>
                 </div>
-            </div>
+            </div>-->
+
 
             <div class="form-group">
                 <?php echo $form->labelEx($model,'test_exams_kinds',array('class'=>"col-sm-2 control-label")); ?>

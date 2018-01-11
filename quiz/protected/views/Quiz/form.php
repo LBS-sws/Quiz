@@ -173,7 +173,6 @@ $this->pageTitle=Yii::app()->name . ' - Customer Type Form';
                         }
                     });
                 });
-
             </script>
 
           <?php echo $form->hiddenField($model, 'quiz_exams_count',array('id'=>'getCountValue')); ?>
@@ -209,12 +208,13 @@ $this->pageTitle=Yii::app()->name . ' - Customer Type Form';
                    ); ?>
                 </div>
             </div>
-
         </div>
     </div>
 </section>
 
 <?php $this->renderPartial('//site/removedialog'); ?>
+
+
 
 <?php
 $js = "

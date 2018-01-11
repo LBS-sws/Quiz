@@ -54,7 +54,6 @@ $this->pageTitle=Yii::app()->name . ' - Customer Type Form';
             <?php $this->selectData=Yii::app()->createUrl('teststart/SelectQuestions');?>
         <input type="hidden" id="urlGetSelect" name="urlGetSelect" value="<?php echo $this->selectData;?>"/>
 
-
             <div class="form-group">
                 <?php echo $form->labelEx($model,'quiz_choose_id',array('class'=>"col-sm-2 control-label")); ?>
                 <div class="col-sm-5">

@@ -43,7 +43,6 @@ $this->pageTitle=Yii::app()->name . ' - Customer Type Form';
             </div>
         </div>
     </div>
-
     <div class="box box-info">
         <div class="box-body">
             <?php echo $form->hiddenField($model, 'scenario'); ?>
@@ -53,7 +52,7 @@ $this->pageTitle=Yii::app()->name . ' - Customer Type Form';
                 <?php echo $form->labelEx($model,'quiz_info_show',array('class'=>"col-sm-2 control-label")); ?>
                 <div class="col-sm-5">
                     <?php echo $form->textField($model,'quiz_info_show',
-                        array('disabled'=>!Yii::app()->user->validRWFunction('HK01')));?>
+                        array('disabled'=>true));?>
                 </div>
             </div>
 
