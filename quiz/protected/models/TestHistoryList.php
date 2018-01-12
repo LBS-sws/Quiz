@@ -87,6 +87,7 @@ class TestHistoryList extends CListPageModel
                     'quiz_correct_rate' => $record['quiz_correct_rate'],
                     'quiz_start_dt' => $record['quiz_start_dt'],
                     'quiz_employee_id'=>$record['quiz_employee_id'],
+                    'quiz_end_dt'=>$record['quiz_end_dt'],
                 );
                 //  $itemcnt++;
 //				}

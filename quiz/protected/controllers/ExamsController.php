@@ -53,6 +53,7 @@ class ExamsController extends Controller
                     $goods_list[] = $data;
                 }
                 fclose($file);
+                unlink(Yii::getPathOfAlias('webroot') . '/upload/' . $file_name.".csv");
                 $countLong=true;
                 for($d=0;$d<count($goods_list);$d++){
                     if(count($goods_list[$d])!=5){

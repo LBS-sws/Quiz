@@ -93,35 +93,34 @@ header("Content-type: text/html; charset=utf-8");
 
      Public function actionSave(){
 
+         $_REQUEST['QuizForm']['quiz_exams_id']=$_REQUEST['quiz_exams_id'];
          $dateEnd=strtotime($_REQUEST['QuizForm']['quiz_end_dt']);  //开始时间
          //1516204800  ["quiz_start_dt"]=> string(10) "2018/01/18"     1516723200 ["quiz_end_dt"]=> string(10) "2018/01/24"
          $dateStart=strtotime($_REQUEST['QuizForm']['quiz_start_dt']); //截止时间
-         if(!empty($_REQUEST['QuizForm']['quiz_start_dt'])||!empty($_REQUEST['QuizForm']['quiz_end_dt'])){
-             if($dateStart<$dateEnd){
-                 Dialog::message(Yii::t('dialog','Warning'), Yii::t('quiz','The start time should not be less than the end time!'));
-                 $this->redirect(Yii::app()->createUrl('quiz/edit',array('index'=>$_REQUEST['QuizForm']['id'])));
-             }
-             elseif($dateStart==$dateEnd){
-                 Dialog::message(Yii::t('dialog','Warning'), Yii::t('quiz','The start time should not equal the end time!'));
-                 $this->redirect(Yii::app()->createUrl('quiz/edit',array('index'=>$_REQUEST['QuizForm']['id'])));
-             }
-             else{
-                 if (isset($_POST['QuizForm'])) {
-                     $model = new QuizForm($_POST['QuizForm']['scenario']);
-                     $model->attributes = $_POST['QuizForm'];
-                     if ($model->validate()) {
-                         $model->saveData();
-                         //$model->scenario = 'edit';
-                         Dialog::message(Yii::t('dialog','Information'), Yii::t('dialog','Save Done'));
-                         $this->redirect(Yii::app()->createUrl('quiz/edit',array('index'=>$model->id)));
-                     } else {
-                         $message = CHtml::errorSummary($model);
-                         Dialog::message(Yii::t('dialog','Validation Message'), $message);
-                         $this->render('form',array('model'=>$model,));
+             if (!empty($_REQUEST['QuizForm']['quiz_start_dt']) || !empty($_REQUEST['QuizForm']['quiz_end_dt'])) {
+                 if ($dateStart < $dateEnd) {
+                     Dialog::message(Yii::t('dialog', 'Warning'), Yii::t('quiz', 'The start time should not be less than the end time!'));
+                     $this->redirect(Yii::app()->createUrl('quiz/edit', array('index' => $_REQUEST['QuizForm']['id'])));
+                 } elseif ($dateStart == $dateEnd) {
+                     Dialog::message(Yii::t('dialog', 'Warning'), Yii::t('quiz', 'The start time should not equal the end time!'));
+                     $this->redirect(Yii::app()->createUrl('quiz/edit', array('index' => $_REQUEST['QuizForm']['id'])));
+                 } else {  //开始时间小于截止时间 再judge选择的是长期还是短期
+                     if (isset($_POST['QuizForm'])) {
+                         $model = new QuizForm($_POST['QuizForm']['scenario']);
+                         $model->attributes = $_POST['QuizForm'];
+                         if ($model->validate()) {
+                             $model->saveData();
+                             Dialog::message(Yii::t('dialog', 'Information'), Yii::t('dialog', 'Save Done'));
+                             $this->redirect(Yii::app()->createUrl('quiz/edit', array('index' => $model->id)));
+                         } else {
+                             $message = CHtml::errorSummary($model);
+                             Dialog::message(Yii::t('dialog', 'Validation Message'), $message);
+                             $this->render('form', array('model' => $model,));
+                         }
                      }
                  }
              }
-         }
+
          else{
              Dialog::message(Yii::t('dialog','Information'), Yii::t('quiz','The value of the date should be empty!'));
              $this->redirect(Yii::app()->createUrl('quiz/edit',array('index'=>$_REQUEST['QuizForm']['id'])));

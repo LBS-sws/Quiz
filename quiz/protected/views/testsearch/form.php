@@ -85,7 +85,7 @@ $this->pageTitle=Yii::app()->name . ' - Customer Type Form';
                 <?php echo $form->labelEx($model,'employee_name_show',array('class'=>"col-sm-2 control-label")); ?>
                 <div class="col-sm-3">
                     <?php echo $form->textArea($model, 'employee_name_show',
-                        array('size'=>50,'maxlength'=>100,'readonly'=>($model->scenario=='view'),'cols'=>'30','rows'=>'6')
+                        array('size'=>50,'maxlength'=>100,'readonly'=>($model->scenario=='view'),'cols'=>'60','rows'=>'12')
                     ); ?>
                 </div>
             </div>
@@ -113,8 +113,6 @@ $this->pageTitle=Yii::app()->name . ' - Customer Type Form';
                     ; ?>
                 </div>
             </div>
-
-
 
         </div>
     </div>

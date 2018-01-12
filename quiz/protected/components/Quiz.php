@@ -132,12 +132,11 @@ Class Quiz{
     Public static function QuestionsSelect(){
         $city = Yii::app()->user->city_allow();
         $tableFuss=Yii::app()->params['jsonTableName'];
-        $sql="select id,quiz_name,quiz_start_dt,quiz_employee_id from blog$tableFuss.quiz WHERE 1=1 ";
+        $sql="select id,quiz_name,quiz_start_dt,quiz_employee_id,quiz_exams_id,quiz_end_dt from blog$tableFuss.quiz WHERE 1=1 ";
         $select_quiz_result = Yii::app()->db2->createCommand($sql)->queryAll();
         $result=array();  //判断条件获取结果的测验单
         $nowTime=strtotime(date("Y-m-d H:i:s")); //当前时间
         $newResultForEmployee=array();
-
         $quiz_session_login_id=Yii::app()->user->name;
         $employee_middle_value_set="select * from employee_user_bind_v WHERE user_id='$quiz_session_login_id'";
         //var_dump($employee_middle_value_set);die;
@@ -151,15 +150,23 @@ Class Quiz{
         }
         $list=array();
                 for ($k = 0; $k < count($select_quiz_result); $k++) {   //外层(测验单能够在city授权输出的条件)走一次 内层(每个测验单的授权员工id)走一圈
-                    $quiz_time = strtotime($select_quiz_result[$k]['quiz_start_dt']);
-                    $dateShow = ceil(($quiz_time - $nowTime) / 86400);
-                    if ($dateShow > 0) {  //未过期的测验单
-                        $arrayEmployeeId = array();
-                        $arrayEmployeeId=explode(",",$select_quiz_result[$k]['quiz_employee_id']);//测验单的可测验员工
-                        $returnForEmployee=Quiz::arrDealForEmployee($employee_id_middle,$arrayEmployeeId);
-                        if($returnForEmployee){//未过期且允许该员工测验的测验单
-                                $result[]=$select_quiz_result[$k];
-                        }
+                    if ($select_quiz_result[$k]['quiz_exams_id'] == 1) {
+                        $result[] = $select_quiz_result[$k];
+                    } else {   //短期验证
+                        $quiz_time = strtotime($select_quiz_result[$k]['quiz_start_dt']);
+                        $start_time = strtotime($select_quiz_result[$k]['quiz_end_dt']);
+                        $dateShow = ceil(($nowTime - $quiz_time) / 86400);  //是否截止
+                        $dateStart = ceil(($nowTime - $start_time) / 86400); //是否开始
+                        if($dateStart>=0) {
+                            if ($dateShow < 0) {  //未过期的测验单
+                                $arrayEmployeeId = array();
+                                $arrayEmployeeId = explode(",", $select_quiz_result[$k]['quiz_employee_id']);//测验单的可测验员工
+                                $returnForEmployee = Quiz::arrDealForEmployee($employee_id_middle, $arrayEmployeeId);
+                                if ($returnForEmployee) {//未过期且允许该员工测验的测验单
+                                    $result[] = $select_quiz_result[$k];
+                                }
+                            }
+                            }
                     }
                 }
             if(count($result)==0){

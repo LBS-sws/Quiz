@@ -93,15 +93,28 @@ class QuizForm extends CFormModel
             throw new CHttpException(404,'Cannot update.');
         }
     }
-
     protected function saveUser(&$connection)
     {
+        if($_REQUEST['QuizForm']['quiz_exams_id']==1){  //1=>forever 0=>temporary 2=>none
+            $_REQUEST['QuizForm']['quiz_start_dt']="";
+            $_REQUEST['QuizForm']['quiz_end_dt']="";
+            $this->quiz_start_dt='';
+            $this->quiz_end_dt='';
+        }
         if(isset($_REQUEST['quiz_employee_id'])){
             $_REQUEST['quiz_employee_id']=implode(',',$_REQUEST['quiz_employee_id']);
         }
         else{
             $_REQUEST['quiz_employee_id']='';
         }
+        if(isset($_REQUEST['quiz_exams_id'])){
+            $_REQUEST['QuizForm']['quiz_exams_id']=$_REQUEST['quiz_exams_id'];
+        }
+        else{
+            $_REQUEST['QuizForm']['quiz_exams_id']=0;
+        }
+        //$this->count_questions=$_REQUEST['count_questions'];
+        $this->quiz_exams_id=$_REQUEST['QuizForm']['quiz_exams_id'];
         //$_REQUEST['QuizForm']['quiz_exams_id']=$_REQUEST['quiz_exams_id'];
         $_REQUEST['QuizForm']['quiz_employee_id']=$_REQUEST['quiz_employee_id'];
         $this->quiz_employee_id=$_REQUEST['QuizForm']['quiz_employee_id'];

@@ -184,22 +184,26 @@ $this->pageTitle=Yii::app()->name . ' - Customer Type Form';
                     ); ?>
                 </div>
             </div>
+
             <style type="text/css">
                 label .labelForRadio{display:inline-block;width:auto;float:none;}
                 .checkbox{display:inline-block;float:none; width:100px;}
             </style>
 
-           <!-- <div class="form-group">
-                <?php /*echo $form->labelEx($model,'quiz_exams_id',array('class'=>"col-sm-2 control-label")); */?>
+         <div class="form-group">
+                <?php echo $form->labelEx($model,'quiz_exams_id',array('class'=>"col-sm-2 control-label")); ?>
                 <div class="col-sm-5">
-                    <?php /*echo TbHtml::dropDownList('quiz_exams_id',$model->quiz_exams_id,Quiz::kindsReturn(),
+                    <?php echo TbHtml::dropDownList('quiz_exams_id',$model->quiz_exams_id,Quiz::kindsReturn(),
                         array('disabled'=>!Yii::app()->user->validRWFunction('HK01'),'id'=>'kindsGet')
-                    ); */?>
+                    ); ?>
                 </div>
-            </div>-->
-            <?php echo $form->hiddenField($model, 'quiz_exams_id',
-                array('size'=>50,'maxlength'=>100,'readonly'=>($model->scenario=='view'))
-            ); ?>
+             <div class="col-sm-5">
+                 <?php echo $form->hiddenField($model,'quiz_exams_id',
+                     array('size'=>50,'maxlength'=>100,'readonly'=>($model->scenario=='view'))
+                 ); ?>
+             </div>
+            </div>
+
             <div class="form-group">
                 <?php echo $form->labelEx($model,'quiz_employee_id',array('class'=>"col-sm-2 control-label")); ?>
                 <div class="col-sm-5">
@@ -208,6 +212,7 @@ $this->pageTitle=Yii::app()->name . ' - Customer Type Form';
                    ); ?>
                 </div>
             </div>
+
         </div>
     </div>
 </section>

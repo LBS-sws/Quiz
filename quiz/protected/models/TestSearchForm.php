@@ -55,11 +55,11 @@ class TestSearchForm extends CFormModel
         $rows = Yii::app()->db2->createCommand($sql)->queryAll();
         $id_array_employee=$rows[0]['quiz_employee_id'];
         if(!empty($id_array_employee)){
-            $employee_name="select * from employee_user_bind_v where employee_id IN ($id_array_employee)";
+            $employee_name="select * from employee_info_v where id IN ($id_array_employee)";
             $final_info = Yii::app()->db2->createCommand($employee_name)->queryAll();
             if(count($final_info)>0){
                 for($i=0;$i<count($final_info);$i++){
-                    $this->employee_name_show.='姓名:'.$final_info[$i]['employee_name']."\n";
+                    $this->employee_name_show.='姓名:'.$final_info[$i]['employee_info_name']."\n";
                 }
             }
         }

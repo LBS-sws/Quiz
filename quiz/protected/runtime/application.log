@@ -7879,3 +7879,1098 @@ Stack trace:
 REQUEST_URI=/newQuiz/Quiz/quiz/js/jquery.js'
 HTTP_REFERER=http://127.0.0.1/newQuiz/Quiz/quiz/index.php/quiz/edit?index=35
 ---
+2018/01/11 16:49:54 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'blog_test.employee_user_v' doesn't exist. The SQL statement executed was: select * from employee_user_v where employee_id IN (39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,60,61,62,63,64,65,66,67,68,69,70,72,73,74,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,191,192,193,194,195,196,197,198,199,200,201,202,203,204,205,206,207,208,209,210,211,212,213,214,215,216,217).
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\models\TestSearchForm.php (59)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\TestsearchController.php (31)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php (13)
+2018/01/11 16:49:54 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'blog_test.employee_user_v' doesn't exist. The SQL statement executed was: select * from employee_user_v where employee_id IN (39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,60,61,62,63,64,65,66,67,68,69,70,72,73,74,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,191,192,193,194,195,196,197,198,199,200,201,202,203,204,205,206,207,208,209,210,211,212,213,214,215,216,217)' in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\models\TestSearchForm.php(59): CDbCommand->queryAll()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\TestsearchController.php(31): TestSearchForm->retrieveData('35')
+#3 [internal function]: TestsearchController->actionView('35')
+#4 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(TestsearchController), Array)
+#5 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(TestsearchController), Object(ReflectionMethod), Array)
+#6 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#7 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#8 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('view')
+#10 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('testsearch/view')
+#11 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/newQuiz/Quiz/quiz/index.php/testsearch/view?index=35
+HTTP_REFERER=http://127.0.0.1/newQuiz/Quiz/quiz/index.php/testsearch/index
+---
+2018/01/11 16:49:56 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'blog_test.employee_user_v' doesn't exist. The SQL statement executed was: select * from employee_user_v where employee_id IN (39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,60,61,62,63,64,65,66,67,68,69,70,72,73,74,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,191,192,193,194,195,196,197,198,199,200,201,202,203,204,205,206,207,208,209,210,211,212,213,214,215,216,217).
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\models\TestSearchForm.php (59)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\TestsearchController.php (31)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php (13)
+2018/01/11 16:49:56 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'blog_test.employee_user_v' doesn't exist. The SQL statement executed was: select * from employee_user_v where employee_id IN (39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,60,61,62,63,64,65,66,67,68,69,70,72,73,74,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,191,192,193,194,195,196,197,198,199,200,201,202,203,204,205,206,207,208,209,210,211,212,213,214,215,216,217)' in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\models\TestSearchForm.php(59): CDbCommand->queryAll()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\TestsearchController.php(31): TestSearchForm->retrieveData('35')
+#3 [internal function]: TestsearchController->actionView('35')
+#4 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(TestsearchController), Array)
+#5 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(TestsearchController), Object(ReflectionMethod), Array)
+#6 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#7 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#8 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('view')
+#10 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('testsearch/view')
+#11 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/newQuiz/Quiz/quiz/index.php/testsearch/view?index=35
+HTTP_REFERER=http://127.0.0.1/newQuiz/Quiz/quiz/index.php/testsearch/index
+---
+2018/01/11 16:50:22 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'blog_test.employee_user_v' doesn't exist. The SQL statement executed was: select * from employee_user_v where id IN (39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,60,61,62,63,64,65,66,67,68,69,70,72,73,74,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,191,192,193,194,195,196,197,198,199,200,201,202,203,204,205,206,207,208,209,210,211,212,213,214,215,216,217).
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\models\TestSearchForm.php (59)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\TestsearchController.php (31)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php (13)
+2018/01/11 16:50:22 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'blog_test.employee_user_v' doesn't exist. The SQL statement executed was: select * from employee_user_v where id IN (39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,60,61,62,63,64,65,66,67,68,69,70,72,73,74,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,191,192,193,194,195,196,197,198,199,200,201,202,203,204,205,206,207,208,209,210,211,212,213,214,215,216,217)' in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\models\TestSearchForm.php(59): CDbCommand->queryAll()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\TestsearchController.php(31): TestSearchForm->retrieveData('35')
+#3 [internal function]: TestsearchController->actionView('35')
+#4 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(TestsearchController), Array)
+#5 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(TestsearchController), Object(ReflectionMethod), Array)
+#6 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#7 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#8 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('view')
+#10 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('testsearch/view')
+#11 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/newQuiz/Quiz/quiz/index.php/testsearch/view?index=35
+HTTP_REFERER=http://127.0.0.1/newQuiz/Quiz/quiz/index.php/testsearch/index
+---
+2018/01/11 16:50:25 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'blog_test.employee_user_v' doesn't exist. The SQL statement executed was: select * from employee_user_v where id IN (39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,60,61,62,63,64,65,66,67,68,69,70,72,73,74,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,191,192,193,194,195,196,197,198,199,200,201,202,203,204,205,206,207,208,209,210,211,212,213,214,215,216,217).
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\models\TestSearchForm.php (59)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\TestsearchController.php (31)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php (13)
+2018/01/11 16:50:25 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'blog_test.employee_user_v' doesn't exist. The SQL statement executed was: select * from employee_user_v where id IN (39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,60,61,62,63,64,65,66,67,68,69,70,72,73,74,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,191,192,193,194,195,196,197,198,199,200,201,202,203,204,205,206,207,208,209,210,211,212,213,214,215,216,217)' in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\models\TestSearchForm.php(59): CDbCommand->queryAll()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\TestsearchController.php(31): TestSearchForm->retrieveData('35')
+#3 [internal function]: TestsearchController->actionView('35')
+#4 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(TestsearchController), Array)
+#5 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(TestsearchController), Object(ReflectionMethod), Array)
+#6 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#7 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#8 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('view')
+#10 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('testsearch/view')
+#11 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/newQuiz/Quiz/quiz/index.php/testsearch/view?index=35
+HTTP_REFERER=http://127.0.0.1/newQuiz/Quiz/quiz/index.php/testsearch/index
+---
+2018/01/11 16:50:28 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'blog_test.employee_user_v' doesn't exist. The SQL statement executed was: select * from employee_user_v where id IN (39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,60,61,62,63,64,65,66,67,68,69,70,72,73,74,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,191,192,193,194,195,196,197,198,199,200,201,202,203,204,205,206,207,208,209,210,211,212,213,214,215,216,217).
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\models\TestSearchForm.php (59)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\TestsearchController.php (31)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php (13)
+2018/01/11 16:50:28 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'blog_test.employee_user_v' doesn't exist. The SQL statement executed was: select * from employee_user_v where id IN (39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,60,61,62,63,64,65,66,67,68,69,70,72,73,74,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,191,192,193,194,195,196,197,198,199,200,201,202,203,204,205,206,207,208,209,210,211,212,213,214,215,216,217)' in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\models\TestSearchForm.php(59): CDbCommand->queryAll()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\TestsearchController.php(31): TestSearchForm->retrieveData('35')
+#3 [internal function]: TestsearchController->actionView('35')
+#4 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(TestsearchController), Array)
+#5 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(TestsearchController), Object(ReflectionMethod), Array)
+#6 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#7 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#8 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('view')
+#10 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('testsearch/view')
+#11 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/newQuiz/Quiz/quiz/index.php/testsearch/view?index=35
+HTTP_REFERER=http://127.0.0.1/newQuiz/Quiz/quiz/index.php/testsearch/index
+---
+2018/01/11 16:50:30 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'blog_test.employee_user_v' doesn't exist. The SQL statement executed was: select * from employee_user_v where id IN (39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,60,61,62,63,64,65,66,67,68,69,70,72,73,74,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,191,192,193,194,195,196,197,198,199,200,201,202,203,204,205,206,207,208,209,210,211,212,213,214,215,216,217).
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\models\TestSearchForm.php (59)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\TestsearchController.php (31)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php (13)
+2018/01/11 16:50:30 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'blog_test.employee_user_v' doesn't exist. The SQL statement executed was: select * from employee_user_v where id IN (39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,60,61,62,63,64,65,66,67,68,69,70,72,73,74,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,191,192,193,194,195,196,197,198,199,200,201,202,203,204,205,206,207,208,209,210,211,212,213,214,215,216,217)' in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\models\TestSearchForm.php(59): CDbCommand->queryAll()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\TestsearchController.php(31): TestSearchForm->retrieveData('35')
+#3 [internal function]: TestsearchController->actionView('35')
+#4 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(TestsearchController), Array)
+#5 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(TestsearchController), Object(ReflectionMethod), Array)
+#6 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#7 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#8 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('view')
+#10 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('testsearch/view')
+#11 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/newQuiz/Quiz/quiz/index.php/testsearch/view?index=35
+HTTP_REFERER=http://127.0.0.1/newQuiz/Quiz/quiz/index.php/testsearch/index
+---
+2018/01/11 16:50:31 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'blog_test.employee_user_v' doesn't exist. The SQL statement executed was: select * from employee_user_v where id IN (39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,60,61,62,63,64,65,66,67,68,69,70,72,73,74,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,191,192,193,194,195,196,197,198,199,200,201,202,203,204,205,206,207,208,209,210,211,212,213,214,215,216,217).
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\models\TestSearchForm.php (59)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\TestsearchController.php (31)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php (13)
+2018/01/11 16:50:31 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'blog_test.employee_user_v' doesn't exist. The SQL statement executed was: select * from employee_user_v where id IN (39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,60,61,62,63,64,65,66,67,68,69,70,72,73,74,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,191,192,193,194,195,196,197,198,199,200,201,202,203,204,205,206,207,208,209,210,211,212,213,214,215,216,217)' in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\models\TestSearchForm.php(59): CDbCommand->queryAll()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\TestsearchController.php(31): TestSearchForm->retrieveData('35')
+#3 [internal function]: TestsearchController->actionView('35')
+#4 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(TestsearchController), Array)
+#5 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(TestsearchController), Object(ReflectionMethod), Array)
+#6 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#7 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#8 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('view')
+#10 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('testsearch/view')
+#11 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/newQuiz/Quiz/quiz/index.php/testsearch/view?index=35
+HTTP_REFERER=http://127.0.0.1/newQuiz/Quiz/quiz/index.php/testsearch/index
+---
+2018/01/11 16:50:32 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'blog_test.employee_user_v' doesn't exist. The SQL statement executed was: select * from employee_user_v where id IN (39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,60,61,62,63,64,65,66,67,68,69,70,72,73,74,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,191,192,193,194,195,196,197,198,199,200,201,202,203,204,205,206,207,208,209,210,211,212,213,214,215,216,217).
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\models\TestSearchForm.php (59)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\TestsearchController.php (31)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php (13)
+2018/01/11 16:50:32 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'blog_test.employee_user_v' doesn't exist. The SQL statement executed was: select * from employee_user_v where id IN (39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,60,61,62,63,64,65,66,67,68,69,70,72,73,74,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,191,192,193,194,195,196,197,198,199,200,201,202,203,204,205,206,207,208,209,210,211,212,213,214,215,216,217)' in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\models\TestSearchForm.php(59): CDbCommand->queryAll()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\TestsearchController.php(31): TestSearchForm->retrieveData('35')
+#3 [internal function]: TestsearchController->actionView('35')
+#4 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(TestsearchController), Array)
+#5 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(TestsearchController), Object(ReflectionMethod), Array)
+#6 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#7 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#8 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(283): CController->run('view')
+#10 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('testsearch/view')
+#11 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/newQuiz/Quiz/quiz/index.php/testsearch/view?index=35
+HTTP_REFERER=http://127.0.0.1/newQuiz/Quiz/quiz/index.php/testsearch/index
+---
+2018/01/11 16:50:45 [error] [php] Undefined index: employee_name (D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\models\TestSearchForm.php:62)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#3 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CController.php(287): TestsearchController->runAction()
+#4 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CController.php(266): TestsearchController->runActionWithFilters()
+#5 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(283): TestsearchController->run()
+#6 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#7 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/newQuiz/Quiz/quiz/index.php/testsearch/view?index=35
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\models\TestSearchForm.php (62)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\TestsearchController.php (31)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php (13)
+2018/01/12 09:33:02 [warning] [application] Failed to set unsafe attribute "scenario" of "TestStartForm".
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\TeststartController.php (67)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php (13)
+2018/01/12 09:33:02 [warning] [application] Failed to set unsafe attribute "quiz_choose_id" of "TestStartForm".
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\TeststartController.php (67)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php (13)
+2018/01/12 09:33:02 [warning] [application] Failed to set unsafe attribute "employee_id" of "TestStartForm".
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\TeststartController.php (67)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php (13)
+2018/01/12 09:33:24 [warning] [application] Failed to set unsafe attribute "scenario" of "TestForm".
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\TestresultController.php (49)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php (13)
+2018/01/12 09:33:24 [warning] [application] Failed to set unsafe attribute "quiz_correct_employee_id" of "TestForm".
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\TestresultController.php (49)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php (13)
+2018/01/12 09:33:24 [warning] [application] Failed to set unsafe attribute "quiz_date" of "TestForm".
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\TestresultController.php (49)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php (13)
+2018/01/12 09:43:56 [warning] [application] Failed to set unsafe attribute "scenario" of "TestStartForm".
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\TeststartController.php (67)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php (13)
+2018/01/12 09:43:56 [warning] [application] Failed to set unsafe attribute "quiz_choose_id" of "TestStartForm".
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\TeststartController.php (67)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php (13)
+2018/01/12 09:43:56 [warning] [application] Failed to set unsafe attribute "employee_id" of "TestStartForm".
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\TeststartController.php (67)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php (13)
+2018/01/12 09:44:15 [warning] [application] Failed to set unsafe attribute "scenario" of "TestForm".
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\TestresultController.php (49)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php (13)
+2018/01/12 09:44:15 [warning] [application] Failed to set unsafe attribute "quiz_correct_employee_id" of "TestForm".
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\TestresultController.php (49)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php (13)
+2018/01/12 09:44:15 [warning] [application] Failed to set unsafe attribute "quiz_date" of "TestForm".
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\TestresultController.php (49)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php (13)
+2018/01/12 09:48:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "js/jquery.js'"。' in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('js/jquery.js'')
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/newQuiz/Quiz/quiz/js/jquery.js'
+HTTP_REFERER=http://127.0.0.1/newQuiz/Quiz/quiz/index.php/quiz/edit?index=29
+---
+2018/01/12 09:53:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "js/jquery.js'"。' in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('js/jquery.js'')
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/newQuiz/Quiz/quiz/js/jquery.js'
+HTTP_REFERER=http://127.0.0.1/newQuiz/Quiz/quiz/index.php/quiz/edit?index=23
+---
+2018/01/12 09:53:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "js/jquery.js'"。' in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('js/jquery.js'')
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/newQuiz/Quiz/quiz/js/jquery.js'
+HTTP_REFERER=http://127.0.0.1/newQuiz/Quiz/quiz/index.php/quiz/edit?index=23
+---
+2018/01/12 09:54:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "js/jquery.js'"。' in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('js/jquery.js'')
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/newQuiz/Quiz/quiz/js/jquery.js'
+HTTP_REFERER=http://127.0.0.1/newQuiz/Quiz/quiz/index.php/quiz/edit?index=23
+---
+2018/01/12 09:54:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "js/jquery.js'"。' in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('js/jquery.js'')
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/newQuiz/Quiz/quiz/js/jquery.js'
+HTTP_REFERER=http://127.0.0.1/newQuiz/Quiz/quiz/index.php/quiz/edit?index=23
+---
+2018/01/12 09:55:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "js/jquery.js'"。' in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('js/jquery.js'')
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/newQuiz/Quiz/quiz/js/jquery.js'
+HTTP_REFERER=http://127.0.0.1/newQuiz/Quiz/quiz/index.php/quiz/edit?index=23
+---
+2018/01/12 09:55:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "js/jquery.js'"。' in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('js/jquery.js'')
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/newQuiz/Quiz/quiz/js/jquery.js'
+HTTP_REFERER=http://127.0.0.1/newQuiz/Quiz/quiz/index.php/quiz/edit?index=23
+---
+2018/01/12 09:55:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "js/jquery.js'"。' in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('js/jquery.js'')
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/newQuiz/Quiz/quiz/js/jquery.js'
+HTTP_REFERER=http://127.0.0.1/newQuiz/Quiz/quiz/index.php/quiz/edit?index=23
+---
+2018/01/12 09:56:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "js/jquery.js'"。' in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('js/jquery.js'')
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/newQuiz/Quiz/quiz/js/jquery.js'
+HTTP_REFERER=http://127.0.0.1/newQuiz/Quiz/quiz/index.php/quiz/edit?index=23
+---
+2018/01/12 09:56:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "js/jquery.js'"。' in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('js/jquery.js'')
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/newQuiz/Quiz/quiz/js/jquery.js'
+HTTP_REFERER=http://127.0.0.1/newQuiz/Quiz/quiz/index.php/quiz/edit?index=23
+---
+2018/01/12 09:57:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "js/jquery.js'"。' in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('js/jquery.js'')
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/newQuiz/Quiz/quiz/js/jquery.js'
+HTTP_REFERER=http://127.0.0.1/newQuiz/Quiz/quiz/index.php/quiz/edit?index=23
+---
+2018/01/12 09:57:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "js/jquery.js'"。' in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('js/jquery.js'')
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/newQuiz/Quiz/quiz/js/jquery.js'
+HTTP_REFERER=http://127.0.0.1/newQuiz/Quiz/quiz/index.php/quiz/edit?index=23
+---
+2018/01/12 09:58:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "js/jquery.js'"。' in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('js/jquery.js'')
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/newQuiz/Quiz/quiz/js/jquery.js'
+HTTP_REFERER=http://127.0.0.1/newQuiz/Quiz/quiz/index.php/quiz/edit?index=23
+---
+2018/01/12 09:58:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "js/jquery.js'"。' in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('js/jquery.js'')
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/newQuiz/Quiz/quiz/js/jquery.js'
+HTTP_REFERER=http://127.0.0.1/newQuiz/Quiz/quiz/index.php/quiz/edit?index=23
+---
+2018/01/12 10:00:46 [warning] [application] Failed to set unsafe attribute "scenario" of "QuizForm".
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\QuizController.php (112)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php (13)
+2018/01/12 10:00:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "js/jquery.js'"。' in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('js/jquery.js'')
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/newQuiz/Quiz/quiz/js/jquery.js'
+HTTP_REFERER=http://127.0.0.1/newQuiz/Quiz/quiz/index.php/quiz/edit?index=23
+---
+2018/01/12 10:00:55 [warning] [application] Failed to set unsafe attribute "scenario" of "QuizForm".
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\QuizController.php (112)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php (13)
+2018/01/12 10:00:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "js/jquery.js'"。' in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('js/jquery.js'')
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/newQuiz/Quiz/quiz/js/jquery.js'
+HTTP_REFERER=http://127.0.0.1/newQuiz/Quiz/quiz/index.php/quiz/edit?index=23
+---
+2018/01/12 10:01:15 [warning] [application] Failed to set unsafe attribute "scenario" of "QuizForm".
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\QuizController.php (112)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php (13)
+2018/01/12 10:01:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "js/jquery.js'"。' in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('js/jquery.js'')
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/newQuiz/Quiz/quiz/js/jquery.js'
+HTTP_REFERER=http://127.0.0.1/newQuiz/Quiz/quiz/index.php/quiz/edit?index=23
+---
+2018/01/12 10:01:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "js/jquery.js'"。' in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('js/jquery.js'')
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/newQuiz/Quiz/quiz/js/jquery.js'
+HTTP_REFERER=http://127.0.0.1/newQuiz/Quiz/quiz/index.php/quiz/edit?index=23
+---
+2018/01/12 10:02:13 [warning] [application] Failed to set unsafe attribute "scenario" of "QuizForm".
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\QuizController.php (112)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php (13)
+2018/01/12 10:02:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "js/jquery.js'"。' in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('js/jquery.js'')
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/newQuiz/Quiz/quiz/js/jquery.js'
+HTTP_REFERER=http://127.0.0.1/newQuiz/Quiz/quiz/index.php/quiz/edit?index=23
+---
+2018/01/12 10:03:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "js/jquery.js'"。' in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('js/jquery.js'')
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/newQuiz/Quiz/quiz/js/jquery.js'
+HTTP_REFERER=http://127.0.0.1/newQuiz/Quiz/quiz/index.php/quiz/edit?index=23
+---
+2018/01/12 10:05:31 [warning] [application] Failed to set unsafe attribute "scenario" of "QuizForm".
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\QuizController.php (112)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php (13)
+2018/01/12 10:05:32 [error] [php] Undefined index: quiz_exams_id (D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\models\QuizForm.php:100)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\actions\CInlineAction.php(50): QuizController->actionSave()
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CController.php(287): QuizController->runAction()
+#3 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CController.php(266): QuizController->runActionWithFilters()
+#4 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(283): QuizController->run()
+#5 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#6 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/newQuiz/Quiz/quiz/index.php/quiz/save
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\models\QuizForm.php (100)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\models\QuizForm.php (88)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\QuizController.php (114)
+2018/01/12 10:05:47 [warning] [application] Failed to set unsafe attribute "scenario" of "QuizForm".
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\QuizController.php (112)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php (13)
+2018/01/12 10:05:48 [error] [php] Undefined index: quiz_employee_id (D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\models\QuizForm.php:100)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\actions\CInlineAction.php(50): QuizController->actionSave()
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CController.php(287): QuizController->runAction()
+#3 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CController.php(266): QuizController->runActionWithFilters()
+#4 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(283): QuizController->run()
+#5 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#6 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/newQuiz/Quiz/quiz/index.php/quiz/save
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\models\QuizForm.php (100)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\models\QuizForm.php (88)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\QuizController.php (114)
+2018/01/12 10:06:20 [warning] [application] Failed to set unsafe attribute "scenario" of "QuizForm".
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\QuizController.php (112)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php (13)
+2018/01/12 10:06:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "js/jquery.js'"。' in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('js/jquery.js'')
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/newQuiz/Quiz/quiz/js/jquery.js'
+HTTP_REFERER=http://127.0.0.1/newQuiz/Quiz/quiz/index.php/quiz/edit?index=23
+---
+2018/01/12 10:07:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "js/jquery.js'"。' in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('js/jquery.js'')
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/newQuiz/Quiz/quiz/js/jquery.js'
+HTTP_REFERER=http://127.0.0.1/newQuiz/Quiz/quiz/index.php/quiz/edit?index=23
+---
+2018/01/12 10:14:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "js/jquery.js'"。' in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('js/jquery.js'')
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/newQuiz/Quiz/quiz/js/jquery.js'
+HTTP_REFERER=http://127.0.0.1/newQuiz/Quiz/quiz/index.php/quiz/edit?index=23
+---
+2018/01/12 10:29:29 [error] [php] Object of class QuizForm could not be converted to string (D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\helpers\CHtml.php:1825)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\extensions\bootstrap\helpers\TbHtml.php(1061): dropDownList()
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\views\quiz\form.php(198): dropDownList()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CBaseController.php(127): require()
+#3 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CBaseController.php(96): QuizController->renderInternal()
+#4 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CController.php(870): QuizController->renderFile()
+#5 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CController.php(783): QuizController->renderPartial()
+#6 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\QuizController.php(137): QuizController->render()
+#7 unknown(0): QuizController->actionEdit()
+#8 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#9 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#10 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#11 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CController.php(287): QuizController->runAction()
+#12 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CController.php(266): QuizController->runActionWithFilters()
+#13 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(283): QuizController->run()
+#14 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#15 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/newQuiz/Quiz/quiz/index.php/quiz/edit?index=23
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\extensions\bootstrap\helpers\TbHtml.php (1061)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\views\quiz\form.php (198)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\QuizController.php (137)
+2018/01/12 10:35:39 [error] [php] Object of class QuizForm could not be converted to string (D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\helpers\CHtml.php:1825)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\extensions\bootstrap\helpers\TbHtml.php(1061): dropDownList()
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\views\quiz\form.php(198): dropDownList()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CBaseController.php(127): require()
+#3 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CBaseController.php(96): QuizController->renderInternal()
+#4 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CController.php(870): QuizController->renderFile()
+#5 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CController.php(783): QuizController->renderPartial()
+#6 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\QuizController.php(137): QuizController->render()
+#7 unknown(0): QuizController->actionEdit()
+#8 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#9 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#10 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#11 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CController.php(287): QuizController->runAction()
+#12 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CController.php(266): QuizController->runActionWithFilters()
+#13 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(283): QuizController->run()
+#14 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#15 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/newQuiz/Quiz/quiz/index.php/quiz/edit?index=23
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\extensions\bootstrap\helpers\TbHtml.php (1061)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\views\quiz\form.php (198)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\QuizController.php (137)
+2018/01/12 10:36:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "js/jquery.js'"。' in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('js/jquery.js'')
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/newQuiz/Quiz/quiz/js/jquery.js'
+HTTP_REFERER=http://127.0.0.1/newQuiz/Quiz/quiz/index.php/quiz/edit?index=23
+---
+2018/01/12 10:37:07 [warning] [application] Failed to set unsafe attribute "scenario" of "QuizForm".
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\QuizController.php (112)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php (13)
+2018/01/12 10:37:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "js/jquery.js'"。' in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('js/jquery.js'')
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/newQuiz/Quiz/quiz/js/jquery.js'
+HTTP_REFERER=http://127.0.0.1/newQuiz/Quiz/quiz/index.php/quiz/edit?index=23
+---
+2018/01/12 10:37:15 [warning] [application] Failed to set unsafe attribute "scenario" of "QuizForm".
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\QuizController.php (112)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php (13)
+2018/01/12 10:37:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "js/jquery.js'"。' in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('js/jquery.js'')
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/newQuiz/Quiz/quiz/js/jquery.js'
+HTTP_REFERER=http://127.0.0.1/newQuiz/Quiz/quiz/index.php/quiz/edit?index=23
+---
+2018/01/12 10:38:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "js/jquery.js'"。' in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('js/jquery.js'')
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/newQuiz/Quiz/quiz/js/jquery.js'
+HTTP_REFERER=http://127.0.0.1/newQuiz/Quiz/quiz/index.php/quiz/edit?index=23
+---
+2018/01/12 10:38:27 [warning] [application] Failed to set unsafe attribute "scenario" of "QuizForm".
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\QuizController.php (112)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php (13)
+2018/01/12 10:38:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "js/jquery.js'"。' in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('js/jquery.js'')
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/newQuiz/Quiz/quiz/js/jquery.js'
+HTTP_REFERER=http://127.0.0.1/newQuiz/Quiz/quiz/index.php/quiz/edit?index=23
+---
+2018/01/12 10:38:36 [warning] [application] Failed to set unsafe attribute "scenario" of "QuizForm".
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\QuizController.php (112)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php (13)
+2018/01/12 10:38:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "js/jquery.js'"。' in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('js/jquery.js'')
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/newQuiz/Quiz/quiz/js/jquery.js'
+HTTP_REFERER=http://127.0.0.1/newQuiz/Quiz/quiz/index.php/quiz/edit?index=23
+---
+2018/01/12 10:40:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "js/jquery.js'"。' in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('js/jquery.js'')
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/newQuiz/Quiz/quiz/js/jquery.js'
+HTTP_REFERER=http://127.0.0.1/newQuiz/Quiz/quiz/index.php/quiz/edit?index=23
+---
+2018/01/12 10:43:31 [warning] [application] Failed to set unsafe attribute "scenario" of "QuizForm".
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\QuizController.php (114)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php (13)
+2018/01/12 10:43:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "js/jquery.js'"。' in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('js/jquery.js'')
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/newQuiz/Quiz/quiz/js/jquery.js'
+HTTP_REFERER=http://127.0.0.1/newQuiz/Quiz/quiz/index.php/quiz/edit?index=23
+---
+2018/01/12 10:43:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "js/jquery.js'"。' in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('js/jquery.js'')
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/newQuiz/Quiz/quiz/js/jquery.js'
+HTTP_REFERER=http://127.0.0.1/newQuiz/Quiz/quiz/index.php/quiz/edit?index=23
+---
+2018/01/12 10:43:46 [warning] [application] Failed to set unsafe attribute "scenario" of "QuizForm".
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\QuizController.php (114)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php (13)
+2018/01/12 10:43:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "js/jquery.js'"。' in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('js/jquery.js'')
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/newQuiz/Quiz/quiz/js/jquery.js'
+HTTP_REFERER=http://127.0.0.1/newQuiz/Quiz/quiz/index.php/quiz/edit?index=23
+---
+2018/01/12 10:43:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "js/jquery.js'"。' in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('js/jquery.js'')
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/newQuiz/Quiz/quiz/js/jquery.js'
+HTTP_REFERER=http://127.0.0.1/newQuiz/Quiz/quiz/index.php/quiz/edit?index=23
+---
+2018/01/12 10:45:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "js/jquery.js'"。' in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('js/jquery.js'')
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/newQuiz/Quiz/quiz/js/jquery.js'
+HTTP_REFERER=http://127.0.0.1/newQuiz/Quiz/quiz/index.php/quiz/edit?index=23
+---
+2018/01/12 10:45:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "js/jquery.js'"。' in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('js/jquery.js'')
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/newQuiz/Quiz/quiz/js/jquery.js'
+HTTP_REFERER=http://127.0.0.1/newQuiz/Quiz/quiz/index.php/quiz/edit?index=23
+---
+2018/01/12 10:45:42 [warning] [application] Failed to set unsafe attribute "scenario" of "QuizForm".
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\QuizController.php (114)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php (13)
+2018/01/12 10:45:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "js/jquery.js'"。' in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('js/jquery.js'')
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/newQuiz/Quiz/quiz/js/jquery.js'
+HTTP_REFERER=http://127.0.0.1/newQuiz/Quiz/quiz/index.php/quiz/edit?index=23
+---
+2018/01/12 10:46:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "js/jquery.js'"。' in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('js/jquery.js'')
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/newQuiz/Quiz/quiz/js/jquery.js'
+HTTP_REFERER=http://127.0.0.1/newQuiz/Quiz/quiz/index.php/quiz/edit?index=23
+---
+2018/01/12 10:47:33 [warning] [application] Failed to set unsafe attribute "scenario" of "QuizForm".
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\QuizController.php (114)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php (13)
+2018/01/12 10:47:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "js/jquery.js'"。' in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('js/jquery.js'')
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/newQuiz/Quiz/quiz/js/jquery.js'
+HTTP_REFERER=http://127.0.0.1/newQuiz/Quiz/quiz/index.php/quiz/edit?index=23
+---
+2018/01/12 10:47:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "js/jquery.js'"。' in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('js/jquery.js'')
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/newQuiz/Quiz/quiz/js/jquery.js'
+HTTP_REFERER=http://127.0.0.1/newQuiz/Quiz/quiz/index.php/quiz/edit?index=23
+---
+2018/01/12 10:47:52 [warning] [application] Failed to set unsafe attribute "scenario" of "QuizForm".
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\QuizController.php (114)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php (13)
+2018/01/12 10:47:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "js/jquery.js'"。' in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('js/jquery.js'')
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/newQuiz/Quiz/quiz/js/jquery.js'
+HTTP_REFERER=http://127.0.0.1/newQuiz/Quiz/quiz/index.php/quiz/edit?index=23
+---
+2018/01/12 10:49:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "js/jquery.js'"。' in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('js/jquery.js'')
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/newQuiz/Quiz/quiz/js/jquery.js'
+HTTP_REFERER=http://127.0.0.1/newQuiz/Quiz/quiz/index.php/quiz/edit?index=23
+---
+2018/01/12 10:49:53 [warning] [application] Failed to set unsafe attribute "scenario" of "QuizForm".
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\QuizController.php (114)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php (13)
+2018/01/12 10:49:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "js/jquery.js'"。' in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('js/jquery.js'')
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/newQuiz/Quiz/quiz/js/jquery.js'
+HTTP_REFERER=http://127.0.0.1/newQuiz/Quiz/quiz/index.php/quiz/edit?index=23
+---
+2018/01/12 10:50:28 [warning] [application] Failed to set unsafe attribute "scenario" of "QuizForm".
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\QuizController.php (114)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php (13)
+2018/01/12 10:50:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "js/jquery.js'"。' in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('js/jquery.js'')
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/newQuiz/Quiz/quiz/js/jquery.js'
+HTTP_REFERER=http://127.0.0.1/newQuiz/Quiz/quiz/index.php/quiz/edit?index=23
+---
+2018/01/12 10:51:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "js/jquery.js'"。' in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('js/jquery.js'')
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/newQuiz/Quiz/quiz/js/jquery.js'
+HTTP_REFERER=http://127.0.0.1/newQuiz/Quiz/quiz/index.php/quiz/edit?index=23
+---
+2018/01/12 10:51:14 [warning] [application] Failed to set unsafe attribute "scenario" of "QuizForm".
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\QuizController.php (114)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php (13)
+2018/01/12 10:51:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "js/jquery.js'"。' in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('js/jquery.js'')
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/newQuiz/Quiz/quiz/js/jquery.js'
+HTTP_REFERER=http://127.0.0.1/newQuiz/Quiz/quiz/index.php/quiz/edit?index=23
+---
+2018/01/12 10:52:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "js/jquery.js'"。' in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('js/jquery.js'')
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/newQuiz/Quiz/quiz/js/jquery.js'
+HTTP_REFERER=http://127.0.0.1/newQuiz/Quiz/quiz/index.php/quiz/edit?index=23
+---
+2018/01/12 10:52:12 [warning] [application] Failed to set unsafe attribute "scenario" of "QuizForm".
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\QuizController.php (114)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php (13)
+2018/01/12 10:52:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "js/jquery.js'"。' in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('js/jquery.js'')
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/newQuiz/Quiz/quiz/js/jquery.js'
+HTTP_REFERER=http://127.0.0.1/newQuiz/Quiz/quiz/index.php/quiz/edit?index=23
+---
+2018/01/12 10:54:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "js/jquery.js'"。' in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('js/jquery.js'')
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/newQuiz/Quiz/quiz/js/jquery.js'
+HTTP_REFERER=http://127.0.0.1/newQuiz/Quiz/quiz/index.php/quiz/edit?index=23
+---
+2018/01/12 10:54:31 [warning] [application] Failed to set unsafe attribute "scenario" of "QuizForm".
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\QuizController.php (114)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php (13)
+2018/01/12 10:54:32 [error] [php] Undefined index: count_questions (D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\models\QuizForm.php:112)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\actions\CInlineAction.php(50): QuizController->actionSave()
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CController.php(287): QuizController->runAction()
+#3 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CController.php(266): QuizController->runActionWithFilters()
+#4 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(283): QuizController->run()
+#5 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#6 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/newQuiz/Quiz/quiz/index.php/quiz/save
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\models\QuizForm.php (112)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\models\QuizForm.php (88)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\QuizController.php (116)
+2018/01/12 10:54:42 [warning] [application] Failed to set unsafe attribute "scenario" of "QuizForm".
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\QuizController.php (114)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php (13)
+2018/01/12 10:54:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "js/jquery.js'"。' in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('js/jquery.js'')
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/newQuiz/Quiz/quiz/js/jquery.js'
+HTTP_REFERER=http://127.0.0.1/newQuiz/Quiz/quiz/index.php/quiz/edit?index=23
+---
+2018/01/12 10:55:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "js/jquery.js'"。' in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('js/jquery.js'')
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/newQuiz/Quiz/quiz/js/jquery.js'
+HTTP_REFERER=http://127.0.0.1/newQuiz/Quiz/quiz/index.php/quiz/edit?index=23
+---
+2018/01/12 10:55:17 [warning] [application] Failed to set unsafe attribute "scenario" of "QuizForm".
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\QuizController.php (114)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php (13)
+2018/01/12 10:55:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "js/jquery.js'"。' in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('js/jquery.js'')
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/newQuiz/Quiz/quiz/js/jquery.js'
+HTTP_REFERER=http://127.0.0.1/newQuiz/Quiz/quiz/index.php/quiz/edit?index=23
+---
+2018/01/12 11:00:10 [warning] [application] Failed to set unsafe attribute "scenario" of "QuizForm".
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\QuizController.php (112)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php (13)
+2018/01/12 11:00:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "js/jquery.js'"。' in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('js/jquery.js'')
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/newQuiz/Quiz/quiz/js/jquery.js'
+HTTP_REFERER=http://127.0.0.1/newQuiz/Quiz/quiz/index.php/quiz/edit?index=23
+---
+2018/01/12 11:04:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "js/jquery.js'"。' in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('js/jquery.js'')
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/newQuiz/Quiz/quiz/js/jquery.js'
+HTTP_REFERER=http://127.0.0.1/newQuiz/Quiz/quiz/index.php/quiz/edit?index=23
+---
+2018/01/12 11:08:32 [warning] [application] Failed to set unsafe attribute "scenario" of "QuizForm".
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\QuizController.php (110)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php (13)
+2018/01/12 11:08:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "js/jquery.js'"。' in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('js/jquery.js'')
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/newQuiz/Quiz/quiz/js/jquery.js'
+HTTP_REFERER=http://127.0.0.1/newQuiz/Quiz/quiz/index.php/quiz/edit?index=23
+---
+2018/01/12 11:08:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "js/jquery.js'"。' in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('js/jquery.js'')
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/newQuiz/Quiz/quiz/js/jquery.js'
+HTTP_REFERER=http://127.0.0.1/newQuiz/Quiz/quiz/index.php/quiz/edit?index=23
+---
+2018/01/12 11:08:49 [warning] [application] Failed to set unsafe attribute "scenario" of "QuizForm".
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\QuizController.php (110)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php (13)
+2018/01/12 11:08:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "js/jquery.js'"。' in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('js/jquery.js'')
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/newQuiz/Quiz/quiz/js/jquery.js'
+HTTP_REFERER=http://127.0.0.1/newQuiz/Quiz/quiz/index.php/quiz/edit?index=23
+---
+2018/01/12 11:09:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "js/jquery.js'"。' in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('js/jquery.js'')
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/newQuiz/Quiz/quiz/js/jquery.js'
+HTTP_REFERER=http://127.0.0.1/newQuiz/Quiz/quiz/index.php/quiz/edit?index=23
+---
+2018/01/12 11:09:09 [warning] [application] Failed to set unsafe attribute "scenario" of "QuizForm".
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\QuizController.php (110)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php (13)
+2018/01/12 11:09:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "js/jquery.js'"。' in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('js/jquery.js'')
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/newQuiz/Quiz/quiz/js/jquery.js'
+HTTP_REFERER=http://127.0.0.1/newQuiz/Quiz/quiz/index.php/quiz/edit?index=23
+---
+2018/01/12 11:09:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "js/jquery.js'"。' in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('js/jquery.js'')
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/newQuiz/Quiz/quiz/js/jquery.js'
+HTTP_REFERER=http://127.0.0.1/newQuiz/Quiz/quiz/index.php/quiz/edit?index=23
+---
+2018/01/12 11:10:17 [warning] [application] Failed to set unsafe attribute "scenario" of "QuizForm".
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\QuizController.php (110)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php (13)
+2018/01/12 11:10:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "js/jquery.js'"。' in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('js/jquery.js'')
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/newQuiz/Quiz/quiz/js/jquery.js'
+HTTP_REFERER=http://127.0.0.1/newQuiz/Quiz/quiz/index.php/quiz/edit?index=23
+---
+2018/01/12 11:19:38 [error] [php] Undefined index: quiz_end_dt (D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\views\testhistory\_listdtl.php:20)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\extensions\layout\ListPageWidget.php(226): ListPageWidget->renderFile()
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\extensions\layout\ListPageWidget.php(40): ListPageWidget->render()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CBaseController.php(174): ListPageWidget->run()
+#3 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\views\testhistory\index.php(51): TesthistoryController->widget()
+#4 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CBaseController.php(127): require()
+#5 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CBaseController.php(96): TesthistoryController->renderInternal()
+#6 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CController.php(870): TesthistoryController->renderFile()
+#7 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CController.php(783): TesthistoryController->renderPartial()
+#8 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\TesthistoryController.php(28): TesthistoryController->render()
+#9 unknown(0): TesthistoryController->actionIndex()
+#10 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#11 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#12 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#13 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CController.php(287): TesthistoryController->runAction()
+#14 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CController.php(266): TesthistoryController->runActionWithFilters()
+#15 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(283): TesthistoryController->run()
+#16 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#17 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/newQuiz/Quiz/quiz/index.php/testhistory/index
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\views\testhistory\_listdtl.php (20)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\extensions\layout\ListPageWidget.php (226)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\extensions\layout\ListPageWidget.php (40)
+2018/01/12 11:20:42 [error] [php] Undefined index: quiz_end_dt (D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\views\testhistory\_listdtl.php:24)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\extensions\layout\ListPageWidget.php(226): ListPageWidget->renderFile()
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\extensions\layout\ListPageWidget.php(40): ListPageWidget->render()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CBaseController.php(174): ListPageWidget->run()
+#3 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\views\testhistory\index.php(51): TesthistoryController->widget()
+#4 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CBaseController.php(127): require()
+#5 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CBaseController.php(96): TesthistoryController->renderInternal()
+#6 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CController.php(870): TesthistoryController->renderFile()
+#7 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CController.php(783): TesthistoryController->renderPartial()
+#8 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\TesthistoryController.php(28): TesthistoryController->render()
+#9 unknown(0): TesthistoryController->actionIndex()
+#10 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#11 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#12 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#13 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CController.php(287): TesthistoryController->runAction()
+#14 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CController.php(266): TesthistoryController->runActionWithFilters()
+#15 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(283): TesthistoryController->run()
+#16 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#17 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/newQuiz/Quiz/quiz/index.php/testhistory/index
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\views\testhistory\_listdtl.php (24)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\extensions\layout\ListPageWidget.php (226)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\extensions\layout\ListPageWidget.php (40)
+2018/01/12 11:28:14 [error] [php] Undefined index: quiz_exams_id (D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\components\Quiz.php:154)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CBaseController.php(96): TeststartController->renderInternal()
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CController.php(870): TeststartController->renderFile()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CController.php(783): TeststartController->renderPartial()
+#3 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\TeststartController.php(30): TeststartController->render()
+#4 unknown(0): TeststartController->actionIndex()
+#5 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#6 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#7 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#8 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CController.php(287): TeststartController->runAction()
+#9 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CController.php(266): TeststartController->runActionWithFilters()
+#10 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(283): TeststartController->run()
+#11 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#12 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/newQuiz/Quiz/quiz/index.php/teststart/index
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\components\Quiz.php (154)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\views\teststart\form.php (60)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\TeststartController.php (30)
+2018/01/12 11:30:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "js/jquery.js'"。' in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('js/jquery.js'')
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/newQuiz/Quiz/quiz/js/jquery.js'
+HTTP_REFERER=http://127.0.0.1/newQuiz/Quiz/quiz/index.php/quiz/new
+---
+2018/01/12 11:36:50 [error] [php] Undefined index: quiz_exams_id (D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\components\Quiz.php:154)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CBaseController.php(96): TeststartController->renderInternal()
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CController.php(870): TeststartController->renderFile()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CController.php(783): TeststartController->renderPartial()
+#3 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\TeststartController.php(30): TeststartController->render()
+#4 unknown(0): TeststartController->actionIndex()
+#5 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#6 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#7 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#8 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CController.php(287): TeststartController->runAction()
+#9 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CController.php(266): TeststartController->runActionWithFilters()
+#10 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(283): TeststartController->run()
+#11 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#12 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/newQuiz/Quiz/quiz/index.php/teststart/index
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\components\Quiz.php (154)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\views\teststart\form.php (60)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\TeststartController.php (30)
+2018/01/12 11:41:32 [error] [php] Undefined index: quiz_exams_id (D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\components\Quiz.php:154)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CBaseController.php(96): TeststartController->renderInternal()
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CController.php(870): TeststartController->renderFile()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CController.php(783): TeststartController->renderPartial()
+#3 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\TeststartController.php(30): TeststartController->render()
+#4 unknown(0): TeststartController->actionIndex()
+#5 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#6 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#7 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#8 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CController.php(287): TeststartController->runAction()
+#9 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CController.php(266): TeststartController->runActionWithFilters()
+#10 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(283): TeststartController->run()
+#11 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#12 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/newQuiz/Quiz/quiz/index.php/teststart/index
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\components\Quiz.php (154)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\views\teststart\form.php (60)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\TeststartController.php (30)
+2018/01/12 11:42:25 [error] [php] Undefined index: quiz_end_dt (D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\components\Quiz.php:158)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CBaseController.php(96): TeststartController->renderInternal()
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CController.php(870): TeststartController->renderFile()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CController.php(783): TeststartController->renderPartial()
+#3 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\TeststartController.php(30): TeststartController->render()
+#4 unknown(0): TeststartController->actionIndex()
+#5 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#6 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#7 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#8 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CController.php(287): TeststartController->runAction()
+#9 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CController.php(266): TeststartController->runActionWithFilters()
+#10 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(283): TeststartController->run()
+#11 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#12 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/newQuiz/Quiz/quiz/index.php/teststart/index
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\components\Quiz.php (158)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\views\teststart\form.php (60)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\TeststartController.php (30)
