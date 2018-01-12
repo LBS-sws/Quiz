@@ -83,7 +83,7 @@ if($this->_directory === null){
 $this->_directory = Yii::getPathOfAlias('webroot').DIRECTORY_SEPARATOR.'upload';
 }
 if($this->allowSize === null){
-$this->allowSize = '2m';
+$this->allowSize = '5m';
 }
 if($this->allowExtensions === null){
 $this->allowExtensions = array('csv');

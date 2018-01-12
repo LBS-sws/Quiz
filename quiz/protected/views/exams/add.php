@@ -13,13 +13,6 @@ $this->pageTitle=Yii::app()->name . ' - Customer Type Form';
     <h1>
         <strong><?php echo Yii::t('quiz','Questions DataOrder'); ?></strong>
     </h1>
-    <!--
-        <ol class="breadcrumb">
-            <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-            <li><a href="#">Layout</a></li>
-            <li class="active">Top Navigation</li>
-        </ol>
-    -->
 </section>
 
 <section class="content">

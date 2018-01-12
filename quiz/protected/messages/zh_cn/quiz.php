@@ -74,4 +74,5 @@ return array(
     'Field length is not 5!'=>'字段个数应该为5!',
     'File data uploads failed,because some field is empty!please confirm your file‘s encoding format is utf-8!'=>'文件数据上传失败,原因:所有字段值不能为空,请查看文件编码是否为utf-8!',
     'Submit data file'=>'提交csv数据文件',
+    'The value of the date should be empty!'=>'日期应当为空',
 );

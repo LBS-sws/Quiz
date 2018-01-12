@@ -1,5 +1,5 @@
 <?php
-
+header("Content-type: text/html; charset=utf-8");
 class ExamsController extends Controller
 {
     public function actionIndex($pageNum=0)
@@ -18,22 +18,20 @@ class ExamsController extends Controller
         $model->retrieveDataByPage($model->pageNum);
         $this->render('index',array('model'=>$model));
     }
-
     Public function actionSaveAdd(){
         if (isset($_POST['ExamsAdd'])) {
             $model = new ExamsAdd($_POST['ExamsAdd']['scenario']);
             $model->attributes = $_POST['ExamsAdd'];
-            if ($model->validate()) {
+        /*    if ($model->validate()) {*/
                 $model->saveData();
                 //$model->scenario = 'edit';
                 Dialog::message(Yii::t('dialog','Information'), Yii::t('dialog','Save Done'));
                 $this->redirect(Yii::app()->createUrl('exams/index',array('index'=>$model->id)));
-            } else {
-
+           /* } else {
                 $message = CHtml::errorSummary($model);
                 Dialog::message(Yii::t('dialog','Validation Message'), $message);
                 $this->render('index',array('model'=>$model,));
-            }
+            }*/
         }
     }
 

@@ -212,7 +212,6 @@ $this->pageTitle=Yii::app()->name . ' - Customer Type Form';
                    ); ?>
                 </div>
             </div>
-
         </div>
     </div>
 </section>

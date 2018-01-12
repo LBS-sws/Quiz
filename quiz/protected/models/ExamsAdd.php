@@ -14,9 +14,15 @@ class ExamsAdd extends CFormModel
     Public $selectValue=2;
     Public $arrData=array();
     Public $newData=array();
-
     public $log_dt;
-
+ /*   Public $totalRow;
+    Public $pageNum;
+    Public $noOfItem;
+    Public $searchField;
+    Public $searchValue;
+    Public $orderField;
+    Public $attr;
+    Public $orderType;*/
     //Public $scenario;
     /**
      * Declares customized attribute labels.
@@ -81,6 +87,7 @@ class ExamsAdd extends CFormModel
 
     public function saveData()
     {
+
         $connection = Yii::app()->db;
         $transaction=$connection->beginTransaction();
         try {

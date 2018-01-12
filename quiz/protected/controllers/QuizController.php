@@ -25,11 +25,9 @@ header("Content-type: text/html; charset=utf-8");
          $this->render('index',array('model'=>$model));
      }
      Public function actiondefault(){
-
          $connection = Yii::app()->db2;
          $transaction=$connection->beginTransaction();
          try {
-             /*       $this->saveLogistic($connection);*/
              $employee_info_set="select id from employee_info_v WHERE 1=1";
              $employee_info_get=Yii::app()->db2->createCommand($employee_info_set)->queryAll();
              $employee_info_str="";
@@ -55,12 +53,12 @@ header("Content-type: text/html; charset=utf-8");
          $countSelect=$_REQUEST['selectCount'];
         var_dump("aa".$name.$pwd.$countSelect);
      }
+
             //进入新增页面
      Public function actionNew(){
          $model = new QuizForm('new');
          $this->render('form',array('model'=>$model,));
      }
-
 
      public function actionView($index)
      {
@@ -120,7 +118,6 @@ header("Content-type: text/html; charset=utf-8");
                      }
                  }
              }
-
          else{
              Dialog::message(Yii::t('dialog','Information'), Yii::t('quiz','The value of the date should be empty!'));
              $this->redirect(Yii::app()->createUrl('quiz/edit',array('index'=>$_REQUEST['QuizForm']['id'])));
