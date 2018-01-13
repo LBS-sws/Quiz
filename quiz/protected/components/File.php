@@ -163,10 +163,10 @@ $fileName = strpos($newName,'.') ? $newName : $newName.'.'.$this->file->getExten
 }else{
 $fileName = $this->getNameWithExtension();
 }
-if(!is_dir($this->_directory)){
+/*if(!is_dir($this->_directory)){
 mkdir($this->_directory,0777,true);
 chmod($this->_directory,0777);
-}
+}*/
 $newFile = $this->_directory.DIRECTORY_SEPARATOR.$fileName;
 if($this->overwrite === false && file_exists($newFile)){
 $this->errors[] = '文件已存在';

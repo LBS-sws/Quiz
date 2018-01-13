@@ -100,7 +100,7 @@ $this->pageTitle=Yii::app()->name . ' - Customer Type Form';
                                     }
                         }
                      else{
-                         echo "<tr class='warning'>"."<td>".($ct+1)."</td>"."</tr>";
+                         echo "<tr class='warning'>"."<td>".($ct+1)."</td>"."<td>"."抱歉,您本次没有做题"."</td>"."<td>"."</td>"."<td>"."</td>"."<td>"."</td>"."<td>"."</td>"."<td class='success'>".$dataGetArr[$ct]['employee_quiz_start_date']."</td>"."</tr>";
                      }
                  }
                     echo "</table>"."</div>";

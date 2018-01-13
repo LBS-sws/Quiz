@@ -70,7 +70,6 @@ header("Content-type: text/html; charset=utf-8");
          }
      }
 
-
      public function actionDelete()
      {
          $model = new QuizForm('delete');
@@ -88,9 +87,7 @@ header("Content-type: text/html; charset=utf-8");
 //		$this->actionIndex();
      }
 
-
      Public function actionSave(){
-
          $_REQUEST['QuizForm']['quiz_exams_id']=$_REQUEST['quiz_exams_id'];
          $dateEnd=strtotime($_REQUEST['QuizForm']['quiz_end_dt']);  //开始时间
          //1516204800  ["quiz_start_dt"]=> string(10) "2018/01/18"     1516723200 ["quiz_end_dt"]=> string(10) "2018/01/24"

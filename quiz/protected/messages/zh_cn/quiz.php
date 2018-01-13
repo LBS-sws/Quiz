@@ -6,7 +6,7 @@
  * Time: 12:01
  */
 return array(
-    'quiz_date'=>'描述',
+    'quiz_date'=>'备注',
     'quiz_name'=>'名字',
     'quiz List'=>'测验总结单',
     'quiz_exams_id'=>'测验单类型',

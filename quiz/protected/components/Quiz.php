@@ -35,9 +35,21 @@ Class Quiz{
      * 员工的历史查询页面
      */
     Public static function historyShow($employee_id,$quiz_id){
-            $middle_employee_quiz_info_set="select * from employee_correct_rate WHERE quiz_employee_id=$employee_id AND employee_correct_rate_info_id=$quiz_id";
-            $middle_employee_quiz_info_get=Yii::app()->db2->createCommand($middle_employee_quiz_info_set)->queryAll();
-            return $middle_employee_quiz_info_get;
+        $result=array();
+        if(isset($quiz_id)&&isset($employee_id)){
+            if(!empty($quiz_id)&&!empty($employee_id)) {
+                $middle_employee_quiz_info_set = "select * from employee_correct_rate WHERE quiz_employee_id=$employee_id AND employee_correct_rate_info_id='$quiz_id'";
+                $middle_employee_quiz_info_get = Yii::app()->db2->createCommand($middle_employee_quiz_info_set)->queryAll();
+                $result=$middle_employee_quiz_info_get;
+                return $result;
+            }
+            else{
+                return $result;
+            }
+        }
+        else{
+            return $result;
+        }
     }
 /*
  * add info_id
@@ -92,7 +104,6 @@ Class Quiz{
      * 答错详情数组返回
      */
     Public static function getWrongDetail($wrongArr){
-        $city=Yii::app()->user->city_allow();
         $detailAnswer=explode('-',$wrongArr);
         $outPutData=array();
         if(!empty($wrongArr)) {
@@ -100,7 +111,7 @@ Class Quiz{
                 $temporaryArr = array();
                 $temporaryArr = explode('*', $detailAnswer[$k]);
                 $temporaryStr = $temporaryArr[0];
-                $wrongDataSet = "select * from test_exams WHERE id=$temporaryStr AND city_privileges IN ($city)";
+                $wrongDataSet = "select * from test_exams WHERE id=$temporaryStr";
                 $wrongDataGet = Yii::app()->db2->createCommand($wrongDataSet)->queryAll();
                 if (count($wrongDataGet) > 0) {
                     $outPutData[$k]['id'] = $temporaryStr;
@@ -130,7 +141,6 @@ Class Quiz{
      * ②测验单的数据可能还有一种情况:当登录的员工没有被任何测验单授权测验时
      */
     Public static function QuestionsSelect(){
-        $city = Yii::app()->user->city_allow();
         $tableFuss=Yii::app()->params['jsonTableName'];
         $sql="select id,quiz_name,quiz_start_dt,quiz_employee_id,quiz_exams_id,quiz_end_dt from blog$tableFuss.quiz WHERE 1=1 ";
         $select_quiz_result = Yii::app()->db2->createCommand($sql)->queryAll();
@@ -236,7 +246,6 @@ Class Quiz{
         $wrong_exams_id_str=rtrim($wrong_exams_id_str,',');//该员工的错题id的所有集合
         $finalResult=array();
         if(!empty($employee_id)&&!empty($quiz_id)){
-
             if(count($Wrong_Employee_Value_Get)>1){  //错题大于一
                 $wrong_exams_count=count($Wrong_Employee_Value_Get);
                 $split_exams_count=floor($wrong_exams_count/2);
@@ -254,7 +263,6 @@ Class Quiz{
                     $finalResult=$finalTestExamsStrResultGet;
                 }
                 else{         //错题一半的向下取整小于该次测验单数量=>由错题和题库一起提供 即为错题的计算结果数量-本次测验的题目数量<-1(错题取值在1到题目数-1的开区间内)
-
                     $test_exams_id_set ="SELECT id FROM test_exams WHERE id >= (SELECT floor(RAND() * (SELECT MAX(id) FROM test_exams))) AND id NOT IN ($wrong_exams_id_str) order by rand() LIMIT $getTheCountValue";
                     $test_exams_id_get = Yii::app()->db2->createCommand($test_exams_id_set)->queryAll(); //随机且不包含错题的test_exam=>id合集
                     //开始获取非错题的题目id结果集
@@ -300,7 +308,7 @@ Class Quiz{
         }
         else {
             $finalResult=array();
-            $finalResult[0]=array('id'=>'0','test_exams_contents'=>'亲,您的参数神秘消失了!亲及时通知技术人员!','test_exams_answer_right'=>'正解A','test_exams_answer_faultf'=>'错解B','test_exams_answer_faults'=>'错解C','test_exams_answer_faultt'=>'错解D');
+            $finalResult[0]=array('id'=>'0','test_exams_contents'=>'亲,您的参数神秘消失了!请及时通知技术人员!','test_exams_answer_right'=>'正解A','test_exams_answer_faultf'=>'错解B','test_exams_answer_faults'=>'错解C','test_exams_answer_faultt'=>'错解D');
         }
         return $finalResult;
     }
