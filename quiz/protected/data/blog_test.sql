@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50553
 File Encoding         : 65001
 
-Date: 2018-01-12 11:50:03
+Date: 2018-01-13 17:10:43
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -32,166 +32,12 @@ CREATE TABLE `employee_correct_rate` (
   `employee_correct_rate_date` varchar(20) DEFAULT NULL COMMENT '每次测验的时间',
   `employee_quiz_start_date` varchar(50) DEFAULT NULL COMMENT '开始的时间',
   PRIMARY KEY (`employee_correct_rate_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=156 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=163 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of employee_correct_rate
 -- ----------------------------
-INSERT INTO `employee_correct_rate` VALUES ('1', '5', '27', null, 'HK', null, null, null, null, null, null);
-INSERT INTO `employee_correct_rate` VALUES ('2', '1', '2', null, 'HK', null, null, null, null, null, null);
-INSERT INTO `employee_correct_rate` VALUES ('3', '1', '2', null, 'HK', null, null, null, null, null, null);
-INSERT INTO `employee_correct_rate` VALUES ('4', '1', '2', null, 'HK', null, null, null, null, null, null);
-INSERT INTO `employee_correct_rate` VALUES ('5', '1', '2', null, 'HK', null, null, null, null, null, null);
-INSERT INTO `employee_correct_rate` VALUES ('6', '1', '2', null, 'HK', null, null, null, null, null, null);
-INSERT INTO `employee_correct_rate` VALUES ('7', '1', '2', null, 'HK', null, null, null, null, null, null);
-INSERT INTO `employee_correct_rate` VALUES ('8', '1', '2', null, 'HK', null, null, null, null, null, null);
-INSERT INTO `employee_correct_rate` VALUES ('9', '30', '3', null, 'HK', null, null, null, null, null, null);
-INSERT INTO `employee_correct_rate` VALUES ('10', '31', '3', null, 'HK', null, null, null, null, null, null);
-INSERT INTO `employee_correct_rate` VALUES ('11', '28', '0', null, 'HK', null, null, null, null, null, null);
-INSERT INTO `employee_correct_rate` VALUES ('12', '30', '3', null, 'HK', null, null, null, null, null, null);
-INSERT INTO `employee_correct_rate` VALUES ('13', '27', '6', null, 'HK', null, null, null, null, null, null);
-INSERT INTO `employee_correct_rate` VALUES ('14', '26', '4', null, 'HK', null, null, null, null, null, null);
-INSERT INTO `employee_correct_rate` VALUES ('15', '27', '6', null, 'HK', null, null, null, null, null, null);
-INSERT INTO `employee_correct_rate` VALUES ('16', '26', '2', null, 'HK', null, null, null, null, null, null);
-INSERT INTO `employee_correct_rate` VALUES ('17', '38', '2', null, 'HK', null, null, null, null, null, null);
-INSERT INTO `employee_correct_rate` VALUES ('18', '32', '3', null, 'HK', null, null, null, null, null, null);
-INSERT INTO `employee_correct_rate` VALUES ('19', '32', '3', null, 'HK', null, null, null, null, null, null);
-INSERT INTO `employee_correct_rate` VALUES ('20', '23', '1', null, 'HK', null, null, null, null, null, null);
-INSERT INTO `employee_correct_rate` VALUES ('21', '23', '1', null, 'HK', null, null, null, null, null, null);
-INSERT INTO `employee_correct_rate` VALUES ('22', '23', '1', null, 'HK', null, null, null, null, null, null);
-INSERT INTO `employee_correct_rate` VALUES ('23', '23', '1', null, 'HK', null, null, null, null, null, null);
-INSERT INTO `employee_correct_rate` VALUES ('24', '38', '6', null, 'HK', null, null, null, null, null, null);
-INSERT INTO `employee_correct_rate` VALUES ('25', '23', '1', null, 'HK', null, null, null, null, null, null);
-INSERT INTO `employee_correct_rate` VALUES ('26', '23', '1', null, 'HK', null, null, null, null, null, null);
-INSERT INTO `employee_correct_rate` VALUES ('27', '23', '1', null, 'HK', null, null, null, null, null, null);
-INSERT INTO `employee_correct_rate` VALUES ('28', '29', '2', null, 'HK', null, null, null, null, null, null);
-INSERT INTO `employee_correct_rate` VALUES ('29', '23', '1', null, 'HK', null, null, null, null, null, null);
-INSERT INTO `employee_correct_rate` VALUES ('30', '29', '2', null, 'HK', null, null, null, null, null, null);
-INSERT INTO `employee_correct_rate` VALUES ('31', '38', '1', null, 'HK', null, null, null, null, null, null);
-INSERT INTO `employee_correct_rate` VALUES ('32', '38', '6', null, 'HK', null, null, null, null, null, null);
-INSERT INTO `employee_correct_rate` VALUES ('33', '32', '3', null, 'HK', null, null, null, null, null, null);
-INSERT INTO `employee_correct_rate` VALUES ('34', '38', '6', null, 'HK', null, null, null, null, null, null);
-INSERT INTO `employee_correct_rate` VALUES ('35', '38', '6', null, 'HK', null, null, null, null, null, null);
-INSERT INTO `employee_correct_rate` VALUES ('36', '38', '6', null, 'HK', null, null, null, null, null, null);
-INSERT INTO `employee_correct_rate` VALUES ('37', '30', '2', null, 'HK', null, null, null, null, null, null);
-INSERT INTO `employee_correct_rate` VALUES ('38', '31', '5', null, 'HK', null, null, null, null, null, null);
-INSERT INTO `employee_correct_rate` VALUES ('39', '38', '2', null, 'HK', null, null, null, null, null, null);
-INSERT INTO `employee_correct_rate` VALUES ('40', '29', '5', null, 'HK', null, null, null, null, null, null);
-INSERT INTO `employee_correct_rate` VALUES ('41', '29', '5', null, 'HK', null, null, null, null, null, null);
-INSERT INTO `employee_correct_rate` VALUES ('42', '29', '5', null, 'HK', null, null, null, null, null, null);
-INSERT INTO `employee_correct_rate` VALUES ('43', '31', '2', null, 'HK', null, null, null, null, null, null);
-INSERT INTO `employee_correct_rate` VALUES ('44', '29', '2', null, 'HK', null, null, null, null, null, null);
-INSERT INTO `employee_correct_rate` VALUES ('45', '29', '2', null, 'HK', null, null, null, null, null, null);
-INSERT INTO `employee_correct_rate` VALUES ('46', '29', '2', null, 'HK', null, null, null, null, null, null);
-INSERT INTO `employee_correct_rate` VALUES ('47', '29', '2', null, 'HK', null, null, null, null, null, null);
-INSERT INTO `employee_correct_rate` VALUES ('48', '29', '2', null, 'HK', null, null, null, null, null, null);
-INSERT INTO `employee_correct_rate` VALUES ('49', '29', '2', null, 'HK', null, null, null, null, null, null);
-INSERT INTO `employee_correct_rate` VALUES ('50', '29', '2', null, 'HK', null, null, null, null, null, null);
-INSERT INTO `employee_correct_rate` VALUES ('51', '29', '2', null, 'HK', null, null, null, null, null, null);
-INSERT INTO `employee_correct_rate` VALUES ('52', '29', '2', null, 'HK', null, null, null, null, null, null);
-INSERT INTO `employee_correct_rate` VALUES ('53', '29', '2', null, 'HK', null, null, null, null, null, null);
-INSERT INTO `employee_correct_rate` VALUES ('54', '29', '2', null, 'HK', null, null, null, null, null, null);
-INSERT INTO `employee_correct_rate` VALUES ('55', '38', '2', null, 'HK', null, null, null, null, null, null);
-INSERT INTO `employee_correct_rate` VALUES ('56', '38', '6', null, 'HK', null, null, null, null, null, null);
-INSERT INTO `employee_correct_rate` VALUES ('57', '38', '6', null, 'HK', null, null, null, null, null, null);
-INSERT INTO `employee_correct_rate` VALUES ('58', '38', '6', null, 'HK', null, null, null, null, null, null);
-INSERT INTO `employee_correct_rate` VALUES ('59', '38', '6', null, 'HK', null, null, null, null, null, null);
-INSERT INTO `employee_correct_rate` VALUES ('60', '38', '6', null, 'HK', null, null, null, null, null, null);
-INSERT INTO `employee_correct_rate` VALUES ('61', '38', '6', null, 'HK', null, null, null, null, null, null);
-INSERT INTO `employee_correct_rate` VALUES ('62', '38', '6', null, 'HK', null, null, null, null, null, null);
-INSERT INTO `employee_correct_rate` VALUES ('63', '23', '6', null, 'HK', null, null, null, null, null, null);
-INSERT INTO `employee_correct_rate` VALUES ('64', '38', '6', '28.57', 'HK', '8-11-12-16-20-35-36', null, '7', '5', null, null);
-INSERT INTO `employee_correct_rate` VALUES ('65', '29', '3', '0', 'HK', '2-5-12-15', null, '4', '4', null, null);
-INSERT INTO `employee_correct_rate` VALUES ('66', '28', '2', null, 'HK', null, null, null, null, null, null);
-INSERT INTO `employee_correct_rate` VALUES ('67', '32', '5', '18.18', 'HK', '1-10-14-15-19-21-34-37-39-40-43', null, '11', '9', null, null);
-INSERT INTO `employee_correct_rate` VALUES ('68', '31', '3', '41.67', 'HK', '15-16-17-20-21-34-35-37-38-41-44-45', '16*test_exams_answer_faults-17*test_exams_answer_faultt-21*test_exams_answer_faultf-34*test_exams_an', '12', '7', null, null);
-INSERT INTO `employee_correct_rate` VALUES ('69', '30', '3', null, 'HK', null, null, null, null, null, null);
-INSERT INTO `employee_correct_rate` VALUES ('70', '27', '6', null, 'HK', null, null, null, null, null, null);
-INSERT INTO `employee_correct_rate` VALUES ('71', '30', '3', '46.67', 'HK', '16-17-21-34-37-41', '16*test_exams_answer_faults-17*test_exams_answer_faultt-21*test_exams_answer_faultf-34*test_exams_an', '15', '7', null, null);
-INSERT INTO `employee_correct_rate` VALUES ('72', '38', '2', '128.57', 'HK', '18-19-36-39-41-43', '18*test_exams_answer_faultt-19*test_exams_answer_faults-36*test_exams_answer_faultf-39*test_exams_an', '7', '9', null, null);
-INSERT INTO `employee_correct_rate` VALUES ('73', '38', '2', '71.43', 'HK', '5-14-18-19-34-35-36', '5*test_exams_answer_faultf-14*test_exams_answer_faults-18*test_exams_answer_faultt-34*test_exams_answer_faultf-35*test_exams_answer_faults-36*test_exams_answer_faultt', '7', '5', null, null);
-INSERT INTO `employee_correct_rate` VALUES ('74', '33', '3', '20', 'HK', '13-18-20-34-36-38-40-42-45-46', '13*test_exams_answer_faultt-18*test_exams_answer_faultf-20*test_exams_answer_faultf-34*test_exams_answer_faults-36*test_exams_answer_faults-38*test_exams_answer_faultf-42*test_exams_answer_faults-45*test_exams_answer_faults-46*test_exams_answer_faultf', '10', '8', null, null);
-INSERT INTO `employee_correct_rate` VALUES ('75', '28', '3', '13.33', 'HK', '6-12-15-17-18-20-34-35-39-40-41-43-44-47-48', '6*test_exams_answer_faults-12*test_exams_answer_faults-15*test_exams_answer_faultf-18*test_exams_answer_faultf-20*test_exams_answer_faultf-34*test_exams_answer_faultt-35*test_exams_answer_faultf-39*test_exams_answer_faultt-40*test_exams_answer_faults-41*test_exams_answer_faultt-43*test_exams_answer_faults-44*test_exams_answer_faults-47*test_exams_answer_faultt', '15', '13', null, null);
-INSERT INTO `employee_correct_rate` VALUES ('76', '28', '3', '13.33', 'HK', '6-12-15-18-20-34-35-39-40-41-43-50-51-52-53', '12*test_exams_answer_faults-15*test_exams_answer_faults-18*test_exams_answer_faultt-20*test_exams_answer_faultt-34*test_exams_answer_faultf-35*test_exams_answer_faultf-40*test_exams_answer_faultf-41*test_exams_answer_faultt-43*test_exams_answer_faults-50*test_exams_answer_faultt-51*test_exams_answer_faultt-52*test_exams_answer_faultf-53*test_exams_answer_faultt', '15', '13', null, null);
-INSERT INTO `employee_correct_rate` VALUES ('77', '28', '2', '40', 'HK', '2-19-20-21-36-37-38-39-40-43-44-46-47', '2*test_exams_answer_faults-21*test_exams_answer_faults-36*test_exams_answer_faults-37*test_exams_answer_faultt-38*test_exams_answer_faults-39*test_exams_answer_faults-40*test_exams_answer_faultt-43*test_exams_answer_faults-44*test_exams_answer_faultt', '15', '9', null, null);
-INSERT INTO `employee_correct_rate` VALUES ('78', '28', '2', '33.33', 'HK', '2-11-20-21-36-37-38-39-40-42-47-48-49-50-51', '2*test_exams_answer_faults-11*test_exams_answer_faultf-21*test_exams_answer_faultt-36*test_exams_answer_faultt-38*test_exams_answer_faults-39*test_exams_answer_faults-42*test_exams_answer_faultt-47*test_exams_answer_faultt-48*test_exams_answer_faultt-49*test_exams_answer_faultt', '15', '10', null, null);
-INSERT INTO `employee_correct_rate` VALUES ('79', '35', '2', '42.86', 'HK', '2-11-21-36-38-39-42', '2*test_exams_answer_faultt-11*test_exams_answer_faults-38*test_exams_answer_faultf-39*test_exams_answer_faults', '7', '4', null, null);
-INSERT INTO `employee_correct_rate` VALUES ('80', '34', '3', '37.5', 'HK', '12-15-18-34-35-41-43-51', '18*test_exams_answer_faults-34*test_exams_answer_faults-35*test_exams_answer_faults-41*test_exams_answer_faultf-43*test_exams_answer_faultf', '8', '5', null, null);
-INSERT INTO `employee_correct_rate` VALUES ('81', '28', '2', '', 'HK', null, null, null, null, null, null);
-INSERT INTO `employee_correct_rate` VALUES ('82', '28', '2', null, 'HK', null, null, null, null, null, null);
-INSERT INTO `employee_correct_rate` VALUES ('83', '28', '2', '26.67', 'HK', '2-11-20-21-36-38-39-42-45-46-47-48-50-51-52', '2*test_exams_answer_faultf-11*test_exams_answer_faultf-20*test_exams_answer_faultf-21*test_exams_answer_faultt-36*test_exams_answer_faults-39*test_exams_answer_faults-45*test_exams_answer_faultt-46*test_exams_answer_faultt-47*test_exams_answer_faultf-48*test_exams_answer_faultf-52*test_exams_answer_faultt', '15', '11', null, null);
-INSERT INTO `employee_correct_rate` VALUES ('84', '27', '6', '25', 'HK', '17-20-21-36-37-40-41-42-45-46-48-49', '17*test_exams_answer_faults-20*test_exams_answer_faults-21*test_exams_answer_faultt-36*test_exams_answer_faultt-40*test_exams_answer_faultt-41*test_exams_answer_faultf-42*test_exams_answer_faultt-45*test_exams_answer_faultt-46*test_exams_answer_faultt', '12', '9', null, null);
-INSERT INTO `employee_correct_rate` VALUES ('85', '27', '5', '33.33', 'HK', '17-19-20-35-36-37-42-43-44-45-46-47', '17*test_exams_answer_faultt-20*test_exams_answer_faultt-35*test_exams_answer_faultt-36*test_exams_answer_faults-42*test_exams_answer_faultt-43*test_exams_answer_faults-45*test_exams_answer_faults-46*test_exams_answer_faultt', '12', '8', '2017-12-30 15:52:50', null);
-INSERT INTO `employee_correct_rate` VALUES ('86', '32', '3', '9.09', 'HK', '12-15-18-20-34-35-40-43-50-51-52', '12*test_exams_answer_faultt-15*test_exams_answer_faultf-18*test_exams_answer_faultt-20*test_exams_answer_faultt-34*test_exams_answer_faultt-40*test_exams_answer_faultf-43*test_exams_answer_faults-50*test_exams_answer_faults-51*test_exams_answer_faultt-52*test_exams_answer_faults', '11', '10', '2017-12-30 16:14:24-', null);
-INSERT INTO `employee_correct_rate` VALUES ('87', '28', '3', '6.67', 'HK', '10-12-14-15-18-20-34-35-40-41-43-50-51-52-53', '10*test_exams_answer_faults-12*test_exams_answer_faultt-14*test_exams_answer_faultt-15*test_exams_answer_faults-18*test_exams_answer_faultt-20*test_exams_answer_faultt-34*test_exams_answer_faultt-35*test_exams_answer_faultt-40*test_exams_answer_faultf-41*test_exams_answer_faultt-50*test_exams_answer_faults-51*test_exams_answer_faultf-52*test_exams_answer_faultf-53*test_exams_answer_faultt', '15', '14', '58', null);
-INSERT INTO `employee_correct_rate` VALUES ('88', '27', '6', '41.67', 'HK', '12-15-17-18-36-37-39-40-41-43-44-47', '12*test_exams_answer_faultf-17*test_exams_answer_faults-37*test_exams_answer_faultt-40*test_exams_answer_faultf-43*test_exams_answer_faultt-44*test_exams_answer_faultt-47*test_exams_answer_faults', '12', '7', '29', null);
-INSERT INTO `employee_correct_rate` VALUES ('89', '27', '5', '16.67', 'HK', '12-13-17-18-20-21-34-35-36-38-39-40', '12*test_exams_answer_faultf-13*test_exams_answer_faultt-17*test_exams_answer_faults-18*test_exams_answer_faultf-21*test_exams_answer_faults-35*test_exams_answer_faultf-36*test_exams_answer_faultt-38*test_exams_answer_faults-39*test_exams_answer_faults-40*test_exams_answer_faultf', '12', '10', '13', null);
-INSERT INTO `employee_correct_rate` VALUES ('90', '29', '3', '75', 'HK', '10-12-15-18', '15*test_exams_answer_faults', '4', '1', '5', null);
-INSERT INTO `employee_correct_rate` VALUES ('91', '38', '2', '71.43', 'HK', '11-20-21-38-45-47-52', '21*test_exams_answer_faults-45*test_exams_answer_faultt', '7', '2', '2', null);
-INSERT INTO `employee_correct_rate` VALUES ('92', '29', '3', '0', 'HK', '10-12-14-15', '10*test_exams_answer_faults-12*test_exams_answer_faults-14*test_exams_answer_faultf-15*test_exams_answer_faults', '4', '4', '12', null);
-INSERT INTO `employee_correct_rate` VALUES ('93', '27', '5', null, 'HK', null, null, null, null, null, null);
-INSERT INTO `employee_correct_rate` VALUES ('94', '30', '2', '20', 'HK', '2-10-11-16-19-20-21-36-39-41-45-46-47-48-52', '2*test_exams_answer_faults-10*test_exams_answer_faults-11*test_exams_answer_faultt-19*test_exams_answer_faults-21*test_exams_answer_faultt-36*test_exams_answer_faultt-39*test_exams_answer_faults-41*test_exams_answer_faults-46*test_exams_answer_faults-47*test_exams_answer_faults-48*test_exams_answer_faultf-52*test_exams_answer_faults', '15', '12', '20', null);
-INSERT INTO `employee_correct_rate` VALUES ('95', '23', '1', '100', 'HK', '15', '', '1', '0', '20', null);
-INSERT INTO `employee_correct_rate` VALUES ('96', '23', '3', '100', 'HK', '10', '', '1', '0', '12', null);
-INSERT INTO `employee_correct_rate` VALUES ('97', '23', '1', '0', 'HK', '2', '2*test_exams_answer_faultt', '1', '1', '21', null);
-INSERT INTO `employee_correct_rate` VALUES ('98', '29', '7', '25', 'HK', '10-11-35-37-40-43-44-45', '10*test_exams_answer_faultt-11*test_exams_answer_faults-35*test_exams_answer_faultf-37*test_exams_answer_faults-40*test_exams_answer_faultf-43*test_exams_answer_faults', '8', '6', '12', null);
-INSERT INTO `employee_correct_rate` VALUES ('99', '29', '7', '37.5', 'HK', '10-19-35-37-38', '10*test_exams_answer_faultt-19*test_exams_answer_faultf-35*test_exams_answer_faults-37*test_exams_answer_faultf-38*test_exams_answer_faults', '8', '5', '1', null);
-INSERT INTO `employee_correct_rate` VALUES ('100', '29', '7', null, 'HK', null, null, null, null, null, null);
-INSERT INTO `employee_correct_rate` VALUES ('101', '29', '7', null, 'HK', null, null, null, null, null, null);
-INSERT INTO `employee_correct_rate` VALUES ('102', '29', '7', null, 'HK', null, null, null, null, null, null);
-INSERT INTO `employee_correct_rate` VALUES ('103', '29', '7', '62.5', 'HK', '10-12-16', '10*test_exams_answer_faultt-12*test_exams_answer_faultf-16*test_exams_answer_faultf', '8', '3', '5', null);
-INSERT INTO `employee_correct_rate` VALUES ('104', '29', '7', null, 'HK', null, null, null, null, null, null);
-INSERT INTO `employee_correct_rate` VALUES ('105', '29', '7', null, 'HK', null, null, null, null, null, null);
-INSERT INTO `employee_correct_rate` VALUES ('106', '29', '7', null, 'HK', null, null, null, null, null, null);
-INSERT INTO `employee_correct_rate` VALUES ('107', '29', '7', null, 'HK', null, null, null, null, null, null);
-INSERT INTO `employee_correct_rate` VALUES ('108', '29', '7', null, 'HK', null, null, null, null, null, null);
-INSERT INTO `employee_correct_rate` VALUES ('109', '28', '3', null, 'HK', null, null, null, null, null, null);
-INSERT INTO `employee_correct_rate` VALUES ('110', '29', '7', '62.5', 'HK', '10-12-16-17-19', '10*test_exams_answer_faults-12*test_exams_answer_faults-17*test_exams_answer_faultf', '8', '3', '8', null);
-INSERT INTO `employee_correct_rate` VALUES ('111', '29', '7', '25', 'HK', '8-10-12-16-17-18-19-35', '10*test_exams_answer_faultt-12*test_exams_answer_faultf-16*test_exams_answer_faultt-17*test_exams_answer_faultf-19*test_exams_answer_faults-35*test_exams_answer_faults', '8', '6', '14', null);
-INSERT INTO `employee_correct_rate` VALUES ('112', '28', '3', '20', 'HK', '10-12-15-18-19-20-34-35-40-41-43-50-51-52-53', '10*test_exams_answer_faults-12*test_exams_answer_faultf-18*test_exams_answer_faultt-20*test_exams_answer_faultt-34*test_exams_answer_faultf-35*test_exams_answer_faultt-41*test_exams_answer_faults-43*test_exams_answer_faultf-50*test_exams_answer_faults-51*test_exams_answer_faultf-52*test_exams_answer_faultf-53*test_exams_answer_faults', '15', '12', '16', null);
-INSERT INTO `employee_correct_rate` VALUES ('113', '29', '7', '25', 'HK', '1-12-16-17-19-35', '1*test_exams_answer_faultt-12*test_exams_answer_faults-16*test_exams_answer_faults-17*test_exams_answer_faultf-19*test_exams_answer_faults-35*test_exams_answer_faults', '8', '6', '12', null);
-INSERT INTO `employee_correct_rate` VALUES ('114', '27', '5', null, 'HK', null, null, null, null, null, null);
-INSERT INTO `employee_correct_rate` VALUES ('115', '27', '5', null, 'HK', null, null, null, null, null, null);
-INSERT INTO `employee_correct_rate` VALUES ('116', '28', '3', '46.67', 'HK', '10-12-14-15-18-20-34-35-37-40-41-43', '10*test_exams_answer_faults-12*test_exams_answer_faultf-14*test_exams_answer_faults-18*test_exams_answer_faults-20*test_exams_answer_faults-35*test_exams_answer_faultf-41*test_exams_answer_faultt-43*test_exams_answer_faultt', '15', '8', '19', null);
-INSERT INTO `employee_correct_rate` VALUES ('117', '43', '8', null, 'HK', null, null, null, null, null, null);
-INSERT INTO `employee_correct_rate` VALUES ('118', '43', '8', null, 'HK', null, null, null, null, null, null);
-INSERT INTO `employee_correct_rate` VALUES ('119', '33', '3', null, 'HK', null, null, null, null, null, null);
-INSERT INTO `employee_correct_rate` VALUES ('120', '28', '3', null, 'HK', null, null, null, null, null, null);
-INSERT INTO `employee_correct_rate` VALUES ('121', '43', '8', '75', 'HK', '11-14-15', '11*test_exams_answer_faultf-14*test_exams_answer_faultt-15*test_exams_answer_faults', '12', '3', '5', null);
-INSERT INTO `employee_correct_rate` VALUES ('122', '43', '8', '8.33', 'HK', '8-11-16-35-36-38-43-44-45-46-47-48', '8*test_exams_answer_faultf-11*test_exams_answer_faults-16*test_exams_answer_faultf-35*test_exams_answer_faults-36*test_exams_answer_faults-38*test_exams_answer_faultt-43*test_exams_answer_faults-44*test_exams_answer_faultt-45*test_exams_answer_faultt-46*test_exams_answer_faultt-48*test_exams_answer_faults', '12', '11', '21', null);
-INSERT INTO `employee_correct_rate` VALUES ('123', '28', '2', '60', 'HK', '2-19-20-21-36-42-46-47-48-49-50-51-52', '19*test_exams_answer_faults-20*test_exams_answer_faultt-36*test_exams_answer_faults-42*test_exams_answer_faultf-47*test_exams_answer_faults-50*test_exams_answer_faultt', '15', '6', '16', null);
-INSERT INTO `employee_correct_rate` VALUES ('124', '32', '5', null, 'HK', null, null, null, null, null, null);
-INSERT INTO `employee_correct_rate` VALUES ('125', '44', '7', '76.92', 'HK', '1-12-13', '1*test_exams_answer_faultt-12*test_exams_answer_faults-13*test_exams_answer_faultf', '13', '3', '6', null);
-INSERT INTO `employee_correct_rate` VALUES ('126', '44', '7', '76.92', 'HK', '1-11-12', '1*test_exams_answer_faults-11*test_exams_answer_faultt-12*test_exams_answer_faultt', '13', '3', '9', null);
-INSERT INTO `employee_correct_rate` VALUES ('127', '23', '400047', null, 'HK', null, null, null, null, null, null);
-INSERT INTO `employee_correct_rate` VALUES ('128', '23', '400047', null, 'HK', null, null, null, null, null, null);
-INSERT INTO `employee_correct_rate` VALUES ('129', '23', '47', null, 'HK', null, null, null, null, null, null);
-INSERT INTO `employee_correct_rate` VALUES ('130', '23', '47', null, 'HK', null, null, null, null, null, null);
-INSERT INTO `employee_correct_rate` VALUES ('131', '23', '47', null, 'HK', null, null, null, null, null, null);
-INSERT INTO `employee_correct_rate` VALUES ('132', '23', '47', null, 'HK', null, null, null, null, null, null);
-INSERT INTO `employee_correct_rate` VALUES ('133', '23', '47', '45.45', 'HK', '12-19-34-36-42-43-45-46-48', '12*test_exams_answer_faults-42*test_exams_answer_faults-43*test_exams_answer_faultf-45*test_exams_answer_faultf-46*test_exams_answer_faultf-48*test_exams_answer_faults', '11', '6', '20', null);
-INSERT INTO `employee_correct_rate` VALUES ('134', '23', '1', '36.36', 'HK', '2-8-18-20-36-42-43-45-46', '2*test_exams_answer_faultt-8*test_exams_answer_faultf-20*test_exams_answer_faults-42*test_exams_answer_faults-43*test_exams_answer_faultf-45*test_exams_answer_faultt-46*test_exams_answer_faultf', '11', '7', '19', null);
-INSERT INTO `employee_correct_rate` VALUES ('135', '23', '1', '90.91', 'HK', '2-8-14-17-20-36-44-48-54-55-57', '57*test_exams_answer_faultt', '11', '1', '56', null);
-INSERT INTO `employee_correct_rate` VALUES ('136', '23', '1', '18.18', 'HK', '8-20-35-43-46-51-58-66-68-69-70', '8*test_exams_answer_faultf-20*test_exams_answer_faultf-43*test_exams_answer_faults-46*test_exams_answer_faultf-51*test_exams_answer_faultf-58*test_exams_answer_faultf-66*test_exams_answer_faultt-68*test_exams_answer_faultf-70*test_exams_answer_faultf', '11', '9', '23', null);
-INSERT INTO `employee_correct_rate` VALUES ('137', '26', '47', '22.22', 'HK', '12-13-43-44-45-51-57-61-62', '12*test_exams_answer_faultf-13*test_exams_answer_faults-43*test_exams_answer_faults-44*test_exams_answer_faults-45*test_exams_answer_faultt-51*test_exams_answer_faults-62*test_exams_answer_faultt', '9', '7', '11', null);
-INSERT INTO `employee_correct_rate` VALUES ('138', '26', '1', null, 'HK', null, null, null, null, null, null);
-INSERT INTO `employee_correct_rate` VALUES ('139', '26', '1', '11.11', 'HK', '8-20-34-45-46-48-56', '8*test_exams_answer_faultt-20*test_exams_answer_faults-45*test_exams_answer_faultt-46*test_exams_answer_faultt-48*test_exams_answer_faultt-56*test_exams_answer_faultt', '9', '6', '13', null);
-INSERT INTO `employee_correct_rate` VALUES ('140', '26', '1', null, 'HK', null, null, null, null, null, '');
-INSERT INTO `employee_correct_rate` VALUES ('141', '26', '1', '11.11', 'HK', '2-6-45-46-47-48-56-57', '2*test_exams_answer_faultt-45*test_exams_answer_faultt-46*test_exams_answer_faultt-47*test_exams_answer_faults-48*test_exams_answer_faults-56*test_exams_answer_faults-57*test_exams_answer_faultt', '9', '7', '17', '2018-01-08 11:45:51');
-INSERT INTO `employee_correct_rate` VALUES ('142', '33', '1', '10', 'HK', '2-8-20-34-42-45-48-58-67', '2*test_exams_answer_faults-8*test_exams_answer_faultf-20*test_exams_answer_faultf-34*test_exams_answer_faults-45*test_exams_answer_faultt-48*test_exams_answer_faultt-58*test_exams_answer_faults-67*test_exams_answer_faults', '10', '8', '11', '2018-01-08 11:50:14');
-INSERT INTO `employee_correct_rate` VALUES ('143', '23', '39', null, 'HK', null, null, null, null, null, '2018-01-09 11:32:05');
-INSERT INTO `employee_correct_rate` VALUES ('144', '23', '39', null, 'HK', null, null, null, null, null, '2018-01-09 11:32:36');
-INSERT INTO `employee_correct_rate` VALUES ('145', '23', '47', '18.18', 'HK', '13-15-20-42-43-46-48-63-65-67', '13*test_exams_answer_faultf-15*test_exams_answer_faultf-20*test_exams_answer_faults-43*test_exams_answer_faults-46*test_exams_answer_faults-48*test_exams_answer_faultt-63*test_exams_answer_faultt-65*test_exams_answer_faultt', '11', '8', '13', '2018-01-09 14:06:40');
-INSERT INTO `employee_correct_rate` VALUES ('146', '23', '217', '18.18', 'HK', '53-55-72-73-54-56-64-17-62-67-19', '53*test_exams_answer_faultt-55*test_exams_answer_faults-72*test_exams_answer_faults-56*test_exams_answer_faultt-64*test_exams_answer_faultf-17*test_exams_answer_faultf-62*test_exams_answer_faultf-67*test_exams_answer_faultf-19*test_exams_answer_faultf', '11', '9', '17', '2018-01-09 14:22:29');
-INSERT INTO `employee_correct_rate` VALUES ('147', '32', '39', '12.5', 'HK', '44-20-55-57-11-56-53-49', '20*test_exams_answer_faults-55*test_exams_answer_faults-57*test_exams_answer_faultt-11*test_exams_answer_faultt-56*test_exams_answer_faultt-53*test_exams_answer_faultf-49*test_exams_answer_faultf', '8', '7', '13', '2018-01-11 10:18:36');
-INSERT INTO `employee_correct_rate` VALUES ('148', '32', '39', '0', 'HK', '20-44-46-48-50-53-56-59', '20*test_exams_answer_faults-44*test_exams_answer_faultf-46*test_exams_answer_faultt-48*test_exams_answer_faultf-50*test_exams_answer_faults-53*test_exams_answer_faultf-56*test_exams_answer_faults-59*test_exams_answer_faultf', '8', '8', '12', '2018-01-11 10:22:11');
-INSERT INTO `employee_correct_rate` VALUES ('149', '27', '39', '27.27', 'HK', '21-42-46-49-53-54-55-56-59-62-63', '21*test_exams_answer_faultt-42*test_exams_answer_faultt-46*test_exams_answer_faultf-49*test_exams_answer_faultf-53*test_exams_answer_faultt-55*test_exams_answer_faultt-56*test_exams_answer_faultt-63*test_exams_answer_faults', '11', '8', '20', '2018-01-11 10:24:29');
-INSERT INTO `employee_correct_rate` VALUES ('150', '29', '39', '12.5', 'HK', '20-21-42-50-53-56-59-62', '20*test_exams_answer_faults-21*test_exams_answer_faultf-42*test_exams_answer_faultf-50*test_exams_answer_faults-53*test_exams_answer_faultt-56*test_exams_answer_faults-59*test_exams_answer_faultt', '8', '7', '14', '2018-01-11 11:15:19');
-INSERT INTO `employee_correct_rate` VALUES ('151', '29', '39', '0', 'HK', '20-21-48-55-57-59-60-63', '20*test_exams_answer_faultf-21*test_exams_answer_faults-48*test_exams_answer_faultf-55*test_exams_answer_faults-57*test_exams_answer_faultf-59*test_exams_answer_faultf-60*test_exams_answer_faultt-63*test_exams_answer_faultt', '8', '8', '29', '2018-01-11 11:20:06');
-INSERT INTO `employee_correct_rate` VALUES ('152', '32', '39', '25', 'HK', '60-48-57-59-55-21-63-20', '60*test_exams_answer_faultf-48*test_exams_answer_faultt-59*test_exams_answer_faultt-21*test_exams_answer_faults-63*test_exams_answer_faultt-20*test_exams_answer_faultt', '8', '6', '10', '2018-01-11 11:49:08');
-INSERT INTO `employee_correct_rate` VALUES ('153', '29', '39', '37.5', 'HK', '20-63-57-60-21-55-59-48', '63*test_exams_answer_faultf-60*test_exams_answer_faultt-55*test_exams_answer_faultt-59*test_exams_answer_faults-48*test_exams_answer_faults', '8', '5', '11', '2018-01-11 14:40:33');
-INSERT INTO `employee_correct_rate` VALUES ('154', '31', '47', '41.67', 'HK', '12-20-43-45-48-56-62-63-165-166-167-168', '12*test_exams_answer_faultt-20*test_exams_answer_faults-45*test_exams_answer_faults-48*test_exams_answer_faultt-56*test_exams_answer_faultt-165*test_exams_answer_faultf-167*test_exams_answer_faultf', '12', '7', '20', '2018-01-12 09:33:02');
-INSERT INTO `employee_correct_rate` VALUES ('155', '28', '47', '20', 'HK', '15-16-18-20-34-35-42-45-48-51-53-57-60-62', '15*test_exams_answer_faultt-16*test_exams_answer_faultt-18*test_exams_answer_faults-20*test_exams_answer_faults-35*test_exams_answer_faults-42*test_exams_answer_faultf-45*test_exams_answer_faults-48*test_exams_answer_faultf-51*test_exams_answer_faults-57*test_exams_answer_faultf-62*test_exams_answer_faultf', '15', '11', '17', '2018-01-12 09:43:56');
+INSERT INTO `employee_correct_rate` VALUES ('162', '28', '39', '6.67', 'HK', '58-52-50-35-46-54-47-59-44-45-61-60-62-34-56', '58*test_exams_answer_faults-52*test_exams_answer_faultf-50*test_exams_answer_faults-35*test_exams_answer_faults-46*test_exams_answer_faultf-47*test_exams_answer_faults-59*test_exams_answer_faults-44*test_exams_answer_faults-45*test_exams_answer_faultf-61*test_exams_answer_faults-60*test_exams_answer_faultf-62*test_exams_answer_faultf-34*test_exams_answer_faultf-56*test_exams_answer_faultf', '15', '14', '17', '2018-01-13 14:45:32');
 
 -- ----------------------------
 -- Table structure for `employee_info`
@@ -423,187 +269,25 @@ CREATE TABLE `employee_middle_wrong_exams` (
   `city_privileges` char(5) DEFAULT NULL COMMENT '地区权限',
   `employee_middle_wrong_choice` varchar(30) DEFAULT NULL COMMENT '错误选项是什么',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=1322 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=1377 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of employee_middle_wrong_exams
 -- ----------------------------
-INSERT INTO `employee_middle_wrong_exams` VALUES ('689', '6', '12', '27', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('690', '6', '17', '27', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('691', '6', '37', '27', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('692', '6', '40', '27', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('693', '6', '43', '27', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('694', '6', '44', '27', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('695', '6', '47', '27', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('696', '6', '20', '27', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('697', '6', '21', '27', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('698', '6', '36', '27', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('699', '6', '41', '27', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('700', '6', '42', '27', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('701', '6', '45', '27', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('702', '6', '46', '27', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('703', '5', '12', '27', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('704', '5', '13', '27', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('705', '5', '17', '27', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('706', '5', '18', '27', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('707', '5', '21', '27', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('708', '5', '35', '27', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('709', '5', '36', '27', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('710', '5', '38', '27', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('711', '5', '39', '27', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('712', '5', '40', '27', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('713', '5', '20', '27', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('714', '5', '42', '27', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('715', '5', '43', '27', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('716', '5', '45', '27', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('717', '5', '46', '27', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('971', '3', '10', '28', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('972', '3', '12', '28', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('973', '3', '14', '28', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('974', '3', '18', '28', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('975', '3', '20', '28', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('976', '3', '35', '28', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('977', '3', '41', '28', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('978', '3', '43', '28', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('979', '3', '34', '28', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('980', '3', '50', '28', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('981', '3', '51', '28', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('982', '3', '52', '28', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('983', '3', '53', '28', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('984', '3', '15', '28', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('985', '3', '40', '28', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('986', '3', '6', '28', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('987', '3', '39', '28', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('988', '3', '44', '28', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('989', '3', '47', '28', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('990', '3', '48', '28', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('991', '3', '49', '28', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('992', '3', '54', '28', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('993', '3', '13', '28', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('994', '3', '36', '28', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('995', '3', '38', '28', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('996', '3', '42', '28', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('997', '3', '45', '28', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('998', '3', '46', '28', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1002', '8', '8', '43', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1003', '8', '11', '43', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1004', '8', '16', '43', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1005', '8', '35', '43', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1006', '8', '36', '43', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1007', '8', '38', '43', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1008', '8', '43', '43', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1009', '8', '44', '43', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1010', '8', '45', '43', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1011', '8', '46', '43', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1012', '8', '48', '43', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1013', '8', '14', '43', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1014', '8', '15', '43', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1015', '2', '19', '28', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1016', '2', '20', '28', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1017', '2', '36', '28', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1018', '2', '42', '28', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1019', '2', '47', '28', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1020', '2', '50', '28', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1021', '2', '2', '28', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1022', '2', '10', '28', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1023', '2', '11', '28', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1024', '2', '21', '28', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1025', '2', '39', '28', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1026', '2', '41', '28', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1027', '2', '46', '28', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1028', '2', '48', '28', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1029', '2', '52', '28', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1030', '2', '45', '28', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1031', '2', '38', '28', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1032', '2', '49', '28', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1033', '2', '37', '28', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1034', '2', '40', '28', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1035', '2', '43', '28', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1036', '2', '44', '28', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1037', '2', '5', '28', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1038', '2', '14', '28', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1039', '2', '18', '28', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1040', '2', '34', '28', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1041', '2', '35', '28', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1056', '7', '1', '44', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1057', '7', '11', '44', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1058', '7', '12', '44', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1059', '7', '13', '44', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1060', '7', '16', '44', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1061', '7', '17', '44', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1062', '7', '19', '44', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1063', '7', '35', '44', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1064', '7', '10', '44', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1065', '7', '37', '44', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1066', '7', '38', '44', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1067', '7', '40', '44', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1068', '7', '43', '44', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1069', '7', '44', '44', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1070', '7', '45', '44', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1146', '1', '2', '33', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1147', '1', '8', '33', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1148', '1', '20', '33', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1149', '1', '34', '33', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1150', '1', '45', '33', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1151', '1', '48', '33', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1152', '1', '58', '33', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1153', '1', '67', '33', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1154', '1', '46', '33', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1155', '1', '47', '33', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1156', '1', '56', '33', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1157', '1', '57', '33', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1158', '1', '43', '33', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1159', '1', '51', '33', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1160', '1', '66', '33', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1161', '1', '68', '33', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1162', '1', '70', '33', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1163', '1', '42', '33', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1178', '217', '53', '23', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1179', '217', '55', '23', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1180', '217', '72', '23', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1181', '217', '56', '23', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1182', '217', '64', '23', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1183', '217', '17', '23', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1184', '217', '62', '23', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1185', '217', '67', '23', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1186', '217', '19', '23', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1268', '39', '63', '29', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1269', '39', '60', '29', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1270', '39', '55', '29', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1271', '39', '59', '29', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1272', '39', '48', '29', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1273', '39', '21', '29', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1274', '39', '20', '29', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1275', '39', '57', '29', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1276', '39', '42', '29', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1277', '39', '50', '29', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1278', '39', '53', '29', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1279', '39', '56', '29', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1280', '39', '46', '29', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1281', '39', '49', '29', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1282', '39', '44', '29', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1283', '39', '11', '29', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1301', '47', '15', '28', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1302', '47', '16', '28', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1303', '47', '18', '28', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1304', '47', '20', '28', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1305', '47', '35', '28', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1306', '47', '42', '28', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1307', '47', '45', '28', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1308', '47', '48', '28', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1309', '47', '51', '28', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1310', '47', '57', '28', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1311', '47', '62', '28', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1312', '47', '12', '28', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1313', '47', '56', '28', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1314', '47', '165', '28', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1315', '47', '167', '28', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1316', '47', '13', '28', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1317', '47', '43', '28', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1318', '47', '46', '28', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1319', '47', '63', '28', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1320', '47', '65', '28', 'HK', '');
-INSERT INTO `employee_middle_wrong_exams` VALUES ('1321', '47', '44', '28', 'HK', '');
+INSERT INTO `employee_middle_wrong_exams` VALUES ('1363', '39', '58', '28', 'HK', '');
+INSERT INTO `employee_middle_wrong_exams` VALUES ('1364', '39', '52', '28', 'HK', '');
+INSERT INTO `employee_middle_wrong_exams` VALUES ('1365', '39', '50', '28', 'HK', '');
+INSERT INTO `employee_middle_wrong_exams` VALUES ('1366', '39', '35', '28', 'HK', '');
+INSERT INTO `employee_middle_wrong_exams` VALUES ('1367', '39', '46', '28', 'HK', '');
+INSERT INTO `employee_middle_wrong_exams` VALUES ('1368', '39', '47', '28', 'HK', '');
+INSERT INTO `employee_middle_wrong_exams` VALUES ('1369', '39', '59', '28', 'HK', '');
+INSERT INTO `employee_middle_wrong_exams` VALUES ('1370', '39', '44', '28', 'HK', '');
+INSERT INTO `employee_middle_wrong_exams` VALUES ('1371', '39', '45', '28', 'HK', '');
+INSERT INTO `employee_middle_wrong_exams` VALUES ('1372', '39', '61', '28', 'HK', '');
+INSERT INTO `employee_middle_wrong_exams` VALUES ('1373', '39', '60', '28', 'HK', '');
+INSERT INTO `employee_middle_wrong_exams` VALUES ('1374', '39', '62', '28', 'HK', '');
+INSERT INTO `employee_middle_wrong_exams` VALUES ('1375', '39', '34', '28', 'HK', '');
+INSERT INTO `employee_middle_wrong_exams` VALUES ('1376', '39', '56', '28', 'HK', '');
 
 -- ----------------------------
 -- Table structure for `employee_user_bind_v`
@@ -650,10 +334,10 @@ CREATE TABLE `quiz` (
 -- ----------------------------
 -- Records of quiz
 -- ----------------------------
-INSERT INTO `quiz` VALUES ('23', '15', '39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,60,61,62,63,64,65,66,67,68,69,70,72,73,74,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,191,192,193,194,195,196,197,198,199,200,201,202,203,204,205,206,207,208,209,210,211,212,213,214,215,216,217', '问题1修改', '17年秋季第一次测验', '1', '40.74', 'HK', null, '81', '48', null);
+INSERT INTO `quiz` VALUES ('23', '15', '39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,60,61,62,63,64,65,66,67,68,69,70,72,73,74,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,191,192,193,194,195,196,197,198,199,200,201,202,203,204,205,206,207,208,209,210,211,212,213,214,215,216,217', '问题1修改啥答案所多', '17年秋季第一次测验', '1', '39.58', 'HK', null, '96', '58', null);
 INSERT INTO `quiz` VALUES ('26', '15', '39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,60,61,62,63,64,65,66,67,68,69,70,72,73,74,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,191,192,193,194,195,196,197,198,199,200,201,202,203,204,205,206,207,208,209,210,211,212,213,214,215,216,217', '描述1.1', '17年秋季第二次测验', '1', '30.77', 'HK', '2018-01-26 00:00:00', '39', '27', '2018-01-18 00:00:00');
 INSERT INTO `quiz` VALUES ('27', '11', '39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,60,61,62,63,64,65,66,67,68,69,70,72,73,74,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,191,192,193,194,195,196,197,198,199,200,201,202,203,204,205,206,207,208,209,210,211,212,213,214,215,216,217', '测验单描述', '17年秋季第三次测验', '1', '31.33', 'HK', '2018-01-25 00:00:00', '83', '57', null);
-INSERT INTO `quiz` VALUES ('28', '15', '39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,60,61,62,63,64,65,66,67,68,69,70,72,73,74,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,191,192,193,194,195,196,197,198,199,200,201,202,203,204,205,206,207,208,209,210,211,212,213,214,215,216,217', '描述详情测试单12', '17年秋季第四次测验', '1', '31.07', 'HK', '2018-01-31 19:54:32', '177', '122', null);
+INSERT INTO `quiz` VALUES ('28', '15', '39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,60,61,62,63,64,65,66,67,68,69,70,72,73,74,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,191,192,193,194,195,196,197,198,199,200,201,202,203,204,205,206,207,208,209,210,211,212,213,214,215,216,217', '描述详情测试单12', '17年秋季第四次测验', '1', '29.17', 'HK', '2018-01-31 19:54:32', '192', '136', null);
 INSERT INTO `quiz` VALUES ('29', '8', '39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,60,61,62,63,64,65,66,67,68,69,70,72,73,74,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,191,192,193,194,195,196,197,198,199,200,201,202,203,204,205,206,207,208,209,210,211,212,213,214,215,216,217', '问题描述13', '17年春季第一次测验', '0', '33.7', 'HK', '2018-01-31 19:54:36', '92', '61', null);
 INSERT INTO `quiz` VALUES ('30', '12', '39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,60,61,62,63,64,65,66,67,68,69,70,72,73,74,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,191,192,193,194,195,196,197,198,199,200,201,202,203,204,205,206,207,208,209,210,211,212,213,214,215,216,217', '而是下拉', '17年春季第二次测验', '0', '48.48', 'HK', '2017-12-28 00:00:00', '132', '68', null);
 INSERT INTO `quiz` VALUES ('31', '12', '39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,60,61,62,63,64,65,66,67,68,69,70,72,73,74,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,191,192,193,194,195,196,197,198,199,200,201,202,203,204,205,206,207,208,209,210,211,212,213,214,215,216,217', '下拉测试', '17年春季第三次测验', '1', '41.67', 'HK', '2018-01-20 19:54:42', '120', '70', null);
@@ -667,7 +351,7 @@ INSERT INTO `quiz` VALUES ('38', '7', '39,40,41,42,43,44,45,46,47,48,49,50,51,52
 INSERT INTO `quiz` VALUES ('40', '11', '39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,60,61,62,63,64,65,66,67,68,69,70,72,73,74,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,191,192,193,194,195,196,197,198,199,200,201,202,203,204,205,206,207,208,209,210,211,212,213,214,215,216,217', '141414444444444', '', '1', '', 'HK', null, null, null, null);
 INSERT INTO `quiz` VALUES ('41', '11', '39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,60,61,62,63,64,65,66,67,68,69,70,72,73,74,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,191,192,193,194,195,196,197,198,199,200,201,202,203,204,205,206,207,208,209,210,211,212,213,214,215,216,217', '描述19', '', '0', '', 'HK', null, null, null, null);
 INSERT INTO `quiz` VALUES ('42', '14', '39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,60,61,62,63,64,65,66,67,68,69,70,72,73,74,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,191,192,193,194,195,196,197,198,199,200,201,202,203,204,205,206,207,208,209,210,211,212,213,214,215,216,217', '测试单测试115', '答案88', '1', '', 'HK', null, null, null, null);
-INSERT INTO `quiz` VALUES ('43', '12', '39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,60,61,62,63,64,65,66,67,68,69,70,72,73,74,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,191,192,193,194,195,196,197,198,199,200,201,202,203,204,205,206,207,208,209,210,211,212,213,214,215,216,217', '2018年春季第一次销售测试', '2018年春季第一次', '0', '41.67', 'HK', '2018-01-24 00:00:00', '24', '14', null);
+INSERT INTO `quiz` VALUES ('43', '12', '39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,60,61,62,63,64,65,66,67,68,69,70,72,73,74,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,191,192,193,194,195,196,197,198,199,200,201,202,203,204,205,206,207,208,209,210,211,212,213,214,215,216,217', '2018年春季第一次销售测试', '2018年春季第一次', '0', '38.89', 'HK', '2018-01-24 00:00:00', '36', '22', null);
 INSERT INTO `quiz` VALUES ('44', '13', '39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,60,61,62,63,64,65,66,67,68,69,70,72,73,74,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,191,192,193,194,195,196,197,198,199,200,201,202,203,204,205,206,207,208,209,210,211,212,213,214,215,216,217', '2018年春季第三次测验', '2018年春季第三次', '1', '76.92', 'HK', '2018-01-17 00:00:00', '26', '6', null);
 INSERT INTO `quiz` VALUES ('45', '12', '39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,60,61,62,63,64,65,66,67,68,69,70,72,73,74,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,191,192,193,194,195,196,197,198,199,200,201,202,203,204,205,206,207,208,209,210,211,212,213,214,215,216,217', '销售测试', '', '0', '', 'HK', '2018-01-09 00:00:00', null, null, '2018-01-03 00:00:00');
 
@@ -685,12 +369,12 @@ CREATE TABLE `test_exams` (
   `test_exams_kinds` tinyint(1) DEFAULT NULL COMMENT '测验题类型',
   `city_privileges` char(5) DEFAULT NULL COMMENT '地区权限1=>长期,0=>短期,2=>共存',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=178 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=188 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of test_exams
 -- ----------------------------
-INSERT INTO `test_exams` VALUES ('1', '11假如您的客户询问您有关产品的问题,您不知道如何回答,您的做法是', '以您认为对的答案,用好像了解的样子来回答', '11承认您缺乏这方面的知识,然后去找正确答案', '11答应将问题转呈给业务经理', '11给他一个听来很好的答案', '3', 'HK');
+INSERT INTO `test_exams` VALUES ('1', '假如您的客户询问您有关产品的问题,您不知道如何回答,您的做', '以您认为对的答案,用好像了解的样子来回答', '11承认您缺乏这方面的知识,然后去找正确答案', '11答应将问题转呈给业务经理', '11给他一个听来很好的答案', '3', null);
 INSERT INTO `test_exams` VALUES ('2', '当客户正在谈论,而且很明显,他所说的是错误的,您的做法是', '打断他的话,并予以纠正', '聆听然后改变话题', '聆听并找出错误之处', '利用反问使他发觉错误', '1', 'HK');
 INSERT INTO `test_exams` VALUES ('5', '假如您觉得有点泄气时,您的做法是', '请一天假不去想公事', '强迫您自己更卖力去做', '尽量减少拜访', '请示业务经理和您一道去', '1', 'HK');
 INSERT INTO `test_exams` VALUES ('6', '当您拜访经常吃闭门羹的客户时,您的做法是', '不必经常去拜访', '根本不去拜访他', '经常去拜访并试图去改善', '请示业务经理换人试试', '1', 'HK');
@@ -732,12 +416,3 @@ INSERT INTO `test_exams` VALUES ('60', '《医院消毒卫生标准》中规定�
 INSERT INTO `test_exams` VALUES ('61', '《医院消毒卫生标准》中规定，使用中消毒液的合格标准是', '无菌，致病性微生物不得检出；', '细菌菌落总数≤10cfu/ml，致病性微生物不得检出', '细菌菌落总数≤20cfu/ml，致病性微生物不得检出', '细菌菌落总数≤100cfu/ml，致病性微生物不得检出', null, 'HK');
 INSERT INTO `test_exams` VALUES ('62', '空气过滤除菌的原理是', '随流阻挡', '重力沉降', '静电吸附', '扩散粘留', null, 'HK');
 INSERT INTO `test_exams` VALUES ('63', '问题测试的结果', '正解', '错解A', '错解B', '错解C', null, 'HK');
-INSERT INTO `test_exams` VALUES ('169', '111', '11', '111', '11', '111', null, 'HK');
-INSERT INTO `test_exams` VALUES ('170', '11', '141', '111', '1', '1', null, 'HK');
-INSERT INTO `test_exams` VALUES ('171', '141', '11', '1', '11', '14', null, 'HK');
-INSERT INTO `test_exams` VALUES ('172', '111', '11', '111', '11', '111', null, 'HK');
-INSERT INTO `test_exams` VALUES ('173', '11', '141', '111', '1', '1', null, 'HK');
-INSERT INTO `test_exams` VALUES ('174', '141', '11', '1', '11', '14', null, 'HK');
-INSERT INTO `test_exams` VALUES ('175', '111', '11', '111', '11', '111', null, 'HK');
-INSERT INTO `test_exams` VALUES ('176', '11', '141', '111', '1', '1', null, 'HK');
-INSERT INTO `test_exams` VALUES ('177', '141', '11', '1', '11', '14', null, 'HK');
