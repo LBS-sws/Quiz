@@ -102,6 +102,7 @@ Class Quiz{
     /**
      * $wrongArr
      * 答错详情数组返回
+     * 这里考虑一个情况,如果错的题被删掉 浏览数据将会报错 需要做一个判断
      */
     Public static function getWrongDetail($wrongArr){
         $detailAnswer=explode('-',$wrongArr);
@@ -119,19 +120,20 @@ Class Quiz{
                     $outPutData[$k]['wrong_answer'] = $wrongDataGet[0][$temporaryArr[1]];
                     $outPutData[$k]['right_answer'] = $wrongDataGet[0]['test_exams_answer_right'];
                 } else {
-                    $outPutData[0]['id'] = null;
-                    $outPutData[0]['content'] = "无地区权限,请联系管理员";
-                    $outPutData[0]['wrong_answer'] = "无地区权限,请联系管理员";
-                    $outPutData[0]['right_answer'] = "无地区权限,请联系管理员";
+                    $outPutData[$k]['id'] = null;
+                    $outPutData[$k]['content'] = "该测验题数据已经删除";
+                    $outPutData[$k]['wrong_answer'] = "该测验题数据已经删除";
+                    $outPutData[$k]['right_answer'] = "该测验题数据已经删除";
                 }
             }
         }
         else{
             $outPutData[0]['id'] = null;
-            $outPutData[0]['content'] = "你真厉害,这次测验没有错误";
+            $outPutData[0]['content'] = "你真厉害,本次测验没有错误";
             $outPutData[0]['wrong_answer'] = "";
             $outPutData[0]['right_answer'] = "";
         }
+        //var_dump($outPutData);die;
         return $outPutData;
     }
     /**

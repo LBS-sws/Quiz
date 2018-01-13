@@ -232,7 +232,6 @@ class ExamsController extends Controller
         if (isset($_POST['ExamsAdd'])) {
             $model->attributes = $_POST['ExamsAdd'];
             if ($model->isOccupied($model->id)) {
-
                 Dialog::message(Yii::t('dialog','Warning'), Yii::t('dialog','This record is already in use'));
                 $this->redirect(Yii::app()->createUrl('Exams/edit',array('index'=>$model->id)));
             } else {

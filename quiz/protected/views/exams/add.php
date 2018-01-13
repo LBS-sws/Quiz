@@ -60,7 +60,7 @@ $this->pageTitle=Yii::app()->name . ' - Customer Type Form';
                 <?php echo $form->labelEx($model,'test_exams_answer_right',array('class'=>"col-sm-2 control-label")); ?>
                 <div class="col-sm-2">
                     <?php echo $form->textField($model, 'test_exams_answer_right',
-                        array('size'=>10,'maxlength'=>10,'readonly'=>($model->scenario=='view'))
+                        array('size'=>50,'maxlength'=>100,'readonly'=>($model->scenario=='view'))
                     ); ?>
                 </div>
             </div>
@@ -102,14 +102,14 @@ $this->pageTitle=Yii::app()->name . ' - Customer Type Form';
             </div>-->
 
 
-            <div class="form-group">
-                <?php echo $form->labelEx($model,'test_exams_kinds',array('class'=>"col-sm-2 control-label")); ?>
+            <!--<div class="form-group">
+                <?php /*/*echo $form->labelEx($model,'test_exams_kinds',array('class'=>"col-sm-2 control-label")); */?>
                 <div class="col-sm-5">
-                    <?php echo $form->textField($model, 'test_exams_kinds',
+                    <?php /*echo $form->hiddenField($model, 'test_exams_kinds',
                         array('size'=>50,'maxlength'=>100,'readonly'=>($model->scenario=='view'))
-                    ); ?>
+                    ); */?>
                 </div>
-            </div>
+            </div>-->
         </div>
     </div>
 </section>

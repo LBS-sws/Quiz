@@ -102,6 +102,9 @@ class ExamsAdd extends CFormModel
 
     protected function saveUser(&$connection)
     {
+        $middle_test_exams_id=intval($_REQUEST['ExamsAdd']['id']);
+        $test_middle_set="delete from employee_middle_wrong_exams WHERE employee_middle_test_exams_id='$middle_test_exams_id'";
+       Yii::app()->db2->createCommand($test_middle_set)->execute();
         $tableFuss=Yii::app()->params['jsonTableName'];
         $sql = '';
         switch ($this->scenario) {

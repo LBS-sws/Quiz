@@ -95,6 +95,7 @@ $this->pageTitle=Yii::app()->name . ' - Customer Type Form';
                                 "</td>"
                                 ."</tr>";
                                     $wrong_detail_array=Quiz::getWrongDetail($dataGetArr[$ct]['employee_quiz_questions_wrong']);
+
                                     for($qg=0;$qg<count($wrong_detail_array);$qg++){
                                         echo "<tr>"."<td>"."</td>"."<td>".$wrong_detail_array[$qg]['content']."</td>"."<td class='info'>".$wrong_detail_array[$qg]['wrong_answer']."</td>"."<td class='success'>".$wrong_detail_array[$qg]['right_answer']."</td>"."</tr>";
                                     }
