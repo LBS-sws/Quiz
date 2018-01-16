@@ -23,7 +23,8 @@ $this->pageTitle=Yii::app()->name . ' - Customer Type Form';
 </section>
 
 <section class="content">
-    <div class="box"><div class="box-body">
+    <div class="box">
+        <div class="box-body">
             <div class="btn-group" role="group">
                 <?php
                 if ($model->scenario!='new' && $model->scenario!='view') {
@@ -215,11 +216,7 @@ $this->pageTitle=Yii::app()->name . ' - Customer Type Form';
         </div>
     </div>
 </section>
-
 <?php $this->renderPartial('//site/removedialog'); ?>
-
-
-
 <?php
 $js = "
 $('#QuizForm_quiz_start_dt,#QuizForm_quiz_end_dt').on('change',function() {

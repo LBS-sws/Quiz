@@ -38,14 +38,7 @@ $this->pageTitle=Yii::app()->name . ' - Customer Type Form';
                 ?>
                 <?php if ($model->scenario!='view'): ?>
                     <?php echo TbHtml::button('<span class="fa fa-upload"></span> '.Yii::t('misc','Submit quiz Form'), array(
-                        'submit'=>Yii::app()->createUrl('testresult/SubmitResult')));
-                    ?>
-                <?php endif ?>
-
-                <?php if ($model->scenario=='edit'): ?>
-                    <?php echo TbHtml::button('<span class="fa fa-remove"></span> '.Yii::t('misc','Delete'), array(
-                            'name'=>'btnDelete','id'=>'btnDelete','data-toggle'=>'modal','data-target'=>'#removedialog',)
-                    );
+                        'submit'=>Yii::app()->createUrl('testresult/SubmitResult'),'id'=>'dataCheck','name'=>'dataCheck','data-toggle'=>'modal','data-target'=>'#quizStart'));
                     ?>
                 <?php endif ?>
             </div>
@@ -157,7 +150,7 @@ $this->pageTitle=Yii::app()->name . ' - Customer Type Form';
     </div>
 </section>
 
-<?php $this->renderPartial('//site/removedialog'); ?>
+<?php $this->renderPartial('//site/quizStart'); ?>
 <?php
 $js = "
 $('#QuizForm_quiz_start_dt').on('change',function() {
@@ -190,8 +183,10 @@ function IsNumeric(n) {
   return !isNaN(parseFloat(n)) && isFinite(n);
 }
 ";
-$js = Script::genDeleteData(Yii::app()->createUrl('teststart/delete'));
-Yii::app()->clientScript->registerScript('deleteRecord',$js,CClientScript::POS_READY);
+
+$js = Script::QuizDataCheck(Yii::app()->createUrl('testresult/SubmitResult'));
+Yii::app()->clientScript->registerScript('submitQuizCheck',$js,CClientScript::POS_READY);
+
 $js = Script::genReadonlyField();
 Yii::app()->clientScript->registerScript('readonlyClass',$js,CClientScript::POS_READY);
 if ($model->scenario!='view') {

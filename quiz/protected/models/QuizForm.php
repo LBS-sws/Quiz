@@ -58,6 +58,7 @@ class QuizForm extends CFormModel
     public function retrieveData($index)
     {
         $sql = "select * from quiz where id=$index";
+        //var_dump($sql);die;
         $rows = Yii::app()->db2->createCommand($sql)->queryAll();
         if (count($rows) > 0)
         {

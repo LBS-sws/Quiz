@@ -200,6 +200,10 @@ EOF;
 		return $str;
 	}
 
+	/**
+	 * @param $link //跳转方法
+	 * @return string
+	 */
 	public static function genDeleteData($link) {
 		$str = "
 $('#btnDeleteData').on('click',function() {
@@ -214,7 +218,22 @@ function deletedata() {
 		";
 		return $str;
 	}
-	
+
+	public static function QuizDataCheck($link) {
+		$str = "
+$('#btnQuizCheck').on('click',function() {
+	$('#QuizDataCheck').modal('hide');
+	dataCheck();
+});
+
+function dataCheck() {
+	var elm=$('#dataCheck');
+	jQuery.yii.submitForm(elm,'$link',{});
+}
+		";
+		return $str;
+	}
+
 	public static function genFileUpload($modelname, $formname, $ctrlname) {
 		$msg = Yii::t('dialog','Are you sure to delete record?');
 		$rmlink = Yii::app()->createAbsoluteUrl($ctrlname."/fileremove");

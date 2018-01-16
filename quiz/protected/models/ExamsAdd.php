@@ -87,7 +87,6 @@ class ExamsAdd extends CFormModel
 
     public function saveData()
     {
-
         $connection = Yii::app()->db;
         $transaction=$connection->beginTransaction();
         try {

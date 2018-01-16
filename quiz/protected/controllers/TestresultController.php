@@ -45,6 +45,7 @@ Class TestresultController extends Controller
          $final_result=array();
      }
         if (isset($_POST['TestForm'])) {
+            //var_dump($_REQUEST);die;
             $model = new TestForm($_POST['TestForm']['scenario']);
             $model->attributes = $_POST['TestForm'];
             if (!empty($contentArray)){

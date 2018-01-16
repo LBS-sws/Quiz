@@ -116,8 +116,19 @@ header("Content-type: text/html; charset=utf-8");
                  }
              }
          else{
-             Dialog::message(Yii::t('dialog','Information'), Yii::t('quiz','The value of the date should be empty!'));
-             $this->redirect(Yii::app()->createUrl('quiz/edit',array('index'=>$_REQUEST['QuizForm']['id'])));
+             if (isset($_POST['QuizForm'])) {
+                 $model = new QuizForm($_POST['QuizForm']['scenario']);
+                 $model->attributes = $_POST['QuizForm'];
+                 if ($model->validate()) {
+                     $model->saveData();
+                     Dialog::message(Yii::t('dialog', 'Information'), Yii::t('dialog', 'Save Done'));
+                     $this->redirect(Yii::app()->createUrl('quiz/edit', array('index' => $model->id)));
+                 } else {
+                     $message = CHtml::errorSummary($model);
+                     Dialog::message(Yii::t('dialog', 'Validation Message'), $message);
+                     $this->render('form', array('model' => $model,));
+                 }
+             }
          }
      }
      public function actionEdit($index)

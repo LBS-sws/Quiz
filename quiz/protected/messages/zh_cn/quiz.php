@@ -53,7 +53,7 @@ return array(
     'quiz_exams_count_show'=>'本次测验单的题目数量',
     'quiz_employee_title'=>'测验单',
     'now_time'=>'测验时间',
-    'Quiz resultOrder'=>'测验查询单',
+    'quiz resultOrder'=>'测验查询单',
     'employee_info_name'=>'该测验单人员',
     'quiz_info_show'=>'查询的测验单为:',
     'employee_info_name_get'=>'点击人员查看各自在该测验单的测验记录',
