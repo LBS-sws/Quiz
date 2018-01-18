@@ -131,7 +131,6 @@ $('#btnLookup').on('click',function(){
 EOF;
 		return $str;
 	}
-	
 	public static function genLookupSearchEx() {
 		$mesg = Yii::t('dialog','No Record Found');
 		$link = Yii::app()->createAbsoluteUrl("lookup");
@@ -218,11 +217,15 @@ function deletedata() {
 		";
 		return $str;
 	}
+	Public static function getInputValue(){
+		$jsValue="$('#showRate').val()";
+		return $jsValue;
+	}
 
 	public static function QuizDataCheck($link) {
 		$str = "
 $('#btnQuizCheck').on('click',function() {
-	$('#QuizDataCheck').modal('hide');
+	$('#quizStart').modal('hide');
 	dataCheck();
 });
 

@@ -38,7 +38,7 @@ $this->pageTitle=Yii::app()->name . ' - Customer Type Form';
                 ?>
                 <?php if ($model->scenario!='view'): ?>
                     <?php echo TbHtml::button('<span class="fa fa-upload"></span> '.Yii::t('misc','Submit quiz Form'), array(
-                        'submit'=>Yii::app()->createUrl('testresult/SubmitResult'),'id'=>'dataCheck','name'=>'dataCheck','data-toggle'=>'modal','data-target'=>'#quizStart'));
+                      'id'=>'dataCheck','name'=>'dataCheck','data-toggle'=>'modal','data-target'=>'#quizStart'));
                     ?>
                 <?php endif ?>
             </div>

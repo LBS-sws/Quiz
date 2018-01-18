@@ -1,5 +1,4 @@
 <tr>
-	<th></th>
 	<th>
 		<?php echo TbHtml::link($this->getLabelName('quiz_date').$this->drawOrderArrow('quiz_date'),'#',$this->createOrderLink('quiz-list','quiz_date'))
 			;

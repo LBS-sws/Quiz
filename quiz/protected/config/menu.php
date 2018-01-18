@@ -39,7 +39,12 @@ return array(
 				'access'=>'HK07',
 				'url'=>'/testhistory/index',
 				'tag'=>'@',
-			)
+			),
+			'Quiz employee History'=>array(
+			'access'=>'HK08',
+				'url'=>'/Employeehistory/index',
+				'tag'=>'@',
+			),
 		),
 	),
 

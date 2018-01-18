@@ -22,6 +22,7 @@ return array(
 	'Quiz test manage'=>'测验题测试',
 	'Quiz test search'=>'测验题查询',
 	'Quiz test History'=>'测验历史查询',
+	'Quiz employee History'=>'员工数据查询',
 
 	//张静增加结束
 	'All'=>'全部',

@@ -10646,3 +10646,372 @@ Stack trace:
 REQUEST_URI=/newQuiz/Quiz/quiz/index.php/testresult/SubmitResult
 in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\TestresultController.php (48)
 in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php (13)
+2018/01/16 18:00:23 [warning] [application] Failed to set unsafe attribute "scenario" of "TestStartForm".
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\TeststartController.php (67)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php (13)
+2018/01/16 18:00:23 [warning] [application] Failed to set unsafe attribute "quiz_choose_id" of "TestStartForm".
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\TeststartController.php (67)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php (13)
+2018/01/16 18:00:23 [warning] [application] Failed to set unsafe attribute "employee_id" of "TestStartForm".
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\TeststartController.php (67)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php (13)
+2018/01/16 18:00:38 [warning] [application] Failed to set unsafe attribute "scenario" of "TestForm".
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\TestresultController.php (50)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php (13)
+2018/01/16 18:00:38 [warning] [application] Failed to set unsafe attribute "quiz_correct_employee_id" of "TestForm".
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\TestresultController.php (50)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php (13)
+2018/01/16 18:00:38 [warning] [application] Failed to set unsafe attribute "quiz_date" of "TestForm".
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\TestresultController.php (50)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php (13)
+2018/01/17 10:49:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Employeehistory/index"。' in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('Employeehistory...')
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/newQuiz/Quiz/quiz/index.php/Employeehistory/index
+HTTP_REFERER=http://127.0.0.1/newQuiz/Quiz/quiz/index.php
+---
+2018/01/17 10:50:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Employeehistory/index"。' in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('Employeehistory...')
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/newQuiz/Quiz/quiz/index.php/Employeehistory/index
+HTTP_REFERER=http://127.0.0.1/newQuiz/Quiz/quiz/index.php
+---
+2018/01/17 10:50:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Employeehistory/index"。' in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('Employeehistory...')
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/newQuiz/Quiz/quiz/index.php/Employeehistory/index
+HTTP_REFERER=http://127.0.0.1/newQuiz/Quiz/quiz/index.php
+---
+2018/01/17 10:50:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Employeehistory/index"。' in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('Employeehistory...')
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/newQuiz/Quiz/quiz/index.php/Employeehistory/index
+HTTP_REFERER=http://127.0.0.1/newQuiz/Quiz/quiz/index.php
+---
+2018/01/17 10:50:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Employeehistory/index"。' in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('Employeehistory...')
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/newQuiz/Quiz/quiz/index.php/Employeehistory/index
+HTTP_REFERER=http://127.0.0.1/newQuiz/Quiz/quiz/index.php
+---
+2018/01/17 10:50:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Employeehistory/index"。' in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('Employeehistory...')
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/newQuiz/Quiz/quiz/index.php/Employeehistory/index
+HTTP_REFERER=http://127.0.0.1/newQuiz/Quiz/quiz/index.php
+---
+2018/01/17 10:50:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Employeehistory/index"。' in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('Employeehistory...')
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/newQuiz/Quiz/quiz/index.php/Employeehistory/index
+HTTP_REFERER=http://127.0.0.1/newQuiz/Quiz/quiz/index.php/Employeehistory/index
+---
+2018/01/17 10:50:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Employeehistory/index"。' in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('Employeehistory...')
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/newQuiz/Quiz/quiz/index.php/Employeehistory/index
+HTTP_REFERER=http://127.0.0.1/newQuiz/Quiz/quiz/index.php/Employeehistory/index
+---
+2018/01/17 10:53:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Employeehistory/index"。' in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('Employeehistory...')
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/newQuiz/Quiz/quiz/index.php/Employeehistory/index
+HTTP_REFERER=http://127.0.0.1/newQuiz/Quiz/quiz/index.php/Employeehistory/index
+---
+2018/01/17 10:53:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Employeehistory/index"。' in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('Employeehistory...')
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/newQuiz/Quiz/quiz/index.php/Employeehistory/index
+HTTP_REFERER=http://127.0.0.1/newQuiz/Quiz/quiz/index.php/Employeehistory/index
+---
+2018/01/17 10:53:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Employeehistory/index"。' in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('Employeehistory...')
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/newQuiz/Quiz/quiz/index.php/Employeehistory/index
+HTTP_REFERER=http://127.0.0.1/newQuiz/Quiz/quiz/index.php/Employeehistory/index
+---
+2018/01/17 10:53:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Employeehistory/index"。' in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('Employeehistory...')
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/newQuiz/Quiz/quiz/index.php/Employeehistory/index
+HTTP_REFERER=http://127.0.0.1/newQuiz/Quiz/quiz/index.php/Employeehistory/index
+---
+2018/01/17 10:53:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Employeehistory/index"。' in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('Employeehistory...')
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/newQuiz/Quiz/quiz/index.php/Employeehistory/index
+HTTP_REFERER=http://127.0.0.1/newQuiz/Quiz/quiz/index.php/Employeehistory/index
+---
+2018/01/17 10:53:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Employeehistory/index"。' in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('Employeehistory...')
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/newQuiz/Quiz/quiz/index.php/Employeehistory/index
+HTTP_REFERER=http://127.0.0.1/newQuiz/Quiz/quiz/index.php/Employeehistory/index
+---
+2018/01/17 10:53:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Employeehistory/index"。' in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('Employeehistory...')
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/newQuiz/Quiz/quiz/index.php/Employeehistory/index
+HTTP_REFERER=http://127.0.0.1/newQuiz/Quiz/quiz/index.php/Employeehistory/index
+---
+2018/01/17 10:53:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Employeehistory/index"。' in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('Employeehistory...')
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/newQuiz/Quiz/quiz/index.php/Employeehistory/index
+HTTP_REFERER=http://127.0.0.1/newQuiz/Quiz/quiz/index.php/Employeehistory/index
+---
+2018/01/17 10:53:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Employeehistory/index"。' in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('Employeehistory...')
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/newQuiz/Quiz/quiz/index.php/Employeehistory/index
+HTTP_REFERER=http://127.0.0.1/newQuiz/Quiz/quiz/index.php/Employeehistory/index
+---
+2018/01/17 10:54:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Employeehistory/index"。' in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('Employeehistory...')
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/newQuiz/Quiz/quiz/index.php/Employeehistory/index
+HTTP_REFERER=http://127.0.0.1/newQuiz/Quiz/quiz/index.php/Employeehistory/index
+---
+2018/01/17 10:54:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Employeehistory/index"。' in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('Employeehistory...')
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/newQuiz/Quiz/quiz/index.php/Employeehistory/index
+HTTP_REFERER=http://127.0.0.1/newQuiz/Quiz/quiz/index.php/Employeehistory/index
+---
+2018/01/17 10:54:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Employeehistory/index"。' in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('Employeehistory...')
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/newQuiz/Quiz/quiz/index.php/Employeehistory/index
+HTTP_REFERER=http://127.0.0.1/newQuiz/Quiz/quiz/index.php/Employeehistory/index
+---
+2018/01/17 10:54:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Employeehistory/index"。' in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('Employeehistory...')
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/newQuiz/Quiz/quiz/index.php/Employeehistory/index
+HTTP_REFERER=http://127.0.0.1/newQuiz/Quiz/quiz/index.php/Employeehistory/index
+---
+2018/01/17 10:54:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Employeehistory/index"。' in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('Employeehistory...')
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/newQuiz/Quiz/quiz/index.php/Employeehistory/index
+HTTP_REFERER=http://127.0.0.1/newQuiz/Quiz/quiz/index.php/Employeehistory/index
+---
+2018/01/17 10:54:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Employeehistory/index"。' in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('Employeehistory...')
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/newQuiz/Quiz/quiz/index.php/Employeehistory/index
+HTTP_REFERER=http://127.0.0.1/newQuiz/Quiz/quiz/index.php/Employeehistory/index
+---
+2018/01/17 10:54:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Employeehistory/index"。' in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('Employeehistory...')
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/newQuiz/Quiz/quiz/index.php/Employeehistory/index
+HTTP_REFERER=http://127.0.0.1/newQuiz/Quiz/quiz/index.php/teststart/index
+---
+2018/01/17 11:07:53 [warning] [application] Failed to set unsafe attribute "scenario" of "TestStartForm".
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\TeststartController.php (67)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php (13)
+2018/01/17 11:07:53 [warning] [application] Failed to set unsafe attribute "quiz_choose_id" of "TestStartForm".
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\TeststartController.php (67)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php (13)
+2018/01/17 11:07:53 [warning] [application] Failed to set unsafe attribute "employee_id" of "TestStartForm".
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\TeststartController.php (67)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php (13)
+2018/01/17 11:07:58 [warning] [application] Failed to set unsafe attribute "scenario" of "TestStartForm".
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\TeststartController.php (67)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php (13)
+2018/01/17 11:07:58 [warning] [application] Failed to set unsafe attribute "quiz_choose_id" of "TestStartForm".
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\TeststartController.php (67)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php (13)
+2018/01/17 11:07:58 [warning] [application] Failed to set unsafe attribute "employee_id" of "TestStartForm".
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\TeststartController.php (67)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php (13)
+2018/01/17 11:22:13 [error] [php] Object of class CClientScript could not be converted to string (D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\views\site\quizStart.php:5)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CController.php(870): TeststartController->renderFile()
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\views\teststart\quiz.php(153): TeststartController->renderPartial()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CBaseController.php(127): require()
+#3 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CBaseController.php(96): TeststartController->renderInternal()
+#4 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CController.php(870): TeststartController->renderFile()
+#5 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CController.php(783): TeststartController->renderPartial()
+#6 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\TeststartController.php(56): TeststartController->render()
+#7 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\actions\CInlineAction.php(50): TeststartController->actionQuizStart()
+#8 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#9 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CController.php(287): TeststartController->runAction()
+#10 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CController.php(266): TeststartController->runActionWithFilters()
+#11 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(283): TeststartController->run()
+#12 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#13 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/newQuiz/Quiz/quiz/index.php/teststart/QuizStart?index=quiz&quiz_id=28&employee_id=39&quiz_correct_employee_id=175
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\views\site\quizStart.php (5)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\views\teststart\quiz.php (153)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\TeststartController.php (56)
+2018/01/17 11:27:40 [warning] [application] Failed to set unsafe attribute "scenario" of "TestStartForm".
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\TeststartController.php (67)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php (13)
+2018/01/17 11:27:40 [warning] [application] Failed to set unsafe attribute "quiz_choose_id" of "TestStartForm".
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\TeststartController.php (67)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php (13)
+2018/01/17 11:27:40 [warning] [application] Failed to set unsafe attribute "employee_id" of "TestStartForm".
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\TeststartController.php (67)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php (13)
+2018/01/17 11:28:01 [warning] [application] Failed to set unsafe attribute "scenario" of "TestForm".
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\TestresultController.php (50)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php (13)
+2018/01/17 11:28:01 [warning] [application] Failed to set unsafe attribute "quiz_correct_employee_id" of "TestForm".
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\TestresultController.php (50)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php (13)
+2018/01/17 11:28:01 [warning] [application] Failed to set unsafe attribute "quiz_date" of "TestForm".
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\TestresultController.php (50)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php (13)
+2018/01/17 11:32:46 [warning] [application] Failed to set unsafe attribute "scenario" of "TestStartForm".
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\TeststartController.php (67)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php (13)
+2018/01/17 11:32:46 [warning] [application] Failed to set unsafe attribute "quiz_choose_id" of "TestStartForm".
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\TeststartController.php (67)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php (13)
+2018/01/17 11:32:46 [warning] [application] Failed to set unsafe attribute "employee_id" of "TestStartForm".
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\TeststartController.php (67)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php (13)
+2018/01/17 11:32:55 [warning] [application] Failed to set unsafe attribute "scenario" of "TestForm".
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\TestresultController.php (50)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php (13)
+2018/01/17 11:32:55 [warning] [application] Failed to set unsafe attribute "quiz_correct_employee_id" of "TestForm".
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\TestresultController.php (50)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php (13)
+2018/01/17 11:32:55 [warning] [application] Failed to set unsafe attribute "quiz_date" of "TestForm".
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\TestresultController.php (50)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php (13)
+2018/01/17 11:33:00 [warning] [application] Failed to set unsafe attribute "scenario" of "TestStartForm".
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\TeststartController.php (67)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php (13)
+2018/01/17 11:33:00 [warning] [application] Failed to set unsafe attribute "quiz_choose_id" of "TestStartForm".
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\TeststartController.php (67)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php (13)
+2018/01/17 11:33:00 [warning] [application] Failed to set unsafe attribute "employee_id" of "TestStartForm".
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\TeststartController.php (67)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php (13)
+2018/01/17 17:10:08 [error] [php] Undefined index: id (D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\views\employeehistory\_listdtl.php:1)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\extensions\layout\ListPageWidget.php(226): ListPageWidget->renderFile()
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\extensions\layout\ListPageWidget.php(40): ListPageWidget->render()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CBaseController.php(174): ListPageWidget->run()
+#3 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\views\employeehistory\index.php(52): EmployeehistoryController->widget()
+#4 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CBaseController.php(127): require()
+#5 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CBaseController.php(96): EmployeehistoryController->renderInternal()
+#6 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CController.php(870): EmployeehistoryController->renderFile()
+#7 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CController.php(783): EmployeehistoryController->renderPartial()
+#8 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\EmployeehistoryController.php(23): EmployeehistoryController->render()
+#9 unknown(0): EmployeehistoryController->actionIndex()
+#10 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#11 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#12 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#13 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CController.php(287): EmployeehistoryController->runAction()
+#14 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CController.php(266): EmployeehistoryController->runActionWithFilters()
+#15 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(283): EmployeehistoryController->run()
+#16 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#17 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/newQuiz/Quiz/quiz/index.php/Employeehistory/index
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\views\employeehistory\_listdtl.php (1)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\extensions\layout\ListPageWidget.php (226)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\extensions\layout\ListPageWidget.php (40)
+2018/01/17 17:10:30 [error] [php] Missing argument 4 for ListPageWidget::getLink(), called in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\views\employeehistory\_listdtl.php on line 1 and defined (D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\extensions\layout\ListPageWidget.php:196)
+Stack trace:
+#0 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CBaseController.php(96): ListPageWidget->renderInternal()
+#1 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\extensions\layout\ListPageWidget.php(226): ListPageWidget->renderFile()
+#2 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\extensions\layout\ListPageWidget.php(40): ListPageWidget->render()
+#3 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CBaseController.php(174): ListPageWidget->run()
+#4 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\views\employeehistory\index.php(52): EmployeehistoryController->widget()
+#5 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CBaseController.php(127): require()
+#6 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CBaseController.php(96): EmployeehistoryController->renderInternal()
+#7 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CController.php(870): EmployeehistoryController->renderFile()
+#8 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CController.php(783): EmployeehistoryController->renderPartial()
+#9 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\controllers\EmployeehistoryController.php(23): EmployeehistoryController->render()
+#10 unknown(0): EmployeehistoryController->actionIndex()
+#11 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#12 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#13 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#14 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CController.php(287): EmployeehistoryController->runAction()
+#15 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CController.php(266): EmployeehistoryController->runActionWithFilters()
+#16 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(283): EmployeehistoryController->run()
+#17 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#18 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#19 D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\index.php(13): CWebApplication->run()
+REQUEST_URI=/newQuiz/Quiz/quiz/index.php/Employeehistory/index
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\extensions\layout\ListPageWidget.php (196)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\views\employeehistory\_listdtl.php (1)
+in D:\phpstudy\PHPTutorial\WWW\newQuiz\Quiz\quiz\protected\extensions\layout\ListPageWidget.php (226)

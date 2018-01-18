@@ -1,8 +1,12 @@
 <?php
-$content = "<p>".Yii::t('dialog','Are you sure to delete?')."</p>";
+/*$js = Script::getInputValue();
+$data=Yii::app()->clientScript->registerScript('submitQuizCheck',$js,CClientScript::POS_READY);*/
+
+$content = "<p>".Yii::t('dialog','Please check your data while submitting?')."</p>";
+
 $this->widget('bootstrap.widgets.TbModal', array(
-    'id'=>'QuizDataCheck',
-    'header'=>Yii::t('dialog','Delete Record'),
+    'id'=>'quizStart',
+    'header'=>Yii::t('dialog','Information Show'),
     'content'=>$content,
     'footer'=>array(
         TbHtml::button(Yii::t('dialog','OK'), array('id'=>'btnQuizCheck','data-dismiss'=>'modal','color'=>TbHtml::BUTTON_COLOR_PRIMARY)),

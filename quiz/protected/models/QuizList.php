@@ -35,7 +35,6 @@ class QuizList extends CListPageModel
         $sql2 = "select count(id)
 				from blog$tableFuss.quiz
 				where 1=1 ";
-
         $clause = "";
 
         //searchField =>字段名   searchValue =>字段值  日期  名字 描述
